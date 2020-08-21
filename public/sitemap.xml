@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://docs.qlarm.com/</loc>
+    <lastmod>2020-08-20T10:49:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/dashboard/</loc>
+    <lastmod>2020-08-20T15:28:26+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/live/</loc>
+    <lastmod>2020-08-20T15:29:58+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/events/</loc>
+    <lastmod>2020-08-20T15:30:04+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/trend/</loc>
+    <lastmod>2020-08-20T15:30:11+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/history/</loc>
+    <lastmod>2020-08-20T15:30:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/notifications/</loc>
+    <lastmod>2020-08-20T15:30:25+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/configuration/</loc>
+    <lastmod>2020-08-20T15:30:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/configuration/events/</loc>
+    <lastmod>2020-08-20T15:54:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/settings/</loc>
+    <lastmod>2020-08-20T15:41:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/settings/user-settings/</loc>
+    <lastmod>2020-08-20T16:06:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/settings/users/</loc>
+    <lastmod>2020-08-20T16:07:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/settings/permissions/</loc>
+    <lastmod>2020-08-20T16:07:13+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/settings/general-settings/</loc>
+    <lastmod>2020-08-20T16:07:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/configuration/endpoints/</loc>
+    <lastmod>2020-08-20T15:54:44+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/configuration/schedules/</loc>
+    <lastmod>2020-08-20T15:54:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/configuration/recipients/</loc>
+    <lastmod>2020-08-20T15:54:27+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.qlarm.com/tags/</loc>
+  </url>
+  
+</urlset>
