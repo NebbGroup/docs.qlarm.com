@@ -1,4 +1,5 @@
 baseURL = "http://docs.qlarm.com/"
+staticDir = ["static"]
 languageCode = "en-us"
 title = "QLARM Documentation"
 theme="ace-documentation"
