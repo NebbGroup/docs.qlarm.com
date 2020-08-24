@@ -2,6 +2,7 @@ baseURL = "http://docs.qlarm.com/"
 languageCode = "en-us"
 title = "QLARM Documentation"
 theme="ace-documentation"
+publishDir = "docs"
 unsafe = true
 [markup.goldmark.renderer]
   unsafe= true
