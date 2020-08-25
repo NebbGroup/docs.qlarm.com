@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\content"
+    "\\content",
+    "\\content\\dashboard"
   ],
-  "SelectedNode": "\\resources",
+  "SelectedNode": "\\content\\dashboard\\_index.md",
   "PreviewInSolutionExplorer": false
 }

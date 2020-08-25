@@ -12,7 +12,7 @@ One of the most import features of QLARM is creating custom dashboards where you
 ## Overview
 
 <div align="justify">
-    At a glance, in the Dashboard View we are greeted with two components, the configuratinon header and display grid. The configuratinon header containts the importat functionalities for configuring the dashboard. The display grid as it name suggest it displays the available dashboards that we selected from the configuration div and here we can configure the presentation and layout of the widgets in the dashboard. By default we are greeted with a default System Dashboard.
+    At a glance, in the Dashboard View we are greeted with two components, the configuration header and display grid. The configuration header contains the important functionalities for configuring the dashboard. The display grid as it name suggest it displays the available dashboards that we selected from the configuration div and here we can configure the presentation and layout of the widgets in the dashboard. By default we are greeted with a default System Dashboard.
 </div>
 
 ![Example image](/dashboard.png)
@@ -87,7 +87,7 @@ When a widget is clicked from the list it is shown on the grid panel, here we ca
     <figcaption >Fig 5. Widget components</figcaption>
 </figure>
 
-Every widget can we condigured by opening the widget menu and selecting "Edit Widget". Here a new edit widget view is oppened to configure the widget. Each widget has its own unique parameter for configuration.
+Every widget can we configured by opening the widget menu and selecting "Edit Widget". Here a new edit widget view is opened to configure the widget. Each widget has its own unique parameter for configuration.
 
 <figure class="image_container">
     <img class="center_image" src="/edit_widget_menu.png" alt="Widget menu">
@@ -115,7 +115,7 @@ When we have made all the desired configurations in the dashboard we can save it
 
 ### Add Widget
 
-The "Add Widget" button <img src="/add_widgets.png" alt="add widget button"> allows us to add additional widgets to our dashboard. By clicking the button we are greeted with the same window as if we were creating and New Dashboard.
+The "Add Widget" button <img src="/add_widgets.png" alt="add widget button"> allows us to add additional widgets to our dashboard. By clicking the button we are greeted with the same window as if we were creating a new dashboard.
 
 ### Discard Dashboard
 
