@@ -174,19 +174,22 @@
 <div align="justify">
     At a glance, in the Dashboard View we are greeted with two components, the configuration header and display grid. The configuration header contains the important functionalities for configuring the dashboard. The display grid as it name suggest it displays the available dashboards that we selected from the configuration div and here we can configure the presentation and layout of the widgets in the dashboard. By default we are greeted with a default System Dashboard.
 </div>
-<p><img src="/dashboard.png" alt="Example image"></p>
+<figure class="image_container">
+    <img class="center_image" src="/dashboard.png" alt="configure header in view mode">
+    <figcaption>Fig 1. Dashboard configuration</figcaption>
+</figure>
 <h2 id="configure-header">Configure header</h2>
 <div align="justify">
     The configuration header contains the main functionalities that lets us configure dashboards to our needs. In view mode we can view different dashboards that are available to us by changing them in the dashboard dropdown list. We can enter edit mode by clicking on the "Configure" button <img src="/configure_button.png" alt="Configure Button">.
 </div>
 <figure class="image_container">
     <img class="center_image" src="/configure_header_view_mode.png" alt="configure header in view mode">
-    <figcaption>Fig 1. Configure header in view mode</figcaption>
+    <figcaption>Fig 2. Configure header in view mode</figcaption>
 </figure>
 <p>In edit mode the configuration header is changed by adding new functionalities so we can configure dashboards.</p>
 <figure class="image_container">
     <img class="center_image" src="/configure_header_edit_mode.png" alt="configure header in edit mode">
-    <figcaption>Fig 2. Configure header in edit mode</figcaption>
+    <figcaption>Fig 3. Configure header in edit mode</figcaption>
 </figure>
 <h3 id="dashboard-list">Dashboard list</h3>
 <div align="justify">
@@ -208,8 +211,8 @@ By checking the "Share" checkbox <img src="/share_checkbox.png" alt="Mine checkb
 The right cluster of buttons contains the main functionalities for configuring the dashboard we are working on.
 </div>
 <figure class="image_container">
-    <img class="center_image" src="/button_cluster.png" alt="configure header in edit mode">
-    <figcaption>Fig 3. Configure functionalities for dashboard</figcaption>
+    <img class="center_image" src="/button_cluster.png" alt="configure header in edit mode" style="width: 45%;">
+    <figcaption>Fig 4. Configure functionalities for dashboard</figcaption>
 </figure>
 <h3 id="new-dashboard">New Dashboard</h3>
 <div align="justify">
@@ -217,23 +220,34 @@ The "New Dashboard" button <img src="/new_dashboard_button.png" alt="New Dashboa
 </div>
 <figure class="image_container">
     <img class="center_image" src="/add_widgets_mode.png" alt="configure header in edit mode">
-    <figcaption >Fig 4. Configure functionalities for dashboard</figcaption>
+    <figcaption >Fig 5. Configure functionalities for dashboard</figcaption>
 </figure>
-<p>When a widget is clicked from the list it is shown on the grid panel, here we can rearrange and configure added widgets. Each widget can be altered (configured, copied and deleted) by using the Widget menu and resized by dragging the widget handle <img src="/widget_handle.png" alt="widget handle"> located in the lower right angle on every widget.</p>
+<p>When a widget is clicked from the list it is shown on the grid panel, here we can rearrange them by dragging and dropping the widgets at the desired location on the grid and resize them by using the widget handle <img src="/widget_handle.png" alt="widget handle"> located in the lower right angle on every widget or by dragging and dropping the edges and corners. After configuring the dashboard layout we can click the &ldquo;Save&rdquo; button <img src="/save_button.png" alt="save button"> to save the dashboard or the &ldquo;Cancel&rdquo; button <img src="/cancel_button.png" alt="cancel button"> if we do not wish to save the dashboard.</p>
+<p>Every widget can we configured by opening the widget menu and selecting “Edit Widget”. Here a new edit widget view is opened to configure the widget. Each widget has its own unique parameter for configuration (more on this in the Widgets subsection).</p>
 <figure class="image_container">
-    <img class="center_image" src="/widget_menu.png" alt="Widget details">
-    <figcaption >Fig 5. Widget components</figcaption>
+    <img class="center_image" src="/widget_menu.png" alt="Widget details" style="width: 35%;">
+    <figcaption >Fig 6. Widget components</figcaption>
 </figure>
-<p>Every widget can we configured by opening the widget menu and selecting &ldquo;Edit Widget&rdquo;. Here a new edit widget view is opened to configure the widget. Each widget has its own unique parameter for configuration.</p>
+<p>We can saved the widget configuration by clicking the “Save” button <img src="/edit_widget_save_button.png" alt="close button">, otherwise we can close this edit window by clicking the “Close” button <img src="/edit_widget_close_button.png" alt="close button">.</p>
 <figure class="image_container">
     <img class="center_image" src="/edit_widget_menu.png" alt="Widget menu">
-    <figcaption >Fig 6. Edit widget mode</figcaption>
+    <figcaption >Fig 7. Edit widget mode</figcaption>
 </figure>
-<p>After configuring the dashboard layout we can click the &ldquo;Save&rdquo; button <img src="/save_button.png" alt="save button"> to save the dashboard or the &ldquo;Cancel&rdquo; button <img src="/cancel_button.png" alt="cancel button"> if we do not wish to save the dashboard.</p>
+<p>After configuring the widget, the Widget menu is updated with few more options, “Show Trend” and “Show Events” which are available to interact with depending on the circumstances.</p>
+<figure class="image_container">
+    <img class="center_image" src="/updated_edit_widget_menu.png" alt="Widget menu" style="width: 15%;">
+    <figcaption >Fig 8. Updated edit widget mode</figcaption>
+</figure>
 <h5 id="widgets">Widgets</h5>
 <p>The widget list contains eight different types of widgets that can be add by clicking on any of them.</p>
 <ul>
-<li>Latest Value - shows the latest value of a desired sensor,</li>
+<li>Latest Value widget <img src="/last_value_widget_logo.png" alt="last value logo"> - shows the latest value of a desired sensor. In the &ldquo;Subjects&rdquo; tab we select an endpoint and tags available from that endpoint for which we wish to see the latest value. Here we can also give the widget an alias name to differ from the other Latest Value widgets. In the &ldquo;Ranges&rdquo; tab we adjust custom ranges with whom we will view the latest value in a certain color if it falls in that range. The &ldquo;Labels&rdquo; tab contains additional settings for configuring the widget.</li>
+</ul>
+<figure class="image_container">
+    <img class="center_image" src="/last_value_widget_menu.png" alt="Widget menu">
+    <figcaption >Fig 8. Last value widget menu</figcaption>
+</figure>
+<ul>
 <li>Latest Value Gauge - shows the latest value of a desired sensor using a gauge with custom range values and colors,</li>
 <li>Tag state - shows the state of a desired sensor by setting custom range values and different colors,</li>
 <li>Tag chart - displays tag values for a desired period with a chart,</li>
