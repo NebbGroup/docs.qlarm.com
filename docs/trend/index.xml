@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trend View on QLARM Documentation</title>
-    <link>http://docs.qlarm.com/trend/</link>
+    <link>https://docs.qlarm.com/trend/</link>
     <description>Recent content in Trend View on QLARM Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Aug 2020 15:30:11 +0200</lastBuildDate>
     
-	<atom:link href="http://docs.qlarm.com/trend/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.qlarm.com/trend/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
