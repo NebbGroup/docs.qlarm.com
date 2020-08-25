@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>History View on QLARM Documentation</title>
-    <link>http://docs.qlarm.com/history/</link>
+    <link>https://docs.qlarm.com/history/</link>
     <description>Recent content in History View on QLARM Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Aug 2020 15:30:16 +0200</lastBuildDate>
     
-	<atom:link href="http://docs.qlarm.com/history/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.qlarm.com/history/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
