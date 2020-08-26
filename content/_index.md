@@ -18,7 +18,7 @@ Welcome to the official documentation site for QLARM. Get to know our intuitive 
             </div>
 			<div class="card-body">
 				<h5 class="card-title">
-					<a href="{{< ref "/content/dashboard/_index.md" >}}">Dashnoard Configuration</a>
+					<a href="{{< ref "/content/dashboard/_index.md" >}}">Dashboard Configuration</a>
 				</h5>
 			</div>
 		</div>
