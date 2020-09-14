@@ -6,7 +6,7 @@ pre: "<b>1. </b>"
 ---
 
 {{<lead>}}
-One of the most import features of QLARM is creating custom dashboards where you can display different custom configured widgets. Every configured dashboard can be named, configured, saved, reloaded when needed, set as default and shared with other participants.
+One of the most important features of QLARM is creating custom dashboards where you can display different custom configured widgets. Every configured dashboard can be named, configured, saved, reloaded when needed, set as default and shared with other participants.
 {{</lead>}}
 
 ## Overview
