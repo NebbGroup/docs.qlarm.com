@@ -99,31 +99,67 @@ Every widget can we configured by opening the widget menu and selecting “Edit 
     <figcaption >Fig 7. Edit widget mode</figcaption>
 </figure>
 
-After configuring the widget, the Widget menu is updated with few more options, “Show Trend” and “Show Events” which are available to interact with depending on the circumstances.
-
-<figure class="image_container">
-    <img class="center_image" src="/updated_edit_widget_menu.png" alt="Widget menu" style="width: 15%;">
-    <figcaption >Fig 8. Updated edit widget mode</figcaption>
-</figure>
+After configuring the widget, the Widget menu is updated with few more options depending on the widget. 
 
 ##### Widgets
 
 The widget list contains eight different types of widgets that can be add by clicking on any of them. 
 
-- Latest Value widget <img src="/last_value_widget_logo.png" alt="last value logo"> - shows the latest value of a desired sensor. In the "Subjects" tab we select an endpoint and tags available from that endpoint for which we wish to see the latest value. Here we can also give the widget an alias name to differ from the other Latest Value widgets. In the "Ranges" tab we adjust custom ranges with whom we will view the latest value in a certain color if it falls in that range. The "Labels" tab contains additional settings for configuring the widget.
+- Latest Value widget <img src="/last_value_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the latest value of a desired sensor. In the "Subjects" tab we select an endpoint and tags available from that endpoint for which we wish to see the latest value. Here we can also give the widget an alias name to differ from the other Latest Value widgets. In the "Ranges" tab we adjust custom ranges with whom we will view the latest value in a certain color if it falls in that range. The "Labels" tab contains additional settings for configuring the widget.
 
 <figure class="image_container">
     <img class="center_image" src="/last_value_widget_menu.png" alt="Widget menu">
     <figcaption >Fig 8. Last value widget menu</figcaption>
 </figure>
 
-- Latest Value Gauge - shows the latest value of a desired sensor using a gauge with custom range values and colors,
-- Tag state - shows the state of a desired sensor by setting custom range values and different colors,
-- Tag chart - displays tag values for a desired period with a chart,
-- Elapsed time for endpoint -  displays the time since last event/data for an endpoint,
-- Elapsed time for system - displays the time since last event/data for the system,
-- Endpoint state - shows the current connection state of an endpoint,
-- System status - shows the system cumulative health status of all endpoints states.
+- Latest Value Gauge <img src="/last_value_gauge_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the latest value of a desired sensor using a gauge with custom range values and colors. In the "Subjects" tab we select an endpoint and tags available from that endpoint for which we wish to see the latest value. Here we can also give the widget an alias name to differ from the other Latest Value Gauge widgets. In the "Ranges" tab we adjust the appearance of the gauge. Here first we set the minimum and maximum value and the base color of the scale. Then we can add custom ranges on the scale with whom we will view the latest value in a certain color if it falls in that range. The "Labels" tab contains additional settings for configuring the widget.
+
+<figure class="image_container">
+    <img class="center_image" src="/latest_value_gauge_widget_menu.png" alt="Widget menu">
+    <figcaption >Fig 9. Last value widget menu</figcaption>
+</figure>
+
+- Tag state <img src="/tag_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the state of a desired sensor by setting custom range values and different colors. In the "Subjects" tab we select an endpoint and tags available from that endpoint for which we wish to see the tag state. Here we can also give the widget an alias name to differ from the other Latest Value widgets. In the "States" tab we adjust custom ranges with whom we will view the tag state in a certain color if it falls in that range. The "Labels" tab contains additional settings for configuring the widget.
+
+<figure class="image_container">
+    <img class="center_image" src="/tag_state_widget_menu.png" alt="Widget menu">
+    <figcaption >Fig 10. Last value widget menu</figcaption>
+</figure>
+
+- Tag chart <img src="/tag_chart_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays tag values for a desired period with a chart. In the "Subjects" tab we select an endpoint and tags available from that endpoint for which we wish to see the tag chart. Here we can also give the widget an alias name to differ from the other Latest Value widgets. In the "Interval" tab we adjust the unit of time, number and color of the time units. The "Labels" tab contains additional settings for configuring the widget.
+
+<figure class="image_container">
+    <img class="center_image" src="/tag_chart_widget_menu.png" alt="Widget menu">
+    <figcaption >Fig 10. Last value widget menu</figcaption>
+</figure>
+
+- Elapsed time for endpoint <img src="/elapsed_time_for_endpoint_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays the time since last event/data for an endpoint. In the "Subjects" tab we select an endpoint for which we wish to see the elapsed time. In the "Data" and "Event" tabs we add intervals with different ranges and colors to represent the "Last Data" and "Last Event". The "Labels" tab contains additional settings for configuring the widget.
+
+<figure class="image_container">
+    <img class="center_image" src="/elapsed_time_for_endpoint_widget_menu.png" alt="Widget menu">
+    <figcaption >Fig 10. Last value widget menu</figcaption>
+</figure>
+
+- Elapsed time for system <img src="/elapsed_time_for_system_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays the time since last event/data for the system. In the "Subjects" tab we select an endpoint for which we wish to see the elapsed time. In the "Data" and "Event" tabs we add intervals with different ranges and colors to represent the "Last Data" and "Last Event". The "Labels" tab contains additional settings for configuring the widget.
+
+<figure class="image_container">
+    <img class="center_image" src="/elapsed_time_for_system_widget_menu.png" alt="Widget menu">
+    <figcaption >Fig 10. Last value widget menu</figcaption>
+</figure>
+
+- Endpoint state <img src="/endpoint_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the current connection state of an endpoint. In the "Subject" tab we select an endpoint for which we wish to see its state. In the "States" tab we add colors for the "ONLINE" and "OFFLINE" status. The "Labels" tab contains additional settings for configuring the widget.
+
+<figure class="image_container">
+    <img class="center_image" src="/endpoint_state_widget_menu.png" alt="Widget menu">
+    <figcaption >Fig 10. Last value widget menu</figcaption>
+</figure>
+
+- System status <img src="/system_status_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the system cumulative health status of all endpoints states. In the "Statuses" tab we add colors for the "OK", "BROKEN" and "SYSTEM SHUTDOWN" status. The "Labels" tab contains additional settings for configuring the widget.
+
+<figure class="image_container">
+    <img class="center_image" src="/system_status_widget_menu.png" alt="Widget menu">
+    <figcaption >Fig 10. Last value widget menu</figcaption>
+</figure>
 
 ### Save Dashboard
 
