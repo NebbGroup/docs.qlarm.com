@@ -2,8 +2,11 @@ baseURL = "https://docs.qlarm.com/"
 staticDir = ["static"]
 languageCode = "en-us"
 title = "QLARM Documentation"
-theme="ace-documentation"
+theme = "ace-documentation"
 publishDir = "docs"
-unsafe = true
+
 [markup.goldmark.renderer]
-  unsafe= true
+  unsafe = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
