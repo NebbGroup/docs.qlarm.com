@@ -1,8 +1,8 @@
 ---
-title: "Events View"
+title: "Events"
 date: 2020-08-20T15:30:04+02:00
 weight: 4
-pre: "<b>3. </b>"
+pre: ""
 ---
 
 {{<lead>}}
@@ -77,9 +77,14 @@ Depending on what is chosen in the filters we have a different display of column
 If data is not expected than "-" is displayed. <br />
 If data is expected but not available then an empty cell is displayed.
 
-## Events details (click on the arrow at the beginning of the row)
+## Events details
+In Event view tab event details are provided and in order to be displayed click on the arrow at the beginning of the row.
 If data is not expected than the label for a certain time is not displayed.<br />
 If data is expected but not available then "-" is displayed.
+<figure class="image_container">
+    <img class="center_image" src="/event_details.png" alt="Events page">
+    <figcaption>Fig 2. Event details</figcaption>
+</figure>
 
 ## Sorting
 Sorting by clicking on a column name in the tables in both tabs is provided.
@@ -91,10 +96,18 @@ Events listed in the Event view tab can be edited by clicking the row context me
 ## Logs
 Events listed in both Event view and History tab have logs provided. They can be reached by clicking the row context menu and than choose "Logs". <img src="/events_view_logs_link.png"> 
 <br />
-Logs display tracking data about the event. What has happen, when and by who. There is also a possibility for a user to add a custom log (a comment). <img src="/events_view_logs.png" >
+Logs display tracking data about the event. What has happen, when and by who. There is also a possibility for a user to add a custom log (a comment).
+<figure class="image_container">
+    <img class="center_image" src="/events_view_logs.png" alt="Events page">
+    <figcaption>Fig 3. Logs</figcaption>
+</figure>
 
 ## Event view Actions
-Event view events can be acknowledged from this view by clicking the relevant row "ACK" button. <img src="/events_view_ack_link.png" > Than popup appears <img src="/events_view_ack_popup.png" > and we need to confirm if we acknowledge the event or we can cancel the acknowledgement.
+Event view events can be acknowledged from this view by clicking the relevant row "ACK" button. <img src="/events_view_ack_link.png" > Than popup appears and we need to confirm if we acknowledge the event or we can cancel the acknowledgement.
+<figure class="image_container">
+    <img class="center_image" src="/events_view_ack_popup.png" alt="Events page">
+    <figcaption>Fig 4. Acknowledge event</figcaption>
+</figure>
 
 ## Event view Links
 Event view events are related to tags which data can be visually presented in a chart in Trend view. Link to this page is available in Trend column. <img src="/events_view_trend_link.png" >
