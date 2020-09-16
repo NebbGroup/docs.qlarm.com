@@ -22,6 +22,6 @@ By clicking on the <img src="/history_filter_button.png" alt="last value logo" c
 
 <figure class="image_container">
     <img class="center_image" src="/history_filter_options.png" alt="Widget menu">
-    <figcaption >Fig 1. History view</figcaption>
+    <figcaption >Fig 2. History filter options</figcaption>
 </figure>
 
