@@ -6,7 +6,7 @@ pre: "<b>6. </b>"
 ---
 
 {{<lead>}}
-Notifications view lets us view and filer all of the generated notifications.
+Notifications view lets us view and filter all of the generated notifications.
 {{</lead>}}
 
 <figure class="image_container">
