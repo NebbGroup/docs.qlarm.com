@@ -14,14 +14,14 @@ Trend view is where we can get chart display of the data for selected tag(s) for
 </figure>
 
 ## Add tag(s) to chart
-In order for tag(s) data to be displayed tags needs to be added in chart. This is done by selecting an endpoint first from the select list <img src="/trend_endpoint_list.png"> than selecting one or many tags from the multiselect list <img src="/trend_tags_list_empty.png">.
+In order for tag(s) data to be displayed tags needs to be added in chart. This is done by selecting an endpoint first from the select list <img src="/trend_endpoint_list.png"> then selecting one or many tags from the multiselect list <img src="/trend_tags_list_empty.png">.
 <figure class="image_container">
     <img class="center_image" src="/trend_tag_list.png" alt="Trend">
     <figcaption>Fig 2. Adding tags</figcaption>
 </figure>
 
 ## Time period
-Tag(s) data can be displayed in chart for the period selected. We can select the period from the dropdown list "TIME PERIOD" of defined periods or choose a "Custom" period ("Last Day" is the initial preselected period). <img src="/time_period_custom.png">
+Tag(s) data can be displayed in the chart for the period selected. We can select the period from the dropdown list "TIME PERIOD" of defined periods or choose a "Custom" period ("Last Day" is the initial preselected period). <img src="/time_period_custom.png">
 
 When we choose a Custom for a time period, or click to <img src="/custom_time_period_button.png">, popup is displayed for start and end date and time to be inserted. This period is applied to the chart after click on "Apply" button.
 <figure class="image_container">
@@ -68,7 +68,7 @@ If "Single Time Axis" is not applied (value axis by tag displayed): <br/>
 
 
 ## Edit tag settings
-The "Color", "Tickness" and "Symbol" of the chart tag line can be customized. This can be done via the "Edit tag settings" which are displayed on click on <img src="/edit_trend_tag_button.png">.
+The "Color", "Thickness" and "Symbol" of the chart tag line can be customized. This can be done via the "Edit tag settings" which are displayed on click on <img src="/edit_trend_tag_button.png">.
 The change of the "Symbol" ("Round", "Square" or "TriangleUp") can be visible only if the "Show chart symbols" is enabled in "Configuration" part.
 <figure class="image_container">
     <img class="center_image" src="/edit_tag_settings.png" alt="Edit tag settings">
@@ -89,14 +89,14 @@ Chart with all the tags added can be saved as a Report by clicking the Save butt
 </figure>
 
 ## Load Report
-Saved reports can be loaded by clicking on "Open" button <img src="/load_report_button.png">. Than we get the "Load report" popup where we choose the report we want to load from the list and than click "Load".
+Saved reports can be loaded by clicking on "Open" button <img src="/load_report_button.png">. Then we get the "Load report" popup where we choose the report we want to load from the list and then click "Load".
 <figure class="image_container">
     <img class="center_image" src="/load_report_popup.png" alt="Load report">
     <figcaption>Fig 12. Load report</figcaption>
 </figure>
 
 ## Edit Report
-If you edit an already loaded report than if you like to save it, you would get the "Overwrite" option <img src="/overwrite_report.png">  to choose if you like to overwrite the report or "Save as New" <img src="/save_as_new_report.png"> if you like to save a new report.
+If you edit an already loaded report then if you like to save it, you would get the "Overwrite" option <img src="/overwrite_report.png">  to choose if you like to overwrite the report or "Save as New" <img src="/save_as_new_report.png"> if you like to save a new report.
 
 
 
