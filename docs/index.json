@@ -46,7 +46,7 @@
 	"title": "Notifications",
 	"tags": [],
 	"description": "",
-	"content": "Notifications view lets us view and filer all of the generated notifications.\rFig 1. Notifications\r\rThe table lists all of the notifications sent to the recipients with their name, type, status, date and recipient information. Using the \u0026ldquo;Notification Type\u0026rdquo; drop down list we can filter the notifications by their type (SMS, call, email, push notification). The \u0026ldquo;Time Filter\u0026rdquo; drop down list lets us filter the table by the time of the notification. By pressing the button we can further input detail for the time filter.\nFig 2. Time period filter\r\r"
+	"content": "Notifications view lets us view and filter all of the generated notifications.\rFig 1. Notifications\r\rThe table lists all of the notifications sent to the recipients with their name, type, status, date and recipient information. Using the \u0026ldquo;Notification Type\u0026rdquo; drop down list we can filter the notifications by their type (SMS, call, email, push notification). The \u0026ldquo;Time Filter\u0026rdquo; drop down list lets us filter the table by the time of the notification. By pressing the button we can further input detail for the time filter.\nFig 2. Time period filter\r\r"
 },
 {
 	"uri": "https://docs.qlarm.com/configuration/",
