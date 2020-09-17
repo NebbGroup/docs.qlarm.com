@@ -18,7 +18,7 @@ Welcome to the official documentation site for QLARM. Get to know our intuitive 
             </div>
 			<div class="card-body">
 				<h5 class="card-title">
-					<a href="{{< ref "/content/dashboard/_index.md" >}}">Dashboard Configuration</a>
+					<a href="{{< ref "/content/dashboard/_index.md" >}}">Dashboard</a>
 				</h5>
 			</div>
 		</div>
@@ -30,7 +30,7 @@ Welcome to the official documentation site for QLARM. Get to know our intuitive 
             </div>
 			<div class="card-body">
 				<h5 class="card-title">
-					<a href="{{< ref "/content/live/_index.md" >}}">Live View</a>
+					<a href="{{< ref "/content/live/_index.md" >}}">Live</a>
 				</h5>
 			</div>
 		</div>
@@ -42,7 +42,7 @@ Welcome to the official documentation site for QLARM. Get to know our intuitive 
             </div>
 			<div class="card-body">
 				<h5 class="card-title">
-					<a href="{{< ref "/content/events/_index.md" >}}">Events View</a>
+					<a href="{{< ref "/content/events/_index.md" >}}">Events</a>
 				</h5>
 			</div>
 		</div>
@@ -57,7 +57,7 @@ Welcome to the official documentation site for QLARM. Get to know our intuitive 
             </div>
 			<div class="card-body">
 				<h5 class="card-title">
-					<a href="{{< ref "/content/trend/_index.md" >}}">Trend View</a>
+					<a href="{{< ref "/content/trend/_index.md" >}}">Trend</a>
 				</h5>
 			</div>
 		</div>
@@ -69,7 +69,7 @@ Welcome to the official documentation site for QLARM. Get to know our intuitive 
             </div>
 			<div class="card-body">
 				<h5 class="card-title">
-					<a href="{{< ref "/content/history/_index.md" >}}">History View</a>
+					<a href="{{< ref "/content/history/_index.md" >}}">History</a>
 				</h5>
 			</div>
 		</div>
@@ -81,7 +81,7 @@ Welcome to the official documentation site for QLARM. Get to know our intuitive 
             </div>
 			<div class="card-body">
 				<h5 class="card-title">
-					<a href="{{< ref "/content/notifications/_index.md" >}}">Notifications View</a>
+					<a href="{{< ref "/content/notifications/_index.md" >}}">Notifications</a>
 				</h5>
 			</div>
 		</div>
