@@ -8,7 +8,7 @@
 
     <title>
         
-        Events View | QLARM Documentation
+        Events | QLARM Documentation
         
     </title>
 
@@ -51,22 +51,22 @@
     <li data-nav-id="/dashboard/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="/dashboard/"><h6><b>1. </b>Dashboard Configuration</h6></a>
+        <a class="nav-link p-0" href="/dashboard/"><h6>Dashboard</h6></a>
     </li>
     <li data-nav-id="/live/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="/live/"><h6><b>2. </b>Live View</h6></a>
+        <a class="nav-link p-0" href="/live/"><h6>Live</h6></a>
     </li>
     <li data-nav-id="/events/" class="nav-item my-1 parent active
         ">
         
-        <a class="nav-link p-0" href="/events/"><h6><b>3. </b>Events View</h6></a>
+        <a class="nav-link p-0" href="/events/"><h6>Events</h6></a>
     </li>
     <li data-nav-id="/trend/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="/trend/"><h6><b>4. </b>Trend View</h6></a>
+        <a class="nav-link p-0" href="/trend/"><h6>Trend</h6></a>
     </li>
     <li data-nav-id="/history/" class="nav-item my-1
         ">
@@ -76,12 +76,12 @@
     <li data-nav-id="/notifications/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="/notifications/"><h6><b>6. </b>Notifications View</h6></a>
+        <a class="nav-link p-0" href="/notifications/"><h6>Notifications</h6></a>
     </li>
     <li data-nav-id="/configuration/" class="nav-item my-1 haschildren
         ">
         
-        <a class="nav-link p-0" href="/configuration/"><h6><b>7. </b>Configuration</h6></a>
+        <a class="nav-link p-0" href="/configuration/"><h6>Configuration</h6></a>
         <ul class="list-unstyled ml-2">
     <li data-nav-id="/configuration/events/" class="nav-item my-1
         ">
@@ -108,7 +108,7 @@
     <li data-nav-id="/settings/" class="nav-item my-1 haschildren
         ">
         
-        <a class="nav-link p-0" href="/settings/"><h6><b>8. </b>Settings</h6></a>
+        <a class="nav-link p-0" href="/settings/"><h6>Settings</h6></a>
         <ul class="list-unstyled ml-2">
     <li data-nav-id="/settings/user-settings/" class="nav-item my-1
         ">
@@ -145,7 +145,7 @@
     <li><a href="#columns">Columns</a></li>
     <li><a href="#filters">Filters</a></li>
     <li><a href="#info-in-columns-cells-population">Info in columns (cells population)</a></li>
-    <li><a href="#events-details-click-on-the-arrow-at-the-beginning-of-the-row">Events details (click on the arrow at the beginning of the row)</a></li>
+    <li><a href="#events-details">Events details</a></li>
     <li><a href="#sorting">Sorting</a></li>
     <li><a href="#event-view-edit">Event view Edit</a></li>
     <li><a href="#logs">Logs</a></li>
@@ -158,7 +158,7 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Events View</h1>
+<h1>Events</h1>
 
 <p class="lead">
     Event view is listing the current and the past events in tabs Events and History, respectively. 
@@ -235,9 +235,14 @@ Custom Event can be edited or deleted. Alarms that happen because of it are Arch
 <h2 id="info-in-columns-cells-population">Info in columns (cells population)</h2>
 <p>If data is not expected than &ldquo;-&rdquo; is displayed. <br />
 If data is expected but not available then an empty cell is displayed.</p>
-<h2 id="events-details-click-on-the-arrow-at-the-beginning-of-the-row">Events details (click on the arrow at the beginning of the row)</h2>
-<p>If data is not expected than the label for a certain time is not displayed.<br />
+<h2 id="events-details">Events details</h2>
+<p>In Event view tab event details are provided and in order to be displayed click on the arrow at the beginning of the row.
+If data is not expected than the label for a certain time is not displayed.<br />
 If data is expected but not available then &ldquo;-&rdquo; is displayed.</p>
+<figure class="image_container">
+    <img class="center_image" src="/event_details.png" alt="Events page">
+    <figcaption>Fig 2. Event details</figcaption>
+</figure>
 <h2 id="sorting">Sorting</h2>
 <p>Sorting by clicking on a column name in the tables in both tabs is provided.</p>
 <h2 id="event-view-edit">Event view Edit</h2>
@@ -246,9 +251,17 @@ If data is expected but not available then &ldquo;-&rdquo; is displayed.</p>
 <h2 id="logs">Logs</h2>
 <p>Events listed in both Event view and History tab have logs provided. They can be reached by clicking the row context menu and than choose &ldquo;Logs&rdquo;. <img src="/events_view_logs_link.png"> 
 <br />
-Logs display tracking data about the event. What has happen, when and by who. There is also a possibility for a user to add a custom log (a comment). <img src="/events_view_logs.png" ></p>
+Logs display tracking data about the event. What has happen, when and by who. There is also a possibility for a user to add a custom log (a comment).</p>
+<figure class="image_container">
+    <img class="center_image" src="/events_view_logs.png" alt="Events page">
+    <figcaption>Fig 3. Logs</figcaption>
+</figure>
 <h2 id="event-view-actions">Event view Actions</h2>
-<p>Event view events can be acknowledged from this view by clicking the relevant row &ldquo;ACK&rdquo; button. <img src="/events_view_ack_link.png" > Than popup appears <img src="/events_view_ack_popup.png" > and we need to confirm if we acknowledge the event or we can cancel the acknowledgement.</p>
+<p>Event view events can be acknowledged from this view by clicking the relevant row &ldquo;ACK&rdquo; button. <img src="/events_view_ack_link.png" > Than popup appears and we need to confirm if we acknowledge the event or we can cancel the acknowledgement.</p>
+<figure class="image_container">
+    <img class="center_image" src="/events_view_ack_popup.png" alt="Events page">
+    <figcaption>Fig 4. Acknowledge event</figcaption>
+</figure>
 <h2 id="event-view-links">Event view Links</h2>
 <p>Event view events are related to tags which data can be visually presented in a chart in Trend view. Link to this page is available in Trend column. <img src="/events_view_trend_link.png" ></p>
 
@@ -262,8 +275,8 @@ Logs display tracking data about the event. What has happen, when and by who. Th
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/live/" title="Live View"><i class="fas fa-chevron-left p-1"></i>Live View</a>
-        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trend/" title="Trend View">Trend View<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/live/" title="Live"><i class="fas fa-chevron-left p-1"></i>Live</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/trend/" title="Trend">Trend<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 
