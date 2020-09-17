@@ -53,7 +53,7 @@
 	"title": "Configuration",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Configuration represents the core of the QLARM functionality flow.\rFeatures \r\rEvents\r\r\r\r\r\r\rRecipients\r\r\r\r\r\r\rSchedules\r\r\r\r\r\r\rEndpoints\r\r\r\r\r\r"
 },
 {
 	"uri": "https://docs.qlarm.com/configuration/events/",
@@ -109,7 +109,7 @@
 	"title": "Permissions",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Permissions is where we can set permissions for a role. Roles are predefined and listed in the \u0026ldquo;CHOOSE ROLE\u0026rdquo; list .  Permissions names mainly corespond to the application main menu items, and they actually refer to these pages and their functionalities. But sections or finctionalities other than pages can be also set under permission like Scopes, or Acknowledge of Event. After (de)selecting permissions for chosen role, role can be saved with click on \u0026ldquo;Save changes\u0026rdquo; button Fig 1. Permissions\r"
 },
 {
 	"uri": "https://docs.qlarm.com/settings/general-settings/",
