@@ -116,49 +116,49 @@ The widget list contains eight different types of widgets that can be add by cli
 
 <figure class="image_container">
     <img class="center_image" src="/latest_value_gauge_widget_menu.png" alt="Widget menu">
-    <figcaption >Fig 9. Last value widget menu</figcaption>
+    <figcaption >Fig 9. Last value gauge widget menu</figcaption>
 </figure>
 
 - Tag state <img src="/tag_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the state of a desired sensor by setting custom range values and different colors. In the "Subjects" tab we select an endpoint and tags available from that endpoint for which we wish to see the tag state. Here we can also give the widget an alias name to differ from the other Latest Value widgets. In the "States" tab we adjust custom ranges with whom we will view the tag state in a certain color if it falls in that range. The "Labels" tab contains additional settings for configuring the widget.
 
 <figure class="image_container">
     <img class="center_image" src="/tag_state_widget_menu.png" alt="Widget menu">
-    <figcaption >Fig 10. Last value widget menu</figcaption>
+    <figcaption >Fig 10. Tag state widget menu</figcaption>
 </figure>
 
 - Tag chart <img src="/tag_chart_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays tag values for a desired period with a chart. In the "Subjects" tab we select an endpoint and tags available from that endpoint for which we wish to see the tag chart. Here we can also give the widget an alias name to differ from the other Latest Value widgets. In the "Interval" tab we adjust the unit of time, number and color of the time units. The "Labels" tab contains additional settings for configuring the widget.
 
 <figure class="image_container">
     <img class="center_image" src="/tag_chart_widget_menu.png" alt="Widget menu">
-    <figcaption >Fig 10. Last value widget menu</figcaption>
+    <figcaption >Fig 11. Tag chart widget menu</figcaption>
 </figure>
 
 - Elapsed time for endpoint <img src="/elapsed_time_for_endpoint_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays the time since last event/data for an endpoint. In the "Subjects" tab we select an endpoint for which we wish to see the elapsed time. In the "Data" and "Event" tabs we add intervals with different ranges and colors to represent the "Last Data" and "Last Event". The "Labels" tab contains additional settings for configuring the widget.
 
 <figure class="image_container">
     <img class="center_image" src="/elapsed_time_for_endpoint_widget_menu.png" alt="Widget menu">
-    <figcaption >Fig 10. Last value widget menu</figcaption>
+    <figcaption >Fig 12. Elapsed time for endpoint widget menu</figcaption>
 </figure>
 
 - Elapsed time for system <img src="/elapsed_time_for_system_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays the time since last event/data for the system. In the "Subjects" tab we select an endpoint for which we wish to see the elapsed time. In the "Data" and "Event" tabs we add intervals with different ranges and colors to represent the "Last Data" and "Last Event". The "Labels" tab contains additional settings for configuring the widget.
 
 <figure class="image_container">
     <img class="center_image" src="/elapsed_time_for_system_widget_menu.png" alt="Widget menu">
-    <figcaption >Fig 10. Last value widget menu</figcaption>
+    <figcaption >Fig 13. Elapsed time for system widget menu</figcaption>
 </figure>
 
 - Endpoint state <img src="/endpoint_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the current connection state of an endpoint. In the "Subject" tab we select an endpoint for which we wish to see its state. In the "States" tab we add colors for the "ONLINE" and "OFFLINE" status. The "Labels" tab contains additional settings for configuring the widget.
 
 <figure class="image_container">
     <img class="center_image" src="/endpoint_state_widget_menu.png" alt="Widget menu">
-    <figcaption >Fig 10. Last value widget menu</figcaption>
+    <figcaption >Fig 14. Endpoint state widget menu</figcaption>
 </figure>
 
 - System status <img src="/system_status_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the system cumulative health status of all endpoints states. In the "Statuses" tab we add colors for the "OK", "BROKEN" and "SYSTEM SHUTDOWN" status. The "Labels" tab contains additional settings for configuring the widget.
 
 <figure class="image_container">
     <img class="center_image" src="/system_status_widget_menu.png" alt="Widget menu">
-    <figcaption >Fig 10. Last value widget menu</figcaption>
+    <figcaption >Fig 15. System status widget menu</figcaption>
 </figure>
 
 ### Save Dashboard
