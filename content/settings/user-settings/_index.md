@@ -1,7 +1,7 @@
 ---
 title: "User Settings"
 date: 2020-08-20T16:06:59+02:00
-weight: 15
+weight: 14
 ---
 {{<lead>}}
 User settings contains basic settings that apply to the whole application when viewing different content in different pages.
