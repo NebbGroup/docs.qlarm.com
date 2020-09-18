@@ -9,7 +9,7 @@ User settings contains basic settings that apply to the whole application when v
 
 <figure class="image_container">
     <img class="center_image" src="/user_settings.png" alt="Widget menu">
-    <figcaption >Fig 10. Last value widget menu</figcaption>
+    <figcaption >Fig 1. User Settings</figcaption>
 </figure>
 
 The "Page size" drop down list lets the user to select the number of values in each table. The "Language" drop down list lets the user select the general language of the application. The "Time Zone" drop down list lets the user select the time zone of the time for the whole application. The "Date Time Format" drop down list lets the user to select the format of the dates. The "Time Format" drop down list lest the user set the format of the time.
