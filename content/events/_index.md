@@ -10,8 +10,10 @@ Event view is listing the current and the past events in tabs Events and History
 <img src="/events-view-tabs.png" > <br />
 Sorting on column and various filtering are provided for both tabs. Events tab events have details provided in collapsible row and can be edited. Both Events and History data have Logs.
 {{</lead>}}
+
+If the event optains many tags then the name displayed for the event is consisted of the tag name dash ("-") the the name of the custom event.
 <figure class="image_container">
-    <img class="center_image" src="/event_view_screen.png" alt="Events page">
+    <img class="center_image" src="/events.png" alt="Events">
     <figcaption>Fig 1. Events</figcaption>
 </figure>
 
@@ -59,17 +61,26 @@ They both have State : In grace period or not, and that only depend of the time 
 
 ## Filters
 There are filters on this page mutual for both tabs (Events and History):
-- "ENDPOINT FILTER" - <img src="/events_view_endpoint_filter.png"> This filter is preselected and it filters events for selected endpoint. 
-- "TAG FILTER" - <img src="/events_view_tag_filter.png"> This filter is populated with the selected endpoint tags and is not preselected. It filters events for selected tag. 
-- "SEARCH FILTER" (by name) - <img src="/events_view_search_filter.png"> This filters events by name that contains the search string.
-- "EVENT TYPE" - <img src="/events_view_event_type_filter.png"> This filters only the events from selected type.
-- "IN GRACE PERIOD" - <img src="/events_view_in_grace_filter.png"> If this is checked than only events that are in grace period will be displayed. Otherwise only the events that are not in a grace period are listed.
+- "ENDPOINT FILTER" - This filter is preselected and it filters events for selected endpoint. 
+- "TAG FILTER" - This filter is populated with the selected endpoint tags and is not preselected. It filters events for selected tag. 
+- "SEARCH FILTER" (by name) - This filters events by name that contains the search string.
+- "EVENT TYPE" - This filters only the events from selected type.
+- "IN GRACE PERIOD" - If this is checked than only events that are in grace period will be displayed. Otherwise only the events that are not in a grace period are listed.
 
-For Events tab we have 
-- "EVENT STATE" - <img src="/events_view_event_state_filter.png"> This filters the events that have the selected event state.
-- "ACKNOWLEDGED STATE" - <img src="/events_view_acknowledged_state_filter.png">This filters the events that have the selected acknowledged state.
+For Events tab we also have: 
+- "EVENT STATE" - This filters the events that have the selected event state.
+- "ACKNOWLEDGED STATE" - This filters the events that have the selected acknowledged state.
+<figure class="image_container">
+    <img class="center_image" src="/Event_view_filters.png" alt="Event view filter options">
+    <figcaption>Fig 2. Event view filter options</figcaption>
+</figure>
 
-- There is also "DATE FILTER" <img src="/events_view_date_filter.png"> that is available for the History tab, and it filters the events by creation date.
+For History tab we also have:
+- "DATE FILTER" - This filters the events by creation date.
+<figure class="image_container">
+    <img class="center_image" src="/History_filters.png" alt="History filter options">
+    <figcaption>Fig 3. History filter options</figcaption>
+</figure>
 
 Depending on what is chosen in the filters we have a different display of columns: If data is expected for a column for a certain filter combination, than the column is displayed.
 
@@ -82,8 +93,8 @@ In Event view tab event details are provided and in order to be displayed click 
 If data is not expected than the label for a certain time is not displayed.<br />
 If data is expected but not available then "-" is displayed.
 <figure class="image_container">
-    <img class="center_image" src="/event_details.png" alt="Events page">
-    <figcaption>Fig 2. Event details</figcaption>
+    <img class="center_image" src="/event_details.png" alt="Events details">
+    <figcaption>Fig 4. Event details</figcaption>
 </figure>
 
 ## Sorting
@@ -98,15 +109,15 @@ Events listed in both Event view and History tab have logs provided. They can be
 <br />
 Logs display tracking data about the event. What has happen, when and by who. There is also a possibility for a user to add a custom log (a comment).
 <figure class="image_container">
-    <img class="center_image" src="/events_view_logs.png" alt="Events page">
-    <figcaption>Fig 3. Logs</figcaption>
+    <img class="center_image" src="/events_view_logs.png" alt="Logs">
+    <figcaption>Fig 5. Logs</figcaption>
 </figure>
 
 ## Event view Actions
 Event view events can be acknowledged from this view by clicking the relevant row "ACK" button. <img src="/events_view_ack_link.png" > Than popup appears and we need to confirm if we acknowledge the event or we can cancel the acknowledgement.
 <figure class="image_container">
-    <img class="center_image" src="/events_view_ack_popup.png" alt="Events page">
-    <figcaption>Fig 4. Acknowledge event</figcaption>
+    <img class="center_image" src="/events_view_ack_popup.png" alt="Acknowledge event">
+    <figcaption>Fig 6. Acknowledge event</figcaption>
 </figure>
 
 ## Event view Links
