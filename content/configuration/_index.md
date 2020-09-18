@@ -13,7 +13,7 @@ Configuration represents the core of the QLARM functionality flow.
 
 
 <div class="row py-4 mb">
-	<div class="col-md-3" >
+	<div class="col-md-4" >
 		<div class="card d-flex border-0">
             <div class="card-img-top mt-4">
                 <span class="fas fa-certificate fa-4x text-secondary"></span>
@@ -25,7 +25,7 @@ Configuration represents the core of the QLARM functionality flow.
 			</div>
 		</div>
 	</div>
-    <div class="col-md-3">
+    <div class="col-md-4">
 		<div class="card d-flex border-0">
             <div class="card-img-top mt-4">
                 <span class="far fa-address-book fa-4x text-secondary"></span>
@@ -37,19 +37,7 @@ Configuration represents the core of the QLARM functionality flow.
 			</div>
 		</div>
 	</div>
-    <div class="col-md-3">
-		<div class="card d-flex border-0">
-            <div class="card-img-top mt-4">
-                <span class="fas fa-clipboard-list fa-4x text-secondary"></span>
-            </div>
-			<div class="card-body">
-				<h5 class="card-title">
-					<a href="{{< ref "/content/configuration/schedules/_index.md" >}}">Schedules</a>
-				</h5>
-			</div>
-		</div>
-	</div>
-    <div class="col-md-3">
+    <div class="col-md-4">
 		<div class="card d-flex border-0">
             <div class="card-img-top mt-4">
                 <span class="far fa-dot-circle fa-4x text-secondary"></span>

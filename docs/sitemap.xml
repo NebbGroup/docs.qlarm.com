@@ -53,11 +53,6 @@
   </url>
   
   <url>
-    <loc>https://docs.qlarm.com/configuration/schedules/</loc>
-    <lastmod>2020-08-20T15:54:37+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs.qlarm.com/configuration/endpoints/</loc>
     <lastmod>2020-08-20T15:54:44+02:00</lastmod>
   </url>
@@ -85,6 +80,21 @@
   <url>
     <loc>https://docs.qlarm.com/settings/general-settings/</loc>
     <lastmod>2020-08-20T16:07:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.qlarm.com/support/</loc>
+    <lastmod>2020-09-18T15:15:08+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.qlarm.com/support/documentation/</loc>
+    <lastmod>2020-09-18T15:15:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.qlarm.com/support/submit-ticket/</loc>
+    <lastmod>2020-09-18T15:16:37+02:00</lastmod>
   </url>
   
   <url>
