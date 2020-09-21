@@ -151,7 +151,15 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#add-event">Add event</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
@@ -159,6 +167,69 @@
 
 <h1>Events</h1>
 
+<p class="lead">
+    Events page is where custom events are listed.
+</p>
+
+<figure class="image_container">
+    <img class="center_image" src="/config-events.png" alt="Events configuration">
+    <figcaption>Fig 1. Events configuration</figcaption>
+</figure>
+<p>Type of the event, number of recipients and if the event is enabled, are information displayed in the table. Events can be created <img src="/add_event_button.png">, duplicated <img  src="/duplicate_event.png">, edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">. Events can be searched by name or filtered by endpoint by the filters provided.</p>
+<figure class="image_container">
+    <img class="center_image" src="/config_events_filters.png" alt="Events filter options">
+    <figcaption>Fig 2. Events filter options</figcaption>
+</figure>
+<h2 id="add-event">Add event</h2>
+<p>If you click on the &ldquo;Add event&rdquo; button <img src="/add_event_button.png"> &ldquo;Add event&rdquo; popup is opened.</p>
+<figure class="image_container">
+    <img class="center_image" src="/add_event.png" alt="Add event">
+    <figcaption>Fig 3. Add event</figcaption>
+</figure>
+<p>As for the event it self, &ldquo;NAME&rdquo;, &ldquo;DESCRIPTION&rdquo;, &ldquo;TYPE&rdquo; info should be populated and the event should be enabled if you want it to take the set actions for the condition set.<br/>
+There are two types of events, Alarms and Other. Alarms can be acknoledged and can became active and inactive depending of the latest value. Other type of event just gets archived when the condition is not met (See page Events for more details).</p>
+<figure class="image_container">
+    <img class="center_image" src="/event_general.png" alt="General event info">
+    <figcaption>Fig 4. General event info</figcaption>
+</figure>
+<h4 id="condition">Condition</h4>
+<p>Condition tab is preselected <img src="/condition_tab.png"> when you open the &ldquo;Add event&rdquo; popup. A condition must be set in order for the event to be created. You should choose one &ldquo;ENDPOINT&rdquo;, and one or many tags from &ldquo;TAG&rdquo; list to create a condition, and compose the actual condition for tag&rsquo;s value, quality or time by choosing a relevant &ldquo;OPERATOR&rdquo; and desired &ldquo;VALUE&rdquo;. <br/> If the custom event is created for many tags, the tag that will raise this event is the activation tag which name is used in the display of the name of the event, listed in the Events page.</p>
+<figure class="image_container">
+    <img class="center_image" src="/event_condition.png" alt="Event condition">
+    <figcaption>Fig 5. Event condition</figcaption>
+</figure>
+<p>After a condition is created it is listed in the table below and can be edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">.</p>
+<figure class="image_container">
+    <img class="center_image" src="/condition_edit_mode.png" alt="Edit event condition">
+    <figcaption>Fig 6. Edit event condition</figcaption>
+</figure>
+<h4 id="actions">Actions</h4>
+<p>Actions can be defined in the tab &ldquo;Actions&rdquo; <img  src="/actions_tab.png">.
+These are notifications that need to be sent in chosen ways to chosen recipients, with custom content, if the event condition is met.
+<br/>
+To create an Action, select type Notification from the &ldquo;TYPE&rdquo; dropdown. 
+You can populate &ldquo;CONTENT&rdquo; and &ldquo;VOICE MESSAGE TEXT&rdquo; by choosing a template from the &ldquo;TEMPLATE&rdquo; dropdown, which is editable or by adding a text in the fields. &ldquo;CONTENT&rdquo; is required if you have &ldquo;NOTIFY USING&rdquo; &ldquo;SMS&rdquo;, &ldquo;Email&rdquo; and &ldquo;Push&rdquo; enabled. &ldquo;VOICE MESSAGE TEXT&rdquo; is required if you have &ldquo;NOTIFY USING&rdquo; &ldquo;Voice&rdquo; enabled. You can play/stop the &ldquo;VOICE MESSAGE TEXT&rdquo; to check the whole message that will be played to the recipient in the call notification. <br/>
+Recipients can be added one by one or as a recipient group from the &ldquo;RECIPIENTS&rdquo; dropdown.
+<br/>
+Notification can be repeated in the number of times set in the &ldquo;REPEAT&rdquo; textbox. In &ldquo;INTERVAL (MIN)&rdquo; you can define the interval between the notifications if they need to be repeated. In &ldquo;PAUSE FOR NEXT ACTION (MIN)&rdquo; you can define the interval between the actions if they need to be looped (see &ldquo;EXECUTION&rdquo; in &ldquo;Advanced settings&rdquo; for more details).</p>
+<figure class="image_container">
+    <img class="center_image" src="/add_action.png" alt="Add action">
+    <figcaption>Fig 7. Add action</figcaption>
+</figure>
+<p>Actions added are listed in the table below and can be edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">.</p>
+<figure class="image_container">
+    <img class="center_image" src="/edit_event_action.png" alt="Edit event action">
+    <figcaption>Fig 8. Edit action</figcaption>
+</figure>
+<h4 id="advanced-settings">Advanced settings</h4>
+<p>Advanced settings is where you can set the additional configuration for the event.</p>
+<figure class="image_container">
+    <img class="center_image" src="/advanced_settings.png" alt="Advanced settings"> 
+    <figcaption>Fig 9. Advanced settings</figcaption>
+</figure>
+<p>In &ldquo;GRACE PERIOD (MIN)&rdquo; you can define the minutes to pass before this event becomes active after it is created. <br/>
+In &ldquo;EXECUTION&rdquo; you can define if actions should execute &ldquo;Once&rdquo; or many times in &ldquo;Loop&rdquo;.<br/>
+&ldquo;BREAK WHEN EVENT BECOMES&rdquo; Inactive or Acknowledged refers to stopping the notifications set to be repeated and all actions set to be executed again.</p>
 
 
     
