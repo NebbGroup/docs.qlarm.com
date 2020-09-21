@@ -57,7 +57,7 @@ By checking the "Share" checkbox <img src="/share_checkbox.png" alt="share check
 
 ## Managing Dashboards
 
-## Configure header
+### Configure header
 
 <div align="justify">
     The configuration header contains the main functionalities that allow us to configure dashboards to our needs. In view mode, you can view different dashboards that are available, and you can change them from the dashboard dropdown list. You can enter edit mode by clicking the <img src="/configure_button.png" alt="Configure Button"> button.
