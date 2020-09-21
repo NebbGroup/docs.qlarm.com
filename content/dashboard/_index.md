@@ -191,6 +191,17 @@ The <img src="/discard_changes_button.png" alt="discard changes button"> button 
 
 The <img src="/delete_dashboard_button.png" alt="delete dashboard button"> button deletes the selected dashboard that we have configured.
 
+### Copy Dashboard
+
+<div align="justify">
+Whenever you are viewing a dashboard created by another user, you can copy the existing dashboard by clicking on the <img src="/copy_button.png" alt="copy button"> button. This will ask you if you want to rename the dashboard and save the copy as your own after clicking the <img src="/user_save.png" alt="save button"> button.
+</div>
+
+<figure class="image_container">
+    <img class="center_image" src="/save_dashboard_copy.png" alt="save copy of dashboard">
+    <figcaption >Fig 16. Save copy of dashboard</figcaption>
+</figure>
+
 ### Exit Dashboard
 
 The <img src="/exit_button.png" alt="exit button"> button allows us to leave the edit mode and get back to the view mode.
