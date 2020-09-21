@@ -13,7 +13,7 @@ The Live View provides rich, real-time user experience and shows information fro
     <img class="center_image" src="/live_view.png" alt="Live view">
     <figcaption >Fig 1. Live view</figcaption>
 </figure>
-
+<div align="justify">
 The table lists all the tags for selected endpoints that are enabled and set for live view (for more details go to Endpoints). The table shows the name, last value, last change time, associate active event and trend view link for each tag. You can filter the content in the table by activating the Search, Time or Endpoint filters.
 
 <figure class="image_container">
@@ -32,6 +32,7 @@ In the Search filter you can search by one or more keywords and filter your tag 
 By clicking the Active event icon in the table, QLARM will redirect the user to the Active event for that specific tag.
 
 <img src="/trend_button.png" alt="trend button" class = "logo_resize"> redirects the user to the trend view for that specific tag.
+</div>
 
 
 
