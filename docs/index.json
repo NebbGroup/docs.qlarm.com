@@ -116,21 +116,21 @@
 	"title": "Support",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Support section is where you can find information about Qlarm. This is where you can find the user manual and submit ticket form. The chat option is also provided for this purpose.\rYou can open the chat by clicking the chat button in the bottom-left corner.Fig 1. Chat\r "
 },
 {
 	"uri": "https://docs.qlarm.com/support/documentation/",
 	"title": "Documentation",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "This is link to the Qlarm user manual.\r"
 },
 {
 	"uri": "https://docs.qlarm.com/support/submit-ticket/",
 	"title": "Submit Ticket",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Support ticket leads you to a page where you can submit an issue about Qlarm. Fig 1. Submit ticket\r\rEnter your first and last name, the email you want to get the response to and a brief subject of the issue. Describing details is optional.\n"
 },
 {
 	"uri": "https://docs.qlarm.com/categories/",
