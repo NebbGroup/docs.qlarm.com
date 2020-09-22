@@ -5,7 +5,7 @@ weight: 15
 ---
 
 {{<lead>}}
-Users lists all users in the system. <br />
+The Users page lists all the users in the system. <br />
 {{</lead>}}
 <figure class="image_container">
     <img class="center_image" src="/users.png" alt="Users">
@@ -13,16 +13,16 @@ Users lists all users in the system. <br />
 </figure>
 
 User can be added, edited or deleted. 
-We can search users by name and filter them by role.
+You can search users by name and filter them by role.
 <figure class="image_container">
     <img class="center_image" src="/filter_users_role_filter.png" alt="Search and filter users">
     <figcaption>Fig 2. Search and filter users</figcaption>
 </figure>
 
 ## Add user
-If we click on "Add user" button <img src="/add_user_button.png"> a popup will appear. All the fields in the popup are required for the user to be saved. We insert first and last name, phone, select a role that is available for the organization, also insert an email with a domain that is available for the organization and password with a required complexity. The email and pasword combination will be the new account credentials for the user to login with in the system. <br />
-Scopes we add to the user (see Fig 3.) determine the data that will be visible to the user. E.g. endpoints are listed and selecting one for a user makes all the data related to that endpoint such as tags, events, notifications, dashboards e.t.c. will be visible for the user.<br/> 
-After we fill the data we click "Save" button <img src="/user_save.png"> to save the user.
+If you click the "Add user" button <img src="/add_user_button.png"> a popup opens. All the fields in the popup are required to save the user. You need to fill out information for first and last name and a phone number. Select a role in the organization, use one of the organization’s email domains and password with the required complexity. The email and password combination will be the new account credentials for the user to login with in the system. <br />
+Scopes you added for the user (see Fig 3.) determine the data that will be visible to the user. For instance,  selecting one endpoint for a user makes all the data related to that endpoint such as tags, events, notifications, dashboards, etc. visible for the user.<br/> 
+After filling out the required data, click the "Save" button <img src="/user_save.png"> to save the user.
 
 <figure class="image_container">
     <img class="center_image" src="/user_scopes.png" alt="Scopes">
@@ -35,8 +35,7 @@ After we fill the data we click "Save" button <img src="/user_save.png"> to save
 </figure>
 
 ## Edit user
-User can be edited by clicking on this row button <img src="/row_edit_button.png">.
-Scopes for the user can always be edited. Name, email and mobile are not editable in case of a user that is synced from external active directory. Role can be edited if the user account email domain belongs to the organization domains.
+To edit the user, click the <img src="/row_edit_button.png"> button on the user row. Scopes for the user can be edited. Name, email and mobile cannot be edited when the user is synchronized with the external active directory. Roles can be edited if the user account email domain belongs to the organization domains.
 
 <figure class="image_container">
     <img class="center_image" src="/edit_user.png" alt="Edit user">
@@ -44,7 +43,7 @@ Scopes for the user can always be edited. Name, email and mobile are not editabl
 </figure>
 
 ## Delete user
-If the user account email domain belongs to the organization domains, then the button is provided <img src="/row_delete_button.png"> and if clicked a confirmation popup will appear. If we confirm the user will be deleted.
+If the user account email domain belongs to the organization domains, then the <img src="/row_delete_button.png"> is provided. If clicked a confirmation popup will appear. If confirmed, the user will be deleted.
 <figure class="image_container">
     <img class="center_image" src="/user_delete_popup.png" alt="Delete user">
     <figcaption>Fig 6. Delete user</figcaption>
