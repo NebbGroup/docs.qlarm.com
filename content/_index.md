@@ -87,3 +87,68 @@ Welcome to the official documentation site for QLARM. Get to know our intuitive 
 		</div>
 	</div>
 </div>
+<div class="row py-3 mb">
+	<div class="col-md-4" >
+		<div class="card d-flex border-0">
+            <div class="card-img-top mt-4">
+                <span class="fas fa-home fa-4x text-secondary"></span>
+            </div>
+			<div class="card-body">
+				<h5 class="card-title">
+					<a href="{{< ref "/content/dashboard/_index.md" >}}">Dashboard</a>
+				</h5>
+			</div>
+		</div>
+	</div>
+    <div class="col-md-4">
+		<div class="card d-flex border-0">
+            <div class="card-img-top mt-4">
+                <span class="far fa-eye fa-4x text-secondary"></span>
+            </div>
+			<div class="card-body">
+				<h5 class="card-title">
+					<a href="{{< ref "/content/live/_index.md" >}}">Live</a>
+				</h5>
+			</div>
+		</div>
+	</div>
+    <div class="col-md-4">
+		<div class="card d-flex border-0">
+            <div class="card-img-top mt-4">
+                <span class="fas fa-exclamation-triangle fa-4x text-secondary"></span>
+            </div>
+			<div class="card-body">
+				<h5 class="card-title">
+					<a href="{{< ref "/content/events/_index.md" >}}">Events</a>
+				</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row py-2 mb">
+    <div class="col-md-6">
+		<div class="card d-flex border-0">
+            <div class="card-img-top mt-4">
+                <span class="fas fa-cog fa-4x text-secondary"></span>
+            </div>
+			<div class="card-body">
+				<h5 class="card-title">
+					<a href="{{< ref "/content/settings/_index.md" >}}">Settings</a>
+				</h5>
+			</div>
+		</div>
+	</div>
+    <div class="col-md-6">
+		<div class="card d-flex border-0">
+            <div class="card-img-top mt-4">
+                <span class="far fa-life-ring fa-4x text-secondary"></span>
+            </div>
+			<div class="card-body">
+				<h5 class="card-title">
+					<a href="{{< ref "/content/support/_index.md" >}}">Support</a>
+				</h5>
+			</div>
+		</div>
+	</div>
+</div>

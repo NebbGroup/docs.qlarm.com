@@ -14,7 +14,7 @@ Events page is where custom events are listed.
 
 Type of the event, number of recipients and if the event is enabled, are information displayed in the table. Events can be created <img src="/add_event_button.png">, duplicated <img  src="/duplicate_event.png">, edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">. Events can be searched by name or filtered by endpoint by the filters provided.
 <figure class="image_container">
-    <img class="center_image" src="/config_events_filters.png" alt="Events filter options">
+    <img class="center_image figure_resize2" src="/config_events_filters.png" alt="Events filter options">
     <figcaption>Fig 2. Events filter options</figcaption>
 </figure>
 

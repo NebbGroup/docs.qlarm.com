@@ -25,7 +25,7 @@ Scopes we add to the user (see Fig 3.) determine the data that will be visible t
 After we fill the data we click "Save" button <img src="/user_save.png"> to save the user.
 
 <figure class="image_container">
-    <img class="center_image" src="/user_scopes.png" alt="Scopes">
+    <img class="center_image figure_resize2" src="/user_scopes.png" alt="Scopes">
     <figcaption>Fig 3. Scopes</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ To edit the user, click the <img src="/row_edit_button.png"> button on the user 
 ## Delete user
 If the user account email domain belongs to the organization domains, then the <img src="/row_delete_button.png"> is provided. If clicked a confirmation popup will appear. If confirmed, the user will be deleted.
 <figure class="image_container">
-    <img class="center_image" src="/user_delete_popup.png" alt="Delete user">
+    <img class="center_image figure_resize1" src="/user_delete_popup.png" alt="Delete user">
     <figcaption>Fig 6. Delete user</figcaption>
 </figure>
 

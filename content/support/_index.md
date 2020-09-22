@@ -10,6 +10,6 @@ Support section is where you can find information about Qlarm. This is where you
 
 You can open the chat by clicking the chat button in the bottom-left corner.<img src="/chat_button.png">
 <figure class="image_container">
-    <img class="center_image" src="/support_popup.png" alt="Chat">
+    <img class="center_image figure_resize1" src="/support_popup.png" alt="Chat">
     <figcaption>Fig 1. Chat</figcaption>
 </figure> 

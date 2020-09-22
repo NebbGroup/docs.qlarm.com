@@ -25,7 +25,7 @@ There are four types of notifications that recipients can receive:
 The Recipients configuration lists its recipients in a table, which shows their name, selected notification types, number of recipients for the recipients group. An Individual Recipient represents a single user that can receive notifications. To add a recipient click the <img src="/add_recipient_button.png" alt="add recipient button" > button by which a form appears:
 
 <figure class="image_container">
-    <img class="center_image" src="/add_recipient_form.png" alt="configure header in view mode">
+    <img class="center_image figure_resize2" src="/add_recipient_form.png" alt="configure header in view mode">
     <figcaption>Fig 2. Individual recipient configuration</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ The Individual recipient form requires basic contact information about the recip
 A Recipients Group represents a collection of recipients that can be the receiver of notifications. To add a recipients group click the <img src="/add_recipient_groups_button.png" alt="add recipient button" > button and a form appears:
 
 <figure class="image_container">
-    <img class="center_image" src="/add_recipient_groups_form.png" alt="configure header in view mode">
+    <img class="center_image figure_resize2" src="/add_recipient_groups_form.png" alt="configure header in view mode">
     <figcaption>Fig 3. Recipients group configuration</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ The form requires that you select a name for the group of recipients, group of r
 After filling the table with individual recipients and recipients groups, you can easily search them by using the search text field and filter them by using the filter select list.
 
 <figure class="image_container">
-    <img class="center_image" src="/Seach and filter recipients.png" alt="configure header in view mode">
+    <img class="center_image figure_resize2" src="/Seach and filter recipients.png" alt="configure header in view mode">
     <figcaption>Fig 4. Search and filter recipients</figcaption>
 </figure>
 
