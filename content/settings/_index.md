@@ -6,7 +6,7 @@ pre: ""
 ---
 
 {{< lead >}}
-Settings allows changes of settings that apply to the whole application.
+The Settings tab allows changes of settings that apply to the whole application.
 {{< /lead >}}
 
 ## Features

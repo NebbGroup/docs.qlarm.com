@@ -6,7 +6,7 @@ pre: ""
 ---
 
 {{< lead >}}
-Configuration represents the core of the QLARM functionality flow. 
+Configuration is the core of the QLARM functionality flow. 
 {{< /lead >}}
 
 ## Features

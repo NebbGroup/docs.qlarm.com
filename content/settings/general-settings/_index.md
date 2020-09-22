@@ -5,7 +5,7 @@ weight: 17
 ---
 
 {{<lead>}}
-General settings allows us to change the logo of the application that appears in the right corner of every page, so the organization can have a more personal experience.
+The General settings allows you to change the logo of the application that appears in the right corner of every page, so that the organization can have a more personal experience.
 {{</lead>}}
 
 <figure class="image_container">
@@ -13,5 +13,5 @@ General settings allows us to change the logo of the application that appears in
     <figcaption >Fig 1. General settings</figcaption>
 </figure>
 
-By clicking on the button we can upload a logo that represents the organization and use it to make QLARM a more personal experience. By default the QLARM logo is used. 
+Click the button to upload  the company logo to personalize QLARM. The QLARM logo is used by default.
 
