@@ -35,8 +35,7 @@ After we fill the data we click "Save" button <img src="/user_save.png"> to save
 </figure>
 
 ## Edit user
-User can be edited by clicking on this row button <img src="/row_edit_button.png">.
-Scopes for the user can always be edited. Name, email and mobile are not editable in case of a user that is synced from external active directory. Role can be edited if the user account email domain belongs to the organization domains.
+To edit the user, click the <img src="/row_edit_button.png"> button on the user row. Scopes for the user can be edited. Name, email and mobile cannot be edited when the user is synchronized with the external active directory. Roles can be edited if the user account email domain belongs to the organization domains.
 
 <figure class="image_container">
     <img class="center_image" src="/edit_user.png" alt="Edit user">
@@ -44,7 +43,7 @@ Scopes for the user can always be edited. Name, email and mobile are not editabl
 </figure>
 
 ## Delete user
-If the user account email domain belongs to the organization domains, then the button is provided <img src="/row_delete_button.png"> and if clicked a confirmation popup will appear. If we confirm the user will be deleted.
+If the user account email domain belongs to the organization domains, then the <img src="/row_delete_button.png"> is provided. If clicked a confirmation popup will appear. If confirmed, the user will be deleted.
 <figure class="image_container">
     <img class="center_image" src="/user_delete_popup.png" alt="Delete user">
     <figcaption>Fig 6. Delete user</figcaption>

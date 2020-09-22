@@ -61,22 +61,22 @@ Both types of Events have State: They can be in grace period or not. This depend
 
 ## Filters
 The following filters are available for both Events and History tabs:
-- "ENDPOINT FILTER" - The endpoint filter is preselected and is used to select events created for any of the tags of the selected endpoint. 
-- "TAG FILTER" - Tag filter is populated with the selected endpoint tags and is not preselected. It filters events for selected tag.
-- "SEARCH FILTER" (by name) - Filters the events with a name that contains the search string.
-- "EVENT TYPE" - Filters only the events from selected type.
+- "ENDPOINT FILTER" - the endpoint filter is preselected and is used to select events created for any of the tags of the selected endpoint. 
+- "TAG FILTER" - tag filter is populated with the selected endpoint tags and is not preselected. It filters events for selected tag.
+- "SEARCH FILTER" (by name) - filters the events with a name that contains the search string.
+- "EVENT TYPE" - f only the events from selected type.
 - "IN GRACE PERIOD" - If checked than only events that are in grace period will be displayed. If this is not the case, only the events that are not in a grace period will be listed.
 
 For Events tab we also have: 
-- "EVENT STATE" - Filters the events that have the selected event state.
-- "ACKNOWLEDGED STATE" - Filters the events that have the selected acknowledged state.
+- "EVENT STATE" - filters the events that have the selected event state.
+- "ACKNOWLEDGED STATE" - filters the events that have the selected acknowledged state.
 <figure class="image_container">
     <img class="center_image" src="/Event_view_filters.png" alt="Event view filter options">
     <figcaption>Fig 2. Event view filter options</figcaption>
 </figure>
 
 For History tab we also have:
-- "DATE FILTER" - Filters the events by creation date.
+- "DATE FILTER" - filters the events by creation date.
 <figure class="image_container">
     <img class="center_image" src="/History_filters.png" alt="History filter options">
     <figcaption>Fig 3. History filter options</figcaption>
