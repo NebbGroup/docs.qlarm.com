@@ -53,7 +53,7 @@
 	"title": "Configuration",
 	"tags": [],
 	"description": "",
-	"content": "Configuration section is where you can configure entities used in QLARM core functionality flow for monitoring, controling, analysis and notification.\rFeatures \r\rEvents\r\r\r\r\r\r\rRecipients\r\r\r\r\r\r\rEndpoints\r\r\r\r\r\r"
+	"content": "Configuration section is where you can configure entities used in QLARM core functionality flow for monitoring, controling, analysis and notification.\rFeatures \r\rEvents\r\r\r\r\r\r\r\rRecipients\r\r\r\r\r\r\r\rEndpoints\r\r\r\r\r\r\r"
 },
 {
 	"uri": "https://docs.qlarm.com/configuration/events/",
@@ -81,7 +81,7 @@
 	"title": "Settings",
 	"tags": [],
 	"description": "",
-	"content": "The Settings tab allows changes of settings that apply to the whole application.\rFeatures \r\rUser Settings\r\r\r\r\r\r\rUsers\r\r\r\r\r\r\rPermissions\r\r\r\r\r\r\rGeneral Settings\r\r\r\r\r"
+	"content": "The Settings tab allows changes of settings that apply to the whole application.\rFeatures \r\rUser Settings\r\r\r\r\r\r\r\rUsers\r\r\r\r\r\r\r\rPermissions\r\r\r\r\r\r\r\rGeneral Settings\r\r\r\r\r\r"
 },
 {
 	"uri": "https://docs.qlarm.com/settings/user-settings/",
