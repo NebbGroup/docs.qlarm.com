@@ -5,15 +5,22 @@ weight: 4
 pre: ""
 ---
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
 {{<lead>}}
 Event view lists the current and the past events in tabs Events and History.
 <img src="/events-view-tabs.png" > <br />
 Sort on column and various filtering are provided for both tabs. Current events have details provided in collapsible row. Events can be edited and have Logs.
 {{</lead>}}
 
-If the event optains many tags, then the name displayed for the event is consisted of the tag name dash ("-") the the name of the custom event.
+If the event obtains many tags, then the name displayed for the event is consisted of the tag name dash ("-") the the name of the custom event.
 <figure class="image_container">
-    <img class="center_image" src="/events.png" alt="Events">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events.png" alt="Events">
     <figcaption>Fig 1. Events</figcaption>
 </figure>
 
@@ -71,14 +78,14 @@ For Events tab we also have:
 - "EVENT STATE" - filters the events that have the selected event state.
 - "ACKNOWLEDGED STATE" - filters the events that have the selected acknowledged state.
 <figure class="image_container">
-    <img class="center_image" src="/Event_view_filters.png" alt="Event view filter options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/Event_view_filters.png" alt="Event view filter options">
     <figcaption>Fig 2. Event view filter options</figcaption>
 </figure>
 
 For History tab we also have:
 - "DATE FILTER" - filters the events by creation date.
 <figure class="image_container">
-    <img class="center_image" src="/History_filters.png" alt="History filter options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/History_filters.png" alt="History filter options">
     <figcaption>Fig 3. History filter options</figcaption>
 </figure>
 
@@ -93,7 +100,7 @@ In Event view tab event details are provided and in order to be displayed you ne
 If data is not expected, the label for a certain time is not displayed.<br />
 If data is expected but not available, "-" is displayed.
 <figure class="image_container">
-    <img class="center_image" src="/event_details.png" alt="Events details">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="event_details" src="/event_details.png" alt="Event details">
     <figcaption>Fig 4. Event details</figcaption>
 </figure>
 
@@ -109,17 +116,39 @@ Events listed in both Event view and History tab have logs. They can be reached 
 <br />
 Logs display tracking data about the event. What has happen, when and by who. There is also a possibility for a user to add a custom log (a comment).
 <figure class="image_container">
-    <img class="center_image" src="/events_view_logs.png" alt="Logs">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_logs" src="/events_view_logs.png" alt="Logs">
     <figcaption>Fig 5. Logs</figcaption>
 </figure>
 
 ## Event view Actions
 Event view events can be acknowledged by clicking the "ACK" button for the event row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/events_view_ack_link.png" > 
 <figure class="image_container">
-    <img class="center_image" src="/events_view_ack_popup.png" alt="Acknowledge event">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_ack_popup" src="/events_view_ack_popup.png" alt="Acknowledge event">
     <figcaption>Fig 6. Acknowledge event</figcaption>
 </figure>
 
 ## Event view Links
 Events are related to tags which data can be visually presented in a chart in Trend view. Link to this page is available in Trend column of the Event view tab. <img src="/events_view_trend_link.png" >
 
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function reply_click(img)
+{
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>

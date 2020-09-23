@@ -9,15 +9,22 @@ pre: ""
 The Live View provides rich, real-time user experience and shows information from all enabled tags.
 {{</lead>}}
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
 <figure class="image_container">
-    <img class="center_image" src="/live_view.png" alt="Live view">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="live_view" src="/live_view.png" alt="Live view">
     <figcaption >Fig 1. Live view</figcaption>
 </figure>
 <div align="justify">
 The table lists all the tags for selected endpoints that are enabled and set for live view (for more details go to Endpoints). The table shows the name, last value, last change time, associate active event and trend view link for each tag. You can filter the content in the table by activating the Search, Time or Endpoint filters.
 
 <figure class="image_container">
-    <img class="center_image" src="/live_filter_options.png" alt="Live view filter">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="live_filter_options" src="/live_filter_options.png" alt="Live View filters options">
     <figcaption >Fig 2. Live View filters options</figcaption>
 </figure>
 
@@ -34,5 +41,25 @@ By clicking the Active event icon in the table, QLARM will redirect the user to 
 <img src="/trend_button.png" alt="trend button" class = "logo_resize"> redirects the user to the trend view for that specific tag.
 </div>
 
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function reply_click(img)
+{
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
 
 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>

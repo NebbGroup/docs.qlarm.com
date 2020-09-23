@@ -4,12 +4,19 @@ date: 2020-08-20T15:54:27+02:00
 weight: 10
 ---
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
 {{<lead>}}
 In the Recipients configuration tab, you can define the recipients of notifications. Recipients are categorized as individual <img src="/individual_recipient_icon.png" alt="individual recipient icon" class = "logo_resize"> and groups <img src="/recipients_groups_icon.png" alt="recipient groups icon" class = "logo_resize"> of recipients, each recipient can receive notifications in many forms. 
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image" src="/recipients_configuration.png" alt="configure header in view mode">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="recipients_configuration" src="/recipients_configuration.png" alt="Recipients configuration">
     <figcaption>Fig 1. Recipients configuration</figcaption>
 </figure>
 
@@ -25,7 +32,7 @@ There are four types of notifications that recipients can receive:
 The Recipients configuration lists its recipients in a table, which shows their name, selected notification types, number of recipients for the recipients group. An Individual Recipient represents a single user that can receive notifications. To add a recipient click the <img src="/add_recipient_button.png" alt="add recipient button" > button by which a form appears:
 
 <figure class="image_container">
-    <img class="center_image figure_resize2" src="/add_recipient_form.png" alt="configure header in view mode">
+    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_form" src="/add_recipient_form.png" alt="Individual recipient configuration">
     <figcaption>Fig 2. Individual recipient configuration</figcaption>
 </figure>
 
@@ -34,7 +41,7 @@ The Individual recipient form requires basic contact information about the recip
 A Recipients Group represents a collection of recipients that can be the receiver of notifications. To add a recipients group click the <img src="/add_recipient_groups_button.png" alt="add recipient button" > button and a form appears:
 
 <figure class="image_container">
-    <img class="center_image figure_resize2" src="/add_recipient_groups_form.png" alt="configure header in view mode">
+    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_groups_form" src="/add_recipient_groups_form.png" alt="Recipients group configuration">
     <figcaption>Fig 3. Recipients group configuration</figcaption>
 </figure>
 
@@ -43,7 +50,7 @@ The form requires that you select a name for the group of recipients, group of r
 After filling the table with individual recipients and recipients groups, you can easily search them by using the search text field and filter them by using the filter select list.
 
 <figure class="image_container">
-    <img class="center_image figure_resize2" src="/Seach and filter recipients.png" alt="configure header in view mode">
+    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="search_and_filter recipients" src="/search_and_filter recipients.png" alt="Search and filter recipients">
     <figcaption>Fig 4. Search and filter recipients</figcaption>
 </figure>
 
@@ -51,4 +58,25 @@ After filling the table with individual recipients and recipients groups, you ca
 
 You can edit an individual recipient or a recipients group by clicking the <img src="/edit_recipient_button.png" alt="add recipient button" > button after which a filled form will appear in which we can make the changes. To remove an individual recipient or a recipients group click the <img src="/delete_recipient_button.png" alt="add recipient button" > button.
 
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
 
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function reply_click(img)
+{
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
