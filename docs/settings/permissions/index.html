@@ -159,20 +159,50 @@
 
 <h1>Permissions</h1>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 <p class="lead">
     The Permissions page is used to set permissions for a role.
 </p>
 
 <p>Roles are predefined and listed in the &ldquo;CHOOSE ROLE&rdquo; list.</p>
 <figure class="image_container">
-    <img class="center_image figure_resize2" src="/choose_role_list.png" alt="Choose role">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="choose_role_list" src="/choose_role_list.png" alt="Choose role">
     <figcaption>Fig 1. Choose role</figcaption>
 </figure>
 Permissions names mainly correspond to the application main menu items, and they refer to these pages and their functionalities. But sections or functionalities other than pages can be also set under permission like Scopes, or Acknowledge of Event. After (de)selecting permissions for a chosen role, the role can be saved by clicking the "Save changes" button <img src="/save_changes_button.png" >
 <figure class="image_container">
-    <img class="center_image" src="/permissions.png" alt="Permissions">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="permissions" src="/permissions.png" alt="Permissions">
     <figcaption>Fig 2. Permissions</figcaption>
 </figure>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function reply_click(img)
+{
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script><blockquote>
+</blockquote>
+
 
     
 
