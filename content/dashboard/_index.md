@@ -211,7 +211,6 @@ Whenever you are viewing a dashboard created by another user, you can copy the e
 
 The <img src="/exit_button.png" alt="exit button"> button allows us to leave the edit mode and get back to the view mode.
 
-
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -225,12 +224,7 @@ function reply_click(img)
     captionText.innerHTML = img.alt;
 }
 
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+modal.onclick = function() { 
   modal.style.display = "none";
 }
 </script>
