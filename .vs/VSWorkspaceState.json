@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\content",
-    "\\content\\dashboard"
+    "\\content\\dashboard",
+    "\\content\\support",
+    "\\content\\support\\documentation",
+    "\\content\\support\\submit-ticket"
   ],
   "PreviewInSolutionExplorer": false
 }
