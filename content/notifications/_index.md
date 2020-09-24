@@ -44,4 +44,10 @@ function reply_click(img)
 modal.onclick = function() { 
   modal.style.display = "none";
 }
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) {
+        modal.style.display = "none";
+    }
+});
 </script>
