@@ -14,16 +14,17 @@ weight: 21
 - Event - created when Custom event condition is met
 - Logo - the image that appears to the upper left corner
 - Logs - tracking information data about changes made to an entity (Event, Endpoint, etc.)
+- Node (synonym of Tag) - a system representation of a real-world sensor
 - Notification - is sent to a recipient when Event is created (SMS, call, push, email)
 - OPC server - a system representation of IoT Hub device with tags associated
 - Permission - restriction rule for User action
 - Recipient - system representation of a person who need to be notified if an event is raised
 - Report - a trending chart displaying values of one or more tags in time
-- Role - group of Permissions 
-- Site menu - the menu tree on the left side that organizes pages. Contains site menu items.
-- Site menu items - the items of the Site menu
-- Tag - a system representation of a real-world sensor
-- Ticket - an issue from a person about the system provided to system support 
+- Role - group of Permissions
+- Site menu - the menu tree on the left side that organizes pages
+- Site menu items - the items of the Site menu which are links to pages or submenus
+- Tag (synonym of Node) - a system representation of a real-world sensor
+- Ticket - an issue from a person about the system provided to system support
 - Users - system representation of a person who logs into the system
 - Widget - a configurable component which provides real-time values about tags, endpoints and the system
 

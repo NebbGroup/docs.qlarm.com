@@ -12,7 +12,7 @@ weight: 14
 </div>
 
 {{<lead>}}
-The User settings contains basic settings that apply to the whole application when viewing different content on different pages.
+The User settings contains basic settings that apply to the whole application when viewing different content on different pages. This is where you can specify your favorite date-time format for all the dates you are seeing in the system, you can adjust your current timezone to get the right track of the data, choose the language you are most common with or set your most preferable page size for viewing data.
 {{</lead>}}
 
 <figure class="image_container">

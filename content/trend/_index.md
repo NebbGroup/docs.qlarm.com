@@ -13,7 +13,7 @@ pre: ""
 </div>
 
 {{<lead>}}
-Trend view shows a chart display of the data for selected tag(s) for a specific period of time with options to display events and event conditions thresholds. Charts can be customized and reports can be saved.
+The Trend page is where you can get your tags values-data visualized. It show a chart display of the data for selected tag(s) for a specific period of time. You can add tags and change period while viewing a report. Also you can get display of events raised and event thresholds from the tags' conditions. You can customize the chart and have a reports saved. You can download the reports as an images and export the chart data in files.
 {{</lead>}}
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="trend_screen" src="/trend_screen.png" alt="Trend">

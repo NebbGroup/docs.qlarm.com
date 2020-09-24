@@ -12,14 +12,16 @@ weight: 9
 </div>
 
 {{<lead>}}
-Events page is where custom events are listed. 
+The Events page is where custom events are listed and where you can configure your own event definition. The event definition is about malicious time, quality and value of a sensor that need to be detected and event to be raised. Raising the event takes actions in place which is notifying users in many forms with feedback options.
 {{</lead>}}
+
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="config-events" src="/config-events.png" alt="Events configuration">
     <figcaption>Fig 1. Events configuration</figcaption>
 </figure>
 
 Type of the event, number of recipients and if the event is enabled, are information displayed in the table. Events can be created <img src="/add_event_button.png">, duplicated <img  src="/duplicate_event.png">, edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">. Events can be searched by name or filtered by endpoint by the filters provided.
+
 <figure class="image_container">
     <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="config_events_filters" src="/config_events_filters.png" alt="Events filter options">
     <figcaption>Fig 2. Events filter options</figcaption>

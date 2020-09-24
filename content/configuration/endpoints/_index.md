@@ -12,7 +12,8 @@ weight: 12
 </div>
 
 {{<lead>}}
-The Endpoints configuration contains all of the accessible endpoints and their associated nodes.
+The Endpoints configuration page contains all of the accessible endpoints and their associated nodes. 
+Endpoint is logical representation of OPC server in the context of Qlarm environment, providing necessary data to manage an OPC server. Endpoints are the starting point of the main functional flow in the system, the messaging flow. All properties of an endpoint should be configured to respond to the necessity of the flow. Starting from configuration of the endpoint (its OPC server with tags associted) via custom event definitions to events raised and notifications send to recipients, endpoints are the main thrade for all of these entities. Monotoring pages like Live, Events, Notifications can all be filtered by endpoint.
 {{</lead>}}
 
 <figure class="image_container">

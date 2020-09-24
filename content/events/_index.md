@@ -13,9 +13,9 @@ pre: ""
 </div>
 
 {{<lead>}}
-Event view lists the current and the past events in tabs Events and History.
+In Events page you events are listed. It is an accurate representation with details specified. Events are raised because of a custom event condition met. Current event is an ongoing process and can pass different phases due to its definition. Archived events are finished processes. Event view lists the current and the past events in tabs Events and History.
 <img src="/events-view-tabs.png" > <br />
-Sort on column and various filtering are provided for both tabs. Current events have details provided in collapsible row. Events can be edited and have Logs.
+Sort on column and various filtering are provided for both tabs.  Custom event for the event can be edited. Events have Logs for the phases the event has passed.
 {{</lead>}}
 
 If the event obtains many tags, then the name displayed for the event is consisted of the tag name dash ("-") the the name of the custom event.

@@ -12,7 +12,7 @@ weight: 15
 </div>
 
 {{<lead>}}
-The Users tab lists all the users in the system. <br />
+In the Users page you can list all the users in the system. Users are created or registered in Qlarm and they can login and use the system with authorizations. Users can belong to different organizations. Every organization provides the user specific authorizations. User can be present in the system with a corresponding recipient.
 {{</lead>}}
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="users" src="/users.png" alt="Users">

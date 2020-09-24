@@ -12,7 +12,7 @@ weight: 16
 </div>
 
 {{<lead>}}
-The Permissions page is used to set permissions for a role.
+The Permissions page is used to set permissions for a role. Permissions are organization specific. This is a comfortable way to manage and control user actions in the system. You can simply apply or not a permission to a role that user has to be certain that your content is secured.
 {{</lead>}}
 
 Roles are predefined and listed in the "CHOOSE ROLE" list.

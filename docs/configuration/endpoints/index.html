@@ -48,6 +48,11 @@
                 <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
             </form>
          <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/introduction/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/introduction/"><h6>Introduction</h6></a>
+    </li>
     <li data-nav-id="/dashboard/" class="nav-item my-1
         ">
         
@@ -171,7 +176,8 @@
   <div id="caption"></div>
 </div>
 <p class="lead">
-    The Endpoints configuration contains all of the accessible endpoints and their associated nodes.
+    The Endpoints configuration page contains all of the accessible endpoints and their associated nodes. 
+Endpoint is logical representation of OPC server in the context of Qlarm environment, providing necessary data to manage an OPC server. Endpoints are the starting point of the main functional flow in the system, the messaging flow. All properties of an endpoint should be configured to respond to the necessity of the flow. Starting from configuration of the endpoint (its OPC server with tags associted) via custom event definitions to events raised and notifications send to recipients, endpoints are the main thrade for all of these entities. Monotoring pages like Live, Events, Notifications can all be filtered by endpoint.
 </p>
 
 <figure class="image_container">

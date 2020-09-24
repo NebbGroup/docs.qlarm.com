@@ -13,7 +13,7 @@ pre: ""
 </div>
 
 {{<lead>}}
-Notifications view lets us view and filter all of the generated notifications.
+The Notifications page lists all notifications in the system. They can be filtered by tag. You can also search for a notifications created in certain period. Notification relates to action taken because of a raised event. Notification represents the process behind the actual SMS, call, push or email. It is a document of the action in progress or done and it provides details about the current status. You can check if an action took place, check its state, message content etc.
 {{</lead>}}
 
 <figure class="image_container">

@@ -6,7 +6,7 @@ pre: ""
 ---
 
 {{<lead>}}
-The Live View provides rich, real-time user experience and shows information from all enabled tags.
+The Live page lists all enabled tags. You can easily make a quick check of the tags last values and events raised for a tags. You can filter the tags by endpoint and search a tag by name. You can also filter the tags changed in certain period of time.
 {{</lead>}}
 
 <!-- The Modal -->

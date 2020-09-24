@@ -6,9 +6,8 @@ pre: ""
 ---
 
 {{<lead>}}
-QLARM dashboards are designed to display the custom dashboards along with various configured widgets. It is highly flexible and enables you to create your own dashboards and share between other dashboard viewers. QLARM comes with a variety of premade configurable dashboard widgets that you can use to build a specific dashboard view that meets the different needs of your business.
+QLARM dashboards are designed to display the custom dashboards along with various configured widgets. It is highly flexible and enables you to create your own dashboards and share between other dashboard viewers. QLARM comes with a variety of configurable dashboard widgets that you can use to build a specific dashboard view that meets the different needs of your business. They provide you real-time monitoring of sensor values with configurable states which makes the detection of desired on undesired behaviours much more easier.
 {{</lead>}}
-
 
 ## Overview
 
