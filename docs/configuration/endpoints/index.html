@@ -144,6 +144,11 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/glossary/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/glossary/"><h6>Glossary</h6></a>
+    </li>
         </ul>
     </div>
 </nav>
@@ -220,6 +225,12 @@ function reply_click(img)
 modal.onclick = function() { 
   modal.style.display = "none";
 }
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) {
+        modal.style.display = "none";
+    }
+});
 </script><blockquote>
 </blockquote>
 
