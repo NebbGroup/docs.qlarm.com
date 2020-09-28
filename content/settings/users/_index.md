@@ -27,9 +27,9 @@ A user can be added, edited or deleted. You can search users by name and filter 
 
 ## Add user
 
-If we click the <img src="/add_user_button.png"> button a popup appears. All the fields in the popup are required to save the user. You need to insert first and last name, phone number, select a role that is available for the organization, also insert an email with a domain that is available for the organization and password with a required complexity. The email and password combination will be the new account credentials for the user to login with in the system. <br />
-Scopes we add to the user (see Fig 3.) determine the data that will be visible to the user. E.g. endpoints are listed and selecting one for a user makes all the data related to that endpoint such as tags, events, notifications, dashboards e.t.c. will be visible for the user.<br/> 
-After we fill the data we click "Save" button <img src="/user_save.png"> to save the user.
+If you click the <img src="/add_user_button.png"> button a popup appears. All the fields in the popup are required to save the user. You need to insert first and last name, phone number, select a role that is available for the organization, also insert an email with a domain that is available for the organization and password with a required complexity. The email and password combination will be the new account credentials for the user to login within the system. <br />
+You can add Scopes to the user (see Fig 3.) to determine the data that will be visible to the user. E.g. endpoints are listed and selecting one for a user makes all the data related to that endpoint such as tags, events, notifications, dashboards e.t.c. will be visible for the user.<br/> 
+After you fill the data you click "Save" button <img src="/user_save.png"> to save the user.
 
 <figure class="image_container">
     <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="user_scopes" src="/user_scopes.png" alt="Scopes">
