@@ -29,7 +29,7 @@ QLARM dashboards are designed to display the custom dashboards along with variou
 
 ## Working with Dashboards
 
-In the following sections we will explain the two main functionalities of QLARM dashboards:
+In the following sections, the two main functionalities of QLARM dashboards are explained:
 
 - Viewing Dashboards
 - Managing Dashboards
@@ -39,7 +39,7 @@ In the following sections we will explain the two main functionalities of QLARM 
 ### Default Dashboard
 
 <div align="justify">
-Upon logging into QLARM a default dashboard is displayed. a System Dashboard is present to be the default dashboard nevertheless, any other dashboard that is available can be selected to be the new default dashboard by checking the "Default" checkbox <img src="/default_checkbox.png" alt="default checkbox">.
+Upon logging into QLARM a default dashboard is displayed. The default dashboard at first login is the System dashboard, but any other dashboard that is available can be selected to be the new default dashboard by checking the "Default" checkbox <img src="/default_checkbox.png" alt="default checkbox">.
 </div>
 
 ### Dashboard list
@@ -65,14 +65,14 @@ By checking the "Share" checkbox <img src="/share_checkbox.png" alt="share check
 ### Configure header
 
 <div align="justify">
-    The configuration header contains the main functionalities that allow us to configure dashboards to our needs. In view mode, you can view different dashboards that are available, and you can change them from the dashboard dropdown list. You can enter edit mode by clicking the <img src="/configure_button.png" alt="Configure Button"> button.
+    The configuration header contains the main functionalities that allow you to configure dashboards to your needs. In view mode, you can view different dashboards that are available, and you can change them from the dashboard dropdown list. You can enter edit mode by clicking the <img src="/configure_button.png" alt="Configure Button"> button.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="configure_header_view_mode" src="/configure_header_view_mode.png" alt="Configure header in view mode">
     <figcaption>Fig 2. Configure header in view mode</figcaption>
 </figure>
 
-In edit mode the configuration header is changed by adding new functionalities so we can configure dashboards. 
+In edit mode the configuration header is changed by adding new functionalities so you can configure dashboards. 
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="configure_header_edit_mode" src="/configure_header_edit_mode.png" alt="Configure header in edit mode">
@@ -81,7 +81,7 @@ In edit mode the configuration header is changed by adding new functionalities s
 
 </div>
 
-### Dashboard configuring
+### Dashboard configuration
 
 <div align="justify">
 The right cluster of buttons contains the main functionalities for configuring the dashboard you are working on.
@@ -102,7 +102,7 @@ The "New Dashboard" button <img src="/new_dashboard_button.png" alt="New Dashboa
     <figcaption >Fig 5. Creating a new dashboard</figcaption>
 </figure>
 
-When you select a widget from the list, it is shown on the grid panel. Drag and drop to rearrange widgets to the desired location on the grid and resize them by using the widget handle <img src="/widget_handle.png" alt="widget handle"> located in the lower right angle on every widget or by drag and drop edges and corners. After configuring the dashboard layout you can click the <img src="/save_button.png" alt="save button"> button to save the dashboard or the <img src="/cancel_button.png" alt="cancel button"> button if you do not want to save the dashboard. Afterwards, if we need to add additional widgets to the dashboard we only need to click the <img src="/add_widgets.png" alt="add widget button"> button by which we are greeted with the same window as if we were creating a new dashboard.
+When you select a widget from the list, it is shown on the grid panel. To organize the widgets in the grip panel you can drag and drop them to the desired location and order. To resize a widget, use the widget handle <img src="/widget_handle.png" alt="widget handle"> located in the lower right corner on every widget or by drag and drop edges and corners. After configuring the dashboard layout you can click the <img src="/save_button.png" alt="save button"> button to save the dashboard or the <img src="/cancel_button.png" alt="cancel button"> button if you do not want to save the dashboard. Afterwards, if you need to add additional widgets to the dashboard, you only need to click the <img src="/add_widgets.png" alt="add widget button"> button by which you are greeted with the same window as if you were creating a new dashboard.
 
 All widget can be configured by opening the widget menu and selecting “Edit Widget”. A new edit widget view opens which allows you to configure it. Every widget has its own unique configuration parameter (more on this in the Widgets subsection).
 
@@ -126,28 +126,28 @@ When the widget configuration is complete, the Widget menu is updated with the n
 <div align="justify">
 The widget list contains eight different types of widgets that can be added one by one from the list.
 
-- Latest Value widget <img src="/last_value_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the latest value of a selected sensor. In the “Subjects” tab you can select an endpoint and tags available from that endpoint for which we want to see the latest value. You can also give the widget an alias name to differ from the other Latest Value widgets. In the “Ranges” tab you can adjust custom ranges to view the latest value in a certain colour, if it falls in that range. The “Labels” tab contains additional settings for widget configuration.
+- Latest Value widget <img src="/last_value_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the latest value of a selected sensor. In the “Subjects” tab you can select an endpoint and tags available from that endpoint for which you want to see the latest value. You can also give the widget an alias name to differ from the other Latest Value widgets. In the “Ranges” tab you can adjust custom ranges to view the latest value in a certain colour, if it falls in that range. The “Labels” tab contains additional settings for widget configuration.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="last_value_widget_menu" src="/last_value_widget_menu.png" alt="Last value widget menu">
     <figcaption >Fig 8. Last value widget menu</figcaption>
 </figure>
 
-- Latest Value Gauge <img src="/last_value_gauge_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the latest value of a selected sensor using a gauge with custom range values and colours. In the “Subjects” tab you can select an endpoint and tags available from that endpoint for which we want to see the latest value. You can also give the widget an alias name to differ from the other Latest Value Gauge widgets. In the “Ranges” tab you can adjust the appearance of the gauge. First you need to set the minimum and maximum value and the base colour of the scale. Then you can add custom ranges on the scale to view the latest value in a certain colour, if it falls in that range. The “Labels” tab contains additional settings for widget configuration.
+- Latest Value Gauge <img src="/last_value_gauge_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the latest value of a selected sensor using a gauge with custom range values and colours. In the “Subjects” tab you can select an endpoint and tags available from that endpoint for which you want to see the latest value. You can also give the widget an alias name to differ from the other Latest Value Gauge widgets. In the “Ranges” tab you can adjust the appearance of the gauge. First you need to set the minimum and maximum value and the base colour of the scale. Then you can add custom ranges on the scale to view the latest value in a certain colour, if it falls in that range. The “Labels” tab contains additional settings for widget configuration.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="latest_value_gauge_widget_menu" src="/latest_value_gauge_widget_menu.png" alt="Last value gauge widget menu">
     <figcaption >Fig 9. Last value gauge widget menu</figcaption>
 </figure>
 
-- Tag state <img src="/tag_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the state of a selected sensor by setting custom range values and different colours. In the “Subjects” tab we select an endpoint and tags available from that endpoint for which we want to see the tag state. You can also give the widget an alias name to differ from the other Latest Value widgets. In the “States” tab you can adjust custom ranges to view the tag state in a certain colour, if it falls in that range. The “Labels” tab contains additional settings for widget configuration.
+- Tag state <img src="/tag_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the state of a selected sensor by setting custom range values and different colours. In the “Subjects” tab you can select an endpoint and tags available from that endpoint for which you want to see the tag state. You can also give the widget an alias name to differ from the other Latest Value widgets. In the “States” tab you can adjust custom ranges to view the tag state in a certain colour, if it falls in that range. The “Labels” tab contains additional settings for widget configuration.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="tag_state_widget_menu" src="/tag_state_widget_menu.png" alt="Tag state widget menu">
     <figcaption >Fig 10. Tag state widget menu</figcaption>
 </figure>
 
-- Tag chart <img src="/tag_chart_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays tag chart values for a selected period In the “Subjects” tab you can select an endpoint and tags available from that endpoint which you want to see the tag chart. You can also give the widget an alias name to differ from the other Latest Value widgets. In the “Interval” tab you can adjust the unit of time, number and colour of time units. The “Labels” tab contains additional settings for widget configuration.
+- Tag chart <img src="/tag_chart_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays tag chart values for a selected period. In the “Subjects” tab you can select an endpoint and tags available from that endpoint for which you want to see the tag chart. You can also give the widget an alias name to differ from the other Latest Value widgets. In the “Interval” tab you can adjust the unit of time, number and colour of time units. The “Labels” tab contains additional settings for widget configuration.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="tag_chart_widget_menu" src="/tag_chart_widget_menu.png" alt="Tag chart widget menu">
@@ -168,7 +168,7 @@ The widget list contains eight different types of widgets that can be added one 
     <figcaption >Fig 13. Elapsed time for system widget menu</figcaption>
 </figure>
 
-- Endpoint state <img src="/endpoint_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the current connection state of an endpoint. In the “Subject” tab you can select an endpoint to monitor its state. In the "States" tab we add colors for the "ONLINE" and "OFFLINE" status. The "Labels" tab contains additional settings for configuring the widget.
+- Endpoint state <img src="/endpoint_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the current connection state of an endpoint. In the “Subject” tab you can select an endpoint to monitor its state. In the "States" tab you can add colours for the "ONLINE" and "OFFLINE" status. The "Labels" tab contains additional settings for configuring the widget.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="endpoint_state_widget_menu" src="/endpoint_state_widget_menu.png" alt="Endpoint state widget menu">
@@ -185,15 +185,15 @@ The widget list contains eight different types of widgets that can be added one 
 
 ### Save Dashboard
 
-To keep the changes in the dashboard we can save the configurations by clicking on the <img src="/save_button1.png" alt="save button"> button.
+To keep the changes in the dashboard you can save the configurations by clicking on the <img src="/save_button1.png" alt="save button"> button.
 
 ### Discard Dashboard
 
-The <img src="/discard_changes_button.png" alt="discard changes button"> button discards all of the applied changes we did in the dashboard we are configuring.
+The <img src="/discard_changes_button.png" alt="discard changes button"> button discards all the applied changes you did in the dashboard you are configuring.
 
 ### Delete Dashboard
 
-The <img src="/delete_dashboard_button.png" alt="delete dashboard button"> button deletes the selected dashboard that we have configured.
+The <img src="/delete_dashboard_button.png" alt="delete dashboard button"> button deletes the selected dashboard that you have configured.
 
 ### Copy Dashboard
 

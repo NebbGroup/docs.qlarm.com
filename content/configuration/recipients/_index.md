@@ -56,7 +56,7 @@ After filling the table with individual recipients and recipients groups, you ca
 
 ## Editing a recipient and recipients groups
 
-You can edit an individual recipient or a recipients group by clicking the <img src="/edit_recipient_button.png" alt="add recipient button" > button after which a filled form will appear in which we can make the changes. To remove an individual recipient or a recipients group click the <img src="/delete_recipient_button.png" alt="add recipient button" > button.
+You can edit an individual recipient or a recipients group by clicking the <img src="/edit_recipient_button.png" alt="add recipient button" > button after which a filled form will appear in which you can make the changes. To remove an individual recipient or a recipients group click the <img src="/delete_recipient_button.png" alt="add recipient button" > button.
 
 <script>
 // Get the modal

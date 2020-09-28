@@ -74,7 +74,7 @@ The following filters are available for both Events and History tabs:
 - "EVENT TYPE" - f only the events from selected type.
 - "IN GRACE PERIOD" - If checked than only events that are in grace period will be displayed. If this is not the case, only the events that are not in a grace period will be listed.
 
-For Events tab we also have: 
+In the Events tab there are also:  
 - "EVENT STATE" - filters the events that have the selected event state.
 - "ACKNOWLEDGED STATE" - filters the events that have the selected acknowledged state.
 <figure class="image_container">
@@ -82,7 +82,7 @@ For Events tab we also have:
     <figcaption>Fig 2. Event view filter options</figcaption>
 </figure>
 
-For History tab we also have:
+In the History tab there are also:  
 - "DATE FILTER" - filters the events by creation date.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/History_filters.png" alt="History filter options">
