@@ -15,15 +15,15 @@ An activity by a user or a recipient to confirm that they have seen an event and
 ###### Alarm
 An alarm is a type of event within Qlarm. It has a stricter set of parameters, and is acknowledgable.
 ###### Asset
-"A collection of tags, events, states and attributes that belong to a single entity within the system. An asset provides context to the system. A sensor is typically not an asset, but a device that provides data on behalf of an asset.
-E.g. a motor [asset] could have tags for Speed, Power, and Temperature; and static attributes Name, Weight, and Location; and have an event (alarm) defined for Overheating. Assets can share properties through templates."
+A collection of tags, events, states and attributes that belong to a single entity within the system. An asset provides context to the system. A sensor is typically not an asset, but a device that provides data on behalf of an asset.
+E.g. a motor [asset] could have tags for Speed, Power, and Temperature; and static attributes Name, Weight, and Location; and have an event (alarm) defined for Overheating. Assets can share properties through templates.
 ###### Asset model
 An hierarchical representation (model) of assets.
 ###### Channel
 A method or mechanism of communicating with recipients. E.g. SMS text message, e-mail, voice phone call or push notifications.
 ###### Condition
-"A rule within an event that evaluates to true or false for the attributes of a tag (its value, quality, or time). Examples:
-Condition: Room temperature is over 30 °C [RoomTemp > 30]".
+A rule within an event that evaluates to true or false for the attributes of a tag (its value, quality, or time). Examples:
+Condition: Room temperature is over 30 °C [RoomTemp > 30].
 ###### Context tag
 The tag within an event that triggered the event.
 ###### Dashboard
@@ -35,13 +35,13 @@ The Qlarm Edge Client is an application (service) running on the local server of
 ###### Endpoint
 A connection to a data source from where to get data. The endpoint can be of types OPC UA (using the Qlarm Edge Client); IoT Gateway (using MQTT directly). An endpoint belong to a tenant and have a separate Scope defined. Endpoints have a number of tags defined, and attributes like Location, Time Zone, Geographic properties.
 ###### Event
-"An occurance (event) defined by a given condition and corresponding actions. Examples:
+An occurance (event) defined by a given condition and corresponding actions. Examples:
 Condition: Room temperature is over 30 °C
-Action: Send an SMS to the janitor."
+Action: Send an SMS to the janitor.
 ###### Event Defintion
 The definition of an event with its name, conditions, actions, and parameters. Found under Qlarm -> Configuration -> Events.
 ###### Event Instance
-"When an event has been triggered, an Event Instance is created. The Event Instance will remain active until the event condition reverts to false. There can only be one Event Instance active at any time (see Tag Set).
+When an event has been triggered, an Event Instance is created. The Event Instance will remain active until the event condition reverts to false. There can only be one Event Instance active at any time (see Tag Set).
 An event instance can have these states:
 Created - when the condition becomes true;
 In Grace Period - a defined waiting period before any actions are executed;
@@ -50,7 +50,7 @@ Active & Unacknowledged - the user has not yet acknowledged the event instance;
 Active & Acknowledged - the user has acknowledged the event instance;
 Inactive - when the condition no longer is true (no actions executed if turning inactive during grace period);
 Inactive & Unacknowledged - the condition is no longer true and the user has not acknowledged;
-Archived - when event is inactive and no pending user activites pending (e.g. acknowledge)";
+Archived - when event is inactive and no pending user activites pending (e.g. acknowledge);
 ###### Event Type
 Events inherit some features by their type. Currently there are only two system defined types: Alarm and Other. Alarms can be acknowledged, Other can not. In the future more types can be created and customized by the user.
 ###### Grace period

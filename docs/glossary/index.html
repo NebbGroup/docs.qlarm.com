@@ -188,15 +188,15 @@
 <h6 id="alarm">Alarm</h6>
 <p>An alarm is a type of event within Qlarm. It has a stricter set of parameters, and is acknowledgable.</p>
 <h6 id="asset">Asset</h6>
-<p>&ldquo;A collection of tags, events, states and attributes that belong to a single entity within the system. An asset provides context to the system. A sensor is typically not an asset, but a device that provides data on behalf of an asset.
-E.g. a motor [asset] could have tags for Speed, Power, and Temperature; and static attributes Name, Weight, and Location; and have an event (alarm) defined for Overheating. Assets can share properties through templates.&rdquo;</p>
+<p>A collection of tags, events, states and attributes that belong to a single entity within the system. An asset provides context to the system. A sensor is typically not an asset, but a device that provides data on behalf of an asset.
+E.g. a motor [asset] could have tags for Speed, Power, and Temperature; and static attributes Name, Weight, and Location; and have an event (alarm) defined for Overheating. Assets can share properties through templates.</p>
 <h6 id="asset-model">Asset model</h6>
 <p>An hierarchical representation (model) of assets.</p>
 <h6 id="channel">Channel</h6>
 <p>A method or mechanism of communicating with recipients. E.g. SMS text message, e-mail, voice phone call or push notifications.</p>
 <h6 id="condition">Condition</h6>
-<p>&ldquo;A rule within an event that evaluates to true or false for the attributes of a tag (its value, quality, or time). Examples:
-Condition: Room temperature is over 30 °C [RoomTemp &gt; 30]&rdquo;.</p>
+<p>A rule within an event that evaluates to true or false for the attributes of a tag (its value, quality, or time). Examples:
+Condition: Room temperature is over 30 °C [RoomTemp &gt; 30].</p>
 <h6 id="context-tag">Context tag</h6>
 <p>The tag within an event that triggered the event.</p>
 <h6 id="dashboard">Dashboard</h6>
@@ -208,13 +208,13 @@ Condition: Room temperature is over 30 °C [RoomTemp &gt; 30]&rdquo;.</p>
 <h6 id="endpoint">Endpoint</h6>
 <p>A connection to a data source from where to get data. The endpoint can be of types OPC UA (using the Qlarm Edge Client); IoT Gateway (using MQTT directly). An endpoint belong to a tenant and have a separate Scope defined. Endpoints have a number of tags defined, and attributes like Location, Time Zone, Geographic properties.</p>
 <h6 id="event">Event</h6>
-<p>&ldquo;An occurance (event) defined by a given condition and corresponding actions. Examples:
+<p>An occurance (event) defined by a given condition and corresponding actions. Examples:
 Condition: Room temperature is over 30 °C
-Action: Send an SMS to the janitor.&rdquo;</p>
+Action: Send an SMS to the janitor.</p>
 <h6 id="event-defintion">Event Defintion</h6>
 <p>The definition of an event with its name, conditions, actions, and parameters. Found under Qlarm -&gt; Configuration -&gt; Events.</p>
 <h6 id="event-instance">Event Instance</h6>
-<p>&ldquo;When an event has been triggered, an Event Instance is created. The Event Instance will remain active until the event condition reverts to false. There can only be one Event Instance active at any time (see Tag Set).
+<p>When an event has been triggered, an Event Instance is created. The Event Instance will remain active until the event condition reverts to false. There can only be one Event Instance active at any time (see Tag Set).
 An event instance can have these states:
 Created - when the condition becomes true;
 In Grace Period - a defined waiting period before any actions are executed;
@@ -223,7 +223,7 @@ Active &amp; Unacknowledged - the user has not yet acknowledged the event instan
 Active &amp; Acknowledged - the user has acknowledged the event instance;
 Inactive - when the condition no longer is true (no actions executed if turning inactive during grace period);
 Inactive &amp; Unacknowledged - the condition is no longer true and the user has not acknowledged;
-Archived - when event is inactive and no pending user activites pending (e.g. acknowledge)&quot;;</p>
+Archived - when event is inactive and no pending user activites pending (e.g. acknowledge);</p>
 <h6 id="event-type">Event Type</h6>
 <p>Events inherit some features by their type. Currently there are only two system defined types: Alarm and Other. Alarms can be acknowledged, Other can not. In the future more types can be created and customized by the user.</p>
 <h6 id="grace-period">Grace period</h6>
