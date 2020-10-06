@@ -13,7 +13,7 @@ pre: ""
 </div>
 
 {{<lead>}}
-The Trend page is where you can get your tags values-data visualized. It show a chart display of the data for selected tag(s) for a specific period of time. You can add tags and change period while viewing a report. Also you can get display of events raised and event thresholds from the tags' conditions. You can customize the chart and have a reports saved. You can download the reports as an images and export the chart data in files.
+The [Trend View](/glossary#view) page is where you can get your [Tags](/glossary#tag) values-data visualized as [Trend](/glossary#trend). It show a chart display of the data for selected [Tag(s)](/glossary#tag) for a specific period of time. You can add [Tags](/glossary#tag) and change period while viewing a [Report](/glossary#report). Also you can get display of [Event](/glossary#event) raised and event thresholds from the [Tags](/glossary#tag)' [Conditions](/glossary#condition). You can customize the chart and have a [Reports](/glossary#report) saved. You can download the [Reports](/glossary#report) as an images and export the chart data in files.
 {{</lead>}}
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="trend_screen" src="/trend_screen.png" alt="Trend">
@@ -21,14 +21,14 @@ The Trend page is where you can get your tags values-data visualized. It show a 
 </figure>
 
 ## Add tag(s) to chart
-In order for tag(s) data to be displayed tags needs to be added in chart. This is done by selecting an endpoint first from the select list "ENDPOINT" then selecting one or more tags (max 5) from the multiselect "TAGS" list.
+In order for [Tags](/glossary#tag) data to be displayed [Tags](/glossary#tag) needs to be added in chart. This is done by selecting an [Endpoint](/glossary#endpoint) first from the select list "ENDPOINT" then selecting one or more [Tags](/glossary#tag) (max 5) from the multiselect "TAGS" list.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="trend_tag_list" src="/trend_tag_list.png" alt="Adding tags">
     <figcaption>Fig 2. Adding tags</figcaption>
 </figure>
 
 ## Time period
-Tag(s) data can be displayed in the chart for the selected period. You can choose the period from the dropdown “TIME PERIOD” list for specified periods or choose a “Custom” period (“Last Day” is the initial preselected period).
+[Tags](/glossary#tag) data can be displayed in the chart for the selected period. You can choose the period from the dropdown “TIME PERIOD” list for specified periods or choose a “Custom” period (“Last Day” is the initial preselected period).
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="time_period" src="/time_period.png" alt="Time filter">
     <figcaption>Fig 3. Time filter</figcaption>
@@ -71,7 +71,7 @@ If "Value Axis Position" is applied: <br/>
     <figcaption>Fig 9. "Value axis position" enabled</figcaption>
 </figure>
 
-If "Single Time Axis" is not applied (value axis by tag displayed): <br/>
+If "Single Time Axis" is not applied (value axis by [Tag](/glossary#tag) displayed): <br/>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="no_single_time_axis" src="/no_single_time_axis.png" alt="Single time axis disabled">
     <figcaption>Fig 10. "Single time axis" disabled</figcaption>
@@ -79,7 +79,7 @@ If "Single Time Axis" is not applied (value axis by tag displayed): <br/>
 
 
 ## Edit tag settings
-The "Color", "Thickness" and "Symbol" of the chart tag line can be customized. Go to "Edit tag settings" with click on the edit button in the chart tag.
+The "Color", "Thickness" and "Symbol" of the chart tag line can be customized. Go to "Edit tag settings" with click on the edit button in the Chart Tag.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="edit_trend_tag_button" src="/edit_trend_tag_button.png" alt="Edit chart tag">
     <figcaption>Fig 11. Edit chart tag</figcaption>
@@ -91,7 +91,7 @@ The change of the "Symbol" ("Round", "Square" or "TriangleUp") can be visible on
 </figure>
 
 ## Delete tags
-Delete tags from the chart by clicking the delete button in the chart tag.
+Delete [Tags](/glossary#tag) from the chart by clicking the delete button in the chart tag.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="tag_delete_button" src="/tag_delete_button.png" alt="Delete chart tag">
     <figcaption>Fig 13. Delete chart tag</figcaption>
@@ -101,29 +101,29 @@ Delete tags from the chart by clicking the delete button in the chart tag.
 Reset chart by clicking the reset button <img src="/chart_reset_button.png">.
 
 ## Save Report
-Chart with all the tags added can be saved as a Report by clicking the Save button <img src="/save_report_button.png">. Insert name and choose to save it in the actual period.
+Chart with all the [Tags](/glossary#tag) added can be saved as a [Report](/glossary#report) by clicking the Save button <img src="/save_report_button.png">. Insert name and choose to save it in the actual period.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="save_new_report" src="/save_new_report.png" alt="Save report">
     <figcaption>Fig 14. Save report</figcaption>
 </figure>
 
 ## Load Report
-Saved reports can be loaded by clicking the "Open" button <img src="/load_report_button.png">. Then you get the "Load report" popup where you can select the report you want to load from the list and click "Load".
+Saved [Reports](/glossary#report) can be loaded by clicking the "Open" button <img src="/load_report_button.png">. Then you get the "Load Report" popup where you can select the [Report](/glossary#report) you want to load from the list and click "Load".
 <figure class="image_container">
     <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="load_report_popup" src="/load_report_popup.png" alt="Load report">
-    <figcaption>Fig 15. Load report</figcaption>
+    <figcaption>Fig 15. Load Report</figcaption>
 </figure>
 
 ## Edit Report
-If you edit a loaded report and if you want to save it, you will get the "Overwrite" option in the popup from Fig 11. to choose if you like to overwrite the existing one.
+If you edit a loaded [Report](/glossary#report) and if you want to save it, you will get the "Overwrite" option in the popup from Fig 11. to choose if you like to overwrite the existing one.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="overwrite_report" src="/overwrite_report.png" alt="Overwrite report">
-    <figcaption>Fig 16. Overwrite report</figcaption>
+    <figcaption>Fig 16. Overwrite Report</figcaption>
 </figure> 
- To save the report as a new report, select "Save as New" option and the loaded report will remain unchanged.
+ To save the [Report](/glossary#report) as a new [Report](/glossary#report), select "Save as New" option and the loaded [Report](/glossary#report) will remain unchanged.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="save_as_new_report" src="/save_as_new_report.png" alt="Save report as new">
-    <figcaption>Fig 17. Save report as new</figcaption>
+    <figcaption>Fig 17. Save Report as new</figcaption>
 </figure> 
 
 ## Chart menu

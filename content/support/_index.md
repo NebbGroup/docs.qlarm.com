@@ -12,7 +12,7 @@ weight: 18
 </div>
 
 {{<lead>}}
-Support section is where you can ask for an information about Qlarm. This is where you can find the user manual and submit ticket form. The chat option is also provided for this purpose.
+Support section is where you can ask for an information about Qlarm. This is where you can find the User Manual and Submit Ticket Form. The Chat option is also provided for this purpose.
 {{</lead>}}
 
 You can open the chat by clicking the chat button in the bottom-left corner.<img src="/chat_button.png">

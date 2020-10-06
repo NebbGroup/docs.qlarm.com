@@ -12,14 +12,14 @@ weight: 15
 </div>
 
 {{<lead>}}
-In the Users page you can list all the users in the system. Users are created or registered in Qlarm and they can login and use the system with authorizations. Users can belong to different organizations. Every organization provides the user specific authorizations. User can be present in the system with a corresponding recipient.
+In the Users page you can list all the [Users](/glossary#user) in the system. [Users](/glossary#user) are created or registered in Qlarm and they can login and use the system with authorizations. [Users](/glossary#user) can belong to different organizations. Every organization provides the [User](/glossary#user) specific authorizations. [User](/glossary#user) can be present in the system with a corresponding [Recipient](/glossary#recipient).
 {{</lead>}}
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="users" src="/users.png" alt="Users">
     <figcaption>Fig 1. Users</figcaption>
 </figure>
 
-A user can be added, edited or deleted. You can search users by name and filter them by role.
+A [User](/glossary#user) can be added, edited or deleted. You can search [Users](/glossary#user) by name and filter them by [Role](/glossary#role).
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="filter_users_role_filter" src="/filter_users_role_filter.png" alt="Search and filter users">
     <figcaption>Fig 2. Search and filter users</figcaption>
@@ -27,9 +27,9 @@ A user can be added, edited or deleted. You can search users by name and filter 
 
 ## Add user
 
-If you click the <img src="/add_user_button.png"> button a popup appears. All the fields in the popup are required to save the user. You need to insert first and last name, phone number, select a role that is available for the organization, also insert an email with a domain that is available for the organization and password with a required complexity. The email and password combination will be the new account credentials for the user to login within the system. <br />
-You can add Scopes to the user (see Fig 3.) to determine the data that will be visible to the user. E.g. endpoints are listed and selecting one for a user makes all the data related to that endpoint such as tags, events, notifications, dashboards e.t.c. will be visible for the user.<br/> 
-After you fill the data you click "Save" button <img src="/user_save.png"> to save the user.
+If you click the <img src="/add_user_button.png"> button a popup appears. All the fields in the popup are required to save the [User](/glossary#user). You need to insert first and last name, phone number, select a [Role](/glossary#role) that is available for the organization, also insert an email with a domain that is available for the organization and password with a required complexity. The email and password combination will be the new [Account](/glossary#account) credentials for the [User](/glossary#user) to login within the system. <br />
+You can add [Scopes](/glossary#scope) to the [User](/glossary#user) (see Fig 3.) to determine the data that will be visible to the [User](/glossary#user). E.g. [Endpoints](/glossary#endpoint) are listed and selecting one for a [User](/glossary#user) makes all the data related to that [Endpoint](/glossary#endpoint) such as [Tags](/glossary#tag), [Events](/glossary#event), [Notifications](/glossary#notification), [Dashboards](/glossary#dashboard) etc. will be visible for the [User](/glossary#user).<br/> 
+After you fill the data you click "Save" button <img src="/user_save.png"> to save the [User](/glossary#user).
 
 <figure class="image_container">
     <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="user_scopes" src="/user_scopes.png" alt="Scopes">
@@ -42,7 +42,7 @@ After you fill the data you click "Save" button <img src="/user_save.png"> to sa
 </figure>
 
 ## Edit user
-To edit the user, click the <img src="/row_edit_button.png"> button on the user row. Scopes for the user can be edited. Name, email and mobile cannot be edited when the user is synchronized with the external active directory. Roles can be edited if the user account email domain belongs to the organization domains.
+To edit the [User](/glossary#user), click the <img src="/row_edit_button.png"> button on the [User](/glossary#user)'s row. [Scopes](/glossary#scope) for the [User](/glossary#user) can be edited. Name, email and mobile cannot be edited when the [User](/glossary#user) is synchronized with the external active directory. [Roles](/glossary#role) can be edited if the [User Account](/glossary#account) email domain belongs to the organization domains.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_user" src="/edit_user.png" alt="Edit user">
@@ -50,7 +50,7 @@ To edit the user, click the <img src="/row_edit_button.png"> button on the user 
 </figure>
 
 ## Delete user
-If the user account email domain belongs to the organization domains, then the <img src="/row_delete_button.png"> is provided. If clicked a confirmation popup will appear. If confirmed, the user will be deleted.
+If the [User Account](/glossary#account) email domain belongs to the organization domains, then the <img src="/row_delete_button.png"> is provided. If clicked a confirmation popup will appear. If confirmed, the [User](/glossary#user) will be deleted.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="user_delete_popup" src="/user_delete_popup.png" alt="Delete user">
     <figcaption>Fig 6. Delete user</figcaption>

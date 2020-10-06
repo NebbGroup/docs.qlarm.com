@@ -12,15 +12,17 @@ weight: 16
 </div>
 
 {{<lead>}}
-The Permissions page is used to set permissions for a role. Permissions are organization specific. This is a comfortable way to manage and control user actions in the system. You can simply apply a permission to a role of a user and be certain that your content is secured.
+The "Permissions" page is used to set [Permissions](/glossary#permission) for a [Role](/glossary#role). [Permissions](/glossary#permission) are organization specific. This is a comfortable way to manage and control [User](/glossary#user)'s actions in the system. You can simply apply a [Permission](/glossary#permission) to a [Role](/glossary#role) of a [User](/glossary#user) and be certain that your content is secured.
 {{</lead>}}
 
-Roles are predefined and listed in the "CHOOSE ROLE" list.
+[Roles](/glossary#role) are predefined and listed in the "CHOOSE ROLE" list.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="choose_role_list" src="/choose_role_list.png" alt="Choose role">
-    <figcaption>Fig 1. Choose role</figcaption>
+    <figcaption>Fig 1. Choose Role</figcaption>
 </figure>
-Permissions names mainly correspond to the application main menu items, and they refer to these pages and their functionalities. But sections or functionalities other than pages can be also set under permission like Scopes, or Acknowledge of Event. After (de)selecting permissions for a chosen role, the role can be saved by clicking the "Save changes" button <img src="/save_changes_button.png" >
+
+[Permissions](/glossary#permission) names mainly correspond to the application [Site Menu Items](/glossary#site-menu-items), and they refer to these pages and their functionalities. But sections or functionalities other than pages can be also set under permission like [Scopes](/glossary#scope), or Acknowledge of Event. After (de)selecting [Permissions](/glossary#permission) for a chosen [Role](/glossary#role), the [Role](/glossary#role) can be saved by clicking the "Save changes" button <img src="/save_changes_button.png" >
+
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="permissions" src="/permissions.png" alt="Permissions">
     <figcaption>Fig 2. Permissions</figcaption>

@@ -38,7 +38,7 @@ A connection to a data source from where to get data. The endpoint can be of typ
 An occurance (event) defined by a given condition and corresponding actions. Examples:
 Condition: Room temperature is over 30 °C
 Action: Send an SMS to the janitor.
-###### Event Defintion
+###### Event Definition
 The definition of an event with its name, conditions, actions, and parameters. Found under Qlarm -> Configuration -> Events.
 ###### Event Instance
 When an event has been triggered, an Event Instance is created. The Event Instance will remain active until the event condition reverts to false. There can only be one Event Instance active at any time (see Tag Set).
@@ -71,7 +71,7 @@ A restriction rule for User action.
 The online web application of Qlarm found on app.qlarm.com.
 ###### Recipient
 A person that can receive notifications from QLARM. A recipient is not necessarily a user, but can be.
-###### Recipient Group
+###### Recipients Group
 A group of recipients.
 ###### Report
 A trending chart displaying values of one or more tags in time.

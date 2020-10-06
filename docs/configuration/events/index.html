@@ -184,14 +184,14 @@
   <div id="caption"></div>
 </div>
 <p class="lead">
-    The Events page is where custom events are listed and where you can configure your own event definition. The event definition is about malicious time, quality and value of a sensor that need to be detected and event to be raised. Raising the event takes actions in place which is notifying users in many forms with feedback options.
+    The Events page is where <a href="/glossary#event-definition">Event Definitions</a> are listed and where you can configure your own <a href="/glossary#event-definition">Event Definition</a>. The <a href="/glossary#event-definition">Event Definition</a> is about malicious time, quality and value of a sensor that need to be detected and <a href="/glossary#event">Event</a> to be raised. Raising the <a href="/glossary#event">Event</a> takes <a href="/glossary#action">Actions</a> in place which is notifying <a href="/glossary#recipient">Recipients</a> in many forms with feedback options.
 </p>
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="config-events" src="/config-events.png" alt="Events configuration">
     <figcaption>Fig 1. Events configuration</figcaption>
 </figure>
-<p>Type of the event, number of recipients and if the event is enabled, are information displayed in the table. Events can be created <img src="/add_event_button.png">, duplicated <img  src="/duplicate_event.png">, edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">. Events can be searched by name or filtered by endpoint by the filters provided.</p>
+<p>Type of the <a href="/glossary#event-definition">Event Definition</a>, number of <a href="/glossary#recipient">Recipients</a> and if the event definition is enabled, are information displayed in the table. <a href="/glossary#event-definition">Event Definitions</a> can be created <img src="/add_event_button.png">, duplicated <img  src="/duplicate_event.png">, edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">. <a href="/glossary#event-definition">Event Definitions</a> can be searched by name or filtered by <a href="/glossary#endpoint">Endpoint</a> by the filters provided.</p>
 <figure class="image_container">
     <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="config_events_filters" src="/config_events_filters.png" alt="Events filter options">
     <figcaption>Fig 2. Events filter options</figcaption>
@@ -202,50 +202,50 @@
     <img class="center_image myImg" onClick="reply_click(this)"  id="add_event" src="/add_event.png" alt="Add event">
     <figcaption>Fig 3. Add event</figcaption>
 </figure>
-<p>As for the event it self, &ldquo;NAME&rdquo;, &ldquo;DESCRIPTION&rdquo;, &ldquo;TYPE&rdquo; info should be populated and the event should be enabled if you want it to take the set actions for the condition set.<br/>
-There are two types of events, Alarms and Other. Alarms can be acknowledged and can became active and inactive depending of the latest value. Other type of event just gets archived when the condition is not met (See page Events for more details).</p>
+<p>As for the <a href="/glossary#event-definition">Event Definition</a> it self, &ldquo;NAME&rdquo;, &ldquo;DESCRIPTION&rdquo;, &ldquo;TYPE&rdquo; info should be populated and the event should be enabled if you want it to take the set <a href="/glossary#action">Actions</a> for the <a href="/glossary#condition">Condition</a> set.<br/>
+There are two types of <a href="/glossary#event-definition">Event Definitions</a>: <a href="/glossary#alarm">Alarm</a> and Other. <a href="/glossary#alarm">Alarms</a> can be <a href="/glossary#acknowledge-synonym-ack">acknowledged</a> and can became active and inactive depending of the latest value. Other type of <a href="/glossary#event-definition">Event Definition</a> just gets archived when the <a href="/glossary#condition">Condition</a> is not met (See page Events for more details).</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="event_general" src="/event_general.png" alt="General event info">
     <figcaption>Fig 4. General event info</figcaption>
 </figure>
 <h4 id="condition">Condition</h4>
-<p>Condition tab is preselected <img src="/condition_tab.png"> when you open the &ldquo;Add event&rdquo; popup. A condition must be set in order for the event to be created. You should choose one &ldquo;ENDPOINT&rdquo;, and one or many tags from &ldquo;TAG&rdquo; list to create a condition, and compose the actual condition for tag&rsquo;s value, quality or time by choosing a relevant &ldquo;OPERATOR&rdquo; and desired &ldquo;VALUE&rdquo;. <br/> If the custom event is created for many tags, the tag that will raise this event is the activation tag which name is used in the display of the name of the event, listed in the Events page.</p>
+<p>&ldquo;Condition&rdquo; tab is preselected <img src="/condition_tab.png"> when you open the &ldquo;Add event&rdquo; popup. A <a href="/glossary#condition">Condition</a> must be set in order for the <a href="/glossary#event-instance">Event Instance</a> to be created. You should choose one &ldquo;<a href="/glossary#endpoint">ENDPOINT</a>&rdquo;, and one or many <a href="/glossary#tag">Tags</a> from &ldquo;TAG&rdquo; list to create a <a href="/glossary#condition">Condition</a>, and compose the actual <a href="/glossary#condition">Condition</a> for <a href="/glossary#tag">Tag</a>&rsquo;s value, quality or time by choosing a relevant &ldquo;OPERATOR&rdquo; and desired &ldquo;VALUE&rdquo;. <br/> If the <a href="/glossary#event-definition">Event Definition</a> is created for many <a href="/glossary#tag">Tags</a>, the <a href="/glossary#tag">Tag</a> that will raise this <a href="/glossary#event">Event</a> is the Activation Tag which name is used in the display of the name of the <a href="/glossary#event-instance">Event Instance</a>, listed in the &ldquo;Events&rdquo; page.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="event_condition" src="/event_condition.png" alt="Event condition">
     <figcaption>Fig 5. Event condition</figcaption>
 </figure>
-<p>After a condition is created it is listed in the table below and can be edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">.</p>
+<p>After a <a href="/glossary#condition">Condition</a> is created it is listed in the table below and can be edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="condition_edit_mode" src="/condition_edit_mode.png" alt="Edit event condition">
     <figcaption>Fig 6. Edit event condition</figcaption>
 </figure>
 <h4 id="actions">Actions</h4>
-<p>Actions can be defined in the tab &ldquo;Actions&rdquo; <img  src="/actions_tab.png">.
-These are notifications that need to be sent in chosen ways to chosen recipients, with custom content, if the event condition is met.
+<p><a href="/glossary#action">Actions</a> can be defined in the tab &ldquo;Actions&rdquo; <img  src="/actions_tab.png">.
+These are <a href="/glossary#notification">notifications</a> that need to be sent in chosen ways to chosen <a href="/glossary#recipient">Recipients</a>, with custom content, if the <a href="/glossary#condition">Event Definition Condition</a> is met.
 <br/>
-To create an Action, select type Notification from the &ldquo;TYPE&rdquo; dropdown. 
-You can populate &ldquo;CONTENT&rdquo; and &ldquo;VOICE MESSAGE TEXT&rdquo; by choosing a template from the &ldquo;TEMPLATE&rdquo; dropdown, which is editable or by adding a text in the fields. &ldquo;CONTENT&rdquo; is required if you have &ldquo;NOTIFY USING&rdquo; &ldquo;SMS&rdquo;, &ldquo;Email&rdquo; and &ldquo;Push&rdquo; enabled. &ldquo;VOICE MESSAGE TEXT&rdquo; is required if you have &ldquo;NOTIFY USING&rdquo; &ldquo;Voice&rdquo; enabled. You can play/stop the &ldquo;VOICE MESSAGE TEXT&rdquo; to check the whole message that will be played to the recipient in the call notification. <br/>
-Recipients can be added one by one or as a recipient group from the &ldquo;RECIPIENTS&rdquo; dropdown.
+To create an <a href="/glossary#action">&ldquo;action&rdquo;</a>, select type &ldquo;Notification&rdquo; from the &ldquo;TYPE&rdquo; dropdown. 
+You can populate &ldquo;CONTENT&rdquo; and &ldquo;VOICE MESSAGE TEXT&rdquo; by choosing a template from the &ldquo;TEMPLATE&rdquo; dropdown, which is editable or by adding a text in the fields. &ldquo;CONTENT&rdquo; is required if you have &ldquo;NOTIFY USING&rdquo; &ldquo;SMS&rdquo;, &ldquo;Email&rdquo; and &ldquo;Push&rdquo; enabled. &ldquo;VOICE MESSAGE TEXT&rdquo; is required if you have &ldquo;NOTIFY USING&rdquo; &ldquo;Voice&rdquo; enabled. You can play/stop the &ldquo;VOICE MESSAGE TEXT&rdquo; to check the whole message that will be played to the <a href="/glossary#recipient">Recipient</a> in the Call Notification. <br/>
+<a href="/glossary#recipient">Recipients</a> can be added one by one or as a <a href="/glossary#recipient-group">Recipients Group</a> from the &ldquo;RECIPIENTS&rdquo; dropdown.
 <br/>
-Notification can be repeated in the number of times set in the &ldquo;REPEAT&rdquo; textbox. In &ldquo;INTERVAL (MIN)&rdquo; you can define the interval between the notifications if they need to be repeated. In &ldquo;PAUSE FOR NEXT ACTION (MIN)&rdquo; you can define the interval between the actions if they need to be looped (see &ldquo;EXECUTION&rdquo; in &ldquo;Advanced settings&rdquo; for more details).</p>
+<a href="/glossary#notification">Notification</a> can be repeated in the number of times set in the &ldquo;REPEAT&rdquo; textbox. In &ldquo;INTERVAL (MIN)&rdquo; you can define the interval between the <a href="/glossary#notification">notifications</a> if they need to be repeated. In &ldquo;PAUSE FOR NEXT <a href="/glossary#action">ACTION</a> (MIN)&rdquo; you can define the interval between the <a href="/glossary#action">Actions</a> if they need to be looped (see &ldquo;EXECUTION&rdquo; in &ldquo;Advanced settings&rdquo; for more details).</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="add_action" src="/add_action.png" alt="Add action">
     <figcaption>Fig 7. Add action</figcaption>
 </figure>
-<p>Actions added are listed in the table below and can be edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">.</p>
+<p><a href="/glossary#action">Actions</a> added are listed in the table below and can be edited <img src="/edit_event.png"> and deleted <img  src="/delete_event.png">.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_event_action" src="/edit_event_action.png" alt="Edit event action">
     <figcaption>Fig 8. Edit action</figcaption>
 </figure>
 <h4 id="advanced-settings">Advanced settings</h4>
-<p>Advanced settings is where you can set the additional configuration for the event.</p>
+<p>Advanced settings is where you can set the additional configuration for the <a href="/glossary#event-definition">Event Definition</a>.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="advanced_settings" src="/advanced_settings.png" alt="Advanced settings"> 
     <figcaption>Fig 9. Advanced settings</figcaption>
 </figure>
-<p>In &ldquo;GRACE PERIOD (MIN)&rdquo; you can define the minutes to pass before this event becomes active after it is created. <br/>
-In &ldquo;EXECUTION&rdquo; you can define if actions should execute &ldquo;Once&rdquo; or many times in &ldquo;Loop&rdquo;.<br/>
-&ldquo;BREAK WHEN EVENT BECOMES&rdquo; Inactive or Acknowledged refers to stopping the notifications set to be repeated and all actions set to be executed again.</p>
+<p>In &ldquo;GRACE PERIOD (MIN)&rdquo; you can define the minutes to pass before this <a href="/glossary#event-instance">Event Instance</a> becomes active after it is created. <br/>
+In &ldquo;EXECUTION&rdquo; you can define if <a href="/glossary#action">Actions</a> should execute &ldquo;Once&rdquo; or many times in &ldquo;Loop&rdquo;.<br/>
+&ldquo;BREAK WHEN EVENT BECOMES&rdquo; Inactive or Acknowledged refers to stopping the <a href="/glossary#notification">notifications</a> set to be repeated and all <a href="/glossary#action">Actions</a> set to be executed again.</p>
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
