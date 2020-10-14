@@ -11,9 +11,9 @@ An activity to be carried out by the system when the condition of an event becom
 ###### Action Type
 A type of Action. Currently there is only Notification implemented, but in the future there will be a multitude of Action Types available.
 ###### Acknowledge (synonym: ACK)
-An activity by a user or a recipient to confirm that they have seen an event and take responsibility to follow up on the correspondning event.
+An activity by a user or a recipient to confirm that they have seen an event and take responsibility to follow up on the corresponding event.
 ###### Alarm
-An alarm is a type of event within Qlarm. It has a stricter set of parameters, and is acknowledgable.
+An alarm is a type of event within Qlarm. It has a stricter set of parameters, and is acknowledgeable.
 ###### Asset
 A collection of tags, events, states and attributes that belong to a single entity within the system. An asset provides context to the system. A sensor is typically not an asset, but a device that provides data on behalf of an asset.
 E.g. a motor [asset] could have tags for Speed, Power, and Temperature; and static attributes Name, Weight, and Location; and have an event (alarm) defined for Overheating. Assets can share properties through templates.
@@ -35,7 +35,7 @@ The Qlarm Edge Client is an application (service) running on the local server of
 ###### Endpoint
 A connection to a data source from where to get data. The endpoint can be of types OPC UA (using the Qlarm Edge Client); IoT Gateway (using MQTT directly). An endpoint belong to a tenant and have a separate Scope defined. Endpoints have a number of tags defined, and attributes like Location, Time Zone, Geographic properties.
 ###### Event
-An occurance (event) defined by a given condition and corresponding actions. Examples:
+An occurrence (event) defined by a given condition and corresponding actions. Examples:
 Condition: Room temperature is over 30 °C
 Action: Send an SMS to the janitor.
 ###### Event Definition
@@ -50,7 +50,7 @@ Active & Unacknowledged - the user has not yet acknowledged the event instance;
 Active & Acknowledged - the user has acknowledged the event instance;
 Inactive - when the condition no longer is true (no actions executed if turning inactive during grace period);
 Inactive & Unacknowledged - the condition is no longer true and the user has not acknowledged;
-Archived - when event is inactive and no pending user activites pending (e.g. acknowledge);
+Archived - when event is inactive and no pending user activities pending (e.g. acknowledge);
 ###### Event Type
 Events inherit some features by their type. Currently there are only two system defined types: Alarm and Other. Alarms can be acknowledged, Other can not. In the future more types can be created and customized by the user.
 ###### Grace period
@@ -76,7 +76,7 @@ A group of recipients.
 ###### Report
 A trending chart displaying values of one or more tags in time.
 ###### Role
-A set of permissions providing or denying access to features or activites within the system. Users have one role per tenant.
+A set of permissions providing or denying access to features or activities within the system. Users have one role per tenant.
 ###### Scope
 A limitation of the data users have access to. An endpoint will be automatically created with a data access limitation called "scope". A user can have access to one or more scopes. A user can only access the data of the scopes they have access to. They will not see the Endpoints, Dashboards, or any other elements using data from other scopes. An administrator can define who has access to which scopes.
 ###### Site menu
@@ -90,7 +90,7 @@ One specific data point. E.g. a temperature.
 ###### Tag Set
 A group of tags defined within one event that share the same conditions and actions. Event instances are created individually for each tag.
 ###### Tenant (account)
-A tenant is similar to a customer account, and often just refered to as the Account. A tenant defines the properties of the customer, the subscription, the endpoints and the users that have access to Qlarm.
+A tenant is similar to a customer account, and often just referred to as the Account. A tenant defines the properties of the customer, the subscription, the endpoints and the users that have access to Qlarm.
 ###### Ticket
 An issue from a person about the system provided to system support.
 ###### Time zone

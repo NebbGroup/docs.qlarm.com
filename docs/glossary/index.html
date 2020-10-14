@@ -195,9 +195,9 @@ if (!doNotTrack) {
 <h6 id="action-type">Action Type</h6>
 <p>A type of Action. Currently there is only Notification implemented, but in the future there will be a multitude of Action Types available.</p>
 <h6 id="acknowledge-synonym-ack">Acknowledge (synonym: ACK)</h6>
-<p>An activity by a user or a recipient to confirm that they have seen an event and take responsibility to follow up on the correspondning event.</p>
+<p>An activity by a user or a recipient to confirm that they have seen an event and take responsibility to follow up on the corresponding event.</p>
 <h6 id="alarm">Alarm</h6>
-<p>An alarm is a type of event within Qlarm. It has a stricter set of parameters, and is acknowledgable.</p>
+<p>An alarm is a type of event within Qlarm. It has a stricter set of parameters, and is acknowledgeable.</p>
 <h6 id="asset">Asset</h6>
 <p>A collection of tags, events, states and attributes that belong to a single entity within the system. An asset provides context to the system. A sensor is typically not an asset, but a device that provides data on behalf of an asset.
 E.g. a motor [asset] could have tags for Speed, Power, and Temperature; and static attributes Name, Weight, and Location; and have an event (alarm) defined for Overheating. Assets can share properties through templates.</p>
@@ -219,7 +219,7 @@ Condition: Room temperature is over 30 °C [RoomTemp &gt; 30].</p>
 <h6 id="endpoint">Endpoint</h6>
 <p>A connection to a data source from where to get data. The endpoint can be of types OPC UA (using the Qlarm Edge Client); IoT Gateway (using MQTT directly). An endpoint belong to a tenant and have a separate Scope defined. Endpoints have a number of tags defined, and attributes like Location, Time Zone, Geographic properties.</p>
 <h6 id="event">Event</h6>
-<p>An occurance (event) defined by a given condition and corresponding actions. Examples:
+<p>An occurrence (event) defined by a given condition and corresponding actions. Examples:
 Condition: Room temperature is over 30 °C
 Action: Send an SMS to the janitor.</p>
 <h6 id="event-definition">Event Definition</h6>
@@ -234,7 +234,7 @@ Active &amp; Unacknowledged - the user has not yet acknowledged the event instan
 Active &amp; Acknowledged - the user has acknowledged the event instance;
 Inactive - when the condition no longer is true (no actions executed if turning inactive during grace period);
 Inactive &amp; Unacknowledged - the condition is no longer true and the user has not acknowledged;
-Archived - when event is inactive and no pending user activites pending (e.g. acknowledge);</p>
+Archived - when event is inactive and no pending user activities pending (e.g. acknowledge);</p>
 <h6 id="event-type">Event Type</h6>
 <p>Events inherit some features by their type. Currently there are only two system defined types: Alarm and Other. Alarms can be acknowledged, Other can not. In the future more types can be created and customized by the user.</p>
 <h6 id="grace-period">Grace period</h6>
@@ -260,7 +260,7 @@ Archived - when event is inactive and no pending user activites pending (e.g. ac
 <h6 id="report">Report</h6>
 <p>A trending chart displaying values of one or more tags in time.</p>
 <h6 id="role">Role</h6>
-<p>A set of permissions providing or denying access to features or activites within the system. Users have one role per tenant.</p>
+<p>A set of permissions providing or denying access to features or activities within the system. Users have one role per tenant.</p>
 <h6 id="scope">Scope</h6>
 <p>A limitation of the data users have access to. An endpoint will be automatically created with a data access limitation called &ldquo;scope&rdquo;. A user can have access to one or more scopes. A user can only access the data of the scopes they have access to. They will not see the Endpoints, Dashboards, or any other elements using data from other scopes. An administrator can define who has access to which scopes.</p>
 <h6 id="site-menu">Site menu</h6>
@@ -274,7 +274,7 @@ Archived - when event is inactive and no pending user activites pending (e.g. ac
 <h6 id="tag-set">Tag Set</h6>
 <p>A group of tags defined within one event that share the same conditions and actions. Event instances are created individually for each tag.</p>
 <h6 id="tenant-account">Tenant (account)</h6>
-<p>A tenant is similar to a customer account, and often just refered to as the Account. A tenant defines the properties of the customer, the subscription, the endpoints and the users that have access to Qlarm.</p>
+<p>A tenant is similar to a customer account, and often just referred to as the Account. A tenant defines the properties of the customer, the subscription, the endpoints and the users that have access to Qlarm.</p>
 <h6 id="ticket">Ticket</h6>
 <p>An issue from a person about the system provided to system support.</p>
 <h6 id="time-zone">Time zone</h6>
