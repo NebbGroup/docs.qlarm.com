@@ -62,7 +62,7 @@ A standard messaging protocol for Internet of Things (IoT). Used for IoT endpoin
 ###### Notification
 A message sent from Qlarm  to notify recipients through one or more channels (SMS, voice call, e-mail or push notification). Typically defined as an action on an event.
 ###### OPC server
-OPC is an industrial automation communication protocol. An OPC server define items/tags that can be read by the Qlarm Edge Client and forwarded tothe  Qlarm platform.
+OPC is an industrial automation communication protocol. An OPC server define items/tags that can be read by the Qlarm Edge Client and forwarded to the Qlarm platform.
 ###### Page size
 The number of items (rows) to be listed in a table. There is a feature at the bottom of the table to browse to the next or previous pages. 
 ###### Permission
