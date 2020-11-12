@@ -33,24 +33,25 @@ The dashboard configuration which loads when Dashboard page is opened.
 ###### Edge Client
 The Qlarm Edge Client is an application (service) running on the local server of a customer. The Edge Client acts as an intermediary broker between the Qlarm platform and the local data source. The Edge Client will monitor an OPC UA server locally and forward data depending on the configuration and the customer's subscription.
 ###### Endpoint
-A connection to a data source from where to get data. The endpoint can be of types OPC UA (using the Qlarm Edge Client); IoT Gateway (using MQTT directly). An endpoint belong to a tenant and have a separate Scope defined. Endpoints have a number of tags defined, and attributes like Location, Time Zone, Geographic properties.
+A connection to a data source from where to get data. The endpoint can be of types OPC UA (using the Qlarm Edge Client); IoT Gateway (using MQTT directly). An endpoint belongs to a tenant and has a separate Scope defined. Endpoints have a number of tags defined, and attributes like Location, Time Zone, Geographic properties.
 ###### Event
-An occurrence (event) defined by a given condition and corresponding actions. Examples:
-Condition: Room temperature is over 30 °C
+An occurrence defined by a given condition and corresponding actions.<br> 
+Examples:<br>
+Condition: Room temperature is over 30 °C<br>
 Action: Send an SMS to the janitor.
 ###### Event Definition
 The definition of an event with its name, conditions, actions, and parameters. Found under Qlarm -> Configuration -> Events.
 ###### Event Instance
 When an event has been triggered, an Event Instance is created. The Event Instance will remain active until the event condition reverts to false. There can only be one Event Instance active at any time (see Tag Set).
 An event instance can have these states:
-Created - when the condition becomes true;
-In Grace Period - a defined waiting period before any actions are executed;
-Active - after the grace period and when the actions are executed;
-Active & Unacknowledged - the user has not yet acknowledged the event instance;
-Active & Acknowledged - the user has acknowledged the event instance;
-Inactive - when the condition no longer is true (no actions executed if turning inactive during grace period);
-Inactive & Unacknowledged - the condition is no longer true and the user has not acknowledged;
-Archived - when event is inactive and no pending user activities pending (e.g. acknowledge);
+- Created - when the condition becomes true;
+- In Grace Period - a defined waiting period before any actions are executed;
+- Active - after the grace period and when the actions are executed;
+- Active & Unacknowledged - the user has not yet acknowledged the event instance;
+- Active & Acknowledged - the user has acknowledged the event instance;
+- Inactive - when the condition no longer is true (no actions executed if turning inactive during grace period);
+- Inactive & Unacknowledged - the condition is no longer true and the user has not acknowledged;
+- Archived - when event is inactive and no pending user activities pending (e.g. acknowledge);
 ###### Event Type
 Events inherit some features by their type. Currently there are only two system defined types: Alarm and Other. Alarms can be acknowledged, Other can not. In the future more types can be created and customized by the user.
 ###### Grace period

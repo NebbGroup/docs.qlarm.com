@@ -13,9 +13,11 @@ pre: ""
 </div>
 
 {{<lead>}}
-In Events page [Event Instances](/glossary#event-instance) are listed. It is an accurate representation with details specified. [Events](/glossary#event) are raised because of a [Condition](/glossary#condition) met. Current [Event Instance](/glossary#event-instance) is an ongoing process and can pass different phases due to its definition. Archived [Event Instances](/glossary#event-instance) are finished processes. [Event View](/glossary#view) lists the current and the past [Event Instances](/glossary#event-instance) in tabs Events and History.
+The "[Events](/glossary#event)" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
+The "Event [View](/glossary#view)" tab lists the currently active events, and inactive events that have not been acknowledged.
+The "History" tab lists all events that are both inactive and acknowledged.
 <img src="/events-view-tabs.png" > <br />
-Sort on column and various filtering are provided for both tabs. [Event Definition](/glossary#event-definition) for the [Event Instance](/glossary#event-instance) can be edited. [Event Instances](/glossary#event-instance) have [Logs](/glossary#logs) for the phases they have passed.
+The [Event Definitions](/glossary#event-definition) can be edited for each instance, and the [Logs](/glossary#logs) containing all the changes the event states pass through can be accessed.
 {{</lead>}}
 
 If the [Event Definition](/glossary#event-definition) obtains many [Tags](/glossary#tag), then the name displayed for the [Event Instances](/glossary#event-instance) is consisted of the [Tag](/glossary#tag)'s name dash ("-") the the name of the [Event Definition](/glossary#event-definition).
