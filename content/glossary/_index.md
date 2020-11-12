@@ -31,7 +31,7 @@ A graphical representation of the real time content within Qlarm. The dashboard 
 ###### Default dashboard
 The dashboard configuration which loads when Dashboard page is opened.
 ###### Edge Client
-The Qlarm Edge Client is an application (service) running on the local server of a customer endpoint. The Edge Client acts as an intermediary broker between Qlarm platform and the local data source. The Edge Client will monitor an OPC UA server locally and forward data depending on the configuration and the customer's subscription.
+The Qlarm Edge Client is an application (service) running on the local server of a customer. The Edge Client acts as an intermediary broker between the Qlarm platform and the local data source. The Edge Client will monitor an OPC UA server locally and forward data depending on the configuration and the customer's subscription.
 ###### Endpoint
 A connection to a data source from where to get data. The endpoint can be of types OPC UA (using the Qlarm Edge Client); IoT Gateway (using MQTT directly). An endpoint belong to a tenant and have a separate Scope defined. Endpoints have a number of tags defined, and attributes like Location, Time Zone, Geographic properties.
 ###### Event
@@ -62,7 +62,7 @@ A standard messaging protocol for Internet of Things (IoT). Used for IoT endpoin
 ###### Notification
 A message sent from Qlarm  to notify recipients through one or more channels (SMS, voice call, e-mail or push notification). Typically defined as an action on an event.
 ###### OPC server
-A system representation of IoT Hub device with tags associated.
+OPC is an industrial automation communication protocol. An OPC server define items/tags that can be read by the Qlarm Edge Client and forwarded tothe  Qlarm platform.
 ###### Page size
 The number of items (rows) to be listed in a table. There is a feature at the bottom of the table to browse to the next or previous pages. 
 ###### Permission
