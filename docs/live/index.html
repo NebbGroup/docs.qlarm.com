@@ -181,7 +181,8 @@ if (!doNotTrack) {
 <h1>Live</h1>
 
 <p class="lead">
-    The Live page lists all enabled <a href="/glossary#tag">Tags</a>. You can easily make a quick check of the <a href="/glossary#tag">Tags</a> last values and <a href="/glossary#event">Events</a> raised for a <a href="/glossary#tag">Tag</a>. You can filter the <a href="/glossary#tag">Tags</a> by <a href="/glossary#endpoint">Endpoint</a> and search a <a href="/glossary#tag">Tag</a> by name. You can also filter the <a href="/glossary#tag">Tags</a> changed in certain period of time.
+    The Live page provides an exhaustive list of all enabled <a href="/glossary#tag">Tags</a> in you system. The list details the Tags&rsquo; latest values, any <a href="/glossary#event">Events</a> associated with the Tags, and provides a link to the Tags&rsquo; trend view. 
+Several filtering functions enable you to narrow down the list selection to show only Tags of interest.
 </p>
 
 <!-- The Modal -->
@@ -194,20 +195,37 @@ if (!doNotTrack) {
     <img class="center_image myImg" onClick="reply_click(this)"  id="live_view" src="/live_view.png" alt="Live view">
     <figcaption >Fig 1. Live view</figcaption>
 </figure>
-<p>The table lists all the <a href="/glossary#tag">Tags</a> for selected <a href="/glossary#endpoint">Endpoints</a> that are enabled and set for <a href="/glossary#view">Live View</a> (for more details go to Endpoints section). The table shows the name, last value, last change time, associate active <a href="/glossary#event-instance">Event Instances</a> and <a href="/glossary#view">Trend View</a> link for each <a href="/glossary#tag">Tag</a>. You can filter the content in the table by activating the Search, Time or Endpoint filters.</p>
+<p>The table lists all the Tags for selected <a href="/glossary#endpoint">Endpoints</a> that are enabled and set for <a href="/glossary#view">Live View</a> (for more details see <a href="/configuration/endpoints">Endpoints section</a>). The table shows the name, last value, last change time, associated active <a href="/glossary#event-instance">Event Instances</a> and <a href="/glossary#view">Trend View</a> link for each Tag. You can filter the content in the table by activating the Search, Time or Endpoint filters.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="live_filter_options" src="/live_filter_options.png" alt="Live View filters options">
     <figcaption >Fig 2. Live View filters options</figcaption>
 </figure>
-<p>In the Search filter you can search by one or more keywords and filter your <a href="/glossary#tag">Tag</a> results. In the Time filter the <a href="/glossary#user">User</a> can filter the <a href="/glossary#tag">Tags</a> from a given time period predefined in the drop down list, or by entering a specific time period by clicking the  <img src="/options_button.png" alt="options button" class = "logo_resize"> button. In The Endpoint filter the <a href="/glossary#user">User</a> can filter the <a href="/glossary#tag">Tags</a> by their <a href="/glossary#endpoint">Endpoints</a>. Usually, the <a href="/glossary#tag">Tags</a> are enabled to constantly receive information. To view these changes the <a href="/glossary#user">User</a> must refresh the content in the table by clicking the <img src="/refresh_button.png" alt="refresh button" class = "logo_resize"> button.</p>
+<p>In the Search filter you can search by one or more keywords and filter your Tag results. In the Time filter the <a href="/glossary#user">User</a> can filter the Tags from a given time period predefined in the drop down list, or by entering a specific time period by clicking the  <img src="/options_button.png" alt="options button" class = "logo_resize"> button. In the Endpoint filter the user can filter the Tags by their Endpoints. Usually, the Tags are enabled to constantly receive information. To view these changes the user must refresh the content in the table by clicking the <img src="/refresh_button.png" alt="refresh button" class = "logo_resize"> button.</p>
 <p><img src="/event_description.png" alt="event description" class = "logo_resize"> describes the icons that are displayed for every Active Event column.</p>
-<ul>
-<li><img src="/ua-a-e.png" alt="Unacknowledged and active event" class = "logo_resize"> - Unacknowledged and active event</li>
-<li><img src="/ua-ia-e.png" alt="Unacknowledged and inactive event" class = "logo_resize"> - Unacknowledged and inactive event</li>
-<li><img src="/a-a-e.png" alt="Acknowledged and active event" class = "logo_resize"> - Acknowledged and active event</li>
-</ul>
-<p>By clicking the Active event icon in the table, QLARM will redirect the <a href="/glossary#user">User</a> to the Active <a href="/glossary#event-instance">Event Instances</a> for that specific <a href="/glossary#tag">Tag</a>.</p>
-<p><img src="/trend_button.png" alt="trend button" class = "logo_resize"> redirects the <a href="/glossary#user">User</a> to the <a href="/glossary#view">Trend View</a> for that specific <a href="/glossary#tag">Tag</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/ua-a-e.png" alt="Unacknowledged and active event" class = "logo_resize"></td>
+<td>Unacknowledged and active event</td>
+</tr>
+<tr>
+<td><img src="/ua-ia-e.png" alt="Unacknowledged and inactive event" class = "logo_resize"></td>
+<td>Unacknowledged and inactive event</td>
+</tr>
+<tr>
+<td><img src="/a-a-e.png" alt="Acknowledged and active event" class = "logo_resize"></td>
+<td>Acknowledged and active event</td>
+</tr>
+</tbody>
+</table>
+<p>By clicking the Active event icon in the table, QLARM will redirect the user to the Active Event Instance for that specific Tag.</p>
+<p><img src="/trend_button.png" alt="trend button" class = "logo_resize"> redirects the user to the trend view for that specific Tag.</p>
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
