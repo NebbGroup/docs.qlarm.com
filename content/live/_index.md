@@ -33,9 +33,11 @@ In the Search filter you can search by one or more keywords and filter your Tag 
 
 <img src="/event_description.png" alt="event description" class = "logo_resize"> describes the icons that are displayed for every Active Event column.
 
-- <img src="/ua-a-e.png" alt="Unacknowledged and active event" class = "logo_resize"> - Unacknowledged and active event
-- <img src="/ua-ia-e.png" alt="Unacknowledged and inactive event" class = "logo_resize"> - Unacknowledged and inactive event
-- <img src="/a-a-e.png" alt="Acknowledged and active event" class = "logo_resize"> - Acknowledged and active event
+| Symbol                                                                                 | Description                       |
+| -------------------------------------------------------------------------------------- | --------------------------------- |
+| <img src="/ua-a-e.png" alt="Unacknowledged and active event">    | Unacknowledged and active event   |
+| <img src="/ua-ia-e.png" alt="Unacknowledged and inactive event"> | Unacknowledged and inactive event |
+| <img src="/a-a-e.png" alt="Acknowledged and active event">       | Acknowledged and active event     |
 
 By clicking the Active event icon in the table, QLARM will redirect the user to the Active Event Instance for that specific Tag.
 
