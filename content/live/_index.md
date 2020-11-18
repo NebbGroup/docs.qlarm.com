@@ -6,7 +6,7 @@ pre: ""
 ---
 
 {{<lead>}}
-The Live page provides an exhaustive list of all enabled [Tags](/glossary#tag) in you system. The list details the Tags' latest values, any [Events](/glossary#event) associated with the Tags, and provides a link to the Tags' trend view. 
+The Live page provides an exhaustive list of all enabled [Tags](/glossary#tag) in you system. The list details the Tags' latest values, any [Events](/glossary#event) associated with the Tags, and provides a link to the Tags' trend [view](/glossary#view). 
 Several filtering functions enable you to narrow down the list selection to show only Tags of interest. 
 {{</lead>}}
 
@@ -22,7 +22,7 @@ Several filtering functions enable you to narrow down the list selection to show
     <figcaption >Fig 1. Live view</figcaption>
 </figure>
 
-The table lists all the Tags for selected [Endpoints](/glossary#endpoint) that are enabled and set for [Live View](/glossary#view) (for more details see [Endpoints section](/configuration/endpoints)). The table shows the name, last value, last change time, associated active [Event Instances](/glossary#event-instance) and [Trend View](/glossary#view) link for each Tag. You can filter the content in the table by activating the Search, Time or Endpoint filters.
+The table lists all the Tags for selected [Endpoints](/glossary#endpoint) that are enabled and set for Live View (for more details see [Endpoints section](/configuration/endpoints)). The table shows the name, last value, last change time, associated active [Event Instances](/glossary#event-instance) and Trend View link for each Tag. You can filter the content in the table by activating the Search, Time or Endpoint filters.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="live_filter_options" src="/live_filter_options.png" alt="Live View filters options">

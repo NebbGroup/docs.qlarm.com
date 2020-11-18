@@ -23,7 +23,7 @@ Endpoint is a logical representation of [OPC server](/glossary#opc-server) in th
 
 Upon opening the Endpoints configuration the [User](/glossary#user) is greeted with a list of the accessible Endpoints which can be filtered by entering a keyword in the Search Filter.
 
-Each [Endpoint](/glossary#endpoint) is displayed with basic information: Name, Location, Status; and additional information: Date Time Format, IoT Device Name, Description, Type, [Time Zone](/glossary#time-zone), Time Format and Number of [Tags](/glossary#tag). The Date Time and Time format shows the format preference for the Date Time and Time for the [Notifications](/glossary#notification) that show up in the [Notifications View](/glossary#view). The [Time Zone](/glossary#time-zone) shows the time zone in which the [Endpoint](/glossary#endpoint) operates. Type shows the type of the [Endpoint](/glossary#endpoint). IoT Device Name and Descriptions may contain additional naming information for the specific [Endpoint](/glossary#endpoint). Most of this information can be edited by clicking the <img src="/edit_button.png" alt="New Dashboard button"> button, separately for each [Endpoint](/glossary#endpoint). You can edit Name, Date Time Format, IoT Device Name, Description, [Time Zone](/glossary#time-zone) and Time Format. Additionally, in this mode there is more information about a specific [Endpoint](/glossary#endpoint): Unique Identifier, Keywords, Update frequency, Geographical Coordinates, Geo Location and IP Address. You can also set the specific [Endpoint](/glossary#endpoint) to be the Default endpoint which will enable every information associated with it to appear first in any table content. When a specific [Endpoint](/glossary#endpoint) is not set as default the "Set Default" button is blank <img src="/set_default_blank.png" alt="New Dashboard button">, otherwise it is coloured <img src="/set_default_primary.png" alt="New Dashboard button">. 
+Each Endpoint is displayed with basic information: Name, Location, Status; and additional information: Date Time Format, IoT Device Name, Description, Type, [Time Zone](/glossary#time-zone), Time Format and Number of Tags. The Date Time and Time format shows the format preference for the Date Time and Time for the Notifications that show up in the [Notifications View](/glossary#view). The Time Zone shows the time zone in which the Endpoint operates. Type shows the type of the Endpoint. IoT Device Name and Descriptions may contain additional naming information for the specific Endpoint. Most of this information can be edited by clicking the <img src="/edit_button.png" alt="New Dashboard button"> button, separately for each Endpoint. You can edit Name, Date Time Format, IoT Device Name, Description, [Time Zone and Time Format. Additionally, in this mode there is more information about a specific Endpoint: Unique Identifier, Keywords, Update frequency, Geographical Coordinates, Geo Location and IP Address. You can also set the specific Endpoint to be the Default endpoint which will enable every information associated with it to appear first in any table content. When a specific Endpoint is not set as default the "Set Default" button is blank <img src="/set_default_blank.png" alt="New Dashboard button">, otherwise it is coloured <img src="/set_default_primary.png" alt="New Dashboard button">. 
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_endpoint" src="/edit_endpoint.png" alt="Endpoint edit mode">
@@ -39,14 +39,14 @@ Each [Endpoint](/glossary#endpoint) is displayed with basic information: Name, L
 
 The Status Label displays if the Endpoint is <img src="/online_status.png" alt="online status"> or <img src="/offline_status.png" alt="offline status">. 
 
-By clicking the <img src="/tag_button.png" alt="New Dashboard button"> button the [User](/glossary#user) can view the table of associated [Tags](/glossary#tag) for that endpoint. For each known [Tag](/glossary#tag) the table displays its Name, Description, OPC UA URL, Value Type, Precision, Deadband, Unit, Enable Live Data, Logs, Enable Status. 
+By clicking the <img src="/tag_button.png" alt="New Dashboard button"> button the User can view the table of associated Tags for that endpoint. For each known Tag the table displays its Name, Description, OPC UA URL, Value Type, Precision, Deadband, Unit, Enable Live Data, Logs, Enable Status. 
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="tags" src="/tags.png" alt="tags">
     <figcaption>Fig 4. Endpoint tags<figcaption>
 </figure>
 
-By clicking on the <img src="/edit_recipient_button.png" alt="online status"> button you can change the [Actions](/glossary#action) for the specific [Tag](/glossary#tag) listed in the table, upon which an "Edit tag" form appears. Also, by selecting multiple [Tags](/glossary#tag) and clicking on the <img src="/change_button.png" alt="New Dashboard button"> button you can apply changes to all the selected [Tags](/glossary#tag). 
+By clicking on the <img src="/edit_recipient_button.png" alt="online status"> button you can change the [Actions](/glossary#action) for the specific Tag listed in the table, upon which an "Edit tag" form appears. Also, by selecting multiple Tags and clicking on the <img src="/change_button.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags. 
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tag" src="/edit_tag.png" alt=" Edit tag">
@@ -58,7 +58,7 @@ By clicking on the <img src="/edit_recipient_button.png" alt="online status"> bu
     <figcaption>Fig 6. Edit selected tags<figcaption>
 </figure>
 
-The [User](/glossary#user) can add a new [Tag](/glossary#tag) by clicking on the <img src="/add_tag_button.png" alt="online status"> button, upon which an "Add tag" form appears which requires information to be provided.
+The User can add a new Tag by clicking on the <img src="/add_tag_button.png" alt="online status"> button, upon which an "Add tag" form appears which requires information to be provided.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="add_tag" src="/add_tag.png" alt="Add tag form">

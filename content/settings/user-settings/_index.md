@@ -20,7 +20,7 @@ The User settings contains basic settings that apply to the whole application wh
     <figcaption >Fig 1. User Settings</figcaption>
 </figure>
 
-The "Page Size" drop down list enables the [User](/glossary#user) to select the number of values in each table. The "Language" drop down list enables the [User](/glossary#user) to select the general language of the application. The "Time Zone" dropdown list enables the [User](/glossary#user) to select the [Time Zone](/glossary#time-zone) for the whole application. The "Date Time Format" dropdown list enables the user to select the dates format. The "Time Format" drop down list lest the [User](/glossary#user) set the Time Format.
+The "Page Size" drop down list enables the [User](/glossary#user) to select the number of values in each table. The "Language" drop down list enables the User to select the general language of the application. The "Time Zone" dropdown list enables the User to select the [Time Zone](/glossary#time-zone) for the whole application. The "Date Time Format" dropdown list enables the user to select the dates format. The "Time Format" drop down list lest the User set the Time Format.
 
 <script>
 // Get the modal

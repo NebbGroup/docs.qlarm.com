@@ -56,11 +56,11 @@ After a Condition is created it is listed in the table below and can be edited <
 
 #### Actions
 Actions can be defined in the tab "Actions" <img  src="/actions_tab.png">.
-These are [notifications](/glossary#notification) that need to be sent in chosen ways to chosen [Recipients](/glossary#recipient), with custom content, if the Event Definition Condition is met.
+These are [notifications](/glossary#notification) that need to be sent in chosen ways to chosen Recipients, with custom content, if the Event Definition Condition is met.
 <br/>
 To create an "action", select type "Notification" from the "TYPE" dropdown. 
 You can populate "CONTENT" and "VOICE MESSAGE TEXT" by choosing a template from the "TEMPLATE" dropdown, which is editable or by adding a text in the fields. "CONTENT" is required if you have "NOTIFY USING" "SMS", "Email" and "Push" enabled. "VOICE MESSAGE TEXT" is required if you have "NOTIFY USING" "Voice" enabled. You can play/stop the "VOICE MESSAGE TEXT" to check the whole message that will be played to the Recipient in the Call Notification. <br/>
-[Recipients](/glossary#recipient) can be added one by one or as a [Recipients Group](/glossary#recipient-group) from the "RECIPIENTS" dropdown.
+Recipients can be added one by one or as a [Recipients Group](/glossary#recipient-group) from the "RECIPIENTS" dropdown.
 <br/>
 Notification can be repeated in the number of times set in the "REPEAT" textbox. In "INTERVAL (MIN)" you can define the interval between the notifications if they need to be repeated. In "PAUSE FOR NEXT ACTION (MIN)" you can define the interval between the Actions if they need to be looped (see "EXECUTION" in "Advanced settings" for more details).
 <figure class="image_container">
