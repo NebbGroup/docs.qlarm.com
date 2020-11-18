@@ -1,7 +1,7 @@
 baseURL = "https://docs.qlarm.com/"
 staticDir = ["static"]
 languageCode = "en-us"
-title = "QLARM Documentation"
+title = "Qlarm Documentation"
 theme = "ace-documentation"
 publishDir = "docs"
 googleAnalytics = "UA-2760582-5"

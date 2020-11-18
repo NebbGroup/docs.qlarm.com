@@ -12,7 +12,7 @@ weight: 10
 </div>
 
 {{<lead>}}
-In the "Recipients" configuration page, you can list, create, edit and delete [Recipients](/glossary#recipient). You can categorize Recipients as individual <img src="/individual_recipient_icon.png" alt="individual recipient icon" class = "logo_resize"> and groups <img src="/recipients_groups_icon.png" alt="recipient groups icon" class = "logo_resize"> of recipients. You can use groups in applying rules and notifying manu racipients at once. Recipient you create should contains required contact details and availability in order to receive [Notifications](/glossary#notification) in many forms. Recipients are organization specific.
+In the "Recipients" configuration page, you can list, create, edit and delete [Recipients](/glossary#recipient). You can categorize Recipients as individual <img src="/individual_recipient_icon.png" alt="individual recipient icon" class = "logo_resize"> and groups <img src="/recipients_groups_icon.png" alt="recipient groups icon" class = "logo_resize"> of recipients. You can use groups in applying rules and notifying many recipients at once. Recipient you create should contains required contact details and availability in order to receive [Notifications](/glossary#notification) in many forms. Recipients are organization specific.
 {{</lead>}}
 
 <figure class="image_container">

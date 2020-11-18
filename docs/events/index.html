@@ -8,7 +8,7 @@
 
     <title>
         
-        Events | QLARM Documentation
+        Events View | Qlarm Documentation
         
     </title>
 
@@ -40,7 +40,7 @@ if (!doNotTrack) {
         <div>
             <a class="navbar-brand" href="/">
                 
-                QLARM Documentation
+                Qlarm Documentation
             </a>
         </div>
         
@@ -77,7 +77,7 @@ if (!doNotTrack) {
     <li data-nav-id="/events/" class="nav-item my-1 parent active
         ">
         
-        <a class="nav-link p-0" href="/events/"><h6>Events</h6></a>
+        <a class="nav-link p-0" href="/events/"><h6>Events View</h6></a>
     </li>
     <li data-nav-id="/trend/" class="nav-item my-1
         ">
@@ -102,7 +102,7 @@ if (!doNotTrack) {
     <li data-nav-id="/configuration/events/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="/configuration/events/"><h6>Events</h6></a>
+        <a class="nav-link p-0" href="/configuration/events/"><h6>Events Configuration</h6></a>
     </li>
     <li data-nav-id="/configuration/recipients/" class="nav-item my-1
         ">
@@ -191,7 +191,7 @@ if (!doNotTrack) {
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Events</h1>
+<h1>Events View</h1>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -202,42 +202,39 @@ if (!doNotTrack) {
 <p class="lead">
     The &ldquo;<a href="/glossary#event">Events</a>&rdquo; page shows the current status and history of <a href="/glossary#event-instance">Event Instances</a>. The event lists can be filtered to display events in several different ways.
 The &ldquo;Event <a href="/glossary#view">View</a>&rdquo; tab lists the currently active events, and inactive events that have not been acknowledged.
-The &ldquo;History&rdquo; tab lists all events that are both inactive and acknowledged.
+The &ldquo;History&rdquo; tab lists all events that are both inactive and acknowledged.<br>
 <img src="/events-view-tabs.png" > <br />
 The <a href="/glossary#event-definition">Event Definitions</a> can be edited for each instance, and the <a href="/glossary#logs">Logs</a> containing all the changes the event states pass through can be accessed.
 </p>
 
-<p>If the <a href="/glossary#event-definition">Event Definition</a> obtains many <a href="/glossary#tag">Tags</a>, then the name displayed for the <a href="/glossary#event-instance">Event Instances</a> is consisted of the <a href="/glossary#tag">Tag</a>&rsquo;s name dash (&quot;-&quot;) the the name of the <a href="/glossary#event-definition">Event Definition</a>.</p>
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events.png" alt="Events">
-    <figcaption>Fig 1. Events</figcaption>
-</figure>
 <h2 id="types-of-events">Types of Events</h2>
-<p>There are two types of <a href="/glossary#event">Events</a> defined in the system: <a href="/glossary#alarm">Alarm</a> and Other.
+<p>There are two <a href="/glossary#event-type">Event Types</a> defined in the system: <a href="/glossary#alarm">Alarm</a> and Other.
+<br>
 <br />
-The functional flow for the <a href="/glossary#alarm">Alarm</a> type events is:
-An <a href="/glossary#event-instance">Event Instance</a> (<a href="/glossary#alarm">Alarm</a>) is Created and then it gets the Creation Date.
+The functional flow for the Alarm type events is:<br>
+An Event Instance (Alarm) is Created and assigned a Creation Date.
 <br />
-If there is a <a href="/glossary#grace-period">Grace Period</a> defined in the <a href="/glossary#event-definition">Event Definition</a>, then the <a href="/glossary#event-instance">Event Instance</a> is Activated after the <a href="/glossary#grace-period">Grace Period</a> expires. And if not it is activated right after it is created and then it gets the Activation Date.
+If there is a <a href="/glossary#grace-period">Grace Period</a> defined in the Event Definition, then the Event Instance is Activated after the Grace Period expires. And if not it is activated right after it is created and then it gets the Activation Date.
 <br />
-If the new evaluation does not meet the <a href="/glossary#alarm">Alarm</a> <a href="/glossary#condition">Condition</a>, the <a href="/glossary#alarm">Alarm</a> gets Inactivated if it is not in a <a href="/glossary#grace-period">Grace Period</a> (Inactive Date), on the other hand, if it is in a <a href="/glossary#grace-period">Grace Period</a> it gets Archived (Archived Date).
+If the new evaluation does not meet the Alarm <a href="/glossary#condition">Condition</a>, the Alarm gets Inactivated if it is not in a Grace Period (Inactive Date), on the other hand, if it is in a Grace Period it gets Archived (Archived Date).
 <br />
-Being active or inactive, <a href="/glossary#event-instance">Event Instance</a> can be <a href="/glossary#acknowledge-synonym-ack">Acknowledged</a> by a <a href="/glossary#recipient">Recipient</a> (Acknowledged date).
+Being active or inactive, Event Instance can be <a href="/glossary#acknowledge-synonym-ack">Acknowledged</a> by a <a href="/glossary#recipient">Recipient</a> (Acknowledged date).
 <br />
-Every time an <a href="/glossary#condition">Condition</a> is met, before the creation of an <a href="/glossary#event-instance">Event Instance</a>, system finds the old inactive <a href="/glossary#alarm">Alarm</a> for the <a href="/glossary#event-definition">Event Definition</a> (<a href="/glossary#acknowledge-synonym-ack">acknowledged</a> or not) and it archives it (Archived date).
+Every time an Condition is met, before the creation of an Event Instance, system finds the old inactive Alarm for the Event Definition (acknowledged or not) and it archives it (Archived date).
 <br />
-<a href="/glossary#event-definition">Event Definition</a> can be edited or deleted. In this case its instances gets Archived (Archived date).
+Event Definition can be edited or deleted. In this case its instances gets Archived (Archived date).
 <br />
-The functional flow for the Other type <a href="/glossary#event">Events</a> is:
-An <a href="/glossary#event-instance">Event Instance</a> is Created (Creation Date).
+<br>
+The functional flow for the Other type Events is:<br>
+An Event Instance is Created (Creation Date).
 <br />
-If there is a <a href="/glossary#grace-period">Grace Period</a> defined in the <a href="/glossary#event-definition">Event Definition</a>, the <a href="/glossary#event-instance">Event Instance</a> is Activated after this <a href="/glossary#grace-period">Grace Period</a>. And if not, it is activated right after it is created (Activation Date).
+If there is a Grace Period defined in the Event Definition, the Event Instance is Activated after this Grace Period. And if not, it is activated right after it is created (Activation Date).
 <br />
-If the new evaluation does not meet the <a href="/glossary#condition">Condition</a>, the <a href="/glossary#event-instance">Event Instance</a> gets Archived, (Archived Date).
+If the new evaluation does not meet the Condition, the Event Instance gets Archived, (Archived Date).
 <br />
-<a href="/glossary#event-definition">Event Definition</a> can be edited or deleted. In this case its instances gets Archived (Archived date).</p>
+Event Definition can be edited or deleted. In this case its instances gets Archived (Archived date).</p>
 <h2 id="columns">Columns</h2>
-<p>Columns for <a href="/glossary#alarm">Alarm</a> type are:</p>
+<p>Columns for Alarm type are:</p>
 <ul>
 <li>Creation time</li>
 <li>Activation time</li>
@@ -251,20 +248,20 @@ If the new evaluation does not meet the <a href="/glossary#condition">Condition<
 <li>Activation time</li>
 <li>Archived time</li>
 </ul>
-<p>Both types of <a href="/glossary#event-instance">Event Instances</a> have State: They can be in <a href="/glossary#grace-period">Grace Period</a> or not. This depends on the time elapsed since creation.</p>
+<p>Both types of Event Instances have State: They can be in Grace Period or not. This depends on the time elapsed since creation.</p>
 <h2 id="filters">Filters</h2>
 <p>The following filters are available for both Events and History tabs:</p>
 <ul>
-<li>&ldquo;ENDPOINT FILTER&rdquo; - the endpoint filter is preselected and is used to select <a href="/glossary#event-instance">Event Instances</a> created for any of the <a href="/glossary#tag">Tags</a> of the selected <a href="/glossary#endpoint">Endpoint</a>.</li>
-<li>&ldquo;TAG FILTER&rdquo; - the tag filter is populated with the selected <a href="/glossary#endpoint">Endpoint</a> <a href="/glossary#tag">Tags</a> and is not preselected. It filters <a href="/glossary#event-instance">Event Instances</a> for selected <a href="/glossary#tag">Tag</a>.</li>
-<li>&ldquo;SEARCH FILTER&rdquo; (by name) - filters the <a href="/glossary#event-instance">Event Instances</a> with a name that contains the search string.</li>
-<li>&ldquo;EVENT TYPE&rdquo; - filters only the <a href="/glossary#event-instance">Event Instances</a> from selected <a href="/glossary#event-type">Event Type</a>.</li>
-<li>&ldquo;IN GRACE PERIOD&rdquo; - if checked than only <a href="/glossary#event-instance">Event Instances</a> that are in <a href="/glossary#grace-period">Grace Period</a> will be displayed. If this is not the case, only the <a href="/glossary#event-instance">Event Instances</a> that are not in a <a href="/glossary#grace-period">Grace Period</a> will be listed.</li>
+<li>&ldquo;ENDPOINT FILTER&rdquo; - the endpoint filter is preselected and is used to select Event Instances created for any of the Tags of the selected <a href="/glossary#endpoint">Endpoint</a>.</li>
+<li>&ldquo;TAG FILTER&rdquo; - the tag filter is populated with the selected Endpoint Tags and is not preselected. It filters Event Instances for selected Tag.</li>
+<li>&ldquo;SEARCH FILTER&rdquo; (by name) - filters the Event Instances with a name that contains the search string.</li>
+<li>&ldquo;EVENT TYPE&rdquo; - filters only the Event Instances from selected Event Type.</li>
+<li>&ldquo;IN GRACE PERIOD&rdquo; - if checked than only Event Instances that are in Grace Period will be displayed. If this is not the case, only the Event Instances that are not in a Grace Period will be listed.</li>
 </ul>
 <p>In the Events tab there are also:</p>
 <ul>
-<li>&ldquo;EVENT STATE&rdquo; - filters the <a href="/glossary#event-instance">Event Instances</a> that have the selected event state.</li>
-<li>&ldquo;ACKNOWLEDGED STATE&rdquo; - filters the <a href="/glossary#event-instance">Event Instances</a> that have the selected acknowledged state.</li>
+<li>&ldquo;EVENT STATE&rdquo; - filters the Event Instances that have the selected event state.</li>
+<li>&ldquo;ACKNOWLEDGED STATE&rdquo; - filters the Event Instances that have the selected acknowledged state.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/Event_view_filters.png" alt="Event view filter options">
@@ -272,7 +269,7 @@ If the new evaluation does not meet the <a href="/glossary#condition">Condition<
 </figure>
 <p>In the History tab there are also:</p>
 <ul>
-<li>&ldquo;DATE FILTER&rdquo; - filters the <a href="/glossary#event-instance">Event Instances</a> by creation date.</li>
+<li>&ldquo;DATE FILTER&rdquo; - filters the Event Instances by creation date.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/History_filters.png" alt="History filter options">
@@ -280,10 +277,15 @@ If the new evaluation does not meet the <a href="/glossary#condition">Condition<
 </figure>
 <p>Depending on what is selected in the filters, you can have a different columns displayed: Column is not displayed if its data is not expected for a certain filter combination.</p>
 <h2 id="info-in-columns-cells-population">Info in columns (cells population)</h2>
-<p>If data is not expected, &ldquo;-&rdquo; is displayed. <br />
-If data is expected but not available, an empty cell is displayed.</p>
+<p>If the Event Definition contains many Tags, then the name displayed for the Event Instances consists of the Tags&rsquo; names separated by dashes (&quot;-&quot;) the the name of the Event Definition.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events.png" alt="Events">
+    <figcaption>Fig 1. Events</figcaption>
+</figure>
+If data is not expected, "-" is displayed. <br />
+If data is expected but not available, an empty cell is displayed.
 <h2 id="events-details">Events details</h2>
-<p>In Event view tab <a href="/glossary#event">Event</a> details are provided and in order to be displayed you need to click the arrow at the beginning of the row.
+<p>In Event view tab Event details are provided and in order to be displayed you need to click the arrow at the beginning of the row.
 If data is not expected, the label for a certain time is not displayed.<br />
 If data is expected but not available, &ldquo;-&rdquo; is displayed.</p>
 <figure class="image_container">
@@ -296,21 +298,21 @@ If data is expected but not available, &ldquo;-&rdquo; is displayed.</p>
 <p>Events listed in the Event view tab can be edited by clicking &ldquo;Edit&rdquo; in the row context menu.
 <img src="/events_view_edit_link.png"></p>
 <h2 id="logs">Logs</h2>
-<p>Events listed in both Event view and History tab have <a href="/glossary#logs">Logs</a>. They can be reached by clicking &ldquo;Logs&rdquo; the row context menu. <img src="/events_view_logs_link.png"> 
+<p>Events listed in both Event view and History tab have Logs. They can be reached by clicking &ldquo;Logs&rdquo; the row context menu. <img src="/events_view_logs_link.png"> 
 <br />
-<a href="/glossary#logs">Logs</a> display tracking data about the event. What has happen, when and by who. There is also a possibility for a <a href="/glossary#user">User</a> to add a custom log (a comment).</p>
+Logs display tracking data about the event. What has happen, when and by who. There is also a possibility for a <a href="/glossary#user">User</a> to add a custom log (a comment).</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_logs" src="/events_view_logs.png" alt="Logs">
     <figcaption>Fig 5. Logs</figcaption>
 </figure>
 <h2 id="event-view-actions">Event view Actions</h2>
-<p>Event view events can be <a href="/glossary#acknowledge-synonym-ack">acknowledged</a> by clicking the &ldquo;ACK&rdquo; button for the <a href="/glossary#event-instance">Event Instance</a> row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/events_view_ack_link.png" ></p>
+<p>Event view events can be acknowledged by clicking the &ldquo;ACK&rdquo; button for the Event Instance row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/events_view_ack_link.png" ></p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_ack_popup" src="/events_view_ack_popup.png" alt="Acknowledge event">
     <figcaption>Fig 6. Acknowledge event</figcaption>
 </figure>
 <h2 id="event-view-links">Event view Links</h2>
-<p><a href="/glossary#event">Events</a> are related to <a href="/glossary#tag">Tags</a> which data can be visually presented in a chart in <a href="/glossary#view">Trend view</a>. Link to this page is available in &ldquo;Trend&rdquo; column of the &ldquo;Event view&rdquo; tab. <img src="/events_view_trend_link.png" ></p>
+<p>Events are related to Tags which data can be visually presented in a chart in Trend view. Link to this page is available in &ldquo;Trend&rdquo; column of the &ldquo;Event view&rdquo; tab. <img src="/events_view_trend_link.png" ></p>
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");

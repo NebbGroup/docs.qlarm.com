@@ -8,7 +8,7 @@
 
     <title>
         
-        Endpoints | QLARM Documentation
+        Endpoints | Qlarm Documentation
         
     </title>
 
@@ -40,7 +40,7 @@ if (!doNotTrack) {
         <div>
             <a class="navbar-brand" href="/">
                 
-                QLARM Documentation
+                Qlarm Documentation
             </a>
         </div>
         
@@ -77,7 +77,7 @@ if (!doNotTrack) {
     <li data-nav-id="/events/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="/events/"><h6>Events</h6></a>
+        <a class="nav-link p-0" href="/events/"><h6>Events View</h6></a>
     </li>
     <li data-nav-id="/trend/" class="nav-item my-1
         ">
@@ -102,7 +102,7 @@ if (!doNotTrack) {
     <li data-nav-id="/configuration/events/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="/configuration/events/"><h6>Events</h6></a>
+        <a class="nav-link p-0" href="/configuration/events/"><h6>Events Configuration</h6></a>
     </li>
     <li data-nav-id="/configuration/recipients/" class="nav-item my-1
         ">
@@ -187,15 +187,15 @@ if (!doNotTrack) {
   <div id="caption"></div>
 </div>
 <p class="lead">
-    The Endpoints configuration page contains all of the accessible <a href="/glossary#endpoint">Endpoints</a> and their associated nodes. 
-<a href="/glossary#endpoint">Endpoint</a> is logical representation of <a href="/glossary#opc-server">OPC server</a> in the context of Qlarm environment, providing necessary data to manage an <a href="/glossary#opc-server">OPC server</a>. <a href="/glossary#endpoint">Endpoints</a> are the starting point of the main functional flow in the system, the messaging flow. All properties of an <a href="/glossary#endpoint">Endpoint</a> should be configured to respond to the necessity of the flow. Starting from configuration of the <a href="/glossary#endpoint">Endpoint</a> (its <a href="/glossary#opc-server">OPC server</a> with <a href="/glossary#tag">Tags</a> associted) via <a href="/glossary#event-definition">Event Definitions</a> to <a href="/glossary#event">Events</a> raised and <a href="/glossary#notification">Notifications</a> send to <a href="/glossary#recipient">Recipients</a>, <a href="/glossary#endpoint">Endpoints</a> are the main thrade for all of these entities. Monotoring pages like Live, Events, <a href="/glossary#notification">Notifications</a> can all be filtered by <a href="/glossary#endpoint">Endpoint</a>.
+    The Endpoints configuration page contains all of the accessible <a href="/glossary#endpoint">Endpoints</a> and their associated nodes. An 
+Endpoint is a logical representation of <a href="/glossary#opc-server">OPC server</a> in the context of Qlarm environment, providing necessary data to manage an OPC server. Endpoints are the starting point of the main functional flow in the system, the messaging flow. All properties of an Endpoint should be configured to respond to the necessity of the flow. Starting from configuration of the Endpoint (its OPC server with <a href="/glossary#tag">Tags</a> associated) via <a href="/glossary#event-definition">Event Definitions</a> to <a href="/glossary#event">Events</a> raised and <a href="/glossary#notification">Notifications</a> send to <a href="/glossary#recipient">Recipients</a>, Endpoints are the main trade for all of these entities. Monitoring pages like Live, Events, Notifications can all be filtered by Endpoint.
 </p>
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="endpoints_configuration" src="/endpoints_configuration.png" alt="Endpoints configuration">
     <figcaption>Fig 1. Endpoints configuration</figcaption>
 </figure>
-<p>Upon opening the Endpoints configuration the <a href="/glossary#user">User</a> is greeted with a list of the accessible <a href="/glossary#endpoint">Endpoints</a> which can be filtered by entering a keyword in the Search Filter.</p>
+<p>Upon opening the Endpoints configuration the <a href="/glossary#user">User</a> is greeted with a list of the accessible Endpoints which can be filtered by entering a keyword in the Search Filter.</p>
 <p>Each <a href="/glossary#endpoint">Endpoint</a> is displayed with basic information: Name, Location, Status; and additional information: Date Time Format, IoT Device Name, Description, Type, <a href="/glossary#time-zone">Time Zone</a>, Time Format and Number of <a href="/glossary#tag">Tags</a>. The Date Time and Time format shows the format preference for the Date Time and Time for the <a href="/glossary#notification">Notifications</a> that show up in the <a href="/glossary#view">Notifications View</a>. The <a href="/glossary#time-zone">Time Zone</a> shows the time zone in which the <a href="/glossary#endpoint">Endpoint</a> operates. Type shows the type of the <a href="/glossary#endpoint">Endpoint</a>. IoT Device Name and Descriptions may contain additional naming information for the specific <a href="/glossary#endpoint">Endpoint</a>. Most of this information can be edited by clicking the <img src="/edit_button.png" alt="New Dashboard button"> button, separately for each <a href="/glossary#endpoint">Endpoint</a>. You can edit Name, Date Time Format, IoT Device Name, Description, <a href="/glossary#time-zone">Time Zone</a> and Time Format. Additionally, in this mode there is more information about a specific <a href="/glossary#endpoint">Endpoint</a>: Unique Identifier, Keywords, Update frequency, Geographical Coordinates, Geo Location and IP Address. You can also set the specific <a href="/glossary#endpoint">Endpoint</a> to be the Default endpoint which will enable every information associated with it to appear first in any table content. When a specific <a href="/glossary#endpoint">Endpoint</a> is not set as default the &ldquo;Set Default&rdquo; button is blank <img src="/set_default_blank.png" alt="New Dashboard button">, otherwise it is coloured <img src="/set_default_primary.png" alt="New Dashboard button">.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_endpoint" src="/edit_endpoint.png" alt="Endpoint edit mode">

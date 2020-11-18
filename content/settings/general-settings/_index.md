@@ -20,7 +20,7 @@ The General settings allows you to change the logo of the application that appea
     <figcaption >Fig 1. General settings</figcaption>
 </figure>
 
-Click the button to upload the company logo to personalize QLARM. The QLARM logo is used by default.
+Click the button to upload the company logo to personalize Qlarm. The Qlarm logo is used by default.
 
 <script>
 // Get the modal

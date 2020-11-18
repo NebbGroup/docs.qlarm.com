@@ -71,7 +71,7 @@ A restriction rule for User action.
 ###### Portal
 The online web application of Qlarm found on app.qlarm.com.
 ###### Recipient
-A person that can receive notifications from QLARM. A recipient is not necessarily a user, but can be.
+A person that can receive notifications from Qlarm. A recipient is not necessarily a user, but can be.
 ###### Recipients Group
 A group of recipients.
 ###### Report

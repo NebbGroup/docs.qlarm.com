@@ -39,7 +39,7 @@ In the Search filter you can search by one or more keywords and filter your Tag 
 | <img src="/ua-ia-e.png" alt="Unacknowledged and inactive event"> | Unacknowledged and inactive event |
 | <img src="/a-a-e.png" alt="Acknowledged and active event">       | Acknowledged and active event     |
 
-By clicking the Active event icon in the table, QLARM will redirect the user to the Active Event Instance for that specific Tag.
+By clicking the Active event icon in the table, Qlarm will redirect the user to the Active Event Instance for that specific Tag.
 
 <img src="/trend_button.png" alt="trend button" class = "logo_resize"> redirects the user to the trend view for that specific Tag.
 

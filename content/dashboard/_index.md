@@ -6,7 +6,7 @@ pre: ""
 ---
 
 {{<lead>}}
-QLARM [Dashboards](/glossary#dashboard) are designed to display the custom [Dashboards](/glossary#dashboard) along with various configured [Widget](/glossary#widget). It is highly flexible and enables you to create your own [Dashboards](/glossary#dashboard) and share between other [Dashboard](/glossary#dashboard) viewers. QLARM comes with a variety of configurable [Widgets](/glossary#widget) that you can use to build a specific [Dashboard](/glossary#dashboard) view that meets the different needs of your business. They provide you real-time monitoring of sensor values with configurable states which makes the detection of desired on undesired behaviours much more easier.
+Qlarm [Dashboards](/glossary#dashboard) are designed to display the custom [Dashboards](/glossary#dashboard) along with various configured [Widget](/glossary#widget). It is highly flexible and enables you to create your own [Dashboards](/glossary#dashboard) and share between other [Dashboard](/glossary#dashboard) viewers. Qlarm comes with a variety of configurable [Widgets](/glossary#widget) that you can use to build a specific [Dashboard](/glossary#dashboard) view that meets the different needs of your business. They provide you real-time monitoring of sensor values with configurable states which makes the detection of desired on undesired behaviors much more easier.
 {{</lead>}}
 
 ## Overview
@@ -27,7 +27,7 @@ The [Dashboard View](/glossary#view) contains two main components, configuration
 
 ## Working with Dashboards
 
-In the following sections, the two main functionalities of QLARM [Dashboards](/glossary#dashboard) are explained:
+In the following sections, the two main functionalities of Qlarm [Dashboards](/glossary#dashboard) are explained:
 
 - Viewing [Dashboards](/glossary#dashboard)
 - Managing [Dashboards](/glossary#dashboard)
@@ -36,7 +36,7 @@ In the following sections, the two main functionalities of QLARM [Dashboards](/g
 
 ### Default Dashboard
 
-Upon logging into QLARM a [Default Dashboard](/glossary#default-dashboard) is displayed. The [Default Dashboard](/glossary#default-dashboard) at first login is the "System Dashboard", but any other [Dashboard](/glossary#dashboard) that is available can be selected to be the new [Default Dashboard](/glossary#default-dashboard) by checking the "Default" checkbox <img src="/default_checkbox.png" alt="default checkbox">.
+Upon logging into Qlarm a [Default Dashboard](/glossary#default-dashboard) is displayed. The [Default Dashboard](/glossary#default-dashboard) at first login is the "System Dashboard", but any other [Dashboard](/glossary#dashboard) that is available can be selected to be the new [Default Dashboard](/glossary#default-dashboard) by checking the "Default" checkbox <img src="/default_checkbox.png" alt="default checkbox">.
 
 
 ### Dashboard list

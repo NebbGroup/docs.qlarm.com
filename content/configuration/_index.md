@@ -6,7 +6,7 @@ pre: ""
 ---
 
 {{< lead >}}
-Configuration section is where you can configure entities used in QLARM core functionality flow for monitoring, controling, analysis and notification. 
+Configuration section is where you can configure entities used in Qlarm core functionality flow for monitoring, controlling, analysis and notification. 
 {{< /lead >}}
 
 ## Features
