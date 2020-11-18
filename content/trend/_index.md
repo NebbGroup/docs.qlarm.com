@@ -101,7 +101,7 @@ Delete Tags from the chart by clicking the delete button in the chart tag.
 Reset chart by clicking the reset button <img src="/chart_reset_button.png">.
 
 ## Save Report
-Chart with all the Tags added can be saved as a [Report](/glossary#report) by clicking the Save button <img src="/save_report_button.png">. Insert name and choose to save it in the actual period.
+Chart with all the Tags added can be saved as a Report by clicking the Save button <img src="/save_report_button.png">. Insert name and choose to save it in the actual period.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="save_new_report" src="/save_new_report.png" alt="Save report">
     <figcaption>Fig 14. Save report</figcaption>

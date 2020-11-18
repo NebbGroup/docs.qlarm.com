@@ -12,7 +12,7 @@ weight: 20
 </div>
 
 {{<lead>}}
-Whenever you have an issue about Qlarm to be explained or solved, any request or info needed you can submit a [Ticket](/glossary#ticket) via Support ticket page. The "Submit Ticket" page leads you to a ticket form you need to fill in and submit and we will respond to your [Ticket](/glossary#ticket) as soon as possible. <br />
+Whenever you have an issue about Qlarm to be explained or solved, any request or info needed you can submit a [Ticket](/glossary#ticket) via Support ticket page. The "Submit Ticket" page leads you to a ticket form you need to fill in and submit and we will respond to your Ticket as soon as possible. <br />
 {{</lead>}}
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="submit_issue" src="/submit_issue.png" alt="Submit ticket">
