@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\content",
-    "\\content\\dashboard",
-    "\\content\\support",
-    "\\content\\support\\documentation",
-    "\\content\\support\\submit-ticket"
+    "\\docs",
+    "\\docs\\categories",
+    "\\docs\\configuration\\events",
+    "\\docs\\events",
+    "\\docs\\glossary"
   ],
+  "SelectedNode": "\\docs\\css",
   "PreviewInSolutionExplorer": false
 }

@@ -21,7 +21,7 @@ Configuration section is where you can configure entities used in Qlarm core fun
 				</div>
 				<div class="card-body">
 					<h5 class="card-title">
-						<a href="{{< ref "/content/configuration/events/_index.md" >}}">Events</a>
+						<a href="{{< ref "/content/configuration/events/_index.md" >}}">Event Configuration</a>
 					</h5>
 				</div>
 			</div>

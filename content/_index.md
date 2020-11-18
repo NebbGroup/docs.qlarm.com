@@ -47,7 +47,7 @@ Welcome to the official documentation site for Qlarm. Get to know our intuitive 
 				</div>
 				<div class="card-body">
 					<h5 class="card-title">
-						<a href="{{< ref "/content/events/_index.md" >}}">Events View</a>
+						<a href="{{< ref "/content/events/_index.md" >}}">Event View</a>
 					</h5>
 				</div>
 			</div>
