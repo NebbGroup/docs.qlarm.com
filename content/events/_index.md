@@ -13,9 +13,9 @@ pre: ""
 </div>
 
 {{<lead>}}
-The "[Event View](/glossary#event)" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
-The "Event [View](/glossary#view)" tab lists the currently active events, and inactive events that have not been acknowledged.
-The "History" tab lists all events that are both inactive and acknowledged.<br>
+The "Event View" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
+The "Event View" tab lists the currently active [Events](/glossary#event), and inactive Events that have not been acknowledged.
+The "History" tab lists all Events that are both inactive and acknowledged.<br>
 <img src="/events-view-tabs.png" > <br />
 The [Event Definitions](/glossary#event-definition) can be edited for each instance, and the [Logs](/glossary#logs) containing all the changes the event states pass through can be accessed.
 {{</lead>}}
