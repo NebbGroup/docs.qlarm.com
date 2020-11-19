@@ -35,14 +35,14 @@ If you click on the "Add event" button <img src="/add_event_button.png"> "Add ev
 </figure>
 
 As for the Event Definition it self, "NAME", "DESCRIPTION", "TYPE" info should be populated and the event should be enabled if you want it to take the set Actions for the [Condition](/glossary#condition) set.<br/>
-There are two types of Event Definitions: [Alarm](/glossary#alarm) and Other. Alarms can be [acknowledged](/glossary#acknowledge-synonym-ack) and can became active and inactive depending of the latest value. Other type of Event Definition just gets archived when the Condition is not met (See page Events for more details). 
+There are two types of Event Definitions: [Alarm](/glossary#alarm) and Other. Alarms can be [acknowledged](/glossary#acknowledge-synonym-ack) and can became active and inactive depending of the latest value. Other type of Event Definition just gets archived when the Condition is not met (See [Event View](/events) page for more details). 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="event_general" src="/event_general.png" alt="General event info">
     <figcaption>Fig 4. General event info</figcaption>
 </figure>
 
 #### Condition
-"Condition" tab is preselected <img src="/condition_tab.png"> when you open the "Add event" popup. A Condition must be set in order for the Event Instance to be created. You should choose one "ENDPOINT", and one or many [Tags](/glossary#tag) from "TAG" list to create a Condition, and compose the actual Condition for Tag's value, quality or time by choosing a relevant "OPERATOR" and desired "VALUE". <br/> If the Event Definition is created for many Tags, the Tag that will raise this Event is the Activation Tag which name is used in the display of the name of the [Event Instance](/glossary#event-instance), listed in the ["Events" page](/events).
+"Condition" tab is preselected <img src="/condition_tab.png"> when you open the "Add event" popup. A Condition must be set in order for the Event Instance to be created. You should choose one "ENDPOINT", and one or many [Tags](/glossary#tag) from "TAG" list to create a Condition, and compose the actual Condition for Tag's value, quality or time by choosing a relevant "OPERATOR" and desired "VALUE". <br/> If the Event Definition is created for many Tags, the Tag that will raise this Event is the Activation Tag which name is used in the display of the name of the [Event Instance](/glossary#event-instance), listed in the [Event View](/events) page.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="event_condition" src="/event_condition.png" alt="Event condition">
     <figcaption>Fig 5. Event condition</figcaption>
