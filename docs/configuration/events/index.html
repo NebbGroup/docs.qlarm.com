@@ -8,7 +8,7 @@
 
     <title>
         
-        Event Configuration | Qlarm Documentation
+        Events | Qlarm Documentation
         
     </title>
 
@@ -102,7 +102,7 @@ if (!doNotTrack) {
     <li data-nav-id="/configuration/events/" class="nav-item my-1 parent active
         ">
         
-        <a class="nav-link p-0" href="/configuration/events/"><h6>Event Configuration</h6></a>
+        <a class="nav-link p-0" href="/configuration/events/"><h6>Events</h6></a>
     </li>
     <li data-nav-id="/configuration/recipients/" class="nav-item my-1
         ">
@@ -186,7 +186,7 @@ if (!doNotTrack) {
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Event Configuration</h1>
+<h1>Events</h1>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -214,13 +214,13 @@ if (!doNotTrack) {
     <figcaption>Fig 3. Add event</figcaption>
 </figure>
 <p>As for the Event Definition it self, &ldquo;NAME&rdquo;, &ldquo;DESCRIPTION&rdquo;, &ldquo;TYPE&rdquo; info should be populated and the event should be enabled if you want it to take the set Actions for the <a href="/glossary#condition">Condition</a> set.<br/>
-There are two types of Event Definitions: <a href="/glossary#alarm">Alarm</a> and Other. Alarms can be <a href="/glossary#acknowledge-synonym-ack">acknowledged</a> and can became active and inactive depending of the latest value. Other type of Event Definition just gets archived when the Condition is not met (See page Events for more details).</p>
+There are two types of Event Definitions: <a href="/glossary#alarm">Alarm</a> and Other. Alarms can be <a href="/glossary#acknowledge-synonym-ack">acknowledged</a> and can became active and inactive depending of the latest value. Other type of Event Definition just gets archived when the Condition is not met (See <a href="/events">Event View</a> page for more details).</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="event_general" src="/event_general.png" alt="General event info">
     <figcaption>Fig 4. General event info</figcaption>
 </figure>
 <h4 id="condition">Condition</h4>
-<p>&ldquo;Condition&rdquo; tab is preselected <img src="/condition_tab.png"> when you open the &ldquo;Add event&rdquo; popup. A Condition must be set in order for the Event Instance to be created. You should choose one &ldquo;ENDPOINT&rdquo;, and one or many <a href="/glossary#tag">Tags</a> from &ldquo;TAG&rdquo; list to create a Condition, and compose the actual Condition for Tag&rsquo;s value, quality or time by choosing a relevant &ldquo;OPERATOR&rdquo; and desired &ldquo;VALUE&rdquo;. <br/> If the Event Definition is created for many Tags, the Tag that will raise this Event is the Activation Tag which name is used in the display of the name of the <a href="/glossary#event-instance">Event Instance</a>, listed in the <a href="/events">&ldquo;Events&rdquo; page</a>.</p>
+<p>&ldquo;Condition&rdquo; tab is preselected <img src="/condition_tab.png"> when you open the &ldquo;Add event&rdquo; popup. A Condition must be set in order for the Event Instance to be created. You should choose one &ldquo;ENDPOINT&rdquo;, and one or many <a href="/glossary#tag">Tags</a> from &ldquo;TAG&rdquo; list to create a Condition, and compose the actual Condition for Tag&rsquo;s value, quality or time by choosing a relevant &ldquo;OPERATOR&rdquo; and desired &ldquo;VALUE&rdquo;. <br/> If the Event Definition is created for many Tags, the Tag that will raise this Event is the Activation Tag which name is used in the display of the name of the <a href="/glossary#event-instance">Event Instance</a>, listed in the <a href="/events">Event View</a> page.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="event_condition" src="/event_condition.png" alt="Event condition">
     <figcaption>Fig 5. Event condition</figcaption>

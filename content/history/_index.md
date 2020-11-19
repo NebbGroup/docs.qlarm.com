@@ -13,7 +13,7 @@ pre: ""
 </div>
 
 {{<lead>}}
-Qlarm keeps all the values your sensors emit and pass through filter rules to the system. [History view](/glossary#view) displays the list these values. They are filtered by [Tag](/glossary#tag). Because of the amount of the data provided, data can be presented grouped by an hour or a day and the samples for the time chunks will result the function you select. Also you can choose to list the data in certain period of time. You can export listed data in CSV or XLSX files.
+Qlarm keeps all the values your sensors emit and pass through filter rules to the system. History [View](/glossary#view) displays the list these values. They are filtered by [Tag](/glossary#tag). Because of the amount of the data provided, data can be presented grouped by an hour or a day and the samples for the time chunks will result the function you select. Also you can choose to list the data in certain period of time. You can export listed data in CSV or XLSX files.
 {{</lead>}}
 
 <figure class="image_container">
