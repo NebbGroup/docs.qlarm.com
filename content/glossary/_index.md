@@ -102,7 +102,7 @@ A chart that shows the historic values of one or more tags in the form of a grap
 ###### Trigger 
 The condition of an event is also called a trigger. When the condition is true the event has been triggered and an Event Instance is created.
 ###### User
-A person whom have access to the Qlarm system. A user may have access to one or more tenants.
+A person who has access to the Qlarm system. A user may have access to one or more tenants.
 ###### View 
 One of the "pages" in the system providing a view/perspective to the data. E.g. Live View, Events View, History View, Trend View.
 ###### Widget

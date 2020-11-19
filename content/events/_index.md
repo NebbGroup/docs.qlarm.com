@@ -13,7 +13,7 @@ pre: ""
 </div>
 
 {{<lead>}}
-The "[Events](/glossary#event)" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
+The "[Event View](/glossary#event)" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
 The "Event [View](/glossary#view)" tab lists the currently active events, and inactive events that have not been acknowledged.
 The "History" tab lists all events that are both inactive and acknowledged.<br>
 <img src="/events-view-tabs.png" > <br />
