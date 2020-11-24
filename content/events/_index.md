@@ -25,45 +25,44 @@ The [Event Definitions](/glossary#event-definition) can be edited for each insta
 There are two [Event Types](/glossary#event-type) defined in the system: [Alarm](/glossary#alarm) and Other.
 <br>
 <br />
-The functional flow for the Alarm type events is:<br>
+The functional flow for the Alarm type of Events is:<br>
 An Event Instance (Alarm) is Created and assigned a Creation Date.
 <br />
-If there is a [Grace Period](/glossary#grace-period) defined in the Event Definition, then the Event Instance is Activated after the Grace Period expires. And if not it is activated right after it is created and then it gets the Activation Date.
+If there is a [Grace Period](/glossary#grace-period) defined in the Event Definition, the Event Instance is Activated after the Grace Period expires. If no Grace Period is defined, it is activated immediately.
 <br />
-If the new evaluation does not meet the Alarm [Condition](/glossary#condition), the Alarm gets Inactivated if it is not in a Grace Period (Inactive Date), on the other hand, if it is in a Grace Period it gets Archived (Archived Date).
+If the new evaluation does not meet the Alarm [Condition](/glossary#condition), the Alarm is Inactivated if it is not in a Grace Period (Inactive Date). If it is in a Grace Period it is Archived.
 <br />
-Being active or inactive, Event Instance can be [Acknowledged](/glossary#acknowledge-synonym-ack) by a [Recipient](/glossary#recipient) (Acknowledged date).
+Both active and inactive Event Instances can be [Acknowledged](/glossary#acknowledge-synonym-ack) by a [Recipient](/glossary#recipient).
 <br />
-Every time an Condition is met, before the creation of an Event Instance, system finds the old inactive Alarm for the Event Definition (acknowledged or not) and it archives it (Archived date).
+Every time a Condition is met, before the creation of an Event Instance, system finds the old inactive Alarm for the Event Definition (acknowledged or not) and archives it .
 <br />
-Event Definition can be edited or deleted. In this case its instances gets Archived (Archived date).
+Event Definitions can be edited or deleted. In this case its instances are Archived.
 <br />
 <br>
-The functional flow for the Other type Events is:<br>
-An Event Instance is Created (Creation Date).
+The functional flow for the Other type of Events is:<br>
+An Event Instance is Created.
 <br />
-If there is a Grace Period defined in the Event Definition, the Event Instance is Activated after this Grace Period. And if not, it is activated right after it is created (Activation Date).
+If there is a [Grace Period](/glossary#grace-period) defined in the Event Definition, the Event Instance is Activated after the Grace Period expires. If no Grace Period is defined, it is activated immediately.
 <br />
-If the new evaluation does not meet the Condition, the Event Instance gets Archived, (Archived Date).
+If the new evaluation does not meet the Condition, the Event Instance are Archived.
 <br />
-Event Definition can be edited or deleted. In this case its instances gets Archived (Archived date).
+Event Definition can be edited or deleted. In this case its instances are Archived.
 
 ## Columns
-Columns for Alarm type are:
+Columns common for all Event Types are:
 
-- Creation time
-- Activation time
-- Inactive time
-- Acknowledged time
-- Archived time
+| Column Name | Value |
+|---------|---------|
+| State | Active or Inactive |
+| Timer | |
+| Type | Alarm or Other
+| Creation Time | Timestamp for creation| 
+| Active Time | Timestamp for transition to Active state |
+| Inactive Time | Timestamp for transition to Inactive state | 
+| Ack Time | Timestamp for Acknowledgement of Alarm |
+| Trend | Link to trend view | 
+| Actions | Button for Acknowledging Alarm | 
 
-Columns for Other type are:
-
-- Creation time
-- Activation time
-- Archived time
-
-Both types of Event Instances have State: They can be in Grace Period or not. This depends on the time elapsed since creation.
 
 ## Filters
 The following filters are available for both Events and History tabs:
