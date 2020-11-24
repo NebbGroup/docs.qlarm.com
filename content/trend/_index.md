@@ -13,7 +13,7 @@ pre: ""
 </div>
 
 {{<lead>}}
-The Trend [View](/glossary#view) page is where you can get your [Tags](/glossary#tag) values-data visualized as [Trend](/glossary#trend). It show a chart display of the data for selected Tag(s) for a specific period of time. You can add Tags and change period while viewing a [Report](/glossary#report). Also you can get display of [Event](/glossary#event) raised and event thresholds from the Tags' [Conditions](/glossary#condition). You can customize the chart and have a Reports saved. You can download the Reports as an images and export the chart data in files.
+The Trend page provides a flexible chart for visualizing your data. Data from multiple tags can be displayed on the chart, and the time period from which the data are collected can be adjusted. The resulting trend view can be saved as a Report which can be retrieved later or saved to file.
 {{</lead>}}
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="trend_screen" src="/trend_screen.png" alt="Trend">
