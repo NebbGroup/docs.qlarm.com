@@ -13,34 +13,37 @@ pre: ""
 </div>
 
 {{<lead>}}
-The Trend page provides a flexible chart for visualizing your data. Data from multiple tags can be displayed on the chart, and the time period from which the data are collected can be adjusted. The resulting trend view can be saved as a Report which can be retrieved later or saved to file.
+The Trend page provides a flexible chart for visualizing your data. Data from multiple [Tags](/glossary#tag) can be displayed on the chart, and the time period from which the data are collected can be adjusted. The resulting trend view can be saved as a Report which can be retrieved later or saved to file.
 {{</lead>}}
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="trend_screen" src="/trend_screen.png" alt="Trend">
     <figcaption>Fig 1. Trend</figcaption>
 </figure>
 
-## Add tag(s) to chart
-In order for Tags data to be displayed Tags needs to be added in chart. This is done by selecting an [Endpoint](/glossary#endpoint) first from the select list "ENDPOINT" then selecting one or more Tags (max 5) from the multiselect "TAGS" list.
+## Getting started
+The trend window is by default blank when entering the Trend page. In order to start viewing your data, you can either add individual tags or [load a previously saved Report](/trend#reports).
+
+### Adding tags to the chart
+Multiple Tags can be added to the chart in order to view their data. This is done by selecting an [Endpoint](/glossary#endpoint) first from the select list "ENDPOINT" then selecting one or more Tags (max 5) from the multiselect "TAGS" list.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="trend_tag_list" src="/trend_tag_list.png" alt="Adding tags">
     <figcaption>Fig 2. Adding tags</figcaption>
 </figure>
 
-## Time period
-Tags data can be displayed in the chart for the selected period. You can choose the period from the dropdown “TIME PERIOD” list for specified periods or choose a “Custom” period (“Last Day” is the initial preselected period).
+### Change time period
+Tag data can be displayed in the chart for the selected period. You can choose the period from the dropdown “TIME PERIOD” list for specified periods or choose a “Custom” period (“Last Day” is the initial preselected period).
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="time_period" src="/time_period.png" alt="Time filter">
     <figcaption>Fig 3. Time filter</figcaption>
 </figure>
 
-When you choose a Custom for a time period, or click <img src="/custom_time_period_button.png">, a popup is shown for start and end date and time to be selected. Click “Apply” to apply the time settings in the chart.
+When you choose a Custom time period, or click <img src="/custom_time_period_button.png">, a popup is shown for start and end date and time to be selected. Click “Apply” to apply the time settings in the chart.
 <figure class="image_container">
     <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="custom_filter_screen" src="/custom_filter_screen.png" alt="Custom time period">
     <figcaption>Fig 4. Custom time period</figcaption>
 </figure>
 
-## Configuration
+## Customize the chart
 Chart displays can be customized in “Configuration” tab. Click <img src="/trend_config.png"> to set parameters for various chart displays. <br/>
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="trend_config_popup" src="/trend_config_popup.png" alt="Configuration">
@@ -78,7 +81,7 @@ If "Single Time Axis" is not applied (value axis by Tag displayed): <br/>
 </figure>
 
 
-## Edit tag settings
+### Change trend line appearance
 The "Color", "Thickness" and "Symbol" of the chart tag line can be customized. Go to "Edit tag settings" with click on the edit button in the Chart Tag.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="edit_trend_tag_button" src="/edit_trend_tag_button.png" alt="Edit chart tag">
@@ -90,32 +93,35 @@ The change of the "Symbol" ("Round", "Square" or "TriangleUp") can be visible on
     <figcaption>Fig 12. Edit tag settings</figcaption>
 </figure>
 
-## Delete tags
-Delete Tags from the chart by clicking the delete button in the chart tag.
+### Delete tags
+Delete individual Tags from the chart by clicking the delete button in the chart tag.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="tag_delete_button" src="/tag_delete_button.png" alt="Delete chart tag">
     <figcaption>Fig 13. Delete chart tag</figcaption>
 </figure>
 
-## Reset chart
-Reset chart by clicking the reset button <img src="/chart_reset_button.png">.
+### Reset chart
+Clear the chart of all tags and trends by clicking the reset button <img src="/chart_reset_button.png">.
 
-## Save Report
-Chart with all the Tags added can be saved as a Report by clicking the Save button <img src="/save_report_button.png">. Insert name and choose to save it in the actual period.
+## Reports 
+Reports are collections of Tags which can be saved with their associated time period for later retrieval.
+### Save Report
+The Save button stores all the currently selected Tags in a Report. <img src="/save_report_button.png">.<br> 
+Choose a unique name for your Report, and enable "Save Time Period" to save your choice of Time Period other than "Last Day".
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="save_new_report" src="/save_new_report.png" alt="Save report">
     <figcaption>Fig 14. Save report</figcaption>
 </figure>
 
-## Load Report
-Saved Reports can be loaded by clicking the "Open" button <img src="/load_report_button.png">. Then you get the "Load Report" popup where you can select the Report you want to load from the list and click "Load".
+### Load Report
+Saved Reports can be loaded by clicking the "Open" button <img src="/load_report_button.png">. The "Load Report" popup lets you select the Report you want to load from a list of saved reports. Click "Load" to retrieve the selected Report.
 <figure class="image_container">
     <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="load_report_popup" src="/load_report_popup.png" alt="Load report">
     <figcaption>Fig 15. Load Report</figcaption>
 </figure>
 
-## Edit Report
-If you edit a loaded Report and if you want to save it, you will get the "Overwrite" option in the popup from Fig 11. to choose if you like to overwrite the existing one.
+### Edit Report
+If you edit a loaded Report and if you want to save it, you will get access to the "Overwrite" option in the popup from Fig 14. This overwrites the currently selected Report.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="overwrite_report" src="/overwrite_report.png" alt="Overwrite report">
     <figcaption>Fig 16. Overwrite Report</figcaption>
@@ -126,7 +132,7 @@ If you edit a loaded Report and if you want to save it, you will get the "Overwr
     <figcaption>Fig 17. Save Report as new</figcaption>
 </figure> 
 
-## Chart menu
+## Export chart data
 Chart data can be exported as JSON, CSV, XLSX, HTML, PDF. 
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="chart_data_menu" src="/chart_data_menu.png" alt="Chart data menu">
