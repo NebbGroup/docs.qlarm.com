@@ -22,8 +22,10 @@ An hierarchical representation (model) of assets.
 ###### Channel
 A method or mechanism of communicating with recipients. E.g. SMS text message, e-mail, voice phone call or push notifications.
 ###### Condition
-A rule within an event that evaluates to true or false for the attributes of a tag (its value, quality, or time). Examples:
-Condition: Room temperature is over 30 °C [RoomTemp > 30].
+A rule within an event that evaluates to true or false for the attributes of a tag (its value, quality, or time). <br>
+Example:<br>
+Room temperature is less than 30 °C [RoomTemp < 30].<br>
+Freezer temperature is greater than -20 °C [FreezerTemp > -20]
 ###### Context tag
 The tag within an event that triggered the event.
 ###### Dashboard

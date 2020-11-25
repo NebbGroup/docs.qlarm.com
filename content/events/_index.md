@@ -1,5 +1,5 @@
 ---
-title: "Event View"
+title: "Events"
 date: 2020-08-20T15:30:04+02:00
 weight: 4
 pre: ""
@@ -13,13 +13,16 @@ pre: ""
 </div>
 
 {{<lead>}}
-The "Event View" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
+The "Events" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
 The "Event View" tab lists the currently active [Events](/glossary#event), and inactive Events that have not been acknowledged.
 The "History" tab lists all Events that are both inactive and acknowledged.<br>
-<img src="/events-view-tabs.png" > <br />
 The [Event Definitions](/glossary#event-definition) can be edited for each instance, and the [Logs](/glossary#logs) containing all the changes the event states pass through can be accessed.
 {{</lead>}}
 
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events.png" alt="Events">
+    <figcaption>Fig 1. Events</figcaption>
+</figure>
 
 ## Types of Events
 There are two [Event Types](/glossary#event-type) defined in the system: [Alarm](/glossary#alarm) and Other.
@@ -70,7 +73,7 @@ The following filters are available for both Events and History tabs:
 - "TAG FILTER" - the tag filter is populated with the selected Endpoint Tags and is not preselected. It filters Event Instances for selected Tag.
 - "SEARCH FILTER" (by name) - filters the Event Instances with a name that contains the search string.
 - "EVENT TYPE" - filters only the Event Instances from selected Event Type.
-- "IN GRACE PERIOD" - if checked than only Event Instances that are in Grace Period will be displayed. If this is not the case, only the Event Instances that are not in a Grace Period will be listed.
+- "IN GRACE PERIOD" - If checked, only Event Instances that are in Grace Period will be displayed . 
 
 In the Events tab there are also:  
 - "EVENT STATE" - filters the Event Instances that have the selected event state.
@@ -89,17 +92,13 @@ In the History tab there are also:
 
 Depending on what is selected in the filters, you can have a different columns displayed: Column is not displayed if its data is not expected for a certain filter combination.
 
-## Info in columns (cells population)
-If the Event Definition contains many Tags, then the name displayed for the Event Instances consists of the Tags' names separated by dashes ("-") the the name of the Event Definition.
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events.png" alt="Events">
-    <figcaption>Fig 1. Events</figcaption>
-</figure>
+## Info in columns 
+If the Event Definition contains many Tags, then the name displayed for the Event Instances consists of the Tags' names separated by dashes ("-") <br>
 If data is not expected, "-" is displayed. <br />
 If data is expected but not available, an empty cell is displayed.
 
-## Events details
-In Event view tab Event details are provided and in order to be displayed you need to click the arrow at the beginning of the row.
+## Event details
+Details are provided for all Event Instances in the "Event View". Clicking the arrow at the beginning of each row expands the row to show all associated Event Details.
 If data is not expected, the label for a certain time is not displayed.<br />
 If data is expected but not available, "-" is displayed.
 <figure class="image_container">
@@ -108,16 +107,16 @@ If data is expected but not available, "-" is displayed.
 </figure>
 
 ## Sorting
-Clicking on a column header will sort the table data by the column clicked.
+Clicking on a column header will sort the table data by the selected column.
 
-## Event view Edit
-Events listed in the Event view tab can be edited by clicking "Edit" in the row context menu.
+## Editing Event Instances
+Events listed in the Event view tab can be edited by clicking "Edit" in the row context menu. This will take the user to the [Event Configuration](/configuration/events) page and open the specific Event Definition for editing.
 <img src="/events_view_edit_link.png">
 
 ## Logs
 Events listed in both Event view and History tab have Logs. They can be reached by clicking "Logs" the row context menu. <img src="/events_view_logs_link.png"> 
 <br />
-Logs display tracking data about the event. What has happen, when and by who. There is also a possibility for a [User](/glossary#user) to add a custom log (a comment).
+The Log for each instance contains information on changes in the State of the event, which [User](/glossary#user) initiated the change, and at what time the change occured.There is also a possibility for the User to add a custom log in the form of a comment.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_logs" src="/events_view_logs.png" alt="Logs">
     <figcaption>Fig 5. Logs</figcaption>

@@ -12,7 +12,7 @@ weight: 9
 </div>
 
 {{<lead>}}
-The Events configuration page is where [Event Definitions](/glossary#event-definition) are listed and where you can configure your own Event Definition. The Event Definition is about malicious time, quality and value of a sensor that need to be detected and [Event](/glossary#event) to be raised. Raising the Event takes [Actions](/glossary#action) in place which is notifying [Recipients](/glossary#recipient) in many forms with feedback options.
+The Event configuration page is where all [Event Definitions](/glossary#event-definition) are listed and where you can create and edit your own Event Definitions. An Event Definition define the specifig tags the system should supervise. Setting Conditions on tags enables the Event to become Active and notifcations to be raised whenever the value of those tags exceed some defined boundaries. The Event Definition also enables you to define which [Recipients](/glossary#recipient) the notifications are to be sent, and whether to notify them via email, phone or push notifications.
 {{</lead>}}
 
 <figure class="image_container">

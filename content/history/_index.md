@@ -13,7 +13,7 @@ pre: ""
 </div>
 
 {{<lead>}}
-Qlarm keeps all the values your sensors emit and pass through filter rules to the system. History [View](/glossary#view) displays the list these values. They are filtered by [Tag](/glossary#tag). Because of the amount of the data provided, data can be presented grouped by an hour or a day and the samples for the time chunks will result the function you select. Also you can choose to list the data in certain period of time. You can export listed data in CSV or XLSX files.
+Qlarm keeps all the values your sensors emit and pass them through filter rules to the system. History [View](/glossary#view) displays the list of these values. They are filtered by [Tag](/glossary#tag). Because of the amount of the data provided, data can be presented grouped by hour or by day and the samples for the time chunks will be a result of the function you select. You can also choose to list the data in certain period of time. You can export listed data in CSV or XLSX files.
 {{</lead>}}
 
 <figure class="image_container">
@@ -21,9 +21,9 @@ Qlarm keeps all the values your sensors emit and pass through filter rules to th
     <figcaption >Fig 1. History view</figcaption>
 </figure>
 
-By selecting a Tag from the "Tag" filter (searchable drop down list), the table is filled with all the information associated with that Tag. The table displays the time and value for each line of information. Additionally, in the bottom left corner there is statistical information which displays the number of values, minimum, maximum, average and standard deviation value of the Value column. This table can be refreshed to update its content and downloaded in .xlsx or .csv format. 
+By selecting a Tag from the searchable drop-down Tag list, the table is filled with all the information associated with that Tag. The table displays the time and value for each line of information. f values, minimum, maximum, average and standard deviation value of the Value column. This table can be refreshed to update its content and downloaded in .xlsx or .csv format. 
 
-By clicking the <img src="/history_filter_button.png" alt="last value logo" class = "logo_resize"> button the [User](/glossary#user) can add or remove filters for the table content. In addition to the default "Tag" filter, used to select a Tag to show its content in the table, there is a “Group By” and “Time” filter. The "Group By" filter is used to group the table content by Hour or Day. This filter is accompanied with a "Function" filter which allows us to select which statistical information to be calculated for our grouped content.
+In addition to the default "Tag" filter, used to select a Tag to show its content in the table, there is a “Group By” and “Time” filter. The "Group By" filter is used to group the table content by Hour or Day. This filter is accompanied with a "Function" filter which allows us to select which statistical information to be calculated for our grouped content.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="history_filter_options" src="/history_filter_options.png" alt="History filter options">
