@@ -211,44 +211,76 @@ The <a href="/glossary#event-definition">Event Definitions</a> can be edited for
 <p>There are two <a href="/glossary#event-type">Event Types</a> defined in the system: <a href="/glossary#alarm">Alarm</a> and Other.
 <br>
 <br />
-The functional flow for the Alarm type events is:<br>
+The functional flow for the Alarm type of Events is:<br>
 An Event Instance (Alarm) is Created and assigned a Creation Date.
 <br />
-If there is a <a href="/glossary#grace-period">Grace Period</a> defined in the Event Definition, then the Event Instance is Activated after the Grace Period expires. And if not it is activated right after it is created and then it gets the Activation Date.
+If there is a <a href="/glossary#grace-period">Grace Period</a> defined in the Event Definition, the Event Instance is Activated after the Grace Period expires. If no Grace Period is defined, it is activated immediately.
 <br />
-If the new evaluation does not meet the Alarm <a href="/glossary#condition">Condition</a>, the Alarm gets Inactivated if it is not in a Grace Period (Inactive Date), on the other hand, if it is in a Grace Period it gets Archived (Archived Date).
+If the new evaluation does not meet the Alarm <a href="/glossary#condition">Condition</a>, the Alarm is Inactivated if it is not in a Grace Period (Inactive Date). If it is in a Grace Period it is Archived.
 <br />
-Being active or inactive, Event Instance can be <a href="/glossary#acknowledge-synonym-ack">Acknowledged</a> by a <a href="/glossary#recipient">Recipient</a> (Acknowledged date).
+Both active and inactive Event Instances can be <a href="/glossary#acknowledge-synonym-ack">Acknowledged</a> by a <a href="/glossary#recipient">Recipient</a>.
 <br />
-Every time an Condition is met, before the creation of an Event Instance, system finds the old inactive Alarm for the Event Definition (acknowledged or not) and it archives it (Archived date).
+Every time a Condition is met, before the creation of an Event Instance, system finds the old inactive Alarm for the Event Definition (acknowledged or not) and archives it .
 <br />
-Event Definition can be edited or deleted. In this case its instances gets Archived (Archived date).
+Event Definitions can be edited or deleted. In this case its instances are Archived.
 <br />
 <br>
-The functional flow for the Other type Events is:<br>
-An Event Instance is Created (Creation Date).
+The functional flow for the Other type of Events is:<br>
+An Event Instance is Created.
 <br />
-If there is a Grace Period defined in the Event Definition, the Event Instance is Activated after this Grace Period. And if not, it is activated right after it is created (Activation Date).
+If there is a <a href="/glossary#grace-period">Grace Period</a> defined in the Event Definition, the Event Instance is Activated after the Grace Period expires. If no Grace Period is defined, it is activated immediately.
 <br />
-If the new evaluation does not meet the Condition, the Event Instance gets Archived, (Archived Date).
+If the new evaluation does not meet the Condition, the Event Instance are Archived.
 <br />
-Event Definition can be edited or deleted. In this case its instances gets Archived (Archived date).</p>
+Event Definition can be edited or deleted. In this case its instances are Archived.</p>
 <h2 id="columns">Columns</h2>
-<p>Columns for Alarm type are:</p>
-<ul>
-<li>Creation time</li>
-<li>Activation time</li>
-<li>Inactive time</li>
-<li>Acknowledged time</li>
-<li>Archived time</li>
-</ul>
-<p>Columns for Other type are:</p>
-<ul>
-<li>Creation time</li>
-<li>Activation time</li>
-<li>Archived time</li>
-</ul>
-<p>Both types of Event Instances have State: They can be in Grace Period or not. This depends on the time elapsed since creation.</p>
+<p>Columns common for all Event Types are:</p>
+<table>
+<thead>
+<tr>
+<th>Column Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>State</td>
+<td>Active or Inactive</td>
+</tr>
+<tr>
+<td>Timer</td>
+<td></td>
+</tr>
+<tr>
+<td>Type</td>
+<td>Alarm or Other</td>
+</tr>
+<tr>
+<td>Creation Time</td>
+<td>Timestamp for creation</td>
+</tr>
+<tr>
+<td>Active Time</td>
+<td>Timestamp for transition to Active state</td>
+</tr>
+<tr>
+<td>Inactive Time</td>
+<td>Timestamp for transition to Inactive state</td>
+</tr>
+<tr>
+<td>Ack Time</td>
+<td>Timestamp for Acknowledgement of Alarm</td>
+</tr>
+<tr>
+<td>Trend</td>
+<td>Link to trend view</td>
+</tr>
+<tr>
+<td>Actions</td>
+<td>Button for Acknowledging Alarm</td>
+</tr>
+</tbody>
+</table>
 <h2 id="filters">Filters</h2>
 <p>The following filters are available for both Events and History tabs:</p>
 <ul>
