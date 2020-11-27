@@ -15,7 +15,16 @@ weight: 1
 <p>Qlarm is a solid platform with good scaling capabilities, with engineers devoted to increasing its security, maintaining stable uptime and continuing its robust development and improvement.
 </p>
 
-## Getting Started
+### Key Concepts
 
-### 
+- **Dashboards** are highly customizable panels that display real-time information from a wide array of widgets. 
+- **Widgets** display configurable information like sensor values from tags on dashboards. 
+- **Events** are occurences tied to tags, defined by a given condition and corresponding actions.
+- **Notifications** are messages sent from Qlarm to notify recipients through one or more channels (SMS, voice call, e-mail or push notification).
+- **Tags** are representations of data, and can hold both sensor values and calculation results. All tags belong to an endpoint.
+- **Endpoints** are a way for Qlarm to connect to sensors via tags, either as an OPC server or via MQTT.
+- **Tenants** are similar to customer accounts, and often just referred to as the Account. A tenant defines the properties of the customer, the subscription, the endpoints and the users that have access to Qlarm
+
+### Navigating the site
+
 </div>

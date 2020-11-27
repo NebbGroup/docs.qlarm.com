@@ -57,7 +57,7 @@ Columns common for all Event Types are:
 | Column Name | Value |
 |---------|---------|
 | State | Active or Inactive |
-| Timer | |
+| Timer | Time elapsed since event activation |
 | Type | Alarm or Other
 | Creation Time | Timestamp for creation| 
 | Active Time | Timestamp for transition to Active state |
