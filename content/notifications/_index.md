@@ -1,7 +1,7 @@
 ---
 title: "Notifications"
 date: 2020-08-20T15:30:25+02:00
-weight: 7
+weight: 10
 pre: ""
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Settings"
 date: 2020-08-20T15:41:17+02:00
-weight: 12
+weight: 15
 pre: ""
 ---
 
