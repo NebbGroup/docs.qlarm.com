@@ -14,6 +14,7 @@ weight: 1
 </p>
 <p>Qlarm is a solid platform with good scaling capabilities, with engineers devoted to increasing its security, maintaining stable uptime and continuing its robust development and improvement.
 </p>
+<br>
 
 ### Key Concepts
 

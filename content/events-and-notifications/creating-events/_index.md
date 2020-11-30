@@ -1,7 +1,7 @@
 ---
-title: "Events"
-date: 2020-08-20T15:54:15+02:00
-weight: 12
+title: "Creating Events"
+date: 2020-11-27T15:45:28+01:00
+weight: 8
 ---
 
 <!-- The Modal -->

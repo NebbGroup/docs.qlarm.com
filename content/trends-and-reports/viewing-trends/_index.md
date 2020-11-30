@@ -1,9 +1,9 @@
 ---
-title: "Trend"
-date: 2020-08-20T15:30:11+02:00
-weight: 8
-pre: ""
+title: "Viewing Trends"
+date: 2020-11-30T14:35:52+01:00
+
 ---
+
 
 <!-- The Modal -->
 <div id="myModal" class="modal">

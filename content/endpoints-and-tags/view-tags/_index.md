@@ -1,9 +1,9 @@
 ---
-title: "Live"
-date: 2020-08-20T15:29:58+02:00
-weight: 7
-pre: ""
+title: "Viewing Tags"
+date: 2020-11-30T14:19:36+01:00
+
 ---
+
 
 {{<lead>}}
 The Live page provides an exhaustive list of all enabled [Tags](/glossary#tag) in you system. The list details the Tags' latest values, any [Events](/glossary#event) associated with the Tags, and provides a link to the Tags' trend [view](/glossary#view). 

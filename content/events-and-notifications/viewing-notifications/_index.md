@@ -1,8 +1,7 @@
 ---
-title: "Notifications"
-date: 2020-08-20T15:30:25+02:00
+title: "Viewing Notifications"
+date: 2020-11-27T15:48:04+01:00
 weight: 10
-pre: ""
 ---
 
 <!-- The Modal -->

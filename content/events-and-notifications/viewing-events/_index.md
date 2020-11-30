@@ -1,17 +1,8 @@
 ---
-title: "Events"
-date: 2020-08-20T15:30:04+02:00
-weight: 7
-pre: ""
-draft: true
+title: "Viewing Events"
+date: 2020-11-27T15:47:31+01:00
+weight: 9
 ---
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
 
 {{<lead>}}
 The "Events" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
@@ -25,33 +16,6 @@ The [Event Definitions](/glossary#event-definition) can be edited for each insta
     <figcaption>Fig 1. Events</figcaption>
 </figure>
 
-## Types of Events
-There are two [Event Types](/glossary#event-type) defined in the system: [Alarm](/glossary#alarm) and Other.
-<br>
-<br />
-The functional flow for the Alarm type of Events is:<br>
-An Event Instance (Alarm) is Created and assigned a Creation Date.
-<br />
-If there is a [Grace Period](/glossary#grace-period) defined in the Event Definition, the Event Instance is Activated after the Grace Period expires. If no Grace Period is defined, it is activated immediately.
-<br />
-If the new evaluation does not meet the Alarm [Condition](/glossary#condition), the Alarm is Inactivated if it is not in a Grace Period (Inactive Date). If it is in a Grace Period it is Archived.
-<br />
-Both active and inactive Event Instances can be [Acknowledged](/glossary#acknowledge-synonym-ack) by a [Recipient](/glossary#recipient).
-<br />
-Every time a Condition is met, before the creation of an Event Instance, system finds the old inactive Alarm for the Event Definition (acknowledged or not) and archives it .
-<br />
-Event Definitions can be edited or deleted. In this case its instances are Archived.
-<br />
-<br>
-The functional flow for the Other type of Events is:<br>
-An Event Instance is Created.
-<br />
-If there is a [Grace Period](/glossary#grace-period) defined in the Event Definition, the Event Instance is Activated after the Grace Period expires. If no Grace Period is defined, it is activated immediately.
-<br />
-If the new evaluation does not meet the Condition, the Event Instance are Archived.
-<br />
-Event Definition can be edited or deleted. In this case its instances are Archived.
-
 ## Columns
 Columns common for all Event Types are:
 
@@ -59,7 +23,7 @@ Columns common for all Event Types are:
 |---------|---------|
 | State | Active or Inactive |
 | Timer | Time elapsed since event activation |
-| Type | Alarm or Other
+| Type | Alarm or Other |
 | Creation Time | Timestamp for creation| 
 | Active Time | Timestamp for transition to Active state |
 | Inactive Time | Timestamp for transition to Inactive state | 
