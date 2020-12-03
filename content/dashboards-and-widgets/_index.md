@@ -18,8 +18,32 @@ Qlarm Dashboards are designed to display custom Dashboards along with various co
 Access the dashboards by clicking "Dashboards" in the left-hand menu.
 
 <figure class="image_container">
-    <img class="figure_resize1" onClick="reply_click(this)"  id="dashboard_menu" src="/dashboard_menu.png" alt="Dashboard left-hand menu option">
+    <img class="center_image figure_resize1" onClick="reply_click(this)"  id="dashboard_menu" src="/dashboard_menu.png" alt="Dashboard left-hand menu option">
     <figcaption>Fig 1. Dashboard left-hand menu option</figcaption>
 </figure>
 
 Get started by learning how to [create your first dashboard](/dashboards-and-widgets/create-rename-and-delete-dashboard), and quickly adding your first widgets
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function reply_click(img)
+{
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+modal.onclick = function() { 
+  modal.style.display = "none";
+}
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) {
+        modal.style.display = "none";
+    }
+});
+</script>

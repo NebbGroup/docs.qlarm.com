@@ -75,3 +75,27 @@ This widget displays Tag Chart values for a selected period. In the â€œSubjectsâ
     <img class="center_image myImg" onClick="reply_click(this)"  id="system_status_widget_menu" src="/system_status_widget_menu.png" alt="System status widget menu">
     <figcaption >Fig 15. System status widget menu</figcaption>
 </figure>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function reply_click(img)
+{
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+modal.onclick = function() { 
+  modal.style.display = "none";
+}
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) {
+        modal.style.display = "none";
+    }
+});
+</script>

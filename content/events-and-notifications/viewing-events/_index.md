@@ -3,6 +3,12 @@ title: "Viewing Events"
 date: 2020-11-27T15:47:31+01:00
 weight: 9
 ---
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
 {{<lead>}}
 The "Events" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.

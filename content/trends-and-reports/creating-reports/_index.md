@@ -1,8 +1,13 @@
 ---
 title: "Creating Reports"
 date: 2020-11-30T14:36:01+01:00
-
 ---
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
 ## Reports 
 Reports are collections of Tags which can be saved with their associated time period for later retrieval.
