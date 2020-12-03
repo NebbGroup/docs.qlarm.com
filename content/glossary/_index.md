@@ -1,7 +1,7 @@
 ---
 title: "Glossary"
 date: 2020-09-24T09:56:56+02:00
-weight: 21
+weight: 26
 ---
 
 ###### Account

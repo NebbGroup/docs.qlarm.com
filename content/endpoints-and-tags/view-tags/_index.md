@@ -1,11 +1,20 @@
 ---
 title: "Viewing Tags"
 date: 2020-11-30T14:19:36+01:00
+weight: 9
 
 ---
 
 
 {{<lead>}}
+
+
+
+<figure class="image_container">
+    <img class="center_image figure_resize1" onClick="reply_click(this)"  id="live_view" src="/live_menu.png" alt="Live view">
+    <figcaption >Fig 1. Live view menu option</figcaption>
+</figure>
+
 The Live page provides an exhaustive list of all enabled [Tags](/glossary#tag) in you system. The list details the Tags' latest values, any [Events](/glossary#event) associated with the Tags, and provides a link to the Tags' trend [view](/glossary#view). 
 Several filtering functions enable you to narrow down the list selection to show only Tags of interest. 
 {{</lead>}}

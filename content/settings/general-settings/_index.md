@@ -1,7 +1,8 @@
 ---
 title: "General Settings"
 date: 2020-08-20T16:07:34+02:00
-draft: true
+weight: 19
+
 ---
 
 <!-- The Modal -->

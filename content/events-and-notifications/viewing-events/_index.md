@@ -1,7 +1,7 @@
 ---
 title: "Viewing Events"
 date: 2020-11-27T15:47:31+01:00
-weight: 9
+weight: 12
 ---
 <!-- The Modal -->
 <div id="myModal" class="modal">

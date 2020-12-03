@@ -1,7 +1,7 @@
 ---
 title: "Viewing Trends"
 date: 2020-11-30T14:35:52+01:00
-
+weight: 16
 ---
 
 
@@ -20,8 +20,7 @@ The Trend page provides a flexible chart for visualizing your data. Data from mu
     <figcaption>Fig 1. Trend</figcaption>
 </figure>
 
-## Getting started
-The trend window is by default blank when entering the Trend page. In order to start viewing your data, you can either add individual tags or [load a previously saved Report](/trend#reports).
+The trend window is by default blank when entering the Trend page. In order to start viewing your data, you can either add individual tags or [load a previously saved Report](/trends-and-reports/creating-reports/).
 
 ### Adding tags to the chart
 Multiple Tags can be added to the chart in order to view their data. This is done by selecting an [Endpoint](/glossary#endpoint) first from the select list "ENDPOINT" then selecting one or more Tags (max 5) from the multiselect "TAGS" list.

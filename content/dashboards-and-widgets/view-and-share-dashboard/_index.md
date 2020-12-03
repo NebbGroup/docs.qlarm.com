@@ -1,7 +1,7 @@
 ---
 title: "View and Share Dashboard"
 date: 2020-12-03T15:08:08+01:00
-
+weight: 3
 ---
 
 ### Default Dashboard
@@ -18,4 +18,4 @@ The "Theme" dropdown list is used to select and change the visual colour of the 
 
 
 ### Sharing a Dashboard
-By checking the "Share" checkbox <img src="/share_checkbox.png" alt="share checkbox">, you can enable a selected Dashboard that you configured and share it with the other Users. Other users which can see the endpoints used in the dashboard will see the dashboard in their Dashboards dropdown and will be able to make a copy of it or use it as their default dashboard
+By checking the "Share" checkbox <img src="/share_checkbox.png" alt="share checkbox">, you can enable a selected Dashboard that you configured and share it with the other Users. Other users which can see the [endpoints](/endpoints-and-tags) used in the dashboard will see the dashboard in their Dashboards dropdown and will be able to make a copy of it or use it as their default dashboard

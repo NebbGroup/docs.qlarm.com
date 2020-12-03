@@ -1,7 +1,7 @@
 ---
 title: "Creating Events"
 date: 2020-11-27T15:45:28+01:00
-weight: 8
+weight: 11
 ---
 
 <!-- The Modal -->
@@ -12,7 +12,7 @@ weight: 8
 </div>
 
 {{<lead>}}
-The Event configuration page is where all [Event Definitions](/glossary#event-definition) are listed and where you can create and edit your own Event Definitions. An Event Definition define the specifig tags the system should supervise. Setting Conditions on tags enables the Event to become Active and notifcations to be raised whenever the value of those tags exceed some defined boundaries. The Event Definition also enables you to define which [Recipients](/glossary#recipient) the notifications are to be sent, and whether to notify them via email, phone or push notifications.
+The Event configuration page is where all [Event Definitions](/glossary#event-definition) are listed and where you can create and edit your own Event Definitions. An Event Definition define the specific tags the system should supervise. Setting Conditions on tags enables the Event to become Active and notifcations to be raised whenever the value of those tags exceed some defined boundaries. The Event Definition also enables you to define which [Recipients](/glossary#recipient) the notifications are to be sent, and whether to notify them via email, phone or push notifications.
 {{</lead>}}
 
 <figure class="image_container">

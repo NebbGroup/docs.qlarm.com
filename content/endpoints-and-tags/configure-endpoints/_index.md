@@ -1,6 +1,7 @@
 ---
 title: "Configuring Endpoints"
 date: 2020-11-30T14:31:45+01:00
+weight: 8
 
 ---
 
@@ -12,12 +13,17 @@ date: 2020-11-30T14:31:45+01:00
 </div>
 
 {{<lead>}}
-The Endpoints configuration page contains all of the accessible [Endpoints](/glossary#endpoint) and their associated nodes. An Endpoint is a logical representation of [OPC server](/glossary#opc-server) in the context of Qlarm environment, providing necessary data to manage an OPC server. Endpoints are the starting point of the main functional flow in the system, the messaging flow. All properties of an Endpoint should be configured to respond to the necessity of the flow. Starting from configuration of the Endpoint (its OPC server with [Tags](/glossary#tag) associated) via [Event Definitions](/glossary#event-definition) to [Events](/glossary#event) raised and [Notifications](/glossary#notification) send to [Recipients](/glossary#recipient), Endpoints are the main trade for all of these entities. Monitoring pages like Live, Events, Notifications can all be filtered by Endpoint.
+The Endpoints configuration page contains all of the accessible [Endpoints](/glossary#endpoint) and their associated nodes. 
+<figure class="image_container">
+    <img class="center_image figure_resize1" onClick="reply_click(this)"  id="configure_endpoints_menu" src="/configure_endpoints_menu.png" alt="Endpoint configuration menu">
+    <figcaption>Fig 1. Endpoint configuration menu option</figcaption>
+</figure>
+
 {{</lead>}}
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="endpoints_configuration" src="/endpoints_configuration.png" alt="Endpoints configuration">
-    <figcaption>Fig 1. Endpoints configuration</figcaption>
+    <figcaption>Fig 2. Endpoints configuration</figcaption>
 </figure>
 
 Upon opening the Endpoints configuration the [User](/glossary#user) is greeted with a list of the accessible Endpoints which can be filtered by entering a keyword in the Search Filter.
@@ -26,14 +32,14 @@ Each Endpoint is displayed with basic information: Name, Location, Status; and a
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_endpoint" src="/edit_endpoint.png" alt="Endpoint edit mode">
-    <figcaption>Fig 2. Endpoint edit mode<figcaption>>
+    <figcaption>Fig 3. Endpoint edit mode<figcaption>>
 </figure>
 
 <img src="/log_button.png" alt="New Dashboard button"> contains the [Logs](/glossary#logs) for any changes associated with the specific Endpoint.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="logs" src="/logs.png" alt="Endpoint logs">
-    <figcaption>Fig 3. Endpoint logs<figcaption>
+    <figcaption>Fig 4. Endpoint logs<figcaption>
 </figure>
 
 The Status Label displays if the Endpoint is <img src="/online_status.png" alt="online status"> or <img src="/offline_status.png" alt="offline status">. 
@@ -42,26 +48,26 @@ By clicking the <img src="/tag_button.png" alt="New Dashboard button"> button th
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="tags" src="/tags.png" alt="tags">
-    <figcaption>Fig 4. Endpoint tags<figcaption>
+    <figcaption>Fig 5. Endpoint tags<figcaption>
 </figure>
 
 By clicking on the <img src="/edit_recipient_button.png" alt="online status"> button you can change the [Actions](/glossary#action) for the specific Tag listed in the table, upon which an "Edit tag" form appears. Also, by selecting multiple Tags and clicking on the <img src="/change_button.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags. 
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tag" src="/edit_tag.png" alt=" Edit tag">
-    <figcaption>Fig 5. Edit tag<figcaption>
+    <figcaption>Fig 6. Edit tag<figcaption>
 </figure>
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tags" src="/edit_tags.png" alt="Edit selected tags">
-    <figcaption>Fig 6. Edit selected tags<figcaption>
+    <figcaption>Fig 7. Edit selected tags<figcaption>
 </figure>
 
 The User can add a new Tag by clicking on the <img src="/add_tag_button.png" alt="online status"> button, upon which an "Add tag" form appears which requires information to be provided.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="add_tag" src="/add_tag.png" alt="Add tag form">
-    <figcaption>Fig 7. Add tag form<figcaption>
+    <figcaption>Fig 8. Add tag form<figcaption>
 </figure>
 
 <script>
