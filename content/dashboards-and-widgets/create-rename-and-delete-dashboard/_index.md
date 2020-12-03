@@ -4,35 +4,29 @@ date: 2020-11-27T14:11:30+01:00
 weight: 3
 ---
 
-{{<lead>}}
-Qlarm [Dashboards](/glossary#dashboard) are designed to display the custom Dashboards along with various configured [Widget](/glossary#widget). It is highly flexible and enables you to create your own Dashboards and share between other Dashboard viewers. Qlarm comes with a variety of configurable Widgets that you can use to build a specific Dashboard view that meets the different needs of your business. They provide you real-time monitoring of sensor values with configurable states which makes the detection of desired on undesired behaviors much more easier.
-{{</lead>}}
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
-<br>
-<br>
-Dashboards provide easy-to-read, easy access, real-time information about sensor values and process states which makes the detection of both desired and undesired behaviors easier.
-
-When you add a dashboard, you can choose to make it a project dashboard or one specific to a team. Use project dashboards to display information or status about the project or when you want to control who can edit the dashboard. Use team dashboards to focus information specific to a team.
-
-
-Project dashboards are owned by the person that created the dashboard. The owner can set permissions as to who can edit the dashboard. Team dashboards are owned by team administrators and can be edited by any member of the team. All dashboards can be viewed by members of the project. All widgets available to team dashboards are available for project dashboards. For team-specific widgets, if you aren't able to select a team through the widget, then the team defaults to the default project team.
-
-When a project is first created, a default team and default team dashboard is created. You can customize this default dashboard by adding widgets. Each widget provides access to one or more features or functions. To learn more about each widget, see the [Widget types](/dashboards-and-widgets/widget-types).
+When you log in to Qlarm for the first time, a default dashboard is created. You can customize this default dashboard by adding widgets, or create a new one. Each widget provides access to one or more features or functions. To learn more about each widget, see the [Widget types](/dashboards-and-widgets/widget-types).
 
 ### Configure header
-Adding a new dashboard starts with entering the dashboard configuration mode in the Dashboard View
+Adding a new dashboard starts with entering the dashboard configuration mode in the Dashboard View.
 The configuration header contains the main functionalities that allow you to configure Dashboards to your needs. In view mode, you can view different Dashboards that are available, and you can change them from the "Dashboards" dropdown list. You can enter edit mode by clicking the <img src="/configure_button.png" alt="Configure Button"> button.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="configure_header_view_mode" src="/configure_header_view_mode.png" alt="Configure header in view mode">
-    <figcaption>Fig 2. Configure header in view mode</figcaption>
+    <figcaption>Fig 1. Configure header in view mode</figcaption>
 </figure>
 
 Once you have entered configuration mode, the configuration header will change to present the different functionalities available for managing dashboards. 
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="configure_header_edit_mode" src="/configure_header_edit_mode.png" alt="Configure header in edit mode">
-    <figcaption>Fig 3. Configure header in edit mode</figcaption>
+    <figcaption>Fig 2. Configure header in edit mode</figcaption>
 </figure>
 
 
@@ -42,7 +36,7 @@ The right cluster of buttons contains the main functionalities for configuring t
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/button_cluster.png" alt="Configure functionalities for dashboard" style="width: 45%;">
-    <figcaption>Fig 4. Configure functionalities for dashboard</figcaption>
+    <figcaption>Fig 3. Configure functionalities for dashboard</figcaption>
 </figure>
 
 ### New Dashboard
@@ -51,7 +45,7 @@ The "New Dashboard" button <img src="/new_dashboard_button.png" alt="New Dashboa
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="add_widgets_mode" src="/add_widgets_mode.png" alt="Creating a new dashboard">
-    <figcaption >Fig 5. Creating a new dashboard</figcaption>
+    <figcaption >Fig 4. Creating a new dashboard</figcaption>
 </figure>
 
 
@@ -75,7 +69,7 @@ Whenever you are viewing a Dashboard created by another User, you can copy the e
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="save_dashboard_copy" src="/save_dashboard_copy.png" alt="Save copy of dashboard">
-    <figcaption >Fig 16. Save copy of dashboard</figcaption>
+    <figcaption >Fig 5. Save copy of dashboard</figcaption>
 </figure>
 
 ### Exit Dashboard

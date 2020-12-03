@@ -4,7 +4,14 @@ date: 2020-11-27T14:11:09+01:00
 weight: 4
 ---
 
-When you select a Widget from the list, it is shown on the grid panel. To organize the widgets in the grip panel you can drag and drop them to the desired location and order. To resize a Widget, use the Widget handle <img src="/widget_handle.png" alt="widget handle"> located in the lower right corner on every Widget or by drag and drop edges and corners. After configuring the Dashboard layout you can click the <img src="/save_button.png" alt="save button"> button to save the Dashboard or the <img src="/cancel_button.png" alt="cancel button"> button if you do not want to save the Dashboard. Afterwards, if you need to add additional Widgets to the Dashboard, you only need to click the <img src="/add_widgets.png" alt="add widget button"> button by which you are greeted with the same window as if you were creating a new Dashboard.
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+When you select a [Widget from the list](/dashboards-and-widgets/widget-types), it is shown on the grid panel. To organize the widgets in the grip panel you can drag and drop them to the desired location and order. To resize a Widget, use the Widget handle <img src="/widget_handle.png" alt="widget handle"> located in the lower right corner on every Widget or by drag and drop edges and corners. After configuring the Dashboard layout you can click the <img src="/save_button.png" alt="save button"> button to save the Dashboard or the <img src="/cancel_button.png" alt="cancel button"> button if you do not want to save the Dashboard. Afterwards, if you need to add additional Widgets to the Dashboard, you only need to click the <img src="/add_widgets.png" alt="add widget button"> button by which you are greeted with the same window as if you were creating a new Dashboard.
 
 All Widgets can be configured by opening the Widget Menu and selecting “Edit Widget”. An edit widget form opens for you to configure it. Every Widget has its own unique configuration parameter (more on this in the Widgets subsection).
 
@@ -21,3 +28,27 @@ You can save the Widget configuration by clicking the <img src="/edit_widget_sav
 </figure>
 
 When the Widget configuration is complete, the Widget Menu is updated with the new options defined by the Widget.
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function reply_click(img)
+{
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+modal.onclick = function() { 
+  modal.style.display = "none";
+}
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) {
+        modal.style.display = "none";
+    }
+});
+</script>

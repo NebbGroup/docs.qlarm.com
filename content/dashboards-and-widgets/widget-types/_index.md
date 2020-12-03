@@ -3,6 +3,12 @@ title: "Widget Types"
 date: 2020-11-27T14:14:11+01:00
 weight: 5
 ---
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
 The Widget List contains eight different types of Widgets that can be added to your dashboard.
 
