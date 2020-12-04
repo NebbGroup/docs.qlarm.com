@@ -1,8 +1,16 @@
 ---
-title: "View and Share Dashboard"
+title: "View and Share Dashboards"
 date: 2020-12-03T15:08:08+01:00
 weight: 3
 ---
+
+
+The dashboard view contains two main components, configuration header and display grid. The configuration header contains essential functionalities for Dashboard configuration which can be accessed by clicking the <img src="/configure_button.png" alt="Configure Button"> button. The display grid displays the available Dashboards that can be selected from the Dashboards list, and there you can configure the presentation and layout of the Widgets within the selected Dashboard.</p>
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="dashboard" src="/dashboard.png" alt="Dashboard configuration">
+    <figcaption>Fig 1. Dashboard configuration</figcaption>
+</figure>
 
 ### Default Dashboard
 
