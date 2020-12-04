@@ -24,7 +24,11 @@ Access the dashboards by clicking "Dashboards" in the left-hand menu.
     <figcaption>Fig 1. Dashboard left-hand menu option</figcaption>
 </figure>
 
-Get started by learning how to [create your first dashboard](/dashboards-and-widgets/create-rename-and-delete-dashboard), and quickly adding your first widgets
+Get started quickly by learning how to 
+
+* [View and share dashboards](/dashboards-and-widgets/view-and-share-dashboard)
+* [Create your first dashboard](/dashboards-and-widgets/create-rename-and-delete-dashboard)
+* [Add widgets to your dashboards](/dashboards-and-widgets/add-widget-to-dashboard).
 
 <script>
 // Get the modal
