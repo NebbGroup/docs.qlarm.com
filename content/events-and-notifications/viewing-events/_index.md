@@ -12,8 +12,8 @@ weight: 12
 
 {{<lead>}}
 The "Events" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
-The "Event View" tab lists the currently active [Events](/glossary#event), and inactive Events that have not been acknowledged.
-The "History" tab lists all Events that are both inactive and acknowledged.<br>
+The "Event View" tab lists the currently active [Events](/glossary#event), and inactive events that have not been acknowledged.
+The "History" tab lists all events that are both inactive and acknowledged.<br>
 The [Event Definitions](/glossary#event-definition) can be edited for each instance, and the [Logs](/glossary#logs) containing all the changes the event states pass through can be accessed.
 {{</lead>}}
 
@@ -39,23 +39,23 @@ Columns common for all Event Types are:
 
 
 ## Filters
-The following filters are available for both Events and History tabs:
-- "ENDPOINT FILTER" - the endpoint filter is preselected and is used to select Event Instances created for any of the Tags of the selected [Endpoint](/glossary#endpoint). 
-- "TAG FILTER" - the tag filter is populated with the selected Endpoint Tags and is not preselected. It filters Event Instances for selected Tag.
-- "SEARCH FILTER" (by name) - filters the Event Instances with a name that contains the search string.
-- "EVENT TYPE" - filters only the Event Instances from selected Event Type.
-- "IN GRACE PERIOD" - If checked, only Event Instances that are in Grace Period will be displayed . 
+The following filters are available for both "Event View" and "History" tabs:
+- "ENDPOINT FILTER" - the endpoint filter is preselected and is used to select event instances created for any of the Tags of the selected [Endpoint](/glossary#endpoint). 
+- "TAG FILTER" - the tag filter is populated with the selected Endpoint Tags and is not preselected. It filters event instances for selected Tag.
+- "SEARCH FILTER" (by name) - filters the event instances with a name that contains the search string.
+- "EVENT TYPE" - filters only the event instances from selected Event Type.
+- "IN GRACE PERIOD" - If checked, only event instances that are in Grace Period will be displayed . 
 
-In the Events tab there are also:  
-- "EVENT STATE" - filters the Event Instances that have the selected event state.
-- "ACKNOWLEDGED STATE" - filters the Event Instances that have the selected acknowledged state.
+In the "Event View" tab there are also:  
+- "EVENT STATE" - filters the event instances that have the selected event state.
+- "ACKNOWLEDGED STATE" - filters the event instances that have the selected acknowledged state.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/Event_view_filters.png" alt="Event view filter options">
     <figcaption>Fig 2. Event view filter options</figcaption>
 </figure>
 
 In the History tab there are also:  
-- "DATE FILTER" - filters the Event Instances by creation date.
+- "DATE FILTER" - filters the event instances by creation date.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/History_filters.png" alt="History filter options">
     <figcaption>Fig 3. History filter options</figcaption>
@@ -64,12 +64,12 @@ In the History tab there are also:
 Depending on what is selected in the filters, you can have a different columns displayed: Column is not displayed if its data is not expected for a certain filter combination.
 
 ## Info in columns 
-If the Event Definition contains many Tags, then the name displayed for the Event Instances consists of the Tags' names separated by dashes ("-") <br>
+If the Event Definition contains many Tags, then the name displayed for the event instances consists of the Tags' names separated by dashes ("-") <br>
 If data is not expected, "-" is displayed. <br />
 If data is expected but not available, an empty cell is displayed.
 
 ## Event details
-Details are provided for all Event Instances in the "Event View". Clicking the arrow at the beginning of each row expands the row to show all associated Event Details.
+Details are provided for all event instances in the "Event View". Clicking the arrow at the beginning of each row expands the row to show all associated Event Details.
 If data is not expected, the label for a certain time is not displayed.<br />
 If data is expected but not available, "-" is displayed.
 <figure class="image_container">
@@ -80,7 +80,7 @@ If data is expected but not available, "-" is displayed.
 ## Sorting
 Clicking on a column header will sort the table data by the selected column.
 
-## Editing Event Instances
+## Editing event instances
 Events listed in the Event view tab can be edited by clicking "Edit" in the row context menu. This will take the user to the [Event Configuration](/configuration/events) page and open the specific Event Definition for editing.
 <img src="/events_view_edit_link.png">
 
