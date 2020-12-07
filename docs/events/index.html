@@ -8,7 +8,7 @@
 
     <title>
         
-        Event View | Qlarm Documentation
+        Events | Qlarm Documentation
         
     </title>
 
@@ -62,7 +62,7 @@ if (!doNotTrack) {
     <li data-nav-id="/introduction/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="/introduction/"><h6>Introduction</h6></a>
+        <a class="nav-link p-0" href="/introduction/"><h6>Qlarm Overview</h6></a>
     </li>
     <li data-nav-id="/dashboard/" class="nav-item my-1
         ">
@@ -77,7 +77,7 @@ if (!doNotTrack) {
     <li data-nav-id="/events/" class="nav-item my-1 parent active
         ">
         
-        <a class="nav-link p-0" href="/events/"><h6>Event View</h6></a>
+        <a class="nav-link p-0" href="/events/"><h6>Events</h6></a>
     </li>
     <li data-nav-id="/trend/" class="nav-item my-1
         ">
@@ -153,6 +153,11 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/support/documentation/"><h6>Documentation</h6></a>
     </li>
+    <li data-nav-id="/support/release-notes/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/support/release-notes/"><h6>Release Notes</h6></a>
+    </li>
     <li data-nav-id="/support/submit-ticket/" class="nav-item my-1
         ">
         
@@ -177,10 +182,10 @@ if (!doNotTrack) {
     <li><a href="#types-of-events">Types of Events</a></li>
     <li><a href="#columns">Columns</a></li>
     <li><a href="#filters">Filters</a></li>
-    <li><a href="#info-in-columns-cells-population">Info in columns (cells population)</a></li>
-    <li><a href="#events-details">Events details</a></li>
+    <li><a href="#info-in-columns">Info in columns</a></li>
+    <li><a href="#event-details">Event details</a></li>
     <li><a href="#sorting">Sorting</a></li>
-    <li><a href="#event-view-edit">Event view Edit</a></li>
+    <li><a href="#editing-event-instances">Editing Event Instances</a></li>
     <li><a href="#logs">Logs</a></li>
     <li><a href="#event-view-actions">Event view Actions</a></li>
     <li><a href="#event-view-links">Event view Links</a></li>
@@ -191,7 +196,7 @@ if (!doNotTrack) {
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Event View</h1>
+<h1>Events</h1>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -200,13 +205,16 @@ if (!doNotTrack) {
   <div id="caption"></div>
 </div>
 <p class="lead">
-    The &ldquo;Event View&rdquo; page shows the current status and history of <a href="/glossary#event-instance">Event Instances</a>. The event lists can be filtered to display events in several different ways.
+    The &ldquo;Events&rdquo; page shows the current status and history of <a href="/glossary#event-instance">Event Instances</a>. The event lists can be filtered to display events in several different ways.
 The &ldquo;Event View&rdquo; tab lists the currently active <a href="/glossary#event">Events</a>, and inactive Events that have not been acknowledged.
 The &ldquo;History&rdquo; tab lists all Events that are both inactive and acknowledged.<br>
-<img src="/events-view-tabs.png" > <br />
 The <a href="/glossary#event-definition">Event Definitions</a> can be edited for each instance, and the <a href="/glossary#logs">Logs</a> containing all the changes the event states pass through can be accessed.
 </p>
 
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events.png" alt="Events">
+    <figcaption>Fig 1. Events</figcaption>
+</figure>
 <h2 id="types-of-events">Types of Events</h2>
 <p>There are two <a href="/glossary#event-type">Event Types</a> defined in the system: <a href="/glossary#alarm">Alarm</a> and Other.
 <br>
@@ -249,7 +257,7 @@ Event Definition can be edited or deleted. In this case its instances are Archiv
 </tr>
 <tr>
 <td>Timer</td>
-<td></td>
+<td>Time elapsed since Activation</td>
 </tr>
 <tr>
 <td>Type</td>
@@ -288,7 +296,7 @@ Event Definition can be edited or deleted. In this case its instances are Archiv
 <li>&ldquo;TAG FILTER&rdquo; - the tag filter is populated with the selected Endpoint Tags and is not preselected. It filters Event Instances for selected Tag.</li>
 <li>&ldquo;SEARCH FILTER&rdquo; (by name) - filters the Event Instances with a name that contains the search string.</li>
 <li>&ldquo;EVENT TYPE&rdquo; - filters only the Event Instances from selected Event Type.</li>
-<li>&ldquo;IN GRACE PERIOD&rdquo; - if checked than only Event Instances that are in Grace Period will be displayed. If this is not the case, only the Event Instances that are not in a Grace Period will be listed.</li>
+<li>&ldquo;IN GRACE PERIOD&rdquo; - If checked, only Event Instances that are in Grace Period will be displayed .</li>
 </ul>
 <p>In the Events tab there are also:</p>
 <ul>
@@ -308,16 +316,12 @@ Event Definition can be edited or deleted. In this case its instances are Archiv
     <figcaption>Fig 3. History filter options</figcaption>
 </figure>
 <p>Depending on what is selected in the filters, you can have a different columns displayed: Column is not displayed if its data is not expected for a certain filter combination.</p>
-<h2 id="info-in-columns-cells-population">Info in columns (cells population)</h2>
-<p>If the Event Definition contains many Tags, then the name displayed for the Event Instances consists of the Tags&rsquo; names separated by dashes (&quot;-&quot;) the the name of the Event Definition.</p>
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events.png" alt="Events">
-    <figcaption>Fig 1. Events</figcaption>
-</figure>
-If data is not expected, "-" is displayed. <br />
-If data is expected but not available, an empty cell is displayed.
-<h2 id="events-details">Events details</h2>
-<p>In Event view tab Event details are provided and in order to be displayed you need to click the arrow at the beginning of the row.
+<h2 id="info-in-columns">Info in columns</h2>
+<p>If the Event Definition contains many Tags, then the name displayed for the Event Instances consists of the Tags&rsquo; names separated by dashes (&quot;-&quot;) <br>
+If data is not expected, &ldquo;-&rdquo; is displayed. <br />
+If data is expected but not available, an empty cell is displayed.</p>
+<h2 id="event-details">Event details</h2>
+<p>Details are provided for all Event Instances in the &ldquo;Event View&rdquo;. Clicking the arrow at the beginning of each row expands the row to show all associated Event Details.
 If data is not expected, the label for a certain time is not displayed.<br />
 If data is expected but not available, &ldquo;-&rdquo; is displayed.</p>
 <figure class="image_container">
@@ -325,14 +329,14 @@ If data is expected but not available, &ldquo;-&rdquo; is displayed.</p>
     <figcaption>Fig 4. Event details</figcaption>
 </figure>
 <h2 id="sorting">Sorting</h2>
-<p>Clicking on a column header will sort the table data by the column clicked.</p>
-<h2 id="event-view-edit">Event view Edit</h2>
-<p>Events listed in the Event view tab can be edited by clicking &ldquo;Edit&rdquo; in the row context menu.
+<p>Clicking on a column header will sort the table data by the selected column.</p>
+<h2 id="editing-event-instances">Editing Event Instances</h2>
+<p>Events listed in the Event view tab can be edited by clicking &ldquo;Edit&rdquo; in the row context menu. This will take the user to the <a href="/configuration/events">Event Configuration</a> page and open the specific Event Definition for editing.
 <img src="/events_view_edit_link.png"></p>
 <h2 id="logs">Logs</h2>
 <p>Events listed in both Event view and History tab have Logs. They can be reached by clicking &ldquo;Logs&rdquo; the row context menu. <img src="/events_view_logs_link.png"> 
 <br />
-Logs display tracking data about the event. What has happen, when and by who. There is also a possibility for a <a href="/glossary#user">User</a> to add a custom log (a comment).</p>
+The Log for each instance contains information on changes in the State of the event, which <a href="/glossary#user">User</a> initiated the change, and at what time the change occured.There is also a possibility for the User to add a custom log in the form of a comment.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_logs" src="/events_view_logs.png" alt="Logs">
     <figcaption>Fig 5. Logs</figcaption>
