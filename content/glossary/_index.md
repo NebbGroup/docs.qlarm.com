@@ -35,7 +35,7 @@ The dashboard configuration which loads when Dashboard page is opened.
 ###### Edge Client
 The Qlarm Edge Client is an application (service) running on the local server of a customer. The Edge Client acts as an intermediary broker between the Qlarm platform and the local data source. The Edge Client will monitor an OPC UA server locally and forward data depending on the configuration and the customer's subscription.
 ###### Endpoint
-A connection to a data source from where to get data. The endpoint can be of types OPC UA (using the Qlarm Edge Client); IoT Gateway (using MQTT directly). An endpoint belongs to a tenant and has a separate Scope defined. Endpoints have a number of tags defined, and attributes like Location, Time Zone, Geographic properties.
+A connection to a data source from where to get data. The endpoint can be of types OPC UA (using the Qlarm Edge Client) or IoT Gateway (using MQTT directly). An endpoint belongs to a tenant and has a separate Scope defined. Endpoints have a number of tags defined, and attributes like Location, Time Zone, Geographic properties.
 ###### Event
 An occurrence defined by a given condition and corresponding actions.<br> 
 Examples:<br>

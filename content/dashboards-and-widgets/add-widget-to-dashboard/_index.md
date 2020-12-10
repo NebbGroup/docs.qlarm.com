@@ -18,14 +18,14 @@ All Widgets can be configured by opening the Widget Menu and selecting “Edit W
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="widget_menu" src="/widget_menu.png" alt="Widget components" style="width: 35%;">
-    <figcaption >Fig 6. Widget components</figcaption>
+    <figcaption >Fig 1. Widget components</figcaption>
 </figure>
 
 You can save the Widget configuration by clicking the <img src="/edit_widget_save_button.png" alt="close button"> button, or you can close the edit window by clicking the <img src="/edit_widget_close_button.png" alt="close button"> button.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_widget_menu" src="/edit_widget_menu.png" alt="Edit widget mode">
-    <figcaption >Fig 7. Edit widget mode</figcaption>
+    <figcaption >Fig 2. Edit widget mode</figcaption>
 </figure>
 
 When the Widget configuration is complete, the Widget Menu is updated with the new options defined by the Widget.

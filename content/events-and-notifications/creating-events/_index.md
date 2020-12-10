@@ -12,7 +12,7 @@ weight: 11
 </div>
 
 {{<lead>}}
-The Event configuration page is accessed from the Configuration > Events menu option, and is where all [Event Definitions](/glossary#event-definition) are listed and where you can create and edit your own event definitions. An event definition defines the specific tags the system should supervise. Setting conditions on tags enables the Event to become active and notifications to be raised whenever the value of those tags exceed some defined boundaries. The event definition also enables you to define which [Recipients](/glossary#recipient) the notifications are to be sent, and whether to notify them via email, phone or push notifications.
+The Event configuration page is accessed from the Configuration > Events menu option, and is where all [Event Definitions](/glossary#event-definition) are listed and where you can create and edit your own event definitions. An event definition defines the specific [tags](/glossary#tag) the system should supervise. Setting conditions on tags enables the Event to become active and notifications to be raised whenever the value of those tags exceed some defined boundaries. The event definition also enables you to define which [Recipients](/glossary#recipient) the notifications are to be sent, and whether to notify them via email, phone or push notifications.
 {{</lead>}}
 
 <figure class="image_container">
