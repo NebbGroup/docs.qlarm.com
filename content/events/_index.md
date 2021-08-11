@@ -123,7 +123,7 @@ The Log for each instance contains information on changes in the State of the ev
 </figure>
 
 ## Event view Actions
-Event view events can be acknowledged by clicking the "ACK" button for the Event Instance row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/events_view_ack_link.png" > 
+Event view events can be acknowledged by clicking the "ACK" button for the Event Instance row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/events_view_ack_link.png">. Multiple events instances can be acknowledged by selecting them using the available check box which enables the <img src="/ack_selected_button.png" style="width: 8rem"> button to execute the bulk acknowledgement. In this case, the message written in the acknowledge popup will be logged for the multiple selected event instances. 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_ack_popup" src="/events_view_ack_popup.png" alt="Acknowledge event">
     <figcaption>Fig 6. Acknowledge event</figcaption>
