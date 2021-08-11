@@ -81,15 +81,17 @@ If "Single Time Axis" is not applied (value axis by Tag displayed): <br/>
 </figure>
 
 
-### Change trend line appearance
-The "Color", "Thickness" and "Symbol" of the chart tag line can be customized. Go to "Edit tag settings" with click on the edit button in the Chart Tag.
+### Configure trend line
+Each trend line's "Color", "Thickness" and "Symbol" is customizable via configuration in the "Edit tag settings".
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="edit_trend_tag_button" src="/edit_trend_tag_button.png" alt="Edit chart tag">
     <figcaption>Fig 11. Edit chart tag</figcaption>
 </figure>
-The change of the "Symbol" ("Round", "Square" or "TriangleUp") can be visible only if the "Show chart symbols" is enabled in "Configuration".
+The trend line Color can be customized by entering Hex Color Codes or by choosing a color from the color pallet. Trend line data points Symbols, that take "Round", "Square" or "TriangleUp" form, can be visible only if the "Show chart symbols" setting is enabled in the Chart Configuration. The thickness of the trend line is customizable by choosing an integer value in the range of 1 to 10.</br></br>
+The Moving Average feature is a calculation used to analyze data points by creating a series of averages of different subsets of the full trend data. The size of the subsets is determined by selecting a number of data points to be included for the calculation. Currently Qlarm supports 5, 10, 25 and 50 data points for each calculating subset.</br></br>
+To visualize data points for long time periods, the data in each trend line is compressed (downsampled) by keeping high precision average data for only a limited time frame, which is calculated depending of the length of the selected time period. The Maximum and Minimum series feature affiliates the downsampled data to give more insight, by calculating the maximum and minimum for the limited time frame.
 <figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="edit_tag_settings" src="/edit_tag_settings.png" alt="Edit chart settings">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tag_settings" src="/edit_tag_settings.png" alt="Edit chart settings">
     <figcaption>Fig 12. Edit tag settings</figcaption>
 </figure>
 
