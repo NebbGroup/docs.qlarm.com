@@ -98,9 +98,7 @@ If data is not expected, "-" is displayed. <br />
 If data is expected but not available, an empty cell is displayed.
 
 ## Event details
-Details are provided for all Event Instances in the "Event View". Clicking the arrow at the beginning of each row expands the row to show all associated Event Details.
-If data is not expected, the label for a certain time is not displayed.<br />
-If data is expected but not available, "-" is displayed.
+Details, including event action time and other numerical information, are provided for all Event Instances in the "Event View". Clicking the arrow at the beginning of each row expands the row to show all associated Event Details. If data is not expected, the label for a certain time is not displayed. If data is expected but not available, "-" is displayed. The event details chart visualizes the moment when the event take places according to the data provided from the tag. By toggling the switch, the chart displays the data points surrounding the event or the recent 24 hour data points.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="event_details" src="/event_details.png" alt="Event details">
     <figcaption>Fig 4. Event details</figcaption>
@@ -123,7 +121,7 @@ The Log for each instance contains information on changes in the State of the ev
 </figure>
 
 ## Event view Actions
-Event view events can be acknowledged by clicking the "ACK" button for the Event Instance row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/events_view_ack_link.png" > 
+Event view events can be acknowledged by clicking the "ACK" button for the Event Instance row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/events_view_ack_link.png">. Multiple events instances can be acknowledged by selecting them using the available check box which enables the <img src="/ack_selected_button.png" style="width: 8rem"> button to execute the bulk acknowledgement. In this case, the message written in the acknowledge popup will be logged for the multiple selected event instances. 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_ack_popup" src="/events_view_ack_popup.png" alt="Acknowledge event">
     <figcaption>Fig 6. Acknowledge event</figcaption>

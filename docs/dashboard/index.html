@@ -267,15 +267,25 @@ if (!doNotTrack) {
     <figcaption >Fig 5. Creating a new dashboard</figcaption>
 </figure>
 <p>When you select a Widget from the list, it is shown on the grid panel. To organize the widgets in the grip panel you can drag and drop them to the desired location and order. To resize a Widget, use the Widget handle <img src="/widget_handle.png" alt="widget handle"> located in the lower right corner on every Widget or by drag and drop edges and corners. After configuring the Dashboard layout you can click the <img src="/save_button.png" alt="save button"> button to save the Dashboard or the <img src="/cancel_button.png" alt="cancel button"> button if you do not want to save the Dashboard. Afterwards, if you need to add additional Widgets to the Dashboard, you only need to click the <img src="/add_widgets.png" alt="add widget button"> button by which you are greeted with the same window as if you were creating a new Dashboard.</p>
-<p>All Widgets can be configured by opening the Widget Menu and selecting “Edit Widget”. An edit widget form opens for you to configure it. Every Widget has its own unique configuration parameter (more on this in the Widgets subsection).</p>
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="widget_menu" src="/widget_menu.png" alt="Widget components" style="width: 35%;">
-    <figcaption >Fig 6. Widget components</figcaption>
-</figure>
+<p>All Widgets can be configured by clicking the configure button visible for any un-configured widget on the dashboard or by opening the Widget Menu and selecting “Edit Widget”. An edit widget form opens for you to configure it. Every Widget has its own unique configuration parameter (more on this in the Widgets subsection).</p>
+<div class="row mb">
+    <div class="col-md-6" >
+		<figure class="image_container">
+            <img class="center_image myImg" onClick="reply_click(this)"  id="widget_configure_button" src="/widget_configure_button.png" alt="Widget configure button" style="width: 60%;">
+            <figcaption >Fig 6. Widget configure button</figcaption>
+        </figure>
+	</div>
+	<div class="col-md-6" >
+		<figure class="image_container">
+            <img class="center_image myImg" onClick="reply_click(this)"  id="widget_menu" src="/widget_menu.png" alt="Widget components" style="width: 60%;">
+            <figcaption >Fig 7. Widget components</figcaption>
+        </figure>
+	</div>
+</div>
 <p>You can save the Widget configuration by clicking the <img src="/edit_widget_save_button.png" alt="close button"> button, or you can close the edit window by clicking the <img src="/edit_widget_close_button.png" alt="close button"> button.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_widget_menu" src="/edit_widget_menu.png" alt="Edit widget mode">
-    <figcaption >Fig 7. Edit widget mode</figcaption>
+    <figcaption >Fig 8. Edit widget mode</figcaption>
 </figure>
 <p>When the Widget configuration is complete, the Widget Menu is updated with the new options defined by the Widget.</p>
 <h3 id="widgets">Widgets</h3>
@@ -285,63 +295,63 @@ if (!doNotTrack) {
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_endpoints_map" src="/edit_endpoints_map.png" alt="Edit endpoints map" style="width: 35%;">
-    <figcaption >Fig 8. Endpoints map menu</figcaption>
+    <figcaption >Fig 9. Endpoints map menu</figcaption>
 </figure>
 <ul>
 <li>Latest Value Widget <img src="/last_value_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the latest value of a selected sensor. In the “Subjects” tab you can select an <a href="/glossary#endpoint">Endpoint</a> and <a href="/glossary#tag">Tags</a> available from that Endpoint for which you want to see the latest value. You can also give the Widget an alias name to differ from the other Latest Value Widgets. In the “Ranges” tab you can adjust custom ranges to view the latest value in a certain colour, if it falls in that range. The “Labels” tab contains additional settings for Widget configuration.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="last_value_widget_menu" src="/last_value_widget_menu.png" alt="Last value widget menu">
-    <figcaption >Fig 9. Last value widget menu</figcaption>
+    <figcaption >Fig 10. Last value widget menu</figcaption>
 </figure>
 <ul>
 <li>Latest Value Gauge <img src="/last_value_gauge_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the latest value of a selected sensor using a gauge with custom range values and colours. In the “Subjects” tab you can select an Endpoint and Tags available from that Endpoint for which you want to see the latest value. You can also give the Widget an alias name to differ from the other Latest Value Gauge Widgets. In the “Ranges” tab you can adjust the appearance of the gauge. First you need to set the minimum and maximum value and the base colour of the scale. Then you can add custom ranges on the scale to view the latest value in a certain colour, if it falls in that range. The “Labels” tab contains additional settings for Widget configuration.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="latest_value_gauge_widget_menu" src="/latest_value_gauge_widget_menu.png" alt="Last value gauge widget menu">
-    <figcaption >Fig 10. Last value gauge widget menu</figcaption>
+    <figcaption >Fig 11. Last value gauge widget menu</figcaption>
 </figure>
 <ul>
 <li>Tag State <img src="/tag_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the state of a selected sensor by setting custom range values and different colours. In the “Subjects” tab you can select an Endpoint and Tags available from that Endpoint for which you want to see the Tag State. You can also give the Widget an alias name to differ from the other Latest Value Widgets. In the “States” tab you can adjust custom ranges to view the Tag State in a certain colour, if it falls in that range. The “Labels” tab contains additional settings for Widget configuration.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="tag_state_widget_menu" src="/tag_state_widget_menu.png" alt="Tag state widget menu">
-    <figcaption >Fig 11. Tag State widget menu</figcaption>
+    <figcaption >Fig 12. Tag State widget menu</figcaption>
 </figure>
 <ul>
 <li>Tag Chart <img src="/tag_chart_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays the values  of the selected Tag for a specified time period. The values in this widget are downsampled, grouped in short intervals, to optimize the performance of the application. This widget supports live tracking for time periods shorter than a day and statistical analysis for periods longer than a day, which can be set in the edit menu. When editing the widget, in the “Subjects” tab you can select an Endpoint and Tags available from that Endpoint for which you want to see the Tag Chart. You can also give the Widget an alias name to differ from the other Latest Value Widgets. In the “Interval” tab you can adjust the time unit type, number of time units and the display color. When selecting the time unit type, if you select &ldquo;Hour&rdquo; and enter a number of time units less or equal to 24, this sets the live tracking mode for the tag chart widget, which means the graph will be updated whenever the Tag records new values. When selecting other time units: &ldquo;Day&rdquo;, &ldquo;Week&rdquo; and &ldquo;Month&rdquo;; we can enable Max interval, Min interval and Basic Statistics which can be set in the &ldquo;Labels&rdquo; tab. The Max and Min interval are an addition to the main interval line, which represent the highest and lowest value in the grouped interval. The Basic statistics label calculates the: &ldquo;Average&rdquo;, &ldquo;Maximum&rdquo;, &ldquo;Minimum&rdquo; and &ldquo;Standard Deviation&rdquo;; for the specified time period. Also, whenever you interact with the widget, by zooming in our out the graph, the basic statistic label gets updated for the selected time period.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="tag_chart_widget_menu" src="/tag_chart_widget_menu.png" alt="Tag chart widget menu">
-    <figcaption >Fig 12. Tag Chart widget menu</figcaption>
+    <figcaption >Fig 13. Tag Chart widget menu</figcaption>
 </figure>
 <ul>
 <li>Elapsed time for Endpoint <img src="/elapsed_time_for_endpoint_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays latest log <a href="/glossary#event">Events</a> from the Endpoint. In the “Subjects” tab you can select an Endpoint to see the elapsed time. In the “Data” and “Event” tabs you can add intervals with different ranges and colours that represent the “Last Data” and “Last Event”. The “Labels” tab contains additional settings for Widget configuration.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="elapsed_time_for_endpoint_widget_menu" src="/elapsed_time_for_endpoint_widget_menu.png" alt="Elapsed time for endpoint widget menu">
-    <figcaption >Fig 13. Elapsed time for endpoint widget menu</figcaption>
+    <figcaption >Fig 14. Elapsed time for endpoint widget menu</figcaption>
 </figure>
 <ul>
 <li>Elapsed time for system <img src="/elapsed_time_for_system_widget_logo.png" alt="last value logo" class = "logo_resize"> - displays latest log Events in the system. Go to “Subjects” tab and select an Endpoint to see the elapsed time. In the “Data” and “Event” tabs you can add intervals with different ranges and colours to represent the “Last Data” and “Last Event”. The “Labels” tab contains additional settings for Widget configuration.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="elapsed_time_for_system_widget_menu" src="/elapsed_time_for_system_widget_menu.png" alt="Elapsed time for system widget menu">
-    <figcaption >Fig 14. Elapsed time for system widget menu</figcaption>
+    <figcaption >Fig 15. Elapsed time for system widget menu</figcaption>
 </figure>
 <ul>
 <li>Endpoint state <img src="/endpoint_state_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the current connection state of an Endpoint. In the “Subject” tab you can select an Endpoint to monitor its state. In the &ldquo;States&rdquo; tab you can add colours for the &ldquo;ONLINE&rdquo; and &ldquo;OFFLINE&rdquo; status. The &ldquo;Labels&rdquo; tab contains additional settings for configuring the Widget.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="endpoint_state_widget_menu" src="/endpoint_state_widget_menu.png" alt="Endpoint state widget menu">
-    <figcaption >Fig 15. Endpoint state widget menu</figcaption>
+    <figcaption >Fig 16. Endpoint state widget menu</figcaption>
 </figure>
 <ul>
 <li>System status <img src="/system_status_widget_logo.png" alt="last value logo" class = "logo_resize"> - shows the system cumulative health status for all endpoints states. Go to “Statuses” tab to add colours for the “OK”, “BROKEN” and “SYSTEM SHUTDOWN” status. The “Labels” tab contains additional settings for Widget configuration.</li>
 </ul>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="system_status_widget_menu" src="/system_status_widget_menu.png" alt="System status widget menu">
-    <figcaption >Fig 16. System status widget menu</figcaption>
+    <figcaption >Fig 17. System status widget menu</figcaption>
 </figure>
 <h3 id="save-dashboard">Save Dashboard</h3>
 <p>To keep the changes in the Dashboard you can save the configurations by clicking on the <img src="/save_button1.png" alt="save button"> button.</p>
@@ -353,7 +363,7 @@ if (!doNotTrack) {
 <p>Whenever you are viewing a Dashboard created by another User, you can copy the existing Dashboard by clicking on the <img src="/copy_button.png" alt="copy button"> button. This will ask you if you want to rename the Dashboard and save the copy as your own after clicking the <img src="/user_save.png" alt="save button"> button.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="save_dashboard_copy" src="/save_dashboard_copy.png" alt="Save copy of dashboard">
-    <figcaption >Fig 17. Save copy of dashboard</figcaption>
+    <figcaption >Fig 18. Save copy of dashboard</figcaption>
 </figure>
 <h3 id="exit-dashboard">Exit Dashboard</h3>
 <p>The <img src="/exit_button.png" alt="exit button"> button allows us to leave the edit mode and get back to the view mode.</p>
