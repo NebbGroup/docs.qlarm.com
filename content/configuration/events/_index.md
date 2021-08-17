@@ -87,6 +87,38 @@ Advanced settings is where you can set the additional configuration for the Even
  In "EXECUTION" you can define if Actions should execute "Once" or many times in "Loop".<br/>
  "BREAK WHEN EVENT BECOMES" Inactive or Acknowledged refers to stopping the notifications set to be repeated and all Actions set to be executed again.
 
+#### Templates management
+While you add or edit Custom Event you can help yourself creating notification content with choosing a Template. You can use it directly as it is or to change the text for immediate usage.
+You can add, edit or delete Templates, and use them as such immediate or later when you or other user will add or edit event.
+Text message template is used for setting E-mail, SMS and Push notifications text. And Voice message template is used for the Voice messages.
+
+Under the Add/Edit Event there is a possibility to manage Templates. You can enter in this mode via clicking the toggle button on the right side of the Template dropdown list.
+
+    <figure class="image_container">
+        <img class="center_image myImg" onClick="reply_click(this)"  id="manage_templates_toggle_button" src="/manage_templates_toggle_button.png" alt="Manage templates toggle button">
+        <figcaption>Fig 10. Manage templates toggle button</figcaption>
+    </figure>
+
+After you click the toggle button a Manage template panel will be opened. It contains fields for Template name, Text message template and Voice message template.
+Voice message template is hidden by default and can be seen if you click on the arrow on the right side od Text message template <img  src="/manage_templates_toggle_arrow.png">. 
+The Voice message template gets the content from the Text message template if not set.
+In this case, the additional change of the Text message template gets applied to the Voice message template content also.
+    
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="manage_templates_opened" src="/manage_templates_add_mode.png" alt="Manage templates"> 
+    <figcaption>Fig 11. Manage templates panel - Add Template Mode</figcaption>
+</figure>
+
+When adding or editing template all fields like Name, Text and Voice message templates are required. Names and combinations of Text and Voice template must be unique to save the template.
+After a Template is selected from the Template list, the manage template panel fields are populated with it. Edited template can be Saved or Saved As New by clicking the buttons "Save" or "Save As New".
+Deleting templates can be done from the panel when the template is selected, "Delete" button, or directly from the Template dropdown list via click on the "x" button.
+Deselect templates will change the panel to add template mode.
+    
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="manage_templates_opened" src="/manage_templates_edit_mode.png" alt="Manage templates"> 
+    <figcaption>Fig 12. Manage templates panel - Edit Template Mode</figcaption>
+</figure>
+
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
