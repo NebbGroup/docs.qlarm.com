@@ -27,8 +27,8 @@ A User can be added, edited or deleted. You can search Users by name and filter 
 
 ## Add user
 
-If you click the <img src="/add_user_button.png"> button a popup appears. All the fields in the popup are required to save the User. You need to insert first and last name, phone number, select a Role that is available for the organization, also insert an email with a domain that is available for the organization and password with a required complexity. The email and password combination will be the new [Account](/glossary#account) credentials for the User to login within the system. <br />
-You can add [Scopes](/glossary#scope) to the User (see Fig 3.) to determine the data that will be visible to the User. E.g. [Endpoints](/glossary#endpoint) are listed and selecting one for a User makes all the data related to that Endpoint such as [Tags](/glossary#tag), [Events](/glossary#event), [Notifications](/glossary#notification), [Dashboards](/glossary#dashboard) etc. will be visible for the User.<br/> 
+If you click the <img src="/add_user_button.png"> button a popup appears. All the fields in the popup are required to save the User. You need to insert first and last name, phone number, select a Role that is available for the organization, also insert an Email. With that Email you can login on Qlarm.
+You can add [Scopes](/glossary#scope) .) to determine the data that will be visible to the User. E.g. [Endpoints](/glossary#endpoint) are listed and selecting one for a User makes all the data related to that Endpoint such as [Tags](/glossary#tag), [Events](/glossary#event), [Notifications](/glossary#notification), [Dashboards](/glossary#dashboard) etc. will be visible for the User.<br/> 
 After you fill the data you click "Save" button <img src="/user_save.png"> to save the User.
 
 <figure class="image_container">
