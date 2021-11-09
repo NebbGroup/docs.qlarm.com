@@ -21,7 +21,7 @@ The Notifications page lists all [Notifications](/glossary#notification) in the 
     <figcaption >Fig 1. Notifications</figcaption>
 </figure>
 
-The table lists all of the Notifications sent to the [Recipients](/glossary#recipient) with their name, type, status, date and Recipient information. Using the "Notification Type" dropdown list you can filter the Notifications by their type (SMS, Call, Email, Push Notification). The "Time Filter" drop down list lets us filter the table by the time of the Notification. By pressing the <img src="/options_button.png" alt="last value logo" class = "logo_resize"> button you can further input detail for the time filter.
+The table lists all of the Notifications sent to the [Recipients](/glossary#recipient) with their name, type, status, date and Recipient full name. Using the “Notification Type” dropdown list you can filter the Notifications by their type (SMS, Call, Email, Push Notification). The “Time Filter” drop down list lets us filter the table by the time of the Notification. By pressing the <img src="/options_button.png" alt="last value logo" class = "logo_resize"> button you can further input detail for the time filter.
 
 <figure class="image_container">
     <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="time_filer_options" src="/time_filer_options.png" alt="Time period filter">

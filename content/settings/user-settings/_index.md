@@ -12,7 +12,7 @@ weight: 14
 </div>
 
 {{<lead>}}
-The User settings contains basic settings that apply to the whole application when viewing different content on different pages. This is where you can specify your favorite date-time format for all the dates you are seeing in the system, you can adjust your current timezone to get the right track of the data, choose the language you are most common with or set your most preferable [Page Size](/glossary#page-size) for viewing data.
+The User settings contains basic settings that apply to the whole application when viewing different content on different pages. This is where you can specify your favorite date-time format for all the dates you are seeing in the system, you can adjust your current timezone to get the right track of the data, choose the language you are most common with or set your most preferable [Page Size](/glossary#page-size) for viewing data. Also you can set your default value for Event Type, Event State, Event Acknowledge State and Grace period.
 {{</lead>}}
 
 <figure class="image_container">
@@ -20,7 +20,7 @@ The User settings contains basic settings that apply to the whole application wh
     <figcaption >Fig 1. User Settings</figcaption>
 </figure>
 
-The "Page Size" drop down list enables the [User](/glossary#user) to select the number of values in each table. The "Language" drop down list enables the User to select the general language of the application. The "Time Zone" dropdown list enables the User to select the [Time Zone](/glossary#time-zone) for the whole application. The "Date Time Format" dropdown list enables the user to select the dates format. The "Time Format" drop down list lest the User set the Time Format.
+The “Page Size” drop down list enables the [User](/glossary#user) to select the number of values in each table. The “Language” drop down list enables the User to select the general language of the application. The “Time Zone” dropdown list enables the User to select the [Time Zone](/glossary#time-zone) for the whole application. The “Date Time Format” dropdown list enables the user to select the dates format. The “Time Format” drop down list lest the User set the Time Format. The Event Type drop down is list enables the User to select type of events (All, Alarm or other). The Event State drop down is list enables the User to select state of event (All, Active or Inactive). The Event Acknowledge State drop down is list enables the User to select All, Acknowledged or Unacknowledged value and the checkbox to include grace period.
 
 <script>
 // Get the modal
