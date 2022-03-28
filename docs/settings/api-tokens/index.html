@@ -4,11 +4,11 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://docs.qlarm.com/settings/permissions/">
+    <link rel="canonical" href="https://docs.qlarm.com/settings/api-tokens/">
 
     <title>
         
-        Permissions | Qlarm Documentation
+        API Tokens | Qlarm Documentation
         
     </title>
 
@@ -131,12 +131,12 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/settings/users/"><h6>Users</h6></a>
     </li>
-    <li data-nav-id="/settings/api-tokens/" class="nav-item my-1
+    <li data-nav-id="/settings/api-tokens/" class="nav-item my-1 parent active
         ">
         
         <a class="nav-link p-0" href="/settings/api-tokens/"><h6>API Tokens</h6></a>
     </li>
-    <li data-nav-id="/settings/permissions/" class="nav-item my-1 parent active
+    <li data-nav-id="/settings/permissions/" class="nav-item my-1
         ">
         
         <a class="nav-link p-0" href="/settings/permissions/"><h6>Permissions</h6></a>
@@ -182,13 +182,17 @@ if (!doNotTrack) {
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#usage-of-api-tokens">Usage of API Tokens</a></li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Permissions</h1>
+<h1>API Tokens</h1>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -197,18 +201,16 @@ if (!doNotTrack) {
   <div id="caption"></div>
 </div>
 <p class="lead">
-    The &ldquo;Permissions&rdquo; page is used to set <a href="/glossary#permission">Permissions</a> for a <a href="/glossary#role">Role</a>. Permissions are organization specific. This is a comfortable way to manage and control <a href="/glossary#user">User</a>&rsquo;s actions in the system. You can simply apply a Permission to a Role of a User and be certain that your content is secured.
+    
 </p>
 
-<p><a href="/glossary#role">Roles</a> are predefined and listed in the &ldquo;CHOOSE ROLE&rdquo; list.</p>
+<h2 id="usage-of-api-tokens">Usage of API Tokens</h2>
+<p>You can use API Tokens in API requests from code or by tool for API requests.
+In order to get the tags available by the token, a GET request should be made to URL <b><a href="https://api.qlarm.com/api/apiTokenAccess/getTagsByToken">https://api.qlarm.com/api/apiTokenAccess/getTagsByToken</a></b> with two request headers: <br/><b>header name: &ldquo;Tenant&rdquo;, header value: (e.g.)&ldquo;Tenant_name&quot;</b> and <br/><b>header name: &ldquo;ApiToken&rdquo;, header value: (e.g. see Fig 1)&ldquo;7c9fc2bf-f94a-b554-6b75-9d4ff6b5025d&quot;</b>.</p>
+<p>ApiToken header value can be copied from Qlarm API Tokens page. API Token will appear on this page if the logged in user has all the scopes included in the API token. Using this getTagsByToken API request, the user will be able to get scoped tags in the response.</p>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="choose_role_list" src="/choose_role_list.png" alt="Choose role">
-    <figcaption>Fig 1. Choose Role</figcaption>
-</figure>
-<p>Permissions names mainly correspond to the application <a href="/glossary#site-menu-items">Site Menu Items</a>, and they refer to these pages and their functionalities. But sections or functionalities other than pages can be also set under permission like <a href="/glossary#scope">Scopes</a>, or Acknowledge of Event. After (de)selecting Permissions for a chosen Role, the Role can be saved by clicking the &ldquo;Save changes&rdquo; button <img src="/save_changes_button.png" ></p>
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="permissions" src="/permissions.png" alt="Permissions">
-    <figcaption>Fig 2. Permissions</figcaption>
+    <img class="center_image myImg" onClick="reply_click(this)"  id="copy_api_token_guid" src="/copy_api_token_guid.png" alt="Copy API token">
+<figcaption>Fig 1. Copy API Token for request header</figcaption>
 </figure>
 <script>
 // Get the modal
@@ -245,8 +247,8 @@ document.addEventListener('keyup', function(e) {
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/settings/api-tokens/" title="API Tokens"><i class="fas fa-chevron-left p-1"></i>API Tokens</a>
-        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/settings/general-settings/" title="General Settings">General Settings<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/settings/users/" title="Users"><i class="fas fa-chevron-left p-1"></i>Users</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/settings/permissions/" title="Permissions">Permissions<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 
