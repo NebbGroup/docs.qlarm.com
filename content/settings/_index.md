@@ -55,6 +55,20 @@ The Settings tab allows changes of settings that apply to the whole application.
 			</div>
 		</a>
 	</div>
+	<div class="col-md-3">
+		<a href="{{< ref "/content/settings/api-tokens/_index.md" >}}">
+			<div class="card d-flex border-0">
+				<div class="card-img-top mt-4">
+					<span class="far fa-cog fa-4x text-secondary"></span>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">
+						<a href="{{< ref "/content/settings/api-tokens/_index.md" >}}">API Tokens</a>
+					</h5>
+				</div>
+			</div>
+		</a>
+	</div>
     <div class="col-md-3">
 		<a href="{{< ref "/content/settings/general-settings/_index.md" >}}">
 			<div class="card d-flex border-0">
