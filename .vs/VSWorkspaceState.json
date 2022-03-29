@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    "\\content"
+    "",
+    "\\docs",
+    "\\docs\\categories",
+    "\\docs\\events",
+    "\\docs\\glossary"
   ],
+  "SelectedNode": "\\docs\\events",
   "PreviewInSolutionExplorer": false
 }
