@@ -5,7 +5,7 @@ function endsWith(str, suffix) {
 }
 
 // Initialize lunrjs using our generated index file
-function initLunr(success_callback) {
+function initLunr() {
     if (!endsWith(baseurl,"/")){
         baseurl = baseurl+'/'
     };
@@ -13,10 +13,10 @@ function initLunr(success_callback) {
     // First retrieve the index file
     $.getJSON(baseurl +"index.json")
         .done(function(index) {
-            pagesIndex = index;
+            pagesIndex =   index;
             // Set up lunrjs by declaring the fields we use
             // Also provide their boost level for the ranking
-            lunrIndex = new lunr.Index;
+            lunrIndex = new lunr.Index
             lunrIndex.ref("uri");
             lunrIndex.field('title', {
                 boost: 15
@@ -33,7 +33,6 @@ function initLunr(success_callback) {
                 lunrIndex.add(page);
             });
             lunrIndex.pipeline.remove(lunrIndex.stemmer)
-            success_callback();
         })
         .fail(function(jqxhr, textStatus, error) {
             var err = textStatus + ", " + error;
@@ -56,7 +55,9 @@ function search(query) {
         });
 }
 
-function configure_completion() {
+// Let's get started
+initLunr();
+$( document ).ready(function() {
     var searchList = new autoComplete({
         /* selector for the search box element */
         selector: $("#search-by").get(0),
@@ -85,16 +86,6 @@ function configure_completion() {
         onSelect: function(e, term, item) {
             console.log(item.getAttribute('data-val'));
             location.href = item.getAttribute('data-uri');
-        }
-    });
-};
-
-$( document ).ready(function() {
-    // configure lazy loading of the search database
-    $("#search-by").focusin(function() {
-        // download and initialize the index only once
-        if (typeof lunrIndex == 'undefined') {
-            initLunr(configure_completion);
         }
     });
 });

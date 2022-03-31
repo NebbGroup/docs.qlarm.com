@@ -2,10 +2,9 @@
 <html><head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://docs.qlarm.com/settings/api-tokens/index.xml" title="Qlarm Documentation" />
-    <link rel="canonical" href="https://docs.qlarm.com/settings/api-tokens/">
+    <link rel="canonical" href="https://docs.qlarm.com/configuration/schedules/">
 
     <title>
         
@@ -20,20 +19,9 @@
     <link rel="stylesheet" href="https://docs.qlarm.com/css/ace.min.css">
 
     
-
-    
     
         
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-2760582-5', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
 
 </head>
 <body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
@@ -157,29 +145,7 @@ if (!doNotTrack) {
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>API Tokens</h1>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-<p class="lead">
-    
-</p>
-
-<h2 id="usage-of-api-tokens">Usage of API Tokens</h2>
-<p>You can use API Tokens in API requests from code or by tool for API requests.
-In order to get the tags available by the token, a GET request should be made to URL <b><a href="https://api.qlarm.com/api/apiTokenAccess/getTagsByToken">https://api.qlarm.com/api/apiTokenAccess/getTagsByToken</a></b> with two request headers: <br/><b>header name: &ldquo;Tenant&rdquo;, header value: (e.g.)&ldquo;Tenant_name&rdquo;</b> and <br/><b>header name: &ldquo;ApiToken&rdquo;, header value: (e.g. see Fig 1)&ldquo;7c9fc2bf-f94a-b554-6b75-9d4ff6b5025d&rdquo;</b>.</p>
-<p>ApiToken header value can be copied from Qlarm API Tokens page. API Token will appear on this page if the logged in user has all the scopes included in the API token. Using this getTagsByToken API request, the user will be able to get scoped tags in the response.</p>
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="copy_api_token_guid" src="/copy_api_token_guid.png" alt="Copy API token">
-<figcaption>Fig 1. Copy API Token for request header</figcaption>
-</figure>
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
+<h1>Schedules</h1>
 
 
 
