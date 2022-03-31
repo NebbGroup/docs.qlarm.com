@@ -6,6 +6,10 @@
     <description>Recent content in History on Qlarm Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Aug 2020 15:30:16 +0200</lastBuildDate><atom:link href="https://docs.qlarm.com/history/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Aug 2020 15:30:16 +0200</lastBuildDate>
+    
+	<atom:link href="https://docs.qlarm.com/history/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

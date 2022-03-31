@@ -6,6 +6,10 @@
     <description>Recent content in Live on Qlarm Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Aug 2020 15:29:58 +0200</lastBuildDate><atom:link href="https://docs.qlarm.com/live/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Aug 2020 15:29:58 +0200</lastBuildDate>
+    
+	<atom:link href="https://docs.qlarm.com/live/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
