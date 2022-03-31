@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://docs.qlarm.com/configuration/recipients/index.xml" title="Qlarm Documentation" />
-    <link rel="canonical" href="https://docs.qlarm.com/configuration/recipients/">
+    <link rel="alternate" type="application/rss+xml" href="https://docs.qlarm.com/settings/api-tokens/index.xml" title="Qlarm Documentation" />
+    <link rel="canonical" href="https://docs.qlarm.com/settings/api-tokens/">
 
     <title>
         
-        Recipients | Qlarm Documentation
+        API Tokens | Qlarm Documentation
         
     </title>
 
@@ -97,7 +97,7 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/notifications/"><h6>Notifications</h6></a>
     </li>
-    <li data-nav-id="/configuration/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/configuration/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/configuration/"><h6>Configuration</h6></a>
@@ -107,7 +107,7 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/configuration/events/"><h6>Events</h6></a>
     </li>
-    <li data-nav-id="/configuration/recipients/" class="nav-item my-1 parent active
+    <li data-nav-id="/configuration/recipients/" class="nav-item my-1
         ">
         
         <a class="nav-link p-0" href="/configuration/recipients/"><h6>Recipients</h6></a>
@@ -119,7 +119,7 @@ if (!doNotTrack) {
     </li>
         </ul>
     </li>
-    <li data-nav-id="/settings/" class="nav-item my-1 haschildren
+    <li data-nav-id="/settings/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/settings/"><h6>Settings</h6></a>
@@ -134,7 +134,7 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/settings/users/"><h6>Users</h6></a>
     </li>
-    <li data-nav-id="/settings/api-tokens/" class="nav-item my-1
+    <li data-nav-id="/settings/api-tokens/" class="nav-item my-1 parent active
         ">
         
         <a class="nav-link p-0" href="/settings/api-tokens/"><h6>API Tokens</h6></a>
@@ -187,8 +187,7 @@ if (!doNotTrack) {
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#recipients">Recipients</a></li>
-    <li><a href="#editing-a-recipient-and-recipients-groups">Editing a recipient and recipients groups</a></li>
+    <li><a href="#usage-of-api-tokens">Usage of API Tokens</a></li>
   </ul>
 </nav>
 </div>
@@ -196,7 +195,7 @@ if (!doNotTrack) {
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Recipients</h1>
+<h1>API Tokens</h1>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -205,40 +204,17 @@ if (!doNotTrack) {
   <div id="caption"></div>
 </div>
 <p class="lead">
-    In the &ldquo;Recipients&rdquo; configuration page, you can list, create, edit and delete <a href="/glossary#recipient">Recipients</a>. You can categorize Recipients as individual <img src="/individual_recipient_icon.png" alt="individual recipient icon" class = "logo_resize"> and groups <img src="/recipients_groups_icon.png" alt="recipient groups icon" class = "logo_resize"> of recipients. You can use groups in applying rules and notifying many recipients at once. Recipient you create should contains required contact details and availability in order to receive <a href="/glossary#notification">Notifications</a> in many forms. Recipients are organization specific.
+    
 </p>
 
+<h2 id="usage-of-api-tokens">Usage of API Tokens</h2>
+<p>You can use API Tokens in API requests from code or by tool for API requests.
+In order to get the tags available by the token, a GET request should be made to URL <b><a href="https://api.qlarm.com/api/apiTokenAccess/getTagsByToken">https://api.qlarm.com/api/apiTokenAccess/getTagsByToken</a></b> with two request headers: <br/><b>header name: &ldquo;Tenant&rdquo;, header value: (e.g.)&ldquo;Tenant_name&rdquo;</b> and <br/><b>header name: &ldquo;ApiToken&rdquo;, header value: (e.g. see Fig 1)&ldquo;7c9fc2bf-f94a-b554-6b75-9d4ff6b5025d&rdquo;</b>.</p>
+<p>ApiToken header value can be copied from Qlarm API Tokens page. API Token will appear on this page if the logged in user has all the scopes included in the API token. Using this getTagsByToken API request, the user will be able to get scoped tags in the response.</p>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="recipients_configuration" src="/recipients_configuration.png" alt="Recipients configuration">
-    <figcaption>Fig 1. Recipients configuration</figcaption>
+    <img class="center_image myImg" onClick="reply_click(this)"  id="copy_api_token_guid" src="/copy_api_token_guid.png" alt="Copy API token">
+<figcaption>Fig 1. Copy API Token for request header</figcaption>
 </figure>
-<h2 id="recipients">Recipients</h2>
-<p>There are four types of Notifications that Recipients can receive:</p>
-<ul>
-<li>SMS Text Message on a mobile phone <img src="/phone_call_and_sms_recipient.png" alt="phone call and sms recipient icon" class = "logo_resize"></li>
-<li>Voice Calls <img src="/phone_call_and_sms_recipient.png" alt="phone call and sms recipient icon" class = "logo_resize"></li>
-<li>E-mail <img src="/email_recipient.png" alt="email icon" class = "logo_resize"></li>
-<li>Push Notifications <img src="/push_notification_recipient.png" alt="push notification icon" class = "logo_resize"></li>
-</ul>
-<p>The &ldquo;Recipients&rdquo; configuration page lists its Recipients in a table, which shows their name, selected Notification Types, number of Recipients for the <a href="/glossary#recipient-group">Recipients Group</a>. An individual Recipient represents a single person that can receive Notifications. To add a Recipient click the <img src="/add_recipient_button.png" alt="add recipient button" > button by which a form appears:</p>
-<figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_form" src="/add_recipient_form.png" alt="Individual recipient configuration">
-    <figcaption>Fig 2. Individual recipient configuration</figcaption>
-</figure>
-<p>The individual Recipient form requires basic contact information about the Recipient. To choose a type of Notification that the individual Recipient will receive, you need to fill a specific contact field and enable it by toggling the switch <img src="/recipient_toggle_switch.png" alt="add recipient button" >. After you are done configuring the individual Recipient save the configuration by clicking the <img src="/add_recipient_form_button.png" alt="add recipient button" > button or <img src="/cancel_recipient_button.png" alt="add recipient button" > to discard the configuration.</p>
-<p>A Recipients Group represents a collection of Recipients that can be the receiver of Notifications. To add a Recipients Group click the <img src="/add_recipient_groups_button.png" alt="add recipient button" > button and a form appears:</p>
-<figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_groups_form" src="/add_recipient_groups_form.png" alt="Recipients group configuration">
-    <figcaption>Fig 3. Recipients group configuration</figcaption>
-</figure>
-<p>The form requires that you select a name for the Recipients Group, select Recipients from the dropdown list and a Template or schedule for when this group is reachable. After you are done configuring the Recipients Group save the configuration by clicking the <img src="/add_recipient_form_button.png" alt="add recipient button" > button or <img src="/cancel_recipient_button.png" alt="add recipient button" > to discard the configuration.</p>
-<p>After filling the table with Recipients and Recipients Groups, you can easily search them by using the search text field and filter them by using the filter select list.</p>
-<figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="search_and_filter recipients" src="/search_and_filter recipients.png" alt="Search and filter recipients">
-    <figcaption>Fig 4. Search and filter recipients</figcaption>
-</figure>
-<h2 id="editing-a-recipient-and-recipients-groups">Editing a recipient and recipients groups</h2>
-<p>You can edit an individual Recipient or a Recipients Group by clicking the <img src="/edit_recipient_button.png" alt="add recipient button" > button after which a filled form will appear in which you can make the changes. To remove a Recipient or a Recipients Group click the <img src="/delete_recipient_button.png" alt="add recipient button" > button.</p>
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -274,8 +250,8 @@ document.addEventListener('keyup', function(e) {
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/configuration/events/" title="Events"><i class="fas fa-chevron-left p-1"></i>Events</a>
-        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/configuration/endpoints/" title="Endpoints">Endpoints<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/settings/users/" title="Users"><i class="fas fa-chevron-left p-1"></i>Users</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/settings/permissions/" title="Permissions">Permissions<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 
