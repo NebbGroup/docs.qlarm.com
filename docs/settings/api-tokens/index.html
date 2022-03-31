@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://docs.qlarm.com/introduction/index.xml" title="Qlarm Documentation" />
-    <link rel="canonical" href="https://docs.qlarm.com/introduction/">
+    <link rel="alternate" type="application/rss+xml" href="https://docs.qlarm.com/settings/api-tokens/index.xml" title="Qlarm Documentation" />
+    <link rel="canonical" href="https://docs.qlarm.com/settings/api-tokens/">
 
     <title>
         
-        Qlarm Overview | Qlarm Documentation
+        API Tokens | Qlarm Documentation
         
     </title>
 
@@ -62,7 +62,7 @@ if (!doNotTrack) {
                 <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
             </form>
          <ul class="navbar-nav flex-column pt-3">
-    <li data-nav-id="/introduction/" class="nav-item my-1 parent active
+    <li data-nav-id="/introduction/" class="nav-item my-1
         ">
         
         <a class="nav-link p-0" href="/introduction/"><h6>Qlarm Overview</h6></a>
@@ -119,7 +119,7 @@ if (!doNotTrack) {
     </li>
         </ul>
     </li>
-    <li data-nav-id="/settings/" class="nav-item my-1 haschildren
+    <li data-nav-id="/settings/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/settings/"><h6>Settings</h6></a>
@@ -133,6 +133,11 @@ if (!doNotTrack) {
         ">
         
         <a class="nav-link p-0" href="/settings/users/"><h6>Users</h6></a>
+    </li>
+    <li data-nav-id="/settings/api-tokens/" class="nav-item my-1 parent active
+        ">
+        
+        <a class="nav-link p-0" href="/settings/api-tokens/"><h6>API Tokens</h6></a>
     </li>
     <li data-nav-id="/settings/permissions/" class="nav-item my-1
         ">
@@ -182,12 +187,7 @@ if (!doNotTrack) {
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#what-is-qlarm">What is Qlarm?</a></li>
-    <li><a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#heading"></a></li>
-      </ul>
-    </li>
+    <li><a href="#usage-of-api-tokens">Usage of API Tokens</a></li>
   </ul>
 </nav>
 </div>
@@ -195,20 +195,50 @@ if (!doNotTrack) {
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Qlarm Overview</h1>
+<h1>API Tokens</h1>
 
-<div class = "lead" align="justify">
-<br>
-<h2 id="what-is-qlarm">What is Qlarm?</h2>
-<p>Qlarm is a smart cloud-based platform for secure monitoring and notification. It gives the customer an overall overview of the control systems and IoT devices connected in the cloud. It provides full insight beginning with dashboards and monitoring, followed by analyses, and completed with flexible user interaction. In addition, it keeps the customer up to date with notifications sent by email, SMS, via a phone call, or a push notification for the mobile app.
-</p>
-<p>Qlarm monitoring capabilities can be used with many different implementations: from production processes and progress on plant tests, to grocery chain freezers and refrigerated counters, office climate and server rooms, or even monitoring of the operation of several geographically distributed unmanned facilities. These capabilities extend even further with the implementation of the mobile system that replaces the local operator panels as a superior system that can give a full status and interaction access to your facility from any location that has an internet connection.
-</p>
-<p>Qlarm is a solid platform with good scaling capabilities, with engineers devoted to increasing its security, maintaining stable uptime and continuing its robust development and improvement.
-</p>
-<h2 id="getting-started">Getting Started</h2>
-<h3 id="heading"></h3>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
+<p class="lead">
+    
+</p>
+
+<h2 id="usage-of-api-tokens">Usage of API Tokens</h2>
+<p>You can use API Tokens in API requests from code or by tool for API requests.
+In order to get the tags available by the token, a GET request should be made to URL <b><a href="https://api.qlarm.com/api/apiTokenAccess/getTagsByToken">https://api.qlarm.com/api/apiTokenAccess/getTagsByToken</a></b> with two request headers: <br/><b>header name: &ldquo;Tenant&rdquo;, header value: (e.g.)&ldquo;Tenant_name&rdquo;</b> and <br/><b>header name: &ldquo;ApiToken&rdquo;, header value: (e.g. see Fig 1)&ldquo;7c9fc2bf-f94a-b554-6b75-9d4ff6b5025d&rdquo;</b>.</p>
+<p>ApiToken header value can be copied from Qlarm API Tokens page. API Token will appear on this page if the logged in user has all the scopes included in the API token. Using this getTagsByToken API request, the user will be able to get scoped tags in the response.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="copy_api_token_guid" src="/copy_api_token_guid.png" alt="Copy API token">
+<figcaption>Fig 1. Copy API Token for request header</figcaption>
+</figure>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function reply_click(img)
+{
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+modal.onclick = function() { 
+  modal.style.display = "none";
+}
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) {
+        modal.style.display = "none";
+    }
+});
+</script><blockquote>
+</blockquote>
 
 
     
@@ -220,8 +250,8 @@ if (!doNotTrack) {
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/" title="Qlarm Documentation"><i class="fas fa-chevron-left p-1"></i>Qlarm Documentation</a>
-        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/dashboard/" title="Dashboard">Dashboard<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/settings/users/" title="Users"><i class="fas fa-chevron-left p-1"></i>Users</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/settings/permissions/" title="Permissions">Permissions<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 
