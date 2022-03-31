@@ -81,7 +81,7 @@
 	"title": "Settings",
 	"tags": [],
 	"description": "",
-	"content": "The Settings tab allows changes of settings that apply to the whole application.\rFeatures \r\rUser Settings\r\r\r\r\r\r\r\rUsers\r\r\r\r\r\r\r\rPermissions\r\r\r\r\r\r\r\rAPI Tokens\r\r\r\r\r\r\r\rGeneral Settings\r\r\r\r\r\r"
+	"content": "The Settings tab allows changes of settings that apply to the whole application.\rFeatures \r\rUser Settings\r\r\r\r\r\r\r\rUsers\r\r\r\r\r\r\r\rPermissions\r\r\r\r\r\r\r\rGeneral Settings\r\r\r\r\r\r"
 },
 {
 	"uri": "https://docs.qlarm.com/settings/user-settings/",
@@ -96,20 +96,6 @@
 	"tags": [],
 	"description": "",
 	"content": "\u0026times;\r\r\rIn the Users page you can list all the Users in the system. Users are created or registered in Qlarm and they can login and use the system with authorizations. Users can belong to different organizations. Every organization provides the User specific authorizations. User can be present in the system with a corresponding Recipient.\rFig 1. Users\r\rA User can be added, edited or deleted. You can search Users by name and filter them by Role.\nFig 2. Search and filter users\r\rAdd user If you click the button a popup appears. All the fields in the popup are required to save the User. You need to insert first and last name, phone number, select a Role that is available for the organization, also insert an Email. With that Email you can login on Qlarm. You can add Scopes .) to determine the data that will be visible to the User. E.g. Endpoints are listed and selecting one for a User makes all the data related to that Endpoint such as Tags, Events, Notifications, Dashboards etc. will be visible for the User. After you fill the data you click \u0026ldquo;Save\u0026rdquo; button to save the User.\nFig 3. Scopes\r\rFig 4. Add user\r\rEdit user To edit the User, click the button on the User\u0026rsquo;s row. Scopes for the User can be edited. Name, email and mobile cannot be edited when the User is synchronized with the external active directory. Roles can be edited if the User Account email domain belongs to the organization domains.\nFig 5. Edit user\r\rDelete user If the User Account email domain belongs to the organization domains, then the is provided. If clicked a confirmation popup will appear. If confirmed, the User will be deleted.\nFig 6. Delete user\r\r\r// Get the modal\rvar modal = document.getElementById(\"myModal\");\rvar modalImg = document.getElementById(\"img01\");\rvar captionText = document.getElementById(\"caption\");\rfunction reply_click(img)\r{\rmodal.style.display = \"block\";\rmodalImg.src = img.src;\rcaptionText.innerHTML = img.alt;\r}\rmodal.onclick = function() { modal.style.display = \"none\";\r}\rdocument.addEventListener('keyup', function(e) {\rif (e.keyCode == 27) {\rmodal.style.display = \"none\";\r}\r});\r  "
-},
-{
-	"uri": "https://docs.qlarm.com/settings/api-tokens/",
-	"title": "API Tokens",
-	"tags": [],
-	"description": "",
-	"content": "\u0026times;\r\r\rUsage of API Tokens You can use API Tokens in API requests from code or by tool for API requests. In order to get the tags available by the token, a GET request should be made to URL https://api.qlarm.com/api/apiTokenAccess/getTagsByToken with two request headers: header name: \u0026ldquo;Tenant\u0026rdquo;, header value: (e.g.)\u0026ldquo;Tenant_name\u0026quot; and header name: \u0026ldquo;ApiToken\u0026rdquo;, header value: (e.g. see Fig 1)\u0026ldquo;7c9fc2bf-f94a-b554-6b75-9d4ff6b5025d\u0026quot;.\nApiToken header value can be copied from Qlarm API Tokens page. API Token will appear on this page if the logged in user has all the scopes included in the API token. Using this getTagsByToken API request, the user will be able to get scoped tags in the response.\nFig 1. Copy API Token for request header\r\r\r// Get the modal\rvar modal = document.getElementById(\"myModal\");\rvar modalImg = document.getElementById(\"img01\");\rvar captionText = document.getElementById(\"caption\");\rfunction reply_click(img)\r{\rmodal.style.display = \"block\";\rmodalImg.src = img.src;\rcaptionText.innerHTML = img.alt;\r}\rmodal.onclick = function() { modal.style.display = \"none\";\r}\rdocument.addEventListener('keyup', function(e) {\rif (e.keyCode == 27) {\rmodal.style.display = \"none\";\r}\r});\r  "
-},
-{
-	"uri": "https://docs.qlarm.com/settings/api-tokens/",
-	"title": "API Tokens",
-	"tags": [],
-	"description": "",
-	"content": "\u0026times;\r\r\rUsage of API Tokens You can use API Tokens in API requests from code or by tool for API requests. In order to get the tags available by the token, a GET request should be made to URL https://api.qlarm.com/api/apiTokenAccess/getTagsByToken with two request headers: header name: \u0026ldquo;Tenant\u0026rdquo;, header value: (e.g.)\u0026ldquo;Tenant_name\u0026quot; and header name: \u0026ldquo;ApiToken\u0026rdquo;, header value: (e.g. see Fig 1)\u0026ldquo;7c9fc2bf-f94a-b554-6b75-9d4ff6b5025d\u0026quot;.\nApiToken header value can be copied from Qlarm API Tokens page. API Token will appear on this page if the logged in user has all the scopes included in the API token. Using this getTagsByToken API request, the user will be able to get scoped tags in the response.\nFig 1. Copy API Token for request header\r\r\r// Get the modal\rvar modal = document.getElementById(\"myModal\");\rvar modalImg = document.getElementById(\"img01\");\rvar captionText = document.getElementById(\"caption\");\rfunction reply_click(img)\r{\rmodal.style.display = \"block\";\rmodalImg.src = img.src;\rcaptionText.innerHTML = img.alt;\r}\rmodal.onclick = function() { modal.style.display = \"none\";\r}\rdocument.addEventListener('keyup', function(e) {\rif (e.keyCode == 27) {\rmodal.style.display = \"none\";\r}\r});\r  "
 },
 {
 	"uri": "https://docs.qlarm.com/settings/permissions/",
