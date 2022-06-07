@@ -13,7 +13,7 @@ Configuration section is where you can configure entities used in Qlarm core fun
 
 
 <div class="row py-4 mb">
-	<div class="col-md-4" >
+	<div class="col-md-3" >
 		<a href="{{< ref "/content/configuration/events/_index.md" >}}">
 			<div class="card d-flex border-0">
 				<div class="card-img-top mt-4">
@@ -27,7 +27,7 @@ Configuration section is where you can configure entities used in Qlarm core fun
 			</div>
 		</a>
 	</div>
-    <div class="col-md-4">
+    <div class="col-md-3">
 		<a href="{{< ref "/content/configuration/recipients/_index.md" >}}">
 			<div class="card d-flex border-0">
 				<div class="card-img-top mt-4">
@@ -41,7 +41,7 @@ Configuration section is where you can configure entities used in Qlarm core fun
 			</div>
 		</a>
 	</div>
-    <div class="col-md-4">
+    <div class="col-md-3">
 		<a href="{{< ref "/content/configuration/endpoints/_index.md" >}}">
 			<div class="card d-flex border-0">
 				<div class="card-img-top mt-4">
@@ -50,6 +50,20 @@ Configuration section is where you can configure entities used in Qlarm core fun
 				<div class="card-body">
 					<h5 class="card-title">
 						<a href="{{< ref "/content/configuration/endpoints/_index.md" >}}">Endpoints</a>
+					</h5>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="col-md-3">
+		<a href="{{< ref "/content/configuration/assetModel/_index.md" >}}">
+			<div class="card d-flex border-0">
+				<div class="card-img-top mt-4">
+					<span class="fas fa-project-diagram fa-4x text-secondary"></span>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">
+						<a href="{{< ref "/content/configuration/assetModel/_index.md" >}}">Asset Model</a>
 					</h5>
 				</div>
 			</div>
