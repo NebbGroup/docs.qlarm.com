@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://docs.qlarm.com/notifications/index.xml" title="Qlarm Documentation" />
-    <link rel="canonical" href="https://docs.qlarm.com/notifications/">
+    <link rel="alternate" type="application/rss+xml" href="https://docs.qlarm.com/loginscreen/index.xml" title="Qlarm Documentation" />
+    <link rel="canonical" href="https://docs.qlarm.com/loginscreen/">
 
     <title>
         
-        Notifications | Qlarm Documentation
+        Log In Screen | Qlarm Documentation
         
     </title>
 
@@ -67,7 +67,7 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/introduction/"><h6>Qlarm Overview</h6></a>
     </li>
-    <li data-nav-id="/loginscreen/" class="nav-item my-1
+    <li data-nav-id="/loginscreen/" class="nav-item my-1 parent active
         ">
         
         <a class="nav-link p-0" href="/loginscreen/"><h6>Log In Screen</h6></a>
@@ -97,7 +97,7 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/history/"><h6>History</h6></a>
     </li>
-    <li data-nav-id="/notifications/" class="nav-item my-1 parent active
+    <li data-nav-id="/notifications/" class="nav-item my-1
         ">
         
         <a class="nav-link p-0" href="/notifications/"><h6>Notifications</h6></a>
@@ -201,26 +201,26 @@ if (!doNotTrack) {
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Notifications</h1>
+<h1>Log In Screen</h1>
 
-<!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
 <p class="lead">
-    The Notifications page lists all <a href="/glossary#notification">Notifications</a> in the system. They can be filtered by <a href="/glossary#tag">Tag</a>. You can also search for a Notifications created in certain period. Notification relates to <a href="/glossary#action">Action</a> taken because of a raised <a href="/glossary#event">Event</a>. Notification represents the process behind the actual SMS, call, push or email. It is a document of the Action in progress or done and it provides details about the current status. You can check if an Action took place, check its state, message content etc.
+    <p>The log in screen allows the users to accomplish the following three actions:</p>
+<ol>
+<li>Log In with their email account by filling in their email and password and clicking the Log In button.</li>
+<li>Log In using their Azure AD authentication by clicking on the Enterprise Log In button.</li>
+<li>Sign Up for a trial of Qlarm on a specific Trial environment by creating a new trial account.</li>
+</ol>
+
 </p>
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="notifications_view" src="/notifications_view.png" alt="Notifications">
-    <figcaption >Fig 1. Notifications</figcaption>
-</figure>
-<p>The table lists all of the Notifications sent to the <a href="/glossary#recipient">Recipients</a> with their name, type, status, date and Recipient full name. Using the “Notification Type” dropdown list you can filter the Notifications by their type (SMS, Call, Email, Push Notification). The “Time Filter” drop down list lets us filter the table by the time of the Notification. By pressing the <img src="/options_button.png" alt="last value logo" class = "logo_resize"> button you can further input detail for the time filter.</p>
-<figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="time_filer_options" src="/time_filer_options.png" alt="Time period filter">
-    <figcaption >Fig 2. Time period filter</figcaption>
+    <img class="center_image myImg" onClick="reply_click(this)"  id="users" src="/LogInScreen.png" alt="Log In Screen">
+    <figcaption>Fig 1. Log In Screen</figcaption>
 </figure>
 <script>
 // Get the modal
@@ -244,8 +244,7 @@ document.addEventListener('keyup', function(e) {
         modal.style.display = "none";
     }
 });
-</script><blockquote>
-</blockquote>
+</script>
 
 
     
@@ -257,8 +256,8 @@ document.addEventListener('keyup', function(e) {
 
     <h4 class="text-white text-center">Read more</h4>
 
-    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/history/" title="History"><i class="fas fa-chevron-left p-1"></i>History</a>
-        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/configuration/" title="Configuration">Configuration<i class="fas fa-chevron-right p-1"></i></a>
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/introduction/" title="Qlarm Overview"><i class="fas fa-chevron-left p-1"></i>Qlarm Overview</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/dashboard/" title="Dashboard">Dashboard<i class="fas fa-chevron-right p-1"></i></a>
     </div>
 </div>
 

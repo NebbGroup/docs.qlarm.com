@@ -27,19 +27,25 @@ A User can be added, edited or deleted. You can search Users by name and filter 
 
 ## Add user
 
-If you click the <img src="/add_user_button.png"> button a popup appears. All the fields in the popup are required to save the User. You need to insert first and last name, phone number, select a Role that is available for the organization, also insert an Email. With that Email you can login on Qlarm.
-You can add [Scopes](/glossary#scope) .) to determine the data that will be visible to the User. E.g. [Endpoints](/glossary#endpoint) are listed and selecting one for a User makes all the data related to that Endpoint such as [Tags](/glossary#tag), [Events](/glossary#event), [Notifications](/glossary#notification), [Dashboards](/glossary#dashboard) etc. will be visible for the User.<br/> 
-After you fill the data you click "Save" button <img src="/user_save.png"> to save the User.
+A new user can be added to Qlarm from the Settings -> Users menu, by clicking on the Add User button. This opens a popup window where information about the new user can be entered:
+
+- First name.
+- Last name.
+- Phone number.
+- Role.
+- Scopes.
+- Email (email account that will be used by the new user to log in to Qlarm).
+- Radio button if the user should be listed as a recipient as well.
+
 
 <figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="user_scopes" src="/user_scopes.png" alt="Scopes">
-    <figcaption>Fig 3. Scopes</figcaption>
+    <img class="center_image myImg" onClick="reply_click(this)"  id="user_scopes" src="/addNewUser.png" alt="Add New User">
+    <figcaption>Fig 3. Add New User</figcaption>
 </figure>
 
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="add_user_popup" src="/add_user_popup.png" alt="Add user">
-    <figcaption>Fig 4. Add user</figcaption>
-</figure>
+After entering the data and clicking the Save button, the new user will receive an email on the entered email address. The email informs that he/she was added as a user to Qlarm and contains a link to the Qlarm’s Log In screen where he/she will need to enter few more information to complete the registration and to be able to log in to Qlarm.
+
+If the email used for the new user is used for his/hers Azure Active Directory (Azure AD) authentication, then the user will be able to log in to Qlarm using Azure AD authentication as well just by clicking on Enterprise Log In button on the Qlarm’s Log In screen.
 
 ## Edit user
 To edit the User, click the <img src="/row_edit_button.png"> button on the User's row. Scopes for the User can be edited. Name, email and mobile cannot be edited when the User is synchronized with the external active directory. Roles can be edited if the User Account email domain belongs to the organization domains.
