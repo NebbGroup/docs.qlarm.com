@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="alternate" type="application/rss+xml" href="https://docs.qlarm.com/configuration/assetmodel/index.xml" title="Qlarm Documentation" />
+    <link rel="canonical" href="https://docs.qlarm.com/configuration/assetmodel/">
+
+    <title>
+        
+        Asset Model | Qlarm Documentation
+        
+    </title>
+
+    
+    <link href="https://docs.qlarm.com/css/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://docs.qlarm.com/css/ace.min.css">
+
+    
+
+    
+    
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-2760582-5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                
+                Qlarm Documentation
+            </a>
+        </div>
+        
+    </div>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
+            </form>
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/introduction/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/introduction/"><h6>Qlarm Overview</h6></a>
+    </li>
+    <li data-nav-id="/dashboard/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/dashboard/"><h6>Dashboard</h6></a>
+    </li>
+    <li data-nav-id="/live/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/live/"><h6>Live</h6></a>
+    </li>
+    <li data-nav-id="/events/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/events/"><h6>Events</h6></a>
+    </li>
+    <li data-nav-id="/trend/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/trend/"><h6>Trend</h6></a>
+    </li>
+    <li data-nav-id="/history/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/history/"><h6>History</h6></a>
+    </li>
+    <li data-nav-id="/notifications/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/notifications/"><h6>Notifications</h6></a>
+    </li>
+    <li data-nav-id="/configuration/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/configuration/"><h6>Configuration</h6></a>
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/configuration/events/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/configuration/events/"><h6>Events</h6></a>
+    </li>
+    <li data-nav-id="/configuration/recipients/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/configuration/recipients/"><h6>Recipients</h6></a>
+    </li>
+    <li data-nav-id="/configuration/endpoints/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/configuration/endpoints/"><h6>Endpoints</h6></a>
+    </li>
+    <li data-nav-id="/configuration/assetmodel/" class="nav-item my-1 parent active
+        ">
+        
+        <a class="nav-link p-0" href="/configuration/assetmodel/"><h6>Asset Model</h6></a>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/settings/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/settings/"><h6>Settings</h6></a>
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/settings/user-settings/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/settings/user-settings/"><h6>User Settings</h6></a>
+    </li>
+    <li data-nav-id="/settings/users/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/settings/users/"><h6>Users</h6></a>
+    </li>
+    <li data-nav-id="/settings/api-tokens/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/settings/api-tokens/"><h6>API Tokens</h6></a>
+    </li>
+    <li data-nav-id="/settings/permissions/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/settings/permissions/"><h6>Permissions</h6></a>
+    </li>
+    <li data-nav-id="/settings/general-settings/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/settings/general-settings/"><h6>General Settings</h6></a>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/support/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/support/"><h6>Support</h6></a>
+        <ul class="list-unstyled ml-2">
+    <li data-nav-id="/support/documentation/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/support/documentation/"><h6>Documentation</h6></a>
+    </li>
+    <li data-nav-id="/support/release-notes/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/support/release-notes/"><h6>Release Notes</h6></a>
+    </li>
+    <li data-nav-id="/support/submit-ticket/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/support/submit-ticket/"><h6>Submit Ticket</h6></a>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/glossary/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/glossary/"><h6>Glossary</h6></a>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#functionalities">Functionalities</a>
+      <ul>
+        <li><a href="#model">Model</a></li>
+        <li><a href="#download-models">Download Models</a></li>
+        <li><a href="#create-asset">Create asset</a></li>
+        <li><a href="#upload-model-image">Upload model image</a></li>
+        <li><a href="#view-model">View Model</a></li>
+        <li><a href="#asset-graph">Asset Graph</a></li>
+        <li><a href="#options-for-the-whole-graph">Options for the whole graph</a></li>
+        <li><a href="#layouts">Layouts</a></li>
+        <li><a href="#context-menu">Context menu</a></li>
+      </ul>
+    </li>
+    <li><a href="#filters">Filters</a></li>
+    <li><a href="#actions">Actions</a>
+      <ul>
+        <li><a href="#edit-asset">Edit Asset</a></li>
+        <li><a href="#delete-assets">Delete Asset(s)</a></li>
+        <li><a href="#get-relationships">Get Relationships</a></li>
+      </ul>
+    </li>
+    <li><a href="#relationship-context-menu">Relationship context menu</a>
+      <ul>
+        <li><a href="#filters-1">Filters</a></li>
+        <li><a href="#delete-relationships">Delete Relationship(s)</a></li>
+        <li><a href="#add-relationships">Add Relationships</a></li>
+      </ul>
+    </li>
+    <li><a href="#editor">Editor</a></li>
+    <li><a href="#add-properties">Add properties</a></li>
+    <li><a href="#filterhighlight-the-graph">Filter/Highlight the graph</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>Asset Model</h1>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<p class="lead">
+    Asset Model is a platform that enables the creation of twin graphs based on digital models of entire environments, which could be markets, buildings, factories, farms, energy networks, railways, stadiums, and more—even entire cities. These digital models can be used to gain insights that drive better products, optimized operations, reduced costs, and breakthrough customer experiences.
+</p>
+
+<h2 id="overview">Overview</h2>
+<p>Asset Model can be used to design a digital twin architecture that represents actual IoT devices, and which connects to IoT Hub device twins to send and receive live data.
+Take advantage of your domain expertise on top of Asset Model to build customized, connected solutions that:</p>
+<ul>
+<li>You can model your environment and bring asset twins to life in a scalable and secure manner</li>
+<li>You can Connect assets such as IoT devices</li>
+<li>With uses of Asset Model, you can connect your business logic and data processing</li>
+</ul>
+<p>A sample architecture of a complete solution using Asset Model may contain the following components:</p>
+<ul>
+<li>This service stores your twin models and your twin graph with its state.</li>
+<li>With Asset Model instance you can configure models, create topology, and extract insights from the twin graph.</li>
+<li>One or more external compute resources to process events generated by Asset Model or connected data sources such as devices.</li>
+</ul>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="dashboard" src="/assetModel.png" alt="Asset model">
+    <figcaption>Fig 1. Asset Model</figcaption>
+</figure>
+<h2 id="functionalities">Functionalities</h2>
+<p>The Assets Page provides a flexible and organized asset model for visualizing your graphs. Every node’s data can be displayed in the JSON editor, where users can see all the properties and their values. Also, users can preview the models, add new Assets, export the graph, manipulate with the graph and add new custom properties.</p>
+<h3 id="model">Model</h3>
+<p>Models menu by default is hidden. In order to view Models, click this button <img src="/hideModelsMenu.png" alt="Hide Models Menu"> in the top left corner. In order to hide the Models click again on the same button.</p>
+<h3 id="download-models">Download Models</h3>
+<p>User can download all models provided (Asset and Tag models), in JSON file, by clicking <img src="/downloadAllModels.png" alt="Download All Models"> Download models button.</p>
+<h3 id="create-asset">Create asset</h3>
+<p>User can create new asset by clicking <img src="/createNewAsset.png" alt="Create New Asset"> Create an asset button. After click, a popup form appears. ‘Name’ is a required field. After clicking Add, the newly created Asset will be displayed in the graph. Name of the new asset should be unique.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createNewAssetPopUp.png" alt="Create New Asset Pop Up" style="width: 25%;">
+    <figcaption>Fig 2. Create New Asset Pop Up</figcaption>
+</figure>
+<h3 id="upload-model-image">Upload model image</h3>
+<p>By clicking the Upload model image button <img src="/uploadModelImage.png" alt="Upload Model Image">, user can upload an image for Asset or Tag and the main node will be replaced with the uploaded image. Uploaded images can be replaced or deleted.</p>
+<h3 id="view-model">View Model</h3>
+<p>User can preview model in JSON format by clicking View Model button <img src="/previewModel.png" alt="Preview Model">.</p>
+<h3 id="asset-graph">Asset Graph</h3>
+<p>In the Asset Graph are displayed all Assets and Tags with their relations. Assets and Tags nodes are displayed with different colors, to be distinct. Relations are also displayed with two colors, because there are two different types of relations, contains asset and contains tag.</p>
+<h3 id="options-for-the-whole-graph">Options for the whole graph</h3>
+<p>User can Zoom in, Zoom out, Zoom to Fit, Center and Filter the graph, by clicking these buttons placed in the bottom left corner of the Assets page.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/graphOptions.png" alt="Graph Options" style="width: 6%;">
+    <figcaption>Fig 3. Graph Options</figcaption>
+</figure>
+<p>Users can export the graph in JSON file by clicking the Export Graph button <img src="/exportGraph.png" alt="Export Graph"> placed on the top of the page. 
+Users can view the whole graph, if some of the nodes or relations are hidden previously, by clicking the View All button <img src="/viewAllRelationships.png" alt="View All Relationships"> placed on the top of the page. In order to see the hidden relations from the graph you should click on the Show All Relationships button <img src="/showAllRelationships.png" alt="Show All Relationships">.</p>
+<h3 id="layouts">Layouts</h3>
+<p>Layouts provide a mechanism for automatically positioning nodes in a graph. Default layouts include Cola, Dagre, fCoSE and Klay. User can choose preferred layout from the drop-down menu.</p>
+<h3 id="context-menu">Context menu</h3>
+<p>In the graph there are context menus around nodes, which can be displayed by selecting some node and right click on the node or just right click on the node, after that the context menu with filters and actions is displayed.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/assetContextMenu.png" alt="Asset Context Menu" style="width: 20%;">
+    <figcaption>Fig 4. Asset Context Menu</figcaption>
+</figure>
+<p>In the asset context menu, there are several options for Filters and Actions.</p>
+<h2 id="filters">Filters</h2>
+<p>In the Filtering options if user clicks on <b>Show of type</b>, it will filter all nodes with the same type as the selected one. By clicking <b>Show of model</b>, it will filter all nodes with the same model as the selected one. 
+By clicking <b>Show selected</b> it will show only the selected node and hide all other nodes. By clicking <b>Show selected + Children</b> it will filter only the selected node(s) and nodes below selected node(s). By clicking <b>Hide selected</b> it will hide the selected node(s) and its relationship(s) (if it has one). By clicking <b>Hide selected + Children</b> it will hide the selected nodes(s), all the nodes below them and their relationships.</p>
+<h2 id="actions">Actions</h2>
+<h3 id="edit-asset">Edit Asset</h3>
+<p>By clicking Edit asset action opens the editor on the right side of the screen.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/editAssetActions.png" alt="Edit Asset Actions" style="width: 35%;">
+    <figcaption>Fig 5. Edit Asset Actions</figcaption>
+</figure>
+<p>In the editor, for the selected asset or tag, are displayed all properties and their latest values.
+User can edit only the displayName, name, description and type properties of the selected tag or asset. In order to save the changes, user should click Save Asset button <img src="/saveAssetButton.png" alt="Save Asset Button">.</p>
+<h3 id="delete-assets">Delete Asset(s)</h3>
+<p>By clicking Delete asset(s), confirmation pop-up is displayed, after clicking Yes selected Asset(s) and its relationships will be deleted and the graph will be updated. 
+Note: Delete asset(s) action is only available for Asset nodes.</p>
+<h3 id="get-relationships">Get Relationships</h3>
+<p>In order to see information about incoming and outgoing relationships for selected node, you should click Get relationships from the Context menu.</p>
+<h2 id="relationship-context-menu">Relationship context menu</h2>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/relationshipContextMenu.png" alt="Relationship Context Menu" style="width: 35%;">
+    <figcaption>Fig 6. Relationship Context Menu</figcaption>
+</figure>
+<h3 id="filters-1">Filters</h3>
+<p>By clicking Hide relationship it will hide the selected relationship. By clicking Hide relationships of type it will hide all the relationships of the same type as the selected one.</p>
+<h3 id="delete-relationships">Delete Relationship(s)</h3>
+<p>In order to delete relationship(s) you should click on the Delete relationship(s) option from the context menu. In order to delete multiple relationships at once you should select them by pressing Ctrl + Left click and select all the desired relationships. After deleting relationship(s) the graph will be updated.</p>
+<h3 id="add-relationships">Add Relationships</h3>
+<p>In order to add relationship between nodes, at first you should select the parent node, than press Ctrl, than select the child node and then Right click on the child node. After that the context menu will be displayed with Add relationships option. After clicking the option, a modal is displayed:</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createRelationship.png" alt="Create Relationship" style="width: 25%;">
+    <figcaption>Fig 7. Create Relationship</figcaption>
+</figure>
+<p>In the Create relationship modal there is information about the Source ID (parent node ID) and Target ID (child node ID). In the Relationship dropdown you can choose the relationship type. If you are adding relationship between Assets, you can choose relationship of type ‘contains asset’. If you are adding relationship between Asset and Tag, you can choose relationship of type ‘contains tag’. After clicking Save the graph will be updated.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/containsAsset.png" alt="Contains Asset" style="width: 20%;">
+    <figcaption>Fig 8. Contains Asset</figcaption>
+</figure>
+<p>Note: Add relationships action is only available when user wants to add relationship between Asset -&gt; Tag and Asset -&gt; Asset.</p>
+<h2 id="editor">Editor</h2>
+<p>Editor by default is hidden. In order to open it you should select some node and click Edit asset. In order to close it, you should click this button <img src="/hideEditor.png" alt="Hide Editor">.</p>
+<h2 id="add-properties">Add properties</h2>
+<p>In order to add some custom property to some Asset or Tag, you should click Add properties <img src="/addProperties.png" alt="Add Properties">.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/assetCustomProperties.png" alt="Asset Custom Properties" style="width: 20%;">
+    <figcaption>Fig 9. Asset Custom Properties</figcaption>
+</figure>
+<p>In the pop-up modal you should enter the name of the new property and then click Add. Newly added properties are displayed above the field, and they can also be removed. After clicking Save, the newly created properties will be displayed in the editor and then you should click <img src="/saveAssetProperties.png" alt="Save Asset Properties"> in order to save the Asset or Tag with the new properties.</p>
+<h2 id="filterhighlight-the-graph">Filter/Highlight the graph</h2>
+<p>The first option for filtering the graph is explained in the Context menu part. 
+The second option for filtering the graph is by clicking Filter/Highlight button  <img src="/filterButton.png" alt="Filter Button">. 
+In the Filter and Highlight sub-menus there is a field in which users can add terms to filter/highlight the graph. Terms can be removed or disabled by clicking the toggle button. Filtering will display only those nodes where there is a matching term and highlighting will highlight the matching nodes. The option Add Outgoing Relationships is selected by default, in order to deselect it you should click on the   and the pop-up will be displayed.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/filterPopup.png" alt=" Filter Popup" style="width: 35%;">
+    <figcaption>Fig 10. Filter Popup</figcaption>
+</figure>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function reply_click(img)
+{
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+modal.onclick = function() { 
+  modal.style.display = "none";
+}
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) {
+        modal.style.display = "none";
+    }
+});
+</script><blockquote>
+</blockquote>
+
+
+    
+
+
+                    
+                    <div class="row"><div class="position-relative mx-auto col-lg-9">
+                          <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+
+    <h4 class="text-white text-center">Read more</h4>
+
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/configuration/endpoints/" title="Endpoints"><i class="fas fa-chevron-left p-1"></i>Endpoints</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/settings/" title="Settings">Settings<i class="fas fa-chevron-right p-1"></i></a>
+    </div>
+</div>
+
+
+                        </div></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://docs.qlarm.com/lib/jquery.min.js"></script> 
+<script src="https://docs.qlarm.com/lib/popper.min.js"></script> 
+
+<script src="https://docs.qlarm.com/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/docs.qlarm.com\/";
+  
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>
