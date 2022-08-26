@@ -122,7 +122,7 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/configuration/endpoints/"><h6>Endpoints</h6></a>
     </li>
-    <li data-nav-id="/configuration/assetmodel/" class="nav-item my-1 parent active
+    <li data-nav-id="/configuration/assetmodel/" class="nav-item my-1 active
         ">
         
         <a class="nav-link p-0" href="/configuration/assetmodel/"><h6>Asset Model</h6></a>
@@ -203,7 +203,6 @@ if (!doNotTrack) {
         <li><a href="#model">Model</a></li>
         <li><a href="#download-models">Download Models</a></li>
         <li><a href="#create-asset">Create asset</a></li>
-        <li><a href="#upload-model-image">Upload model image</a></li>
         <li><a href="#view-model">View Model</a></li>
         <li><a href="#asset-graph">Asset Graph</a></li>
         <li><a href="#options-for-the-whole-graph">Options for the whole graph</a></li>
@@ -228,7 +227,11 @@ if (!doNotTrack) {
     </li>
     <li><a href="#editor">Editor</a></li>
     <li><a href="#add-properties">Add properties</a></li>
-    <li><a href="#filterhighlight-the-graph">Filter/Highlight the graph</a></li>
+    <li><a href="#filterhighlight-the-graph">Filter/Highlight the graph</a>
+      <ul>
+        <li><a href="#asset-images">Asset images</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
@@ -278,8 +281,6 @@ Take advantage of your domain expertise on top of Asset Model to build customize
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createNewAssetPopUp.png" alt="Create New Asset Pop Up" style="width: 25%;">
     <figcaption>Fig 2. Create New Asset Pop Up</figcaption>
 </figure>
-<h3 id="upload-model-image">Upload model image</h3>
-<p>By clicking the Upload model image button <img src="/uploadModelImage.png" alt="Upload Model Image">, user can upload an image for Asset or Tag and the main node will be replaced with the uploaded image. Uploaded images can be replaced or deleted.</p>
 <h3 id="view-model">View Model</h3>
 <p>User can preview model in JSON format by clicking View Model button <img src="/previewModel.png" alt="Preview Model">.</p>
 <h3 id="asset-graph">Asset Graph</h3>
@@ -356,6 +357,21 @@ In the Filter and Highlight sub-menus there is a field in which users can add te
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/filterPopup.png" alt=" Filter Popup" style="width: 35%;">
     <figcaption>Fig 10. Filter Popup</figcaption>
 </figure>
+<h3 id="asset-images">Asset images</h3>
+<ul>
+<li><b>Set model image</b> - User can upload model image by clicking Upload image button <img src="/uploadModelImage.png" alt="Upload Model Image">. User can upload an image for Asset or Tag and the main nodes will be replaced with the uploaded image. When uploading image for model it will reflect in all nodes from the same model (Asset or Tag).</li>
+<li><b>Set asset image</b> - In order to set an image for only one node, user should select the node, right click on the node and select the &lsquo;Set asset image&rsquo; option from the Actions list.</li>
+<li><b>Set asset type image</b> - In order to set an image for nodes with the same &rsquo;type&rsquo; property, user should select a node with that &rsquo;type&rsquo; property, right click on the node and select the &lsquo;Set asset type image&rsquo; option from the Actions list. This option is only available if the asset has value for &rsquo;type&rsquo; property.</li>
+</ul>
+<p>After uploading image, pop-up is opened (shown on Fig 11). User can choose Width and Height (min 20, max 200 pixels) for the selected image and then save the image by clicking the Save button <img src="/saveImgBtn.png" alt="Save image button" style="width:70px">.</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/uploadImgPopup.png" alt="Upload image pop-up" style="width: 35%;">
+    <figcaption>Fig 11. Upload image pop-up</figcaption>
+</figure>
+<ul>
+<li><b>Replace image</b> - In order to replace existing image, user should choose Set model image/Set asset image/Set asset type image and then pop-up is opened. User should click on the Replace button <img src="/replaceImgBtn.png" alt="Replace image button" style="width:70px">, choose new image and then click Save button. In order to cancel the action, user should click Cancel <img src="/cancelImgBtn.png" alt="Cancel image upload button" style="width:70px">.</li>
+<li><b>Delete image</b> - In order to delete existing image, user should open the set image pop-up and then click on the Delete button <img src="/deleteImgBtn.png" alt="Delete image button" style="width:70px">.</li>
+</ul>
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");

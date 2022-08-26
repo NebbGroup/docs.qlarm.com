@@ -18,14 +18,14 @@ Several filtering functions enable you to narrow down the list selection to show
 </div>
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="live_view" src="/live_view.png" alt="Live view">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="live_view" src="/liveView.png" alt="Live view">
     <figcaption >Fig 1. Live view</figcaption>
 </figure>
 
-The table lists all the Tags for selected [Endpoints](/glossary#endpoint) that are enabled and set for Live View (for more details see [Endpoints section](/configuration/endpoints)). The table shows the name, last value, last change time, associated active [Event Instances](/glossary#event-instance) and Trend View link for each Tag. You can filter the content in the table by activating the Search, Time or Endpoint filters.
+The table lists all the Tags for selected [Assets](/glossary#asset) that are enabled and set for Live View. The table shows the name, last value, last change time, associated active [Event Instances](/glossary#event-instance) and Trend View link for each Tag. You can filter the content in the table by activating the Search, Time or Assets filters.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="live_filter_options" src="/live_filter_options.png" alt="Live View filters options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="live_filter_options" src="/liveFilters.png" alt="Live View filters options">
     <figcaption >Fig 2. Live View filters options</figcaption>
 </figure>
 
