@@ -17,7 +17,7 @@ Qlarm keeps all the values your sensors emit and pass them through filter rules 
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="history_view" src="/history_view.png" alt="History view">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="history_view" src="/historyView.png" alt="History view">
     <figcaption >Fig 1. History view</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ By selecting a Tag from the searchable drop-down Tag list, the table is filled w
 In addition to the default "Tag" filter, used to select a Tag to show its content in the table, there is a “Group By” and “Time” filter. The "Group By" filter is used to group the table content by Hour or Day. This filter is accompanied with a "Function" filter which allows us to select which statistical information to be calculated for our grouped content.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="history_filter_options" src="/history_filter_options.png" alt="History filter options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="history_filter_options" src="/historyFilters.png" alt="History filter options">
     <figcaption >Fig 2. History filter options</figcaption>
 </figure>
 

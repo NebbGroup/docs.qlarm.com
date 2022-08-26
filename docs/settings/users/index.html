@@ -139,7 +139,7 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/settings/user-settings/"><h6>User Settings</h6></a>
     </li>
-    <li data-nav-id="/settings/users/" class="nav-item my-1 parent active
+    <li data-nav-id="/settings/users/" class="nav-item my-1 active
         ">
         
         <a class="nav-link p-0" href="/settings/users/"><h6>Users</h6></a>
@@ -225,7 +225,7 @@ if (!doNotTrack) {
 </figure>
 <p>A User can be added, edited or deleted. You can search Users by name and filter them by <a href="/glossary#role">Role</a>.</p>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="filter_users_role_filter" src="/filter_users_role_filter.png" alt="Search and filter users">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="filter_users_role_filter" src="/filter_users_role_filter.png" alt="Search and filter users" style="width:50%">
     <figcaption>Fig 2. Search and filter users</figcaption>
 </figure>
 <h2 id="add-user">Add user</h2>
@@ -234,13 +234,14 @@ if (!doNotTrack) {
 <li>First name.</li>
 <li>Last name.</li>
 <li>Phone number.</li>
-<li>Role.</li>
-<li>Scopes.</li>
+<li><a href="/glossary#role">Role</a>.</li>
+<li><a href="/glossary#scope">Scopes</a>.</li>
+<li>Asset scopes.</li>
 <li>Email (email account that will be used by the new user to log in to Qlarm).</li>
 <li>Radio button if the user should be listed as a recipient as well.</li>
 </ul>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="user_scopes" src="/addNewUser.png" alt="Add New User">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="user_scopes" src="/addUser.png" alt="Add New User">
     <figcaption>Fig 3. Add New User</figcaption>
 </figure>
 <p>After entering the data and clicking the Save button, the new user will receive an email on the entered email address. The email informs that he/she was added as a user to Qlarm and contains a link to the Qlarm’s Log In screen where he/she will need to enter few more information to complete the registration and to be able to log in to Qlarm.</p>
@@ -248,13 +249,13 @@ if (!doNotTrack) {
 <h2 id="edit-user">Edit user</h2>
 <p>To edit the User, click the <img src="/row_edit_button.png"> button on the User&rsquo;s row. Scopes for the User can be edited. Name, email and mobile cannot be edited when the User is synchronized with the external active directory. Roles can be edited if the User Account email domain belongs to the organization domains.</p>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="edit_user" src="/edit_user.png" alt="Edit user">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="edit_user" src="/editUser.png" alt="Edit user">
     <figcaption>Fig 5. Edit user</figcaption>
 </figure>
 <h2 id="delete-user">Delete user</h2>
 <p>If the User Account email domain belongs to the organization domains, then the <img src="/row_delete_button.png"> is provided. If clicked a confirmation popup will appear. If confirmed, the User will be deleted.</p>
 <figure class="image_container">
-    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="user_delete_popup" src="/user_delete_popup.png" alt="Delete user">
+    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="user_delete_popup" src="/removeUser.png" alt="Delete user">
     <figcaption>Fig 6. Delete user</figcaption>
 </figure>
 <script>

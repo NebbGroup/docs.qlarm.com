@@ -17,7 +17,7 @@ The "Permissions" page is used to set [Permissions](/glossary#permission) for a 
 
 [Roles](/glossary#role) are predefined and listed in the "CHOOSE ROLE" list.
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="choose_role_list" src="/choose_role_list.png" alt="Choose role">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="choose_role_list" src="/roleFilterPermissionsView.png" alt="Choose role" style="width: 40%">
     <figcaption>Fig 1. Choose Role</figcaption>
 </figure>
 

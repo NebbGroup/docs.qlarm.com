@@ -82,7 +82,7 @@ if (!doNotTrack) {
         
         <a class="nav-link p-0" href="/live/"><h6>Live</h6></a>
     </li>
-    <li data-nav-id="/events/" class="nav-item my-1 parent active
+    <li data-nav-id="/events/" class="nav-item my-1 active
         ">
         
         <a class="nav-link p-0" href="/events/"><h6>Events</h6></a>
@@ -230,7 +230,7 @@ The <a href="/glossary#event-definition">Event Definitions</a> can be edited for
 </p>
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events.png" alt="Events">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/eventsTable.png" alt="Events">
     <figcaption>Fig 1. Events</figcaption>
 </figure>
 <h2 id="types-of-events">Types of Events</h2>
@@ -310,8 +310,7 @@ Event Definition can be edited or deleted. In this case its instances are Archiv
 <h2 id="filters">Filters</h2>
 <p>The following filters are available for both Events and History tabs:</p>
 <ul>
-<li>&ldquo;ENDPOINT FILTER&rdquo; - the endpoint filter is preselected and is used to select Event Instances created for any of the Tags of the selected <a href="/glossary#endpoint">Endpoint</a>.</li>
-<li>&ldquo;TAG FILTER&rdquo; - the tag filter is populated with the selected Endpoint Tags and is not preselected. It filters Event Instances for selected Tag.</li>
+<li>&ldquo;TAGS FILTER&rdquo; - the tags tree view filter is populated with the Tags and their <a href="/glossary#asset">Assets</a> for which the user has asset scopes. It filters Event Instances for selected Tags.</li>
 <li>&ldquo;SEARCH FILTER&rdquo; (by name) - filters the Event Instances with a name that contains the search string.</li>
 <li>&ldquo;EVENT TYPE&rdquo; - filters only the Event Instances from selected Event Type.</li>
 <li>&ldquo;IN GRACE PERIOD&rdquo; - If checked, only Event Instances that are in Grace Period will be displayed .</li>
@@ -322,7 +321,7 @@ Event Definition can be edited or deleted. In this case its instances are Archiv
 <li>&ldquo;ACKNOWLEDGED STATE&rdquo; - filters the Event Instances that have the selected acknowledged state.</li>
 </ul>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/Event_view_filters.png" alt="Event view filter options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/eventViewFilters.png" alt="Event view filter options">
     <figcaption>Fig 2. Event view filter options</figcaption>
 </figure>
 <p>In the History tab there are also:</p>
@@ -330,7 +329,7 @@ Event Definition can be edited or deleted. In this case its instances are Archiv
 <li>&ldquo;DATE FILTER&rdquo; - filters the Event Instances by creation date.</li>
 </ul>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/History_filters.png" alt="History filter options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/historyTabFilters.png" alt="History filter options">
     <figcaption>Fig 3. History filter options</figcaption>
 </figure>
 <p>Depending on what is selected in the filters, you can have a different columns displayed: Column is not displayed if its data is not expected for a certain filter combination.</p>

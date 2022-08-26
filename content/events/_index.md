@@ -20,7 +20,7 @@ The [Event Definitions](/glossary#event-definition) can be edited for each insta
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events.png" alt="Events">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/eventsTable.png" alt="Events">
     <figcaption>Fig 1. Events</figcaption>
 </figure>
 
@@ -69,8 +69,7 @@ Columns common for all Event Types are:
 
 ## Filters
 The following filters are available for both Events and History tabs:
-- "ENDPOINT FILTER" - the endpoint filter is preselected and is used to select Event Instances created for any of the Tags of the selected [Endpoint](/glossary#endpoint). 
-- "TAG FILTER" - the tag filter is populated with the selected Endpoint Tags and is not preselected. It filters Event Instances for selected Tag.
+- "TAGS FILTER" - the tags tree view filter is populated with the Tags and their [Assets](/glossary#asset) for which the user has asset scopes. It filters Event Instances for selected Tags.
 - "SEARCH FILTER" (by name) - filters the Event Instances with a name that contains the search string.
 - "EVENT TYPE" - filters only the Event Instances from selected Event Type.
 - "IN GRACE PERIOD" - If checked, only Event Instances that are in Grace Period will be displayed . 
@@ -79,14 +78,14 @@ In the Events tab there are also:
 - "EVENT STATE" - filters the Event Instances that have the selected event state.
 - "ACKNOWLEDGED STATE" - filters the Event Instances that have the selected acknowledged state.
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/Event_view_filters.png" alt="Event view filter options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/eventViewFilters.png" alt="Event view filter options">
     <figcaption>Fig 2. Event view filter options</figcaption>
 </figure>
 
 In the History tab there are also:  
 - "DATE FILTER" - filters the Event Instances by creation date.
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/History_filters.png" alt="History filter options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/historyTabFilters.png" alt="History filter options">
     <figcaption>Fig 3. History filter options</figcaption>
 </figure>
 

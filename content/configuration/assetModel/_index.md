@@ -55,10 +55,6 @@ User can create new asset by clicking <img src="/createNewAsset.png" alt="Create
     <figcaption>Fig 2. Create New Asset Pop Up</figcaption>
 </figure>
 
-### Upload model image
-
-By clicking the Upload model image button <img src="/uploadModelImage.png" alt="Upload Model Image">, user can upload an image for Asset or Tag and the main node will be replaced with the uploaded image. Uploaded images can be replaced or deleted.
-
 ### View Model
 
 User can preview model in JSON format by clicking View Model button <img src="/previewModel.png" alt="Preview Model">.
@@ -183,6 +179,22 @@ In the Filter and Highlight sub-menus there is a field in which users can add te
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/filterPopup.png" alt=" Filter Popup" style="width: 35%;">
     <figcaption>Fig 10. Filter Popup</figcaption>
 </figure>
+
+### Asset images
+
+- <b>Set model image</b> - User can upload model image by clicking Upload image button <img src="/uploadModelImage.png" alt="Upload Model Image">. User can upload an image for Asset or Tag and the main nodes will be replaced with the uploaded image. When uploading image for model it will reflect in all nodes from the same model (Asset or Tag). 
+- <b>Set asset image</b> - In order to set an image for only one node, user should select the node, right click on the node and select the 'Set asset image' option from the Actions list.
+- <b>Set asset type image</b> - In order to set an image for nodes with the same 'type' property, user should select a node with that 'type' property, right click on the node and select the 'Set asset type image' option from the Actions list. This option is only available if the asset has value for 'type' property.
+
+After uploading image, pop-up is opened (shown on Fig 11). User can choose Width and Height (min 20, max 200 pixels) for the selected image and then save the image by clicking the Save button <img src="/saveImgBtn.png" alt="Save image button" style="width:70px">.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/uploadImgPopup.png" alt="Upload image pop-up" style="width: 35%;">
+    <figcaption>Fig 11. Upload image pop-up</figcaption>
+</figure>
+
+- <b>Replace image</b> - In order to replace existing image, user should choose Set model image/Set asset image/Set asset type image and then pop-up is opened. User should click on the Replace button <img src="/replaceImgBtn.png" alt="Replace image button" style="width:70px">, choose new image and then click Save button. In order to cancel the action, user should click Cancel <img src="/cancelImgBtn.png" alt="Cancel image upload button" style="width:70px">.
+- <b>Delete image</b> - In order to delete existing image, user should open the set image pop-up and then click on the Delete button <img src="/deleteImgBtn.png" alt="Delete image button" style="width:70px">.
 
 <script>
 // Get the modal

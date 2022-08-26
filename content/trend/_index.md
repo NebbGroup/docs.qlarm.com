@@ -16,7 +16,7 @@ pre: ""
 The Trend page provides a flexible chart for visualizing your data. Data from multiple [Tags](/glossary#tag) can be displayed on the chart, and the time period from which the data are collected can be adjusted. The resulting trend view can be saved as a Report which can be retrieved later or saved to file.
 {{</lead>}}
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="trend_screen" src="/trend_screen.png" alt="Trend">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="trend_screen" src="/trend.png" alt="Trend">
     <figcaption>Fig 1. Trend</figcaption>
 </figure>
 
@@ -24,16 +24,16 @@ The Trend page provides a flexible chart for visualizing your data. Data from mu
 The trend window is by default blank when entering the Trend page. In order to start viewing your data, you can either add individual tags or [load a previously saved Report](/trend#reports).
 
 ### Adding tags to the chart
-Multiple Tags can be added to the chart in order to view their data. This is done by selecting an [Endpoint](/glossary#endpoint) first from the select list "ENDPOINT" then selecting one or more Tags (max 5) from the multiselect "TAGS" list.
+Multiple Tags can be added to the chart in order to view their data. This is done by selecting one or more Tags (max 5) from the multiselect "TAGS" tree view dropdown list.
 <figure class="image_container">
-    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="trend_tag_list" src="/trend_tag_list.png" alt="Adding tags">
+    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="trend_tag_list" src="/trendTagsList.png" alt="Adding tags">
     <figcaption>Fig 2. Adding tags</figcaption>
 </figure>
 
 ### Change time period
-Tag data can be displayed in the chart for the selected period. You can choose the period from the dropdown “TIME PERIOD” list for specified periods or choose a “Custom” period (“Last Day” is the initial preselected period).
+Tag data can be displayed in the chart for the selected period. You can choose the period from the dropdown “TIME” list for specified periods or choose a “Custom” period (“Today” is the initial preselected period).
 <figure class="image_container">
-    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="time_period" src="/time_period.png" alt="Time filter">
+    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="time_period" src="/timeFilter.png" alt="Time filter">
     <figcaption>Fig 3. Time filter</figcaption>
 </figure>
 
