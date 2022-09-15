@@ -13,11 +13,11 @@ weight: 12
 
 {{<lead>}}
 The Endpoints configuration page contains all of the accessible [Endpoints](/glossary#endpoint) and their associated nodes. An 
-Endpoint is a logical representation of [OPC server](/glossary#opc-server) in the context of Qlarm environment, providing necessary data to manage an OPC server. Endpoints are the starting point of the main functional flow in the system, the messaging flow. All properties of an Endpoint should be configured to respond to the necessity of the flow. Starting from configuration of the Endpoint (its OPC server with [Tags](/glossary#tag) associated) via [Event Definitions](/glossary#event-definition) to [Events](/glossary#event) raised and [Notifications](/glossary#notification) send to [Recipients](/glossary#recipient), Endpoints are the main trade for all of these entities. Monitoring pages like Live, Events, Notifications can all be filtered by Endpoint.
+Endpoint is a logical representation of [OPC server](/glossary#opc-server) in the context of Qlarm environment, providing necessary data to manage an OPC server. Endpoints are the starting point of the main functional flow in the system, the messaging flow. All properties of an Endpoint should be configured to respond to the necessity of the flow. Starting from configuration of the Endpoint (its OPC server with [Tags](/glossary#tag) associated) via [Event Definitions](/glossary#event-definition) to [Events](/glossary#event) raised and [Notifications](/glossary#notification) send to [Recipients](/glossary#recipient), Endpoints are the main trade for all of these entities.
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="endpoints_configuration" src="/endpoints_configuration.png" alt="Endpoints configuration">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="endpoints_configuration" src="/endpoints.png" alt="Endpoints configuration">
     <figcaption>Fig 1. Endpoints configuration</figcaption>
 </figure>
 
@@ -44,6 +44,8 @@ Each Endpoint is displayed with basic information: Name, Location, Status; and a
 
 The Status Label displays if the Endpoint is <img src="/online_status.png" alt="online status"> or <img src="/offline_status.png" alt="offline status">. 
 
+Make asset button <img src="/makeAsset.png" alt="Make asset button"> enables creating an asset for the chosen endpoint and its tags, which will be visible in the Assets page in shape of a graph after its creation.
+
 By clicking the <img src="/tag_button.png" alt="New Dashboard button"> button the User can view the table of associated Tags for that endpoint. For each known Tag the table displays its Name, Description, OPC UA URL, Value Type, Precision, Deadband, Unit, Enable Live Data, Logs, Enable Status. 
 
 <figure class="image_container">
@@ -54,19 +56,19 @@ By clicking the <img src="/tag_button.png" alt="New Dashboard button"> button th
 By clicking on the <img src="/edit_recipient_button.png" alt="online status"> button you can change the [Actions](/glossary#action) for the specific Tag listed in the table, upon which an "Edit tag" form appears. Also, by selecting multiple Tags and clicking on the <img src="/change_button.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags. 
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tag" src="/edit_tag.png" alt=" Edit tag">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tag" src="/editTag.png" alt=" Edit tag">
     <figcaption>Fig 6. Edit tag<figcaption>
 </figure>
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tags" src="/edit_tags.png" alt="Edit selected tags">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tags" src="/editTags.png" alt="Edit selected tags">
     <figcaption>Fig 7. Edit selected tags<figcaption>
 </figure>
 
 The User can add a new Tag by clicking on the <img src="/add_tag_button.png" alt="online status"> button, upon which an "Add tag" form appears which requires information to be provided.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="add_tag" src="/add_tag.png" alt="Add tag form">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="add_tag" src="/addTag.png" alt="Add tag form">
     <figcaption>Fig 8. Add tag form<figcaption>
 </figure>
 
