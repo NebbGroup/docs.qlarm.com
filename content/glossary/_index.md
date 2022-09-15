@@ -19,6 +19,8 @@ A collection of tags, events, states and attributes that belong to a single enti
 E.g. a motor [asset] could have tags for Speed, Power, and Temperature; and static attributes Name, Weight, and Location; and have an event (alarm) defined for Overheating. Assets can share properties through templates.
 ###### Asset model
 An hierarchical representation (model) of assets.
+###### Asset scopes
+A limitation of the data users have access to. An asset will be automatically created with a data access limitation called ‘asset scope’. A user can have one or more asset scopes. A user can only access the data of the asset scopes they have access to. They will not see Assets, data from assets, or any other elements using data from other asset scopes. An administrator can define who has access to which asset scope. 
 ###### Channel
 A method or mechanism of communicating with recipients. E.g. SMS text message, e-mail, voice phone call or push notifications.
 ###### Condition
