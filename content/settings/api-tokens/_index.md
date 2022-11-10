@@ -16,18 +16,18 @@ In the API Tokens page you can list, create, edit, delete and revoke API Tokens.
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensView" src="/apiTokensView.png" alt="API Tokens View">
-    <figcaption>Fig 1. APi Tokens View</figcaption>
+    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensView" src="/APITokensView.png" alt="API Tokens View">
+    <figcaption>Fig 1. API Tokens View</figcaption>
 </figure>
 
-The table lists all the API Tokens for selected Scopes that are available for the current User. The table shows the name, GUID, Active from date, Expiration date, and Token status information (Is active column). You can filter the content in the table by activating the Search by name, Search by GUID, Scope and Token status filters. 
+The table lists all the API Tokens for selected Scopes that are available for the current User. The table shows the name, GUID, Active from date, Expiration date, and Token status information (Is active column). You can filter the content in the table by name, Token, Asset(s) and Token status filters. 
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensFiltersOptions" src="/apiTokensFiltersOptions.png" alt="API Tokens Filters">
-    <figcaption>Fig 2. APi Tokens Filters</figcaption>
+    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensFiltersOptions" src="/APITokensFilters.png" alt="API Tokens Filters">
+    <figcaption>Fig 2. API Tokens Filters</figcaption>
 </figure>
 
-In the Search by Name filter you can search by one or more keywords and filter your Tokens by name. In the Search by GUID filter you can search tokens by GUID. You can easily copy Token’s GUID by clicking the <img src="/apiTokensCopy.png"> button, right next to the GUID value in the GUID column. In the [Scopes](/glossary#scope) filter, the user can filter the Tokens by the scopes that are assigned to the current User. In the Token status filter the user can filter the Tokens by their status (Active or Inactive). 
+In the Name search filter you can search by one or more keywords and filter your Tokens by name. In the Token search filter you can search tokens by Token. You can easily copy Token’s token GUID by clicking the <img src="/apiTokensCopy.png"> button, right next to the Token value in the Token column. In the [Assets](/glossary#assetScope) filter, the user can filter the Tokens by the asset scopes that are assigned to the current User. In the Token status filter the user can filter the Tokens by their status (Active or Inactive). 
 You can sort the table content by Name and by Is active columns.
 
 ## Create token
@@ -35,11 +35,11 @@ You can sort the table content by Name and by Is active columns.
 If you click the <img src="/apiTokensCreateButton.png"> button a popup form appears
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensCreateTokensPopUp" src="/apiTokensCreateTokensPopUp.png" alt="Create API Token">
-    <figcaption>Fig 3. Create APi Token</figcaption>
+    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensCreateTokensPopUp" src="/CreateAPIToken.png" alt="Create API Token">
+    <figcaption>Fig 3. Create API Token</figcaption>
 </figure>
 
-Name and [Scopes](/glossary#scope) fields are required. GUID field is automatically populated and disabled, it cannot be edited. In order to copy the GUID value click on the <img src="/apiTokensCopy1.png"> button. If you want to regenerate a new GUID value, click on the <img src="/apiTokensRegenerate.png"> button. Description, Valid from and Valid to fields are optional. If you create a token without Valid from and Valid to values, the token is active from the moment of creation and will be active forever. Past dates in the calendar menu are disabled.
+Name and [Assets](/glossary#assetScope) fields are required. Token field is automatically populated and disabled, it cannot be edited. In order to copy the Token GUID value click on the <img src="/apiTokensCopy1.png"> button. If you want to regenerate a new Token GUID value, click on the <img src="/apiTokensRegenerate.png"> button. Description, Valid from and Valid to fields are optional. If you create a token without Valid from and Valid to values, the token is active from the moment of creation and will be active forever. Past dates in the calendar menu are disabled.
 
 
 <figure class="image_container">
@@ -55,7 +55,7 @@ After you are done configuring the token save the token by clicking the <img src
 To edit a token, click the <img src="/apiTokensEdit.png"> button after which a filled form will appear in which you can make the changes.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensEditPopUp" src="/apiTokensEditPopUp.png" alt="Edit Token" >
+    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensEditPopUp" src="/EditAPIToken.png" alt="Edit Token" >
 <figcaption>Fig 5. Edit Token</figcaption>
 </figure>
 
@@ -76,6 +76,21 @@ To revoke a token, click the <img src="/apiTokensRevoke.png"> button after which
     <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensRevokePopUp" src="/apiTokensRevokePopUp.png" alt="Revoke Token" style="width: 35%;">
 <figcaption>Fig 7. Revoke Token</figcaption>
 </figure>
+
+## Usage of API Tokens
+
+You can use API Tokens in API requests by tool for API requests. In order to get the latest values for selected tags in the token, 
+a GET request should be made to URL https://api.qlarm.com/api/apiTokenAccess/getTagsByToken with two request headers: <br>
+header name: "Tenant", header value: (e.g.)"Tenant_name" and <br />
+header name: "ApiToken", header value: (e.g. see Fig 1)"7c9fc2bf-f94a-b554-6b75-9d4ff6b5025d".
+
+ApiToken header value can be copied from Qlarm API Tokens page. Using this getTagsByToken API request, the user will be able to get the latest values for token's selected tags, in the response.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="copyTokenForHeader" src="/CopyToken.png" alt="Copy API Token for request header" style="width: 35%;">
+<figcaption>Fig 8. Copy API Token for request header </figcaption>
+</figure>
+
 
 <script>
 // Get the modal
