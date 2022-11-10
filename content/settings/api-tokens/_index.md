@@ -16,7 +16,7 @@ In the API Tokens page you can list, create, edit, delete and revoke API Tokens.
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensView" src="/APITokensView.png" alt="API Tokens View">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensView" src="/apiTokensView.png" alt="API Tokens View">
     <figcaption>Fig 1. API Tokens View</figcaption>
 </figure>
 
