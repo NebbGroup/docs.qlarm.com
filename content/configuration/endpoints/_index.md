@@ -53,7 +53,7 @@ By clicking the <img src="/tag_button.png" alt="New Dashboard button"> button th
     <figcaption>Fig 5. Endpoint tags<figcaption>
 </figure>
 
-By clicking on the <img src="/edit_recipient_button.png" alt="online status"> button you can change the [Actions](/glossary#action) for the specific Tag listed in the table, upon which an "Edit tag" form appears. Also, by selecting multiple Tags and clicking on the <img src="/change_button.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags. 
+By clicking on the <img src="/edit-button.png" alt="online status"> button you can change the [Actions](/glossary#action) for the specific Tag listed in the table, upon which an "Edit tag" form appears. Also, by selecting multiple Tags and clicking on the <img src="/change_button.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags. 
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tag" src="/editTag.png" alt=" Edit tag">
