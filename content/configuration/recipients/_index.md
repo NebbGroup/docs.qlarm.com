@@ -24,15 +24,15 @@ In the "Recipients" configuration page, you can list, create, edit and delete [R
 
 There are four types of Notifications that Recipients can receive:
 
-- SMS Text Message on a mobile phone <img src="/phone_call_and_sms_recipient.png" alt="phone call and sms recipient icon" class = "logo_resize">
-- Voice Calls <img src="/phone_call_and_sms_recipient.png" alt="phone call and sms recipient icon" class = "logo_resize">
-- E-mail <img src="/email_recipient.png" alt="email icon" class = "logo_resize">
-- Push Notifications <img src="/push_notification_recipient.png" alt="push notification icon" class = "logo_resize">
+- SMS Text Message on a mobile phone <img src="/sms-icon.png" alt="phone call and sms recipient icon" class = "logo_resize">
+- Voice Calls <img src="/call-icon.png" alt="phone call and sms recipient icon" class = "logo_resize">
+- E-mail <img src="/email-icon.png" alt="email icon" class = "logo_resize">
+- Push Notifications <img src="/push-icon.png" alt="push notification icon" class = "logo_resize">
 
 The "Recipients" configuration page lists its Recipients in a table, which shows their name, selected Notification Types, number of Recipients for the [Recipients Group](/glossary#recipient-group). An individual Recipient represents a single person that can receive Notifications. To add a Recipient click the <img src="/add_recipient_button.png" alt="add recipient button" > button by which a form appears:
 
 <figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_form" src="/add_recipient_form.png" alt="Individual recipient configuration">
+    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_form" src="/add-recipient-form.png" alt="Individual recipient configuration">
     <figcaption>Fig 2. Individual recipient configuration</figcaption>
 </figure>
 
@@ -50,13 +50,13 @@ The form requires that you select a name for the Recipients Group, select Recipi
 After filling the table with Recipients and Recipients Groups, you can easily search them by using the search text field and filter them by using the filter select list.
 
 <figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="search_and_filter recipients" src="/search_and_filter recipients.png" alt="Search and filter recipients">
+    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="search_and_filter recipients" src="/recipients_filters.png" alt="Search and filter recipients">
     <figcaption>Fig 4. Search and filter recipients</figcaption>
 </figure>
 
 ## Editing a recipient and recipients groups
 
-You can edit an individual Recipient or a Recipients Group by clicking the <img src="/edit_recipient_button.png" alt="add recipient button" > button after which a filled form will appear in which you can make the changes. To remove a Recipient or a Recipients Group click the <img src="/delete_recipient_button.png" alt="add recipient button" > button.
+You can edit an individual Recipient or a Recipients Group by clicking the <img src="/edit-button.png" alt="add recipient button" > button after which a filled form will appear in which you can make the changes. To remove a Recipient or a Recipients Group click the <img src="/delete-icon.png" alt="add recipient button" > button.
 
 <script>
 // Get the modal
