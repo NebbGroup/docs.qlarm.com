@@ -16,7 +16,7 @@ pre: ""
 The Trend page provides a flexible chart for visualizing your data. Data from multiple [Tags](/glossary#tag) can be displayed on the chart, and the time period from which the data are collected can be adjusted. The resulting trend view can be saved as a Report which can be retrieved later or saved to file.
 {{</lead>}}
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="trend_screen" src="/trend.png" alt="Trend">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="trend_screen" src="/trend-view.png" alt="Trend">
     <figcaption>Fig 1. Trend</figcaption>
 </figure>
 
@@ -26,14 +26,14 @@ The trend window is by default blank when entering the Trend page. In order to s
 ### Adding tags to the chart
 Multiple Tags can be added to the chart in order to view their data. This is done by selecting one or more Tags (max 5) from the multiselect "TAGS" tree view dropdown list.
 <figure class="image_container">
-    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="trend_tag_list" src="/trendTagsList.png" alt="Adding tags">
+    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="trend_tag_list" src="/tag-list.png" alt="Adding tags">
     <figcaption>Fig 2. Adding tags</figcaption>
 </figure>
 
 ### Change time period
 Tag data can be displayed in the chart for the selected period. You can choose the period from the dropdown “TIME” list for specified periods or choose a “Custom” period (“Today” is the initial preselected period).
 <figure class="image_container">
-    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="time_period" src="/timeFilter.png" alt="Time filter">
+    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="time_period" src="/time-filter-trend.png" alt="Time filter">
     <figcaption>Fig 3. Time filter</figcaption>
 </figure>
 
@@ -111,26 +111,26 @@ Reports are collections of Tags which can be saved with their associated time pe
 The Save button stores all the currently selected Tags in a Report. <img src="/save_report_button.png">.<br> 
 Choose a unique name for your Report, and enable "Save Time Period" to save your choice of Time Period other than "Last Day".
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="save_new_report" src="/save_new_report.png" alt="Save report">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="save_new_report" src="/new-trend-report.png" alt="Save report">
     <figcaption>Fig 14. Save report</figcaption>
 </figure>
 
 ### Load Report
-Saved Reports can be loaded by clicking the "Open" button <img src="/load_report_button.png">. The "Load Report" popup lets you select the Report you want to load from a list of saved reports. Click "Load" to retrieve the selected Report.
+Saved Reports can be loaded by clicking the "Open" button <img src="/load_report_button.png">. The "Load Report" popup lets you select the Report you want to load from a list of saved reports. Click "Load" to retrieve the selected Report. Click "Delete" to delete chosen report.
 <figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="load_report_popup" src="/load_report_popup.png" alt="Load report">
+    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="load_report_popup" src="/load-trend-report.png" alt="Load report">
     <figcaption>Fig 15. Load Report</figcaption>
 </figure>
 
 ### Edit Report
 If you edit a loaded Report and if you want to save it, you will get access to the "Overwrite" option in the popup from Fig 14. This overwrites the currently selected Report.
 <figure class="image_container">
-    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="overwrite_report" src="/overwrite_report.png" alt="Overwrite report">
+    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="overwrite_report" src="/overwrite-option.png" alt="Overwrite report">
     <figcaption>Fig 16. Overwrite Report</figcaption>
 </figure> 
  To save the Report as a new Report, select "Save as New" option and the loaded Report will remain unchanged.
 <figure class="image_container">
-    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="save_as_new_report" src="/save_as_new_report.png" alt="Save report as new">
+    <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="save_as_new_report" src="/save-as-new-report.png" alt="Save report as new">
     <figcaption>Fig 17. Save Report as new</figcaption>
 </figure> 
 
