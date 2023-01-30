@@ -17,7 +17,7 @@ The Notifications page lists all [Notifications](/glossary#notification) in the 
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="notifications_view" src="/notifications_view.png" alt="Notifications">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="notifications_view" src="/notificationsTable.png" alt="Notifications">
     <figcaption >Fig 1. Notifications</figcaption>
 </figure>
 

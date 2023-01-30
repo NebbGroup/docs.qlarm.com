@@ -16,7 +16,7 @@ The User settings contains basic settings that apply to the whole application wh
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="user_settings" src="/user_settings.png" alt="User Settings">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="user_settings" src="/user-settings.png" alt="User Settings">
     <figcaption >Fig 1. User Settings</figcaption>
 </figure>
 

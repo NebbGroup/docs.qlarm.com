@@ -16,7 +16,7 @@ In the API Tokens page you can list, create, edit, delete and revoke API Tokens.
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensView" src="/apiTokensView.png" alt="API Tokens View">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensView" src="/apiTokens-table.png" alt="API Tokens View">
     <figcaption>Fig 1. API Tokens View</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ After you are done configuring the token save the token by clicking the <img src
 
 ## Edit token
 
-To edit a token, click the <img src="/apiTokensEdit.png"> button after which a filled form will appear in which you can make the changes.
+To edit a token, click the <img src="/edit-button.png"> button after which a filled form will appear in which you can make the changes.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensEditPopUp" src="/EditAPIToken.png" alt="Edit Token" >
@@ -61,7 +61,7 @@ To edit a token, click the <img src="/apiTokensEdit.png"> button after which a f
 
 ## Delete token
 
-To remove a token, click the <img src="/apiTokensDelete.png" style="width: 2rem;">  button after which a confirmation popup window will appear. If confirmed, the Token will be deleted.
+To remove a token, click the <img src="/delete-icon.png" style="width: 2rem;">  button after which a confirmation popup window will appear. If confirmed, the Token will be deleted.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensDeletePopUp" src="/apiTokensDeletePopUp.png" alt="Delete Token" style="width: 35%;">
@@ -70,7 +70,7 @@ To remove a token, click the <img src="/apiTokensDelete.png" style="width: 2rem;
 
 ## Revoke token
 
-To revoke a token, click the <img src="/apiTokensRevoke.png"> button after which a confirmation pop-up window will appear. If confirmed, the Token will be revoked. When you revoke a token, it goes to inactive state and sets the Valid to value to current date and time. When token is inactive, Revoke button is disabled (<img src="/apiTokensRevokeDisabled.png">). 
+To revoke a token, click the <img src="/revoke-button.png"> button after which a confirmation pop-up window will appear. If confirmed, the Token will be revoked. When you revoke a token, it goes to inactive state and sets the Valid to value to current date and time. When token is inactive, Revoke button is disabled (<img src="/apiTokensRevokeDisabled.png">). 
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="apiTokensRevokePopUp" src="/apiTokensRevokePopUp.png" alt="Revoke Token" style="width: 35%;">
