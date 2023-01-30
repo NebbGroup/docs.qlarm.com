@@ -15,13 +15,13 @@ weight: 15
 In the Users page you can list all the [Users](/glossary#user) in the system. Users are created or registered in Qlarm and they can login and use the system with authorizations. Users can belong to different organizations. Every organization provides the User specific authorizations. User can be present in the system with a corresponding [Recipient](/glossary#recipient).
 {{</lead>}}
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="users" src="/users.png" alt="Users">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="users" src="/users-table.png" alt="Users">
     <figcaption>Fig 1. Users</figcaption>
 </figure>
 
 A User can be added, edited or deleted. You can search Users by name and filter them by [Role](/glossary#role).
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="filter_users_role_filter" src="/filter_users_role_filter.png" alt="Search and filter users" style="width:50%">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="filter_users_role_filter" src="/usersFilters.png" alt="Search and filter users" style="width:50%">
     <figcaption>Fig 2. Search and filter users</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ After entering the data and clicking the Save button, the new user will receive 
 If the email used for the new user is used for his/hers Azure Active Directory (Azure AD) authentication, then the user will be able to log in to Qlarm using Azure AD authentication as well just by clicking on Enterprise Log In button on the Qlarm’s Log In screen.
 
 ## Edit user
-To edit the User, click the <img src="/row_edit_button.png"> button on the User's row. Scopes for the User can be edited. Name, email and mobile cannot be edited when the User is synchronized with the external active directory. Roles can be edited if the User Account email domain belongs to the organization domains.
+To edit the User, click the <img src="/edit-button.png"> button on the User's row. Scopes for the User can be edited. Name, email and mobile cannot be edited when the User is synchronized with the external active directory. Roles can be edited if the User Account email domain belongs to the organization domains.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_user" src="/editUser.png" alt="Edit user">
@@ -57,7 +57,7 @@ To edit the User, click the <img src="/row_edit_button.png"> button on the User'
 </figure>
 
 ## Delete user
-If the User Account email domain belongs to the organization domains, then the <img src="/row_delete_button.png"> is provided. If clicked a confirmation popup will appear. If confirmed, the User will be deleted.
+If the User Account email domain belongs to the organization domains, then the <img src="/delete-icon.png"> is provided. If clicked a confirmation popup will appear. If confirmed, the User will be deleted.
 <figure class="image_container">
     <img class="center_image myImg figure_resize1" onClick="reply_click(this)"  id="user_delete_popup" src="/removeUser.png" alt="Delete user">
     <figcaption>Fig 6. Delete user</figcaption>

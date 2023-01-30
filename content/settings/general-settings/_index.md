@@ -16,7 +16,7 @@ The General settings allows you to change the logo of the application that appea
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="general_settings" src="/general_settings.png" alt="General settings">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="general_settings" src="/generalSettings.png" alt="General settings">
     <figcaption >Fig 1. General settings</figcaption>
 </figure>
 
