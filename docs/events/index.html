@@ -205,6 +205,7 @@ if (!doNotTrack) {
     <li><a href="#sorting">Sorting</a></li>
     <li><a href="#editing-event-instances">Editing Event Instances</a></li>
     <li><a href="#logs">Logs</a></li>
+    <li><a href="#history">History</a></li>
     <li><a href="#event-view-actions">Event view Actions</a></li>
     <li><a href="#event-view-links">Event view Links</a></li>
   </ul>
@@ -230,7 +231,7 @@ The <a href="/glossary#event-definition">Event Definitions</a> can be edited for
 </p>
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/eventsTable.png" alt="Events">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events-table.png" alt="Events">
     <figcaption>Fig 1. Events</figcaption>
 </figure>
 <h2 id="types-of-events">Types of Events</h2>
@@ -321,15 +322,15 @@ Event Definition can be edited or deleted. In this case its instances are Archiv
 <li>&ldquo;ACKNOWLEDGED STATE&rdquo; - filters the Event Instances that have the selected acknowledged state.</li>
 </ul>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/eventViewFilters.png" alt="Event view filter options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/events-filters.png" alt="Event view filter options">
     <figcaption>Fig 2. Event view filter options</figcaption>
 </figure>
 <p>In the History tab there are also:</p>
 <ul>
-<li>&ldquo;DATE FILTER&rdquo; - filters the Event Instances by creation date.</li>
+<li>&ldquo;TIME PERIOD FILTER&rdquo; - filters the Event Instances by creation date.</li>
 </ul>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/historyTabFilters.png" alt="History filter options">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/events-history-filters.png" alt="History filter options">
     <figcaption>Fig 3. History filter options</figcaption>
 </figure>
 <p>Depending on what is selected in the filters, you can have a different columns displayed: Column is not displayed if its data is not expected for a certain filter combination.</p>
@@ -340,30 +341,32 @@ If data is expected but not available, an empty cell is displayed.</p>
 <h2 id="event-details">Event details</h2>
 <p>Details, including event action time and other numerical information, are provided for all Event Instances in the &ldquo;Event View&rdquo;. Clicking the arrow at the beginning of each row expands the row to show all associated Event Details. If data is not expected, the label for a certain time is not displayed. If data is expected but not available, &ldquo;-&rdquo; is displayed. The event details chart visualizes the moment when the event take places according to the data provided from the tag. By toggling the switch, the chart displays the data points surrounding the event or the recent 24 hour data points.</p>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="event_details" src="/event_details.png" alt="Event details">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="event_details" src="/event-details.png" alt="Event details">
     <figcaption>Fig 4. Event details</figcaption>
 </figure>
 <h2 id="sorting">Sorting</h2>
 <p>Clicking on a column header will sort the table data by the selected column.</p>
 <h2 id="editing-event-instances">Editing Event Instances</h2>
 <p>Events listed in the Event view tab can be edited by clicking &ldquo;Edit&rdquo; in the row context menu. This will take the user to the <a href="/configuration/events">Event Configuration</a> page and open the specific Event Definition for editing.
-<img src="/events_view_edit_link.png"></p>
+<img src="/editEvent-link.png"></p>
 <h2 id="logs">Logs</h2>
-<p>Events listed in both Event view and History tab have Logs. They can be reached by clicking &ldquo;Logs&rdquo; the row context menu. <img src="/events_view_logs_link.png"> 
+<p>Events listed in both Event view and History tab have Logs. They can be reached by clicking &ldquo;Logs&rdquo; the row context menu. <img src="/eventLogs-link.png"> 
 <br />
 The Log for each instance contains information on changes in the State of the event, which <a href="/glossary#user">User</a> initiated the change, and at what time the change occured.There is also a possibility for the User to add a custom log in the form of a comment.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_logs" src="/events_view_logs.png" alt="Logs">
     <figcaption>Fig 5. Logs</figcaption>
 </figure>
+<h2 id="history">History</h2>
+<p>Events listed in Event view tab have History preview where you can see archived event instances. All archived data related to the chosen event can be reached by clicking &ldquo;History&rdquo; in the row context menu. <img src="/eventHistory.png"></p>
 <h2 id="event-view-actions">Event view Actions</h2>
-<p>Event view events can be acknowledged by clicking the &ldquo;ACK&rdquo; button for the Event Instance row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/events_view_ack_link.png">. Multiple events instances can be acknowledged by selecting them using the available check box which enables the <img src="/ack_selected_button.png" style="width: 8rem"> button to execute the bulk acknowledgement. In this case, the message written in the acknowledge popup will be logged for the multiple selected event instances.</p>
+<p>Event view events can be acknowledged by clicking the &ldquo;ACK&rdquo; button for the Event Instance row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/ack-btn.png">. Multiple events instances can be acknowledged by selecting them using the available check box which enables the <img src="/ack_selected_button.png" style="width: 8rem"> button to execute the bulk acknowledgement. In this case, the message written in the acknowledge popup will be logged for the multiple selected event instances.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_ack_popup" src="/events_view_ack_popup.png" alt="Acknowledge event">
     <figcaption>Fig 6. Acknowledge event</figcaption>
 </figure>
 <h2 id="event-view-links">Event view Links</h2>
-<p>Events are related to Tags which data can be visually presented in a chart in Trend view. Link to this page is available in &ldquo;Trend&rdquo; column of the &ldquo;Event view&rdquo; tab. <img src="/events_view_trend_link.png" ></p>
+<p>Events are related to Tags which data can be visually presented in a chart in Trend view. Link to this page is available in &ldquo;Trend&rdquo; column of the &ldquo;Event view&rdquo; tab. <img src="/trend-link-events.png" ></p>
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
