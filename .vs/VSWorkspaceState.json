@@ -1,11 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+    "\\archetypes",
+    "\\content",
+    "\\content\\settings",
     "\\docs",
-    "\\docs\\categories",
-    "\\docs\\events",
-    "\\docs\\glossary"
+    "\\docs\\js",
+    "\\resources",
+    "\\resources\\_gen",
+    "\\static",
+    "\\themes",
+    "\\themes\\ace-documentation"
   ],
-  "SelectedNode": "\\docs\\events",
+  "SelectedNode": "\\docs\\lib\\jquery.min.js",
   "PreviewInSolutionExplorer": false
 }
