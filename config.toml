@@ -10,4 +10,4 @@ googleAnalytics = "UA-2760582-5"
   unsafe = true
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+home = [ "HTML" ]
