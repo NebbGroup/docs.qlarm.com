@@ -284,7 +284,7 @@ if (!doNotTrack) {
 <h3 id="new-dashboard-and-add-widgets">New Dashboard and Add Widgets</h3>
 <p>The &ldquo;New Dashboard&rdquo; button <img src="/new-dashboard.png" alt="New Dashboard button"> allows you to create a new Dashboard. When you go to New Dashboard, a new window opens to configure your new Dashboard. You can select a name for it under the &ldquo;Dashboard Name&rdquo; field and add custom Widgets.</p>
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="add_widgets_mode" src="/add-widget-mode.png" alt="Creating a new dashboard">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="add_widgets_mode" src="/addWidgetMode.png" alt="Creating a new dashboard">
     <figcaption >Fig 6. Creating a new dashboard</figcaption>
 </figure>
 <p>When you select a Widget from the list, it is shown on the grid panel. To organize the widgets in the grip panel you can drag and drop them to the desired location and order. To resize a Widget, use the Widget handle <img src="/widget_handle.png" alt="widget handle"> located in the lower right corner on every Widget or by drag and drop edges and corners. After configuring the Dashboard layout you can click the <img src="/save_button.png" alt="save button"> button to save the Dashboard or the <img src="/cancel_button.png" alt="cancel button"> button if you do not want to save the Dashboard. Afterwards, if you need to add additional Widgets to the Dashboard, you only need to click the <img src="/add_widgets.png" alt="add widget button"> button by which you are greeted with the same window as if you were creating a new Dashboard.</p>
@@ -382,6 +382,16 @@ if (!doNotTrack) {
     <figcaption >Fig 19. Set tag value widget menu</figcaption>
 </figure>
 <p>There are two representations of the widget, according to the value type of the chosen Tag. For Boolean Value type tags, there is a toggle button where you can switch the state of the tag (example: On/Off). In this case, the displayed label is set according to the values from ‘State true’ and ‘State false’ configurations from Endpoints-&gt;Tags section. For Integer, Float and String Value type Tags in the widget we have input field where we can write the value, in the format of XX for Integer, XX.XX for Float and String Value respectively, and by clicking the Set button <img src="/set-value-btn.png" alt="set button"> we are setting the value manually. </p>
+<ul>
+<li>Image widget <img src="/imageWidgetIcon.png" alt="image widget logo" class = "logo_resize"> - represents a widget where users can upload images (jpg and png).</li>
+</ul>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="image_widget_menu" src="/imageWidget.png" alt="Image widget menu">
+    <figcaption >Fig 20. Image widget menu</figcaption>
+</figure>
+<p>In order to upload an image user should click on the <b>Upload image</b> button (Fig 20. - left image).
+In order to Replace or Remove the image user can choose from the configuration dropdown menu <b>Replace image</b> or <b>Remove image</b> options (Fig 20. - right image).
+In order to Delete the widget user can choose the <b>Delete widget</b> option from the configuration dropdown menu.</p>
 <h3 id="save-dashboard">Save Dashboard</h3>
 <p>To keep the changes in the Dashboard you can save the configurations by clicking on the <img src="/save_button1.png" alt="save button"> button.
 When configuring existing dashboard changes are saved automatically.</p>
@@ -391,7 +401,7 @@ When configuring existing dashboard changes are saved automatically.</p>
 <p>Whenever you are viewing a Dashboard created by another User, you can copy the existing Dashboard by clicking on the <img src="/copy-dashboard-btn.png" alt="copy button"> button. This will ask you if you want to rename the Dashboard and save the copy as your own after clicking the <img src="/user_save.png" alt="save button"> button.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="save_dashboard_copy" src="/copy-dashboard-modal.png" alt="Save copy of dashboard">
-    <figcaption >Fig 20. Save copy of dashboard</figcaption>
+    <figcaption >Fig 21. Save copy of dashboard</figcaption>
 </figure>
 <h3 id="exit-dashboard">Exit Dashboard</h3>
 <p>The <img src="/exit-dashboard.png" alt="exit button"> button allows us to leave the edit mode and get back to the view mode.</p>
