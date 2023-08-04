@@ -88,7 +88,7 @@ The right cluster of buttons contains the main functionalities for configuring t
 The "New Dashboard" button <img src="/new-dashboard.png" alt="New Dashboard button"> allows you to create a new Dashboard. When you go to New Dashboard, a new window opens to configure your new Dashboard. You can select a name for it under the "Dashboard Name" field and add custom Widgets.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="add_widgets_mode" src="/add-widget-mode.png" alt="Creating a new dashboard">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="add_widgets_mode" src="/addWidgetMode.png" alt="Creating a new dashboard">
     <figcaption >Fig 6. Creating a new dashboard</figcaption>
 </figure>
 
@@ -197,6 +197,16 @@ The Widget List contains eight different types of Widgets that can be added one 
 
 There are two representations of the widget, according to the value type of the chosen Tag. For Boolean Value type tags, there is a toggle button where you can switch the state of the tag (example: On/Off). In this case, the displayed label is set according to the values from ‘State true’ and ‘State false’ configurations from Endpoints->Tags section. For Integer, Float and String Value type Tags in the widget we have input field where we can write the value, in the format of XX for Integer, XX.XX for Float and String Value respectively, and by clicking the Set button <img src="/set-value-btn.png" alt="set button"> we are setting the value manually. 
 
+- Image widget <img src="/imageWidgetIcon.png" alt="image widget logo" class = "logo_resize"> - represents a widget where users can upload images (jpg and png).
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="image_widget_menu" src="/imageWidget.png" alt="Image widget menu">
+    <figcaption >Fig 20. Image widget menu</figcaption>
+</figure>
+
+In order to upload an image user should click on the <b>Upload image</b> button (Fig 20. - left image).
+In order to Replace or Remove the image user can choose from the configuration dropdown menu <b>Replace image</b> or <b>Remove image</b> options (Fig 20. - right image).
+In order to Delete the widget user can choose the <b>Delete widget</b> option from the configuration dropdown menu.
+
 ### Save Dashboard
 
 To keep the changes in the Dashboard you can save the configurations by clicking on the <img src="/save_button1.png" alt="save button"> button.
@@ -212,7 +222,7 @@ Whenever you are viewing a Dashboard created by another User, you can copy the e
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="save_dashboard_copy" src="/copy-dashboard-modal.png" alt="Save copy of dashboard">
-    <figcaption >Fig 20. Save copy of dashboard</figcaption>
+    <figcaption >Fig 21. Save copy of dashboard</figcaption>
 </figure>
 
 ### Exit Dashboard
