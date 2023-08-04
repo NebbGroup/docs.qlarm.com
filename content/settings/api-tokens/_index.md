@@ -79,6 +79,7 @@ To revoke a token, click the <img src="/revoke-button.png"> button after which a
 
 ## Usage of API Tokens
 
+### Latest Values of Tags
 You can use API Tokens in API requests by tool for API requests. In order to get the latest values for selected tags in the token, 
 a GET request should be made to URL https://api.qlarm.com/api/apiTokenAccess/getTagsByToken with two request headers: <br>
 header name: "Tenant", header value: (e.g.)"Tenant_name" and <br />
@@ -90,6 +91,22 @@ ApiToken header value can be copied from Qlarm API Tokens page. Using this getTa
     <img class="center_image myImg" onClick="reply_click(this)"  id="copyTokenForHeader" src="/CopyToken.png" alt="Copy API Token for request header" style="width: 35%;">
 <figcaption>Fig 8. Copy API Token for request header </figcaption>
 </figure>
+
+### Historical Values of Tags
+You can use API Tokens in API requests by tool for API requests. There are two steps to getting historical values for a tag in the token.
+
+First, a GET request should be made to the URL https://api.qlarm.com/odata/tags with two request headers: <br>
+header name: "Tenant", header value: (e.g.)"Tenant_name" and <br />
+header name: "ApiToken", header value: (e.g.) "e137764a-585c-4614-a34d-2d3cac0f062b".
+
+Second, get the id from the tag you would like to see historical values. Then a GET request should be made to the URL https://api.qlarm.com/odata/data(TagId='tagId',TimeFrom='startTime',TimeTo='endTime') with the following parameters: <br>
+tagId: should be the id from the tag, (e.g.) 0d302e53-c505-4792-a89e-46b5138d9dd3 <br />
+startTime: should be the starting date, formatted 2023-06-30 00:00:00 <br />
+endTime: should be the ending date, formatted 2023-07-31 00:00:00
+
+Historical value is limited to show results from the last year. Ensure the dates that are entered are within the past 365 days.
+
+
 
 
 <script>
