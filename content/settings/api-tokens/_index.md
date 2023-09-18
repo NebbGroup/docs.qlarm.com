@@ -108,11 +108,11 @@ header name: "ApiToken", header value: (e.g.) "e137764a-585c-4614-a34d-2d3cac0f0
 <figcaption>Fig 9. GET for Tag Id </figcaption>
 </figure>
 
-Second, get the id from the tag you would like to see historical values. Then a GET request should be made to the URL https://api.qlarm.com/odata/data(TagId='tagId',TimeFrom='startTime',TimeTo='endTime') with the following parameters: <br>
+Second, get the id from the tag you would like to see historical values. Then convert your startTime and endTime to UTC time. You can use <a href="https://dateful.com/convert/utc" target="_blank">this converter</a> for the time. Finally, a GET request should be made to the URL https://api.qlarm.com/odata/data(TagId='tagId',TimeFrom='startTime',TimeTo='endTime') with the following parameters: <br>
 
 parameter tagId: should be the id from the tag, (e.g.) 0d302e53-c505-4792-a89e-46b5138d9dd3 <br />
-parameter startTime: should be the starting date, formatted 2023-06-30 00:00:00 <br />
-parameter endTime: should be the ending date, formatted 2023-07-31 00:00:00
+parameter startTime: should be the starting date in UTC time, formatted 2023-06-30 00:00:00 <br />
+parameter endTime: should be the ending date in UTC time, formatted 2023-07-31 00:00:00
 
 Historical value is limited to show results from the last year. Ensure the dates that are entered are within the past 365 days.
 
