@@ -32,7 +32,7 @@ There are four types of Notifications that Recipients can receive:
 The "Recipients" configuration page lists its Recipients in a table, which shows their name, selected Notification Types, number of Recipients for the [Recipients Group](/glossary#recipient-group). An individual Recipient represents a single person that can receive Notifications. To add a Recipient click the <img src="/add_recipient_button.png" alt="add recipient button" > button by which a form appears:
 
 <figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_form" src="/add-recipient-form.png" alt="Individual recipient configuration">
+    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_form" src="/addRecipientForm.png" alt="Individual recipient configuration">
     <figcaption>Fig 2. Individual recipient configuration</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ The individual Recipient form requires basic contact information about the Recip
 A Recipients Group represents a collection of Recipients that can be the receiver of Notifications. To add a Recipients Group click the <img src="/add_recipient_groups_button.png" alt="add recipient button" > button and a form appears:
 
 <figure class="image_container">
-    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_groups_form" src="/add_recipient_groups_form.png" alt="Recipients group configuration">
+    <img class="center_image myImg figure_resize2" onClick="reply_click(this)"  id="add_recipient_groups_form" src="/addRecipientGroupForm.png" alt="Recipients group configuration">
     <figcaption>Fig 3. Recipients group configuration</figcaption>
 </figure>
 
@@ -56,8 +56,14 @@ After filling the table with Recipients and Recipients Groups, you can easily se
 
 ## Editing a recipient and recipients groups
 
-You can edit an individual Recipient or a Recipients Group by clicking the <img src="/edit-button.png" alt="add recipient button" > button after which a filled form will appear in which you can make the changes. To remove a Recipient or a Recipients Group click the <img src="/delete-icon.png" alt="add recipient button" > button.
+You can edit an individual Recipient or a Recipients Group by clicking the <img src="/edit-button.png" alt="add recipient button" > button after which a filled form will appear in which you can make the changes. To remove a Recipient or a Recipients Group click the <img src="/delete-icon.png" alt="delete recipient button" > button.
 
+## Recipient and recipient group scopes
+
+When configuring Recipient or Recipient group there is a 'Scopes' field in the form. 
+
+If the current user who is creating the new Recipient or Recipient group has Endpoint scopes, the 'Scopes' field will be preselected with the Endpoint scopes from that user. 
+When editing existing Recipient or Recipient group, the 'Scopes' field is preselected with the current Recipient/Recipient group scopes. If the Recipient/Recipient group doesn't have scopes, the field is empty.
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
