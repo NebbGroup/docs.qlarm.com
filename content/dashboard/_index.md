@@ -88,7 +88,7 @@ The right cluster of buttons contains the main functionalities for configuring t
 The "New Dashboard" button <img src="/new-dashboard.png" alt="New Dashboard button"> allows you to create a new Dashboard. When you go to New Dashboard, a new window opens to configure your new Dashboard. You can select a name for it under the "Dashboard Name" field and add custom Widgets.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="add_widgets_mode" src="/addWidgetMode.png" alt="Creating a new dashboard">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="add_widgets_mode" src="/creatingNewDashboard.png" alt="Creating a new dashboard">
     <figcaption >Fig 6. Creating a new dashboard</figcaption>
 </figure>
 
@@ -207,6 +207,16 @@ In order to upload an image user should click on the <b>Upload image</b> button 
 In order to Replace or Remove the image user can choose from the configuration dropdown menu <b>Replace image</b> or <b>Remove image</b> options (Fig 20. - right image).
 In order to Delete the widget user can choose the <b>Delete widget</b> option from the configuration dropdown menu.
 
+- Volume widget <img src="/volumeWidgetIcon.png" alt="volume widget logo" class = "logo_resize"> - this widget represents the current volume state of a selected Tag. In the “Subjects” tab the user can add an Alias to differ the widget from other widgets. Also, there is an option to see the value in percentages by checking the checkbox "Display value in percentage". 
+In the “Ranges” tab you can adjust the appearance of the widget. First you need to set the minimum and maximum value and the base colour of the widget. Then you can add custom ranges on the scale to view the value in a certain colour, if it falls in that range.
+The “Labels” tab contains additional settings for the widget configuration.
+The user can edit, copy or delete the widget from the configuration dropdown menu.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="volume_widget_menu" src="/editVolumeWidgetMode.png" alt="Volume widget menu">
+    <figcaption >Fig 21. Volume widget menu</figcaption>
+</figure>
+
 ### Save Dashboard
 
 To keep the changes in the Dashboard you can save the configurations by clicking on the <img src="/save_button1.png" alt="save button"> button.
@@ -222,7 +232,7 @@ Whenever you are viewing a Dashboard created by another User, you can copy the e
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="save_dashboard_copy" src="/copy-dashboard-modal.png" alt="Save copy of dashboard">
-    <figcaption >Fig 21. Save copy of dashboard</figcaption>
+    <figcaption >Fig 22. Save copy of dashboard</figcaption>
 </figure>
 
 ### Exit Dashboard
