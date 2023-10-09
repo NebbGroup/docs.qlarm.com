@@ -41,6 +41,20 @@ Configuration section is where you can configure entities used in Qlarm core fun
 			</div>
 		</a>
 	</div>
+	<div class="col-md-3">
+		<a href="{{< ref "/content/configuration/schedules/_index.md" >}}">
+			<div class="card d-flex border-0">
+				<div class="card-img-top mt-4">
+					<span class="far fa-clipboard fa-4x text-secondary"></span>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">
+						<a href="{{< ref "/content/configuration/schedules/_index.md" >}}">Schedules</a>
+					</h5>
+				</div>
+			</div>
+		</a>
+	</div>
     <div class="col-md-3">
 		<a href="{{< ref "/content/configuration/endpoints/_index.md" >}}">
 			<div class="card d-flex border-0">
