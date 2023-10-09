@@ -208,6 +208,7 @@ if (!doNotTrack) {
     <li><a href="#history">History</a></li>
     <li><a href="#event-view-actions">Event view Actions</a></li>
     <li><a href="#event-view-links">Event view Links</a></li>
+    <li><a href="#muted-events">Muted events</a></li>
   </ul>
 </nav>
 </div>
@@ -226,12 +227,12 @@ if (!doNotTrack) {
 <p class="lead">
     The &ldquo;Events&rdquo; page shows the current status and history of <a href="/glossary#event-instance">Event Instances</a>. The event lists can be filtered to display events in several different ways.
 The &ldquo;Event View&rdquo; tab lists the currently active <a href="/glossary#event">Events</a>, and inactive Events that have not been acknowledged.
-The &ldquo;History&rdquo; tab lists all Events that are both inactive and acknowledged.<br>
+The &ldquo;History&rdquo; tab lists all Events that are both inactive and acknowledged or archived.<br>
 The <a href="/glossary#event-definition">Event Definitions</a> can be edited for each instance, and the <a href="/glossary#logs">Logs</a> containing all the changes the event states pass through can be accessed.
 </p>
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events-table.png" alt="Events">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/eventsView.png" alt="Events">
     <figcaption>Fig 1. Events</figcaption>
 </figure>
 <h2 id="types-of-events">Types of Events</h2>
@@ -246,6 +247,8 @@ If there is a <a href="/glossary#grace-period">Grace Period</a> defined in the E
 If the new evaluation does not meet the Alarm <a href="/glossary#condition">Condition</a>, the Alarm is Inactivated if it is not in a Grace Period (Inactive Date). If it is in a Grace Period it is Archived.
 <br />
 Both active and inactive Event Instances can be <a href="/glossary#acknowledge-synonym-ack">Acknowledged</a> by a <a href="/glossary#recipient">Recipient</a>.
+<br />
+Both active and inactive Event Instances can be <a href="/glossary#mute">Muted</a>.
 <br />
 Every time a Condition is met, before the creation of an Event Instance, system finds the old inactive Alarm for the Event Definition (acknowledged or not) and archives it .
 <br />
@@ -367,6 +370,15 @@ The Log for each instance contains information on changes in the State of the ev
 </figure>
 <h2 id="event-view-links">Event view Links</h2>
 <p>Events are related to Tags which data can be visually presented in a chart in Trend view. Link to this page is available in &ldquo;Trend&rdquo; column of the &ldquo;Event view&rdquo; tab. <img src="/trend-link-events.png" ></p>
+<h2 id="muted-events">Muted events</h2>
+<p>Muting events allows you to temporarily disable notifications for specific events and specific time period. Once the mute period expires, notifications will resume.
+</br>
+Event view events (active or inactive) can be muted by selecting event(s) and clicking the Mute button <img src="/muteBtn.png">. When you click on the Mute button, pop-up opens up where you can choose a predefined time period until when the selected event should be muted or choose a custom time period (Fig 7).</p>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_mute_popup" src="/muteEvent.png" alt="Mute event">
+    <figcaption>Fig 7. Mute event</figcaption>
+</figure>
+<p>Muted events can be seen in the Muted tab, where you can see until when the events are muted and also Unmute them manually. If you want to unmute them manually you can select the event(s) and then click on the Unmute button  <img src="/unmuteBtn.png">.</p>
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
