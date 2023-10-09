@@ -64,6 +64,8 @@ The time in minutes to ignore an event's condition. The purpose is to filter out
 Tracking information data about changes made to an entity (Event, Endpoint, etc.).
 ###### MQTT
 A standard messaging protocol for Internet of Things (IoT). Used for IoT endpoints to communicate between Qlarm and the local gateway.
+###### Mute
+An activity by a user to mute notifications for an event.
 ###### Notification
 A message sent from Qlarm  to notify recipients through one or more channels (SMS, voice call, e-mail or push notification). Typically defined as an action on an event.
 ###### OPC server
