@@ -15,12 +15,12 @@ pre: ""
 {{<lead>}}
 The "Events" page shows the current status and history of [Event Instances](/glossary#event-instance). The event lists can be filtered to display events in several different ways.
 The "Event View" tab lists the currently active [Events](/glossary#event), and inactive Events that have not been acknowledged.
-The "History" tab lists all Events that are both inactive and acknowledged.<br>
+The "History" tab lists all Events that are both inactive and acknowledged or archived.<br>
 The [Event Definitions](/glossary#event-definition) can be edited for each instance, and the [Logs](/glossary#logs) containing all the changes the event states pass through can be accessed.
 {{</lead>}}
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/events-table.png" alt="Events">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events" src="/eventsView.png" alt="Events">
     <figcaption>Fig 1. Events</figcaption>
 </figure>
 
@@ -36,6 +36,8 @@ If there is a [Grace Period](/glossary#grace-period) defined in the Event Defini
 If the new evaluation does not meet the Alarm [Condition](/glossary#condition), the Alarm is Inactivated if it is not in a Grace Period (Inactive Date). If it is in a Grace Period it is Archived.
 <br />
 Both active and inactive Event Instances can be [Acknowledged](/glossary#acknowledge-synonym-ack) by a [Recipient](/glossary#recipient).
+<br />
+Both active and inactive Event Instances can be [Muted](/glossary#mute).
 <br />
 Every time a Condition is met, before the creation of an Event Instance, system finds the old inactive Alarm for the Event Definition (acknowledged or not) and archives it .
 <br />
@@ -131,6 +133,17 @@ Event view events can be acknowledged by clicking the "ACK" button for the Event
 
 ## Event view Links
 Events are related to Tags which data can be visually presented in a chart in Trend view. Link to this page is available in "Trend" column of the "Event view" tab. <img src="/trend-link-events.png" >
+
+## Muted events
+Muting events allows you to temporarily disable notifications for specific events and specific time period. Once the mute period expires, notifications will resume.
+</br>
+Event view events (active or inactive) can be muted by selecting event(s) and clicking the Mute button <img src="/muteBtn.png">. When you click on the Mute button, pop-up opens up where you can choose a predefined time period until when the selected event should be muted or choose a custom time period (Fig 7).
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_mute_popup" src="/muteEvent.png" alt="Mute event">
+    <figcaption>Fig 7. Mute event</figcaption>
+</figure>
+
+Muted events can be seen in the Muted tab, where you can see until when the events are muted and also Unmute them manually. If you want to unmute them manually you can select the event(s) and then click on the Unmute button  <img src="/unmuteBtn.png">.
 
 <script>
 // Get the modal
