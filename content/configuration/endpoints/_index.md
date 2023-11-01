@@ -54,6 +54,7 @@ By clicking the <img src="/tagsBtn.png" alt="New Dashboard button"> button the U
 </figure>
 
 By clicking on the <img src="/edit-btn.png" alt="online status"> button you can change the [Actions](/glossary#action) for the specific Tag listed in the table, upon which an "Edit tag" form appears. Also, by selecting multiple Tags and clicking on the <img src="/change-button.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags.
+By clicking on the <img src="/delete-tag.png" alt="online status"> button you can delete the specific Tag listed in the table, upon which an “Confirm” form appears. Also, by selecting multiple Tags and clicking ont the <img src="/delete-tags.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags.
 By clicking "Back" button <img src="/back-btn.png" alt="back to endpoints"> you can go back to the Endpoints view.
 
 <figure class="image_container">
@@ -66,12 +67,24 @@ By clicking "Back" button <img src="/back-btn.png" alt="back to endpoints"> you 
     <figcaption>Fig 7. Edit selected tags<figcaption>
 </figure>
 
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="delete_tags" src="/confirm-delete-tag.png" alt="Confirm delete tag">
+    <figcaption>Fig 8. Confirm form for delete tag(s)<figcaption>
+</figure>
+
 The User can add a new Tag by clicking on the <img src="/addTag-button.png" alt="online status"> button, upon which an "Add tag" form appears which requires information to be provided. 
 'Deadband' and 'Precision' input fields are visible only for tag of int, float and string value type. For boolean value type tags instead of 'Deadband' and 'Precision', there are fields for 'State true' and 'State false'.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="add_tag" src="/addTag-form.png" alt="Add tag form">
     <figcaption>Fig 8. Add tag form<figcaption>
+</figure>
+
+The User (Super Admin) can add a multiple Tags by clicking on the <img src="/import-tags-btn.png" alt="online status"> button, than on Import Tags <img src="/import-export-tags-btn.png" alt="online status"> upon which an “Tags Importing” form appears which have a template and downloading it user should add a multiple tags using excel file. In the excel file for string and boolean value type are not required ‘Deadband’ and ‘Precision’. The ‘Engineering Unit’ and ‘Engineering Icon’ are not required for all value types and also ‘StateTrue’ and ‘StateFalse’ are required only for boolean value type. While importing tags are in progress user should see a progress bar and when importing is done user should be notified with Success Message.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="import_tags" src="/importing-tags-modal.png" alt="Import multiple tags form">
+    <figcaption>Fig 9. Tag Importing form<figcaption>
 </figure>
 
 <script>
