@@ -76,14 +76,14 @@ The User can add a new Tag by clicking on the <img src="/addTag-button.png" alt=
 'Deadband' and 'Precision' input fields are visible only for tag of int, float and string value type. For boolean value type tags instead of 'Deadband' and 'Precision', there are fields for 'State true' and 'State false'.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="add_tag" src="/addTag-form.png" alt="Add tag form">
+    <img class="center_image myImg" onClick="reply_click(this)" id="add_tag" src="/addTag-form.png" alt="Add tag form">
     <figcaption>Fig 8. Add tag form<figcaption>
 </figure>
 
-The User (Super Admin) can add a multiple Tags by clicking on the <img src="/import-tags-btn.png" alt="online status"> button, than on Import Tags <img src="/import-export-tags-btn.png" alt="online status"> upon which an “Tags Importing” form appears which have a template and downloading it user should add a multiple tags using excel file. In the excel file for string and boolean value type are not required ‘Deadband’ and ‘Precision’. The ‘Engineering Unit’ and ‘Engineering Icon’ are not required for all value types and also ‘StateTrue’ and ‘StateFalse’ are required only for boolean value type. While importing tags are in progress user should see a progress bar and when importing is done user should be notified with Success Message.
+The User (Super Admin) can add a multiple Tags by clicking on the <img src="/import-tags-btn.png" alt="import tags"> button, than on Import Tags <img src="/import-export-tags-btn.png" alt="import export tags"> upon which an “Tags Importing” form appears which have a template and downloading it user should add a multiple tags using excel file. In the excel file for string and boolean value type are not required ‘Deadband’ and ‘Precision’. The ‘Engineering Unit’ and ‘Engineering Icon’ are not required for all value types and also ‘StateTrue’ and ‘StateFalse’ are required only for boolean value type. While importing tags are in progress user should see a progress bar and when importing is done user should be notified with Success Message.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="import_tags" src="/importing-tags-modal.png" alt="Import multiple tags form">
+    <img class="center_image myImg" onClick="reply_click(this)" id="import_tags" src="/importing-tags-modal.png" alt="Import multiple tags form">
     <figcaption>Fig 9. Tag Importing form<figcaption>
 </figure>
 
