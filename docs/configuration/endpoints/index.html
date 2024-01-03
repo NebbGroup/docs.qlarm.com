@@ -48,7 +48,10 @@ if (!doNotTrack) {
         </div>
         
     </div>
-</nav>
+    <div class="feed-icons">
+            <a href="https://docs.qlarm.com/configuration/endpoints/index.xml"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
+        </div>
+    </nav>
 <div class="container-fluid">
             <div class="row">
 
@@ -307,7 +310,6 @@ Endpoint is a logical representation of <a href="/glossary#opc-server">OPC serve
     <figcaption>Fig 5. Endpoint tags<figcaption>
 </figure>
 <p>By clicking on the <img src="/edit-btn.png" alt="online status"> button you can change the <a href="/glossary#action">Actions</a> for the specific Tag listed in the table, upon which an &ldquo;Edit tag&rdquo; form appears. Also, by selecting multiple Tags and clicking on the <img src="/change-button.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags.
-By clicking on the <img src="/delete-tag.png" alt="online status"> button you can delete the specific Tag listed in the table, upon which an “Confirm” form appears. Also, by selecting multiple Tags and clicking ont the <img src="/delete-tags.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags.
 By clicking &ldquo;Back&rdquo; button <img src="/back-btn.png" alt="back to endpoints"> you can go back to the Endpoints view.</p>
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tag" src="/editTag-form.png" alt=" Edit tag">
@@ -316,10 +318,6 @@ By clicking &ldquo;Back&rdquo; button <img src="/back-btn.png" alt="back to endp
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tags" src="/edit-multiple-tags.png" alt="Edit selected tags">
     <figcaption>Fig 7. Edit selected tags<figcaption>
-</figure>
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="delete_tags" src="/confirm-delete-tag.png" alt="Confirm delete tag">
-    <figcaption>Fig 8. Confirm form for delete tag(s)<figcaption>
 </figure>
 <p>The User can add a new Tag by clicking on the <img src="/addTag-button.png" alt="online status"> button, upon which an &ldquo;Add tag&rdquo; form appears which requires information to be provided. 
 &lsquo;Deadband&rsquo; and &lsquo;Precision&rsquo; input fields are visible only for tag of int, float and string value type. For boolean value type tags instead of &lsquo;Deadband&rsquo; and &lsquo;Precision&rsquo;, there are fields for &lsquo;State true&rsquo; and &lsquo;State false&rsquo;.</p>
