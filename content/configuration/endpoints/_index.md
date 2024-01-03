@@ -54,7 +54,6 @@ By clicking the <img src="/tagsBtn.png" alt="New Dashboard button"> button the U
 </figure>
 
 By clicking on the <img src="/edit-btn.png" alt="online status"> button you can change the [Actions](/glossary#action) for the specific Tag listed in the table, upon which an "Edit tag" form appears. Also, by selecting multiple Tags and clicking on the <img src="/change-button.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags.
-By clicking on the <img src="/delete-tag.png" alt="online status"> button you can delete the specific Tag listed in the table, upon which an “Confirm” form appears. Also, by selecting multiple Tags and clicking ont the <img src="/delete-tags.png" alt="New Dashboard button"> button you can apply changes to all the selected Tags.
 By clicking "Back" button <img src="/back-btn.png" alt="back to endpoints"> you can go back to the Endpoints view.
 
 <figure class="image_container">
@@ -65,11 +64,6 @@ By clicking "Back" button <img src="/back-btn.png" alt="back to endpoints"> you 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="edit_tags" src="/edit-multiple-tags.png" alt="Edit selected tags">
     <figcaption>Fig 7. Edit selected tags<figcaption>
-</figure>
-
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="delete_tags" src="/confirm-delete-tag.png" alt="Confirm delete tag">
-    <figcaption>Fig 8. Confirm form for delete tag(s)<figcaption>
 </figure>
 
 The User can add a new Tag by clicking on the <img src="/addTag-button.png" alt="online status"> button, upon which an "Add tag" form appears which requires information to be provided. 
