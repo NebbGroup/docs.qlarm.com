@@ -46,13 +46,36 @@ Models menu by default is hidden. In order to view Models, click this button <im
 
 User can download all models provided (Asset and Tag models), in JSON file, by clicking <img src="/downloadAllModels.png" alt="Download All Models"> Download models button.
 
-### Create asset
+### Create Asset
 
-User can create new asset by clicking <img src="/createNewAsset.png" alt="Create New Asset"> Create an asset button. After click, a popup form appears. ‘Name’ is a required field. After clicking Add, the newly created Asset will be displayed in the graph. Name of the new asset should be unique.
+User can create new asset by clicking <img src="/createNewAsset.png" alt="Create New Asset"> Create an asset button. After click, a popup form appears. ‘Name’ is a required field. After clicking Add, the newly created Asset will be displayed in the graph.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createNewAssetPopUp.png" alt="Create New Asset Pop Up" style="width: 25%;">
     <figcaption>Fig 2. Create New Asset Pop Up</figcaption>
+</figure>
+
+### Create Virtual Tag
+
+User can create new Virtual Tag by clicking <img src="/createNewAsset.png" alt="Create New Virtual Tag"> Create an virtual tag button. After click, a popup form appears. ‘Name’, ‘Description’ and ‘Value Type’ are required fields. After clicking Add, the newly created Virtual Tag will be displayed in the graph and stored as other tags.
+The value for the Virtual tags can be set with the ‘Set Tag Value’ widget from Dashboard.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createNewVirtualTagPopUp.png" alt="Create New Virtual Tag Pop Up" style="width: 25%;">
+    <figcaption>Fig 3. Create New Virtual Tag Pop Up</figcaption>
+</figure>
+
+
+### Create Calculated Tag
+
+User can create new Calculated Tag by clicking <img src="/createNewAsset.png" alt="Create New Calculated Tag"> Create an calculated tag button. After click, a popup form appears. ‘Name’, ‘Description’, ‘Formula’ and ‘Value Type’ are required fields. For now, user should add only float type of calculated tags, and for float tags ‘Precision’ is required field. After clicking Add, the newly created Asset will be displayed in the graph and stored as other tags.
+The property ‘Formula’ is the place where the user should add some mathematical operations between tags. For now, the value from the tags will be used by their ‘tagId’ tegether with the mathematica operations that user needs. The value for the Calculated Tag will be calculated according to the formula.
+
+Note:  Formula example:("tagId" + 7 - "tagId1" - 3).
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createNewCalculatedTagPopUp.png" alt="Create New Calculated Tag Pop Up" style="width: 25%;">
+    <figcaption>Fig 4. Create New Calculated Tag Pop Up</figcaption>
 </figure>
 
 ### View Model
@@ -69,7 +92,7 @@ User can Zoom in, Zoom out, Zoom to Fit, Center and Filter the graph, by clickin
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/graphOptions.png" alt="Graph Options" style="width: 6%;">
-    <figcaption>Fig 3. Graph Options</figcaption>
+    <figcaption>Fig 5. Graph Options</figcaption>
 </figure>
 
 Users can export the graph in JSON file by clicking the Export Graph button <img src="/exportGraph.png" alt="Export Graph"> placed on the top of the page. 
@@ -85,7 +108,7 @@ In the graph there are context menus around nodes, which can be displayed by sel
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/contextMenu.png" alt="Asset Context Menu" style="width: 20%;">
-    <figcaption>Fig 4. Asset Context Menu</figcaption>
+    <figcaption>Fig 6. Asset Context Menu</figcaption>
 </figure>
 
 
@@ -104,7 +127,7 @@ By clicking Edit asset action opens the editor on the right side of the screen.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/tagDataEditor.png" alt="Edit Asset Actions" style="width: 35%;">
-    <figcaption>Fig 5. Edit Asset Actions</figcaption>
+    <figcaption>Fig 7. Edit Asset Actions</figcaption>
 </figure>
 
 
@@ -117,15 +140,11 @@ User can edit only the displayName, name, description and type properties of the
 By clicking Delete asset(s), confirmation pop-up is displayed, after clicking Yes selected Asset(s) and its relationships will be deleted and the graph will be updated. 
 Note: Delete asset(s) action is only available for Asset nodes.
 
-### Get Relationships
-
-In order to see information about incoming and outgoing relationships for selected node, you should click Get relationships from the Context menu. 
-
 ## Relationship context menu
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/relationshipOptions.png" alt="Relationship Context Menu" style="width: 35%;">
-    <figcaption>Fig 6. Relationship Context Menu</figcaption>
+    <figcaption>Fig 8. Relationship Context Menu</figcaption>
 </figure>
 
 ### Filters
@@ -138,21 +157,16 @@ In order to delete relationship(s) you should click on the Delete relationship(s
 
 ### Add Relationships
 
-In order to add relationship between nodes, at first you should select the parent node, than press Ctrl, than select the child node and then Right click on the child node. After that the context menu will be displayed with Add relationships option. After clicking the option, a modal is displayed:
+In order to add relationship between nodes, at first you should select the parent node, than press Ctrl, than select the child node and then Right click on the child node. After that the context menu will be displayed:
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/addRelationship.png" alt="Create Relationship" style="width: 25%;">
-    <figcaption>Fig 7. Create Relationship</figcaption>
+    <figcaption>Fig 9. Create Relationship</figcaption>
 </figure>
 
-In the Create relationship modal there is information about the Source ID (parent node ID) and Target ID (child node ID). In the Relationship dropdown you can choose the relationship type. If you are adding relationship between Assets, you can choose relationship of type ‘contains asset’. If you are adding relationship between Asset and Tag, you can choose relationship of type ‘contains tag’. After clicking Save the graph will be updated.
+In the Create relationship modal there is information about the Source Name and Target Name. The relationship type will be added respectively by tag type. After clicking Save the graph will be updated.
 
-<figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/containsAsset.png" alt="Contains Asset" style="width: 20%;">
-    <figcaption>Fig 8. Contains Asset</figcaption>
-</figure>
-
-Note: Add relationships action is only available when user wants to add relationship between Asset -> Tag and Asset -> Asset.
+Note: Add relationships action is only available when user wants to add relationship between Asset -> Asset, Asset -> Tag, Asset -> Virtual Tag and Asset -> Calculated Tag.
 
 ## Editor
 
@@ -164,7 +178,7 @@ In order to add some custom property to some Asset or Tag, you should click Add 
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/assetCustomProperties.png" alt="Asset Custom Properties" style="width: 20%;">
-    <figcaption>Fig 9. Asset Custom Properties</figcaption>
+    <figcaption>Fig 10. Asset Custom Properties</figcaption>
 </figure>
 
 In the pop-up modal you should enter the name of the new property and then click Add. Newly added properties are displayed above the field, and they can also be removed. After clicking Save, the newly created properties will be displayed in the editor and then you should click <img src="/saveAssetProperties.png" alt="Save Asset Properties"> in order to save the Asset or Tag with the new properties.
@@ -177,7 +191,7 @@ In the Filter and Highlight sub-menus there is a field in which users can add te
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/filterPopup.png" alt=" Filter Popup" style="width: 35%;">
-    <figcaption>Fig 10. Filter Popup</figcaption>
+    <figcaption>Fig 11. Filter Popup</figcaption>
 </figure>
 
 ### Asset images
@@ -190,7 +204,7 @@ After uploading image, pop-up is opened (shown on Fig 11). User can choose Width
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/uploadImgPopup.png" alt="Upload image pop-up" style="width: 35%;">
-    <figcaption>Fig 11. Upload image pop-up</figcaption>
+    <figcaption>Fig 12. Upload image pop-up</figcaption>
 </figure>
 
 - <b>Replace image</b> - In order to replace existing image, user should choose Set model image/Set asset image/Set asset type image and then pop-up is opened. User should click on the Replace button <img src="/replaceImgBtn.png" alt="Replace image button" style="width:70px">, choose new image and then click Save button. In order to cancel the action, user should click Cancel <img src="/cancelImgBtn.png" alt="Cancel image upload button" style="width:70px">.
