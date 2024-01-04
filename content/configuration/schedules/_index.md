@@ -44,7 +44,7 @@ The created schedules can be used when [creating a recipient group](/configurati
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)" id="use_configured_schedule" src="/addRecipientGroupFromSchedules.png" alt="use created schedule">
-    <figcaption>Fig 4. Configure recipient with added schedule</figcaption>
+    <figcaption>Fig 4. Configure recipient group with added schedule</figcaption>
 </figure>
 
 ## Edit schedule
