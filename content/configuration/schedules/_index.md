@@ -40,7 +40,7 @@ In the top right corner of the popup window, there is a toggle button <img src="
 
 After you are done configuring the schedule, click on “Save” button <img src="/saveSchedule.png" alt="save schedule button"> to create the schedule, or “Cancel” button <img src="/cancelSchedule.png" alt="cancel schedule button"> to discard the configuration.
 
-The created schedules can be used when [creating a recipient group](/configuration/recipients#Recipients). In the “Add recipient group” popup window, click on “SELECT SCHEDULE” drop-down menu to select a schedule.
+The created schedules can be used when creating a recipient group. In the “Add recipient group” popup window, click on “SELECT SCHEDULE” drop-down menu to select a schedule.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)" id="use_configured_schedule" src="/addRecipientGroupFromSchedules.png" alt="use created schedule">
