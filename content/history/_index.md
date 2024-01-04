@@ -30,7 +30,7 @@ In addition to the default "Tag" filter, used to select a Tag to show its conten
     <figcaption >Fig 2. History filter options</figcaption>
 </figure>
 
-You can also view the differences between two values in custome time period with click on <img src="/showDifference.png" alt="Show Difference"> button. You can select up to 10 tags, time period and when the filters are filled with press on "Calculate" button you can see the differences:
+You can also view the differences between two values in custom time period with click on <img src="/showDifference.png" alt="Show Difference"> button. You can select up to 10 tags, time period and when the filters are populated, after click on "Calculate" button you can see the differences:
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="show-difference-view" src="/showDifferenceView.png" alt="Show Difference View">

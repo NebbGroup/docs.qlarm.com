@@ -20,7 +20,7 @@ The General settings allows you to change the logo of the application that appea
     <figcaption >Fig 1. General settings</figcaption>
 </figure>
 
-The “Time Zone” dropdown list enables the User to select the [Time Zone](/glossary#time-zone) for the whole application. The “Date Time Format” dropdown list enables the user to select the dates format. The “Time Format” drop down list lest the User set the Time Format. The Event Type drop down is list enables the User to select type of events (All, Alarm or other). The Event State drop down is list enables the User to select state of event (All, Active or Inactive). The Event Acknowledge State drop down is list enables the User to select All, Acknowledged or Unacknowledged value and Incl. Grace drop down is list enables the User to Enabled or Disabled value.
+The “Time Zone” dropdown list enables the User to select the [Time Zone](/glossary#time-zone) for the whole application. The “Date Time Format” dropdown list enables the user to select the format of the dates. The “Time Format” drop down list enables the User to select the Time Format. The Event Type drop down list enables the User to select type of events (All, Alarm or other). The Event State drop down list enables the User to select state of event (All, Active or Inactive). The Event Acknowledge State drop down list enables the User to select All, Acknowledged or Unacknowledged value and Incl. Grace drop down list enables the User to select Enabled or Disabled value.
 
 <script>
 // Get the modal

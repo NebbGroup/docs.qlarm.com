@@ -57,25 +57,25 @@ User can create new asset by clicking <img src="/createNewAsset.png" alt="Create
 
 ### Create Virtual Tag
 
-User can create new Virtual Tag by clicking <img src="/createNewAsset.png" alt="Create New Virtual Tag"> Create an virtual tag button. After click, a popup form appears. ‘Name’, ‘Description’ and ‘Value Type’ are required fields. After clicking Add, the newly created Virtual Tag will be displayed in the graph and stored as other tags.
+User can create new Virtual Tag by clicking <img src="/createNewAsset.png" alt="Create New Virtual Tag"> Create a virtual tag button. After click, a popup form appears. ‘Name’, ‘Description’ and ‘Value Type’ are required fields. After clicking Add, the newly created Virtual Tag will be displayed in the graph and stored as other tags.
 The value for the Virtual tags can be set with the ‘Set Tag Value’ widget from Dashboard.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createNewVirtualTagPopUp.png" alt="Create New Virtual Tag Pop Up" style="width: 25%;">
-    <figcaption>Fig 3. Create New Virtual Tag Pop Up</figcaption>
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createNewVirtualTagPopUp.png" alt="Create New Virtual Tag Form" style="width: 25%;">
+    <figcaption>Fig 3. Create New Virtual Tag Form</figcaption>
 </figure>
 
 
 ### Create Calculated Tag
 
-User can create new Calculated Tag by clicking <img src="/createNewAsset.png" alt="Create New Calculated Tag"> Create an calculated tag button. After click, a popup form appears. ‘Name’, ‘Description’, ‘Formula’ and ‘Value Type’ are required fields. For now, user should add only float type of calculated tags, and for float tags ‘Precision’ is required field. After clicking Add, the newly created Asset will be displayed in the graph and stored as other tags.
-The property ‘Formula’ is the place where the user should add some mathematical operations between tags. For now, the value from the tags will be used by their ‘tagId’ tegether with the mathematica operations that user needs. The value for the Calculated Tag will be calculated according to the formula.
+User can create new Calculated Tag by clicking <img src="/createNewAsset.png" alt="Create New Calculated Tag"> Create a calculated tag button. After click, a popup form appears. ‘Name’, ‘Description’, ‘Formula’ and ‘Value Type’ are required fields. For now, user should add only float type of calculated tags, and for float tags ‘Precision’ is required field. After clicking Add, the newly created Calculated tag will be displayed in the graph and stored as other tags.
+The property ‘Formula’ is the place where the user should add some mathematical operations between tags. For now, the value from the tags will be used by their ‘tagId’ together with the mathematical operations that user needs. The value for the Calculated Tag will be calculated according to the formula.
 
 Note:  Formula example:("tagId" + 7 - "tagId1" - 3).
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createNewCalculatedTagPopUp.png" alt="Create New Calculated Tag Pop Up" style="width: 25%;">
-    <figcaption>Fig 4. Create New Calculated Tag Pop Up</figcaption>
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/createNewCalculatedTagPopUp.png" alt="Create New Calculated Tag Form" style="width: 25%;">
+    <figcaption>Fig 4. Create New Calculated Tag Form</figcaption>
 </figure>
 
 ### View Model
@@ -219,7 +219,7 @@ This option allows the user to mute one or multiple event instances via asset no
     <figcaption>Fig 13. Mute event instances</figcaption>
 </figure>
 
-By default, all the event instances will be preselected. The user can unselect the event instances they do not want to mute. Once the preferred event instances are selected, click on the “Mute” button. This will open a pop-up window where the user can choose a predefined time period until when the select event instances should be muted or choose a custom time period.
+By default, all the event instances will be preselected. The user can unselect the event instances which he do not want to mute. Once the preferred event instances are selected, click on the “Mute” button. This will open a pop-up window where the user can choose a predefined time period until when the selected event instances should be muted or choose a custom time period.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/muteEvent.png" alt="select period for muting events" style="width: 35%;">
@@ -228,11 +228,11 @@ By default, all the event instances will be preselected. The user can unselect t
 
 ### Unmute event instances
 
-This option allows the user to unmute one or multiple event instances via asset nodes. By clicking on “Unmute event instances” option, a modal window containing the event instances that were previously muted are related to that asset will be displayed.
+This option allows the user to unmute one or multiple event instances via asset nodes. By clicking on “Unmute event instances” option, a modal window containing the event instances that were previously muted and are related to that asset will be displayed.
 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/unmuteEventInstances.png" alt="unmute event instances pop-up" style="width: 35%;">
-    <figcaption>Fig 15. UnMute event instances</figcaption>
+    <figcaption>Fig 15. Unmute event instances</figcaption>
 </figure>
 
 By default, all the event instances will be preselected. The user can unselect the event instances they do not want to unmute. Once the preferred event instances are selected, click on the “Unmute” button.
