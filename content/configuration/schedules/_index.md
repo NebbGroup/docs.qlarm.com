@@ -38,5 +38,19 @@ In the top right corner of the popup window, there is a toggle button <img src="
     <figcaption>Fig 3. Configured schedule</figcaption>
 </figure>
 
-After you are done configuring the schedule, click on “Save” button to create the schedule, or “Cancel” button to discard the configuration.
+After you are done configuring the schedule, click on “Save” button <img src="/saveSchedule.png" alt="save schedule button"> to create the schedule, or “Cancel” button <img src="/cancelSchedule.png" alt="cancel schedule button"> to discard the configuration.
 
+The created schedules can be used when [creating a recipient group](/configuration/recipients#Recipients). In the “Add recipient group” popup window, click on “SELECT SCHEDULE” drop-down menu to select a schedule.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)" id="use_configured_schedule" src="/addRecipientGroupFromSchedules.png" alt="use created schedule">
+    <figcaption>Fig 4. Configure recipient with added schedule</figcaption>
+</figure>
+
+## Edit schedule
+
+You can edit a schedule by clicking the “Edit” button <img src="/edit-button.png" alt="edit schedule button"> after which a filled form will appear in which you can make the changes.
+
+## Delete schedule
+
+To delete a schedule, simply click on the “Delete” button <img src="/delete-icon.png" alt="delete schedule button"> and click on the “Yes” button from the confirmation window.
