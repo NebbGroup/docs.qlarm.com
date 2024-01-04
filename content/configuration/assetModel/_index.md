@@ -210,6 +210,33 @@ After uploading image, pop-up is opened (shown on Fig 11). User can choose Width
 - <b>Replace image</b> - In order to replace existing image, user should choose Set model image/Set asset image/Set asset type image and then pop-up is opened. User should click on the Replace button <img src="/replaceImgBtn.png" alt="Replace image button" style="width:70px">, choose new image and then click Save button. In order to cancel the action, user should click Cancel <img src="/cancelImgBtn.png" alt="Cancel image upload button" style="width:70px">.
 - <b>Delete image</b> - In order to delete existing image, user should open the set image pop-up and then click on the Delete button <img src="/deleteImgBtn.png" alt="Delete image button" style="width:70px">.
 
+### Mute event instances
+
+This option allows the user to mute one or multiple event instances via asset nodes. By clicking on “Mute event instances” option, a modal window containing the event instances that are related to that asset will be displayed.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/muteEventInstances.png" alt="mute event instances pop-up" style="width: 35%;">
+    <figcaption>Fig 13. Mute event instances</figcaption>
+</figure>
+
+By default, all the event instances will be preselected. The user can unselect the event instances they do not want to mute. Once the preferred event instances are selected, click on the “Mute” button. This will open a pop-up window where the user can choose a predefined time period until when the select event instances should be muted or choose a custom time period.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/muteEvent.png" alt="select period for muting events" style="width: 35%;">
+    <figcaption>Fig 14. Select time period for muting an event</figcaption>
+</figure>
+
+### Unmute event instances
+
+This option allows the user to unmute one or multiple event instances via asset nodes. By clicking on “Unmute event instances” option, a modal window containing the event instances that were previously muted are related to that asset will be displayed.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="button_cluster" src="/unmuteEventInstances.png" alt="unmute event instances pop-up" style="width: 35%;">
+    <figcaption>Fig 15. UnMute event instances</figcaption>
+</figure>
+
+By default, all the event instances will be preselected. The user can unselect the event instances they do not want to unmute. Once the preferred event instances are selected, click on the “Unmute” button.
+
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
