@@ -3,7 +3,6 @@ title: "Schedules"
 date: 2020-08-20T15:54:27+02:00
 weight: 10
 ---
-
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
@@ -43,7 +42,7 @@ After you are done configuring the schedule, click on “Save” button <img src
 The created schedules can be used when creating a recipient group. In the “Add recipient group” popup window, click on “SELECT SCHEDULE” drop-down menu to select a schedule.
 
 <figure class="image_container">
-    <img class="center_image myImg" onClick="reply_click(this)" id="use_configured_schedule" src="/addRecipientGroupFromSchedules.png" alt="use created schedule">
+    <img class="center_image myImg" onClick="reply_click(this)" id="use_configured_schedule" src="/createRecipientGroupFromSchedules.png" alt="use created schedule">
     <figcaption>Fig 4. Configure recipient group with added schedule</figcaption>
 </figure>
 
