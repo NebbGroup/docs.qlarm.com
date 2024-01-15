@@ -84,11 +84,11 @@ The User can add a new Tag by clicking on the <img src="/addTag-button.png" alt=
 
 You should select which columns you want to see in the table using the button <img src="/customizeColumns.png" alt="customize column"> The “Details”, “Name” and “Actions” are default columns and cannot be hidden.
 
-<figure>
-    <img class="center_image myImg" onClick="reply_click(this)"  id="tagsColumnFilter" src="/tagsColumnFilter.png" alt="Column filter">
-    <figcaption>Fig 10. Column filter<figcaption>
+<figure style="display: flex;
+    flex-direction: column;">
+    <img style="margin: 0 auto; display:block;" class="myImg" onClick="reply_click(this)"  id="tagsColumnFilter" src="/tagsColumnFilter.png" alt="Column filter">
+    <figcaption style="margin: 10px auto 0;">Fig 10. Column filter<figcaption>
 </figure>
-
 
 <p>The User (Super Admin) can add a multiple Tags by clicking on the <img src="/import-tags-btn.png" alt="online status"> button, than on Import Tags <img src="/import-export-tags-btn.png" alt="online status"> upon which an “Tags Importing” form appears which have a template and downloading it user should add a multiple tags using excel file. In the excel file for string and boolean value type are not required ‘Deadband’ and ‘Precision’. The ‘Engineering Unit’ and ‘Engineering Icon’ are not required for all value types and also ‘StateTrue’ and ‘StateFalse’ are required only for boolean value type. While importing tags are in progress user should see a progress bar and when importing is done user should be notified with Success Message.</p>
 <figure class="image_container">
