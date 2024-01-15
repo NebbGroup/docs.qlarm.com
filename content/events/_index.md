@@ -72,9 +72,10 @@ Columns common for all Event Types are:
 
 You should select which columns you want to see in the table using the button <img src="/customizeColumns.png"> The “Details”, “Name” and “Actions” are default columns and cannot be hidden.
 
-<figure>
-    <img class="center_image myImg" onClick="reply_click(this)"  id="eventColumnFilter" src="/eventsColumnFilter.png" alt="Column filter">
-    <figcaption>Fig 2. Column filter<figcaption>
+<figure style="display: flex;
+    flex-direction: column;">
+    <img style="margin: 0 auto; display:block;" class="myImg" onClick="reply_click(this)"  id="eventColumnFilter" src="/eventsColumnFilter.png" alt="Column filter">
+    <figcaption style="margin: 10px auto 0;">Fig 2. Column filter<figcaption>
 </figure>
 
 Note: This option is possible in ”Event View”, “History” and “Muted” tabs in the “Events view”.

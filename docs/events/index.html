@@ -172,41 +172,6 @@ if (!doNotTrack) {
           <a class="nav-link p-0" href="/settings/"><h6>Settings</h6></a>
         
         <ul class="list-unstyled ml-2">
-    <li data-nav-id="/settings/user-settings/" class="nav-item my-1
-        ">
-        
-        
-          <a class="nav-link p-0" href="/settings/user-settings/"><h6>User Settings</h6></a>
-        
-    </li>
-    <li data-nav-id="/settings/users/" class="nav-item my-1
-        ">
-        
-        
-          <a class="nav-link p-0" href="/settings/users/"><h6>Users</h6></a>
-        
-    </li>
-    <li data-nav-id="/settings/api-tokens/" class="nav-item my-1
-        ">
-        
-        
-          <a class="nav-link p-0" href="/settings/api-tokens/"><h6>API Tokens</h6></a>
-        
-    </li>
-    <li data-nav-id="/settings/permissions/" class="nav-item my-1
-        ">
-        
-        
-          <a class="nav-link p-0" href="/settings/permissions/"><h6>Permissions</h6></a>
-        
-    </li>
-    <li data-nav-id="/settings/general-settings/" class="nav-item my-1
-        ">
-        
-        
-          <a class="nav-link p-0" href="/settings/general-settings/"><h6>General Settings</h6></a>
-        
-    </li>
         </ul>
     </li>
     <li data-nav-id="/support/" class="nav-item my-1 haschildren
@@ -378,9 +343,10 @@ Event Definition can be edited or deleted. In this case its instances are Archiv
 </tbody>
 </table>
 <p>You should select which columns you want to see in the table using the button <img src="/customizeColumns.png"> The “Details”, “Name” and “Actions” are default columns and cannot be hidden.</p>
-<figure>
-    <img class="center_image myImg" onClick="reply_click(this)"  id="eventColumnFilter" src="/eventsColumnFilter.png" alt="Column filter">
-    <figcaption>Fig 2. Column filter<figcaption>
+<figure style="display: flex;
+    flex-direction: column;">
+    <img style="margin: 0 auto; display:block;" class="myImg" onClick="reply_click(this)"  id="eventColumnFilter" src="/eventsColumnFilter.png" alt="Column filter">
+    <figcaption style="margin: 10px auto 0;">Fig 2. Column filter<figcaption>
 </figure>
 <p>Note: This option is possible in ”Event View”, “History” and “Muted” tabs in the “Events view”.</p>
 <h2 id="filters">Filters</h2>
