@@ -92,14 +92,14 @@ In the Events tab there are also:
 - "ACKNOWLEDGED STATE" - filters the Event Instances that have the selected acknowledged state.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="Event_view_filters" src="/events-filters.png" alt="Event view filter options">
-    <figcaption>Fig 2. Event view filter options</figcaption>
+    <figcaption>Fig 3. Event view filter options</figcaption>
 </figure>
 
 In the History tab there are also:  
 - "TIME PERIOD FILTER" - filters the Event Instances by creation date.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="History_filters" src="/events-history-filters.png" alt="History filter options">
-    <figcaption>Fig 3. History filter options</figcaption>
+    <figcaption>Fig 4. History filter options</figcaption>
 </figure>
 
 Depending on what is selected in the filters, you can have a different columns displayed: Column is not displayed if its data is not expected for a certain filter combination.
@@ -113,7 +113,7 @@ If data is expected but not available, an empty cell is displayed.
 Details, including event action time and other numerical information, are provided for all Event Instances in the "Event View". Clicking the arrow at the beginning of each row expands the row to show all associated Event Details. If data is not expected, the label for a certain time is not displayed. If data is expected but not available, "-" is displayed. The event details chart visualizes the moment when the event take places according to the data provided from the tag. By toggling the switch, the chart displays the data points surrounding the event or the recent 24 hour data points.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="event_details" src="/event-details.png" alt="Event details">
-    <figcaption>Fig 4. Event details</figcaption>
+    <figcaption>Fig 5. Event details</figcaption>
 </figure>
 
 ## Sorting
@@ -129,7 +129,7 @@ Events listed in both Event view and History tab have Logs. They can be reached 
 The Log for each instance contains information on changes in the State of the event, which [User](/glossary#user) initiated the change, and at what time the change occured.There is also a possibility for the User to add a custom log in the form of a comment.
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_logs" src="/events_view_logs.png" alt="Logs">
-    <figcaption>Fig 5. Logs</figcaption>
+    <figcaption>Fig 6. Logs</figcaption>
 </figure>
 
 ## History
@@ -139,7 +139,7 @@ Events listed in Event view tab have History preview where you can see archived 
 Event view events can be acknowledged by clicking the "ACK" button for the Event Instance row. A popup appears and you can confirm or cancel the acknowledgement. <img src="/ack-btn.png">. Multiple events instances can be acknowledged by selecting them using the available check box which enables the <img src="/ack_selected_button.png" style="width: 8rem"> button to execute the bulk acknowledgement. In this case, the message written in the acknowledge popup will be logged for the multiple selected event instances. 
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_ack_popup" src="/events_view_ack_popup.png" alt="Acknowledge event">
-    <figcaption>Fig 6. Acknowledge event</figcaption>
+    <figcaption>Fig 7. Acknowledge event</figcaption>
 </figure>
 
 ## Event view Links
@@ -151,7 +151,7 @@ Muting events allows you to temporarily disable notifications for specific event
 Event view events (active or inactive) can be muted by selecting event(s) and clicking the Mute button <img src="/muteBtn.png">. When you click on the Mute button, pop-up opens up where you can choose a predefined time period until when the selected event should be muted or choose a custom time period (Fig 7).
 <figure class="image_container">
     <img class="center_image myImg" onClick="reply_click(this)"  id="events_view_mute_popup" src="/muteEvent.png" alt="Mute event">
-    <figcaption>Fig 7. Mute event</figcaption>
+    <figcaption>Fig 8. Mute event</figcaption>
 </figure>
 
 Muted events can be seen in the Muted tab, where you can see until when the events are muted and also Unmute them manually. If you want to unmute them manually you can select the event(s) and then click on the Unmute button  <img src="/unmuteBtn.png">.
