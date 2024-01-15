@@ -69,6 +69,17 @@ Columns common for all Event Types are:
 | Actions | Button for Acknowledging Alarm | 
 
 
+
+You should select which columns you want to see in the table using the button <img src="/customizeColumns.png"> The “Details”, “Name” and “Actions” are default columns and cannot be hidden.
+
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="eventColumnFilter" src="/eventsColumnFilter.png" alt="Column filter">
+    <figcaption>Fig 2. Column filter<figcaption>
+</figure>
+
+Note: This option is possible in ”Event View”, “History” and “Muted” tabs in the “Events view”.
+
+
 ## Filters
 The following filters are available for both Events and History tabs:
 - "TAGS FILTER" - the tags tree view filter is populated with the Tags and their [Assets](/glossary#asset) for which the user has asset scopes. It filters Event Instances for selected Tags.
