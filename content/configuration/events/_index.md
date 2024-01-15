@@ -94,13 +94,13 @@ Text message template is used for setting E-mail, SMS and Push notifications tex
 
 Under the Add/Edit Event there is a possibility to manage Templates. You can enter in this mode via clicking the toggle button on the right side of the Template dropdown list.
 
-    <figure class="image_container">
-        <img class="center_image myImg" onClick="reply_click(this)"  id="manage_templates_toggle_button" src="/manage_templates_toggle_button.png" alt="Manage templates toggle button">
-        <figcaption>Fig 10. Manage templates toggle button</figcaption>
-    </figure>
+<figure class="image_container">
+    <img class="center_image myImg" onClick="reply_click(this)"  id="manage_templates_toggle_button" src="/manage_templates_toggle_button.png" alt="Manage templates toggle button">
+    <figcaption>Fig 10. Manage templates toggle button</figcaption>
+</figure>
 
 After you click the toggle button a Manage template panel will be opened. It contains fields for Template name, Text message template and Voice message template.
-Voice message template is hidden by default and can be seen if you click on the arrow on the right side od Text message template <img  src="/manage_templates_toggle_arrow.png">. 
+Voice message template is hidden by default and can be seen if you click on the arrow on the right side of Text message template. 
 The Voice message template gets the content from the Text message template if not set.
 In this case, the additional change of the Text message template gets applied to the Voice message template content also.
     
